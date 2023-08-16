@@ -14,24 +14,18 @@
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">data-structure-typed</a></li>
 <li><a href="SinglyLinkedList.html">SinglyLinkedList</a></li></ul>
-<h1>Class SinglyLinkedList&lt;NodeData&gt;</h1></div>
-<section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>A doubly linked list</p>
-<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">list</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">);</span><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">listFromArray</span><span class="hl-1"> = </span><span class="hl-6">LinkedList</span><span class="hl-1">.</span><span class="hl-0">from</span><span class="hl-1">([</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">]);</span>
-</code><button>Copy</button></pre>
-</div>
-<div class="tsd-comment tsd-typography"></div></section> 
+<h1>Class SinglyLinkedList&lt;NodeVal&gt;</h1></div> 
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">NodeData</span> = <span class="tsd-signature-type">any</span></h4></li></ul></section> 
+<h4><span class="tsd-kind-type-parameter">NodeVal</span> = <span class="tsd-signature-type">any</span></h4></li></ul></section> 
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
 <li><span class="target">SinglyLinkedList</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L96">src/data-structures/linked-list/singly-linked-list.ts:96</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L98">src/data-structures/linked-list/singly-linked-list.ts:98</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -43,13 +37,15 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="SinglyLinkedList.html#head" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>head</span></a>
-<a href="SinglyLinkedList.html#size" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>size</span></a>
-<a href="SinglyLinkedList.html#tail" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>tail</span></a>
+<div class="tsd-index-list"><a href="SinglyLinkedList.html#_head" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>_head</span></a>
+<a href="SinglyLinkedList.html#_size" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_size</span></a>
+<a href="SinglyLinkedList.html#_tail" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_tail</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Accessors</h3>
-<div class="tsd-index-list"><a href="SinglyLinkedList.html#length" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-262144"><rect fill="var(--color-icon-background)" stroke="#FF4D4D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M8.85 16L11.13 7.24H12.582L14.85 16H13.758L13.182 13.672H10.53L9.954 16H8.85ZM10.746 12.76H12.954L12.282 10.06C12.154 9.548 12.054 9.12 11.982 8.776C11.91 8.432 11.866 8.208 11.85 8.104C11.834 8.208 11.79 8.432 11.718 8.776C11.646 9.12 11.546 9.544 11.418 10.048L10.746 12.76Z" fill="var(--color-text)"></path></g></svg><span>length</span></a>
+<div class="tsd-index-list"><a href="SinglyLinkedList.html#head" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-262144"><rect fill="var(--color-icon-background)" stroke="#FF4D4D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M8.85 16L11.13 7.24H12.582L14.85 16H13.758L13.182 13.672H10.53L9.954 16H8.85ZM10.746 12.76H12.954L12.282 10.06C12.154 9.548 12.054 9.12 11.982 8.776C11.91 8.432 11.866 8.208 11.85 8.104C11.834 8.208 11.79 8.432 11.718 8.776C11.646 9.12 11.546 9.544 11.418 10.048L10.746 12.76Z" fill="var(--color-text)"></path></g></svg><span>head</span></a>
+<a href="SinglyLinkedList.html#size" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>size</span></a>
+<a href="SinglyLinkedList.html#tail" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>tail</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
@@ -74,7 +70,7 @@
 <a href="SinglyLinkedList.html#push" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>push</span></a>
 <a href="SinglyLinkedList.html#reduce" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>reduce</span></a>
 <a href="SinglyLinkedList.html#removeAt" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>At</span></a>
-<a href="SinglyLinkedList.html#removeFromAnyEnd" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>From<wbr/>Any<wbr/>End</span></a>
+<a href="SinglyLinkedList.html#removeFromAnyEnd" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>From<wbr/>Any<wbr/>End</span></a>
 <a href="SinglyLinkedList.html#removeNode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Node</span></a>
 <a href="SinglyLinkedList.html#reverse" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>reverse</span></a>
 <a href="SinglyLinkedList.html#shift" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>shift</span></a>
@@ -89,127 +85,153 @@
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_SinglyLinkedList"><span class="tsd-kind-constructor-signature">new <wbr/>Singly<wbr/>Linked<wbr/>List</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_SinglyLinkedList" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_SinglyLinkedList"><span class="tsd-kind-constructor-signature">new <wbr/>Singly<wbr/>Linked<wbr/>List</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_SinglyLinkedList" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The constructor initializes a linked list with the given arguments as nodes.</p>
+</div>
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">NodeData</span> = <span class="tsd-signature-type">any</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">NodeVal</span> = <span class="tsd-signature-type">any</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>args is a rest parameter that allows the constructor to accept an arbitrary number of
+arguments of type NodeVal.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L105">src/data-structures/linked-list/singly-linked-list.ts:105</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L130">src/data-structures/linked-list/singly-linked-list.ts:130</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member"><a id="head" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>head</span><a href="#head" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">head</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></div>
-<div class="tsd-comment tsd-typography"><p>The head of the list, the first node</p>
-</div>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_head" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_head</span><a href="#_head" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_head</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L99">src/data-structures/linked-list/singly-linked-list.ts:99</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="size" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>size</span><a href="#size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">size</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-<div class="tsd-comment tsd-typography"><p>Internal size reference</p>
-</div>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L100">src/data-structures/linked-list/singly-linked-list.ts:100</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_size" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_size</span><a href="#_size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_size</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L103">src/data-structures/linked-list/singly-linked-list.ts:103</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="tail" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>tail</span><a href="#tail" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">tail</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></div>
-<div class="tsd-comment tsd-typography"><p>The tail of the list, the last node</p>
-</div>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L117">src/data-structures/linked-list/singly-linked-list.ts:117</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_tail" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_tail</span><a href="#_tail" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_tail</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L101">src/data-structures/linked-list/singly-linked-list.ts:101</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L109">src/data-structures/linked-list/singly-linked-list.ts:109</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
-<section class="tsd-panel tsd-member"><a id="length" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>length</span><a href="#length" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<section class="tsd-panel tsd-member"><a id="head" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>head</span><a href="#head" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature" id="length.length-1"><span class="tsd-signature-symbol">get</span> length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+<li class="tsd-signature" id="head.head-1"><span class="tsd-signature-symbol">get</span> head<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The length of the list</p>
-</div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L118">src/data-structures/linked-list/singly-linked-list.ts:118</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L101">src/data-structures/linked-list/singly-linked-list.ts:101</a></li></ul></aside></li>
+<li class="tsd-signature" id="head.head-2"><span class="tsd-signature-symbol">set</span> head<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L104">src/data-structures/linked-list/singly-linked-list.ts:104</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="size" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>size</span><a href="#size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="size.size-1"><span class="tsd-signature-symbol">get</span> size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L118">src/data-structures/linked-list/singly-linked-list.ts:118</a></li></ul></aside></li>
+<li class="tsd-signature" id="size.size-2"><span class="tsd-signature-symbol">set</span> size<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L121">src/data-structures/linked-list/singly-linked-list.ts:121</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="tail" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>tail</span><a href="#tail" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="tail.tail-1"><span class="tsd-signature-symbol">get</span> tail<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L110">src/data-structures/linked-list/singly-linked-list.ts:110</a></li></ul></aside></li>
+<li class="tsd-signature" id="tail.tail-2"><span class="tsd-signature-symbol">set</span> tail<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L113">src/data-structures/linked-list/singly-linked-list.ts:113</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="_iterator_" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>[iterator]</span><a href="#_iterator_" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="_iterator_._iterator_-1"><span class="tsd-kind-call-signature">[iterator]</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#_iterator_._iterator_-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="_iterator_._iterator_-1"><span class="tsd-kind-call-signature">[iterator]</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#_iterator_._iterator_-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The iterator implementation</p>
-<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">list</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">);</span><br/><span class="hl-7">for</span><span class="hl-1"> (</span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">val</span><span class="hl-1"> </span><span class="hl-3">of</span><span class="hl-1"> </span><span class="hl-6">list</span><span class="hl-1">) { </span><span class="hl-0">log</span><span class="hl-1">(</span><span class="hl-6">val</span><span class="hl-1">); } </span><span class="hl-8">// 1 2 3</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The function is an iterator that returns the values of each node in a linked list.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L754">src/data-structures/linked-list/singly-linked-list.ts:754</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L730">src/data-structures/linked-list/singly-linked-list.ts:730</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="append" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>append</span><a href="#append" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="append.append-1"><span class="tsd-kind-call-signature">append</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#append.append-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="append.append-1"><span class="tsd-kind-call-signature">append</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#append.append-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Append one or any number of nodes to the end of the list.
-This modifies the list in place and returns the list itself
-to make this method chainable.</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">).</span><span class="hl-0">append</span><span class="hl-1">(</span><span class="hl-5">2</span><span class="hl-1">).</span><span class="hl-0">append</span><span class="hl-1">(</span><span class="hl-5">3</span><span class="hl-1">, </span><span class="hl-5">4</span><span class="hl-1">); </span><span class="hl-8">// 1 &lt;=&gt; 2 &lt;=&gt; 3 &lt;=&gt; 4</span>
-</code><button>Copy</button></pre>
-</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">[]</span></h5>
-<div class="tsd-comment tsd-typography"><p>Data to be stored in the node, takes any number of arguments</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L263">src/data-structures/linked-list/singly-linked-list.ts:263</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L269">src/data-structures/linked-list/singly-linked-list.ts:269</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="clear" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>clear</span><a href="#clear" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="clear.clear-1"><span class="tsd-kind-call-signature">clear</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#clear.clear-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="clear.clear-1"><span class="tsd-kind-call-signature">clear</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#clear.clear-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Removes all nodes from a list</p>
-<pre><code class="language-ts"><span class="hl-6">list</span><span class="hl-1">.</span><span class="hl-0">clear</span><span class="hl-1">();</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The clear() function resets the linked list by setting the head and tail to null and the size to 0.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The &quot;this&quot; object is being returned.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L555">src/data-structures/linked-list/singly-linked-list.ts:555</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L537">src/data-structures/linked-list/singly-linked-list.ts:537</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="filter" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>filter</span><a href="#filter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="filter.filter-1"><span class="tsd-kind-call-signature">filter</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">f</span>, <span class="tsd-kind-parameter">reverse</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#filter.filter-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="filter.filter-1"><span class="tsd-kind-call-signature">filter</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callbackFn</span>, <span class="tsd-kind-parameter">reverse</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#filter.filter-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The filter() method creates a new list with all nodes
-that pass the test implemented by the provided function.</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">, </span><span class="hl-5">4</span><span class="hl-1">, </span><span class="hl-5">5</span><span class="hl-1">).</span><span class="hl-0">filter</span><span class="hl-1">(</span><span class="hl-6">val</span><span class="hl-1"> </span><span class="hl-3">=&gt;</span><span class="hl-1"> </span><span class="hl-6">val</span><span class="hl-1"> &lt; </span><span class="hl-5">4</span><span class="hl-1">); </span><span class="hl-8">// 1 &lt;=&gt; 2 &lt;=&gt; 3</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>filter</code> function filters the elements of a singly linked list based on a given callback function.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">f</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>Function to test each node val in the list. Return true to keep the node</p>
+<h5><span class="tsd-kind-parameter">callbackFn</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
+<div class="tsd-comment tsd-typography"><p>A callback function that takes three parameters: data, index, and list. It should return a
+boolean value indicating whether the current element should be included in the filtered list or not.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div>
 <ul class="tsd-parameters">
@@ -221,37 +243,39 @@ that pass the test implemented by the provided function.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5></li>
+<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4></li></ul></li></ul></li>
 <li>
-<h5><span class="tsd-kind-parameter">reverse</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
-<div class="tsd-comment tsd-typography"><p>Indicates if the list should be filtered in reverse order, default is false</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">reverse</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>reverse</code> parameter is a boolean value that determines whether the filtered list should
+be reversed or not. If <code>reverse</code> is set to <code>true</code>, the filtered list will be in reverse order. If <code>reverse</code> is set
+to <code>false</code> or not provided, the filtered list will be in</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The <code>filter</code> method is returning a new <code>SinglyLinkedList</code> object.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L669">src/data-structures/linked-list/singly-linked-list.ts:669</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L645">src/data-structures/linked-list/singly-linked-list.ts:645</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="find" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>find</span><a href="#find" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="find.find-1"><span class="tsd-kind-call-signature">find</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">f</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><a href="#find.find-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="find.find-1"><span class="tsd-kind-call-signature">find</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callbackFn</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><a href="#find.find-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Returns the value of the first element in the list that
-satisfies the provided testing function. Otherwise undefined is returned.</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">find</span><span class="hl-1">(</span><span class="hl-6">val</span><span class="hl-1"> </span><span class="hl-3">=&gt;</span><span class="hl-1"> </span><span class="hl-6">val</span><span class="hl-1"> === </span><span class="hl-5">1</span><span class="hl-1">); </span><span class="hl-8">// 1</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>find</code> function in TypeScript searches for a node in a singly linked list based on a given callback function and
+returns the value of the found node.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">f</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>Function to test val against</p>
+<h5><span class="tsd-kind-parameter">callbackFn</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
+<div class="tsd-comment tsd-typography"><p>A callback function that takes three parameters: data, index, and list. It returns a boolean
+value indicating whether the condition is met for a particular node in the linked list.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div>
 <ul class="tsd-parameters">
@@ -263,32 +287,33 @@ satisfies the provided testing function. Otherwise undefined is returned.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5></li>
+<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4></li></ul></li></ul></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h4><p>The method <code>find</code> returns the <code>NodeVal</code> value of the first node in the linked list that satisfies the
+condition specified by the <code>callbackFn</code> function. If no node satisfies the condition, it returns <code>undefined</code>.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L228">src/data-structures/linked-list/singly-linked-list.ts:228</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L243">src/data-structures/linked-list/singly-linked-list.ts:243</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="findIndex" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>find<wbr/>Index</span><a href="#findIndex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="findIndex.findIndex-1"><span class="tsd-kind-call-signature">find<wbr/>Index</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">f</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#findIndex.findIndex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="findIndex.findIndex-1"><span class="tsd-kind-call-signature">find<wbr/>Index</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callbackFn</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#findIndex.findIndex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Returns the index of the first node in the list that
-satisfies the provided testing function. Ohterwise -1 is returned.</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">findIndex</span><span class="hl-1">(</span><span class="hl-6">val</span><span class="hl-1"> </span><span class="hl-3">=&gt;</span><span class="hl-1"> </span><span class="hl-6">val</span><span class="hl-1"> === </span><span class="hl-5">3</span><span class="hl-1">); </span><span class="hl-8">// 2</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The findIndex function returns the index of the first node in a singly linked list that satisfies a given condition,
+or -1 if no such node is found.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">f</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>Function to test val against</p>
+<h5><span class="tsd-kind-parameter">callbackFn</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
+<div class="tsd-comment tsd-typography"><p>A callback function that takes three parameters: data, index, and list. It returns a boolean
+value indicating whether the condition is met for a particular node in the singly linked list.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div>
 <ul class="tsd-parameters">
@@ -300,32 +325,31 @@ satisfies the provided testing function. Ohterwise -1 is returned.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5></li>
+<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4></li></ul></li></ul></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The method <code>findIndex</code> returns a number.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L245">src/data-structures/linked-list/singly-linked-list.ts:245</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L259">src/data-structures/linked-list/singly-linked-list.ts:259</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="findNode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>find<wbr/>Node</span><a href="#findNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="findNode.findNode-1"><span class="tsd-kind-call-signature">find<wbr/>Node</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">f</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#findNode.findNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="findNode.findNode-1"><span class="tsd-kind-call-signature">find<wbr/>Node</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callbackFn</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#findNode.findNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Returns the first node in the list that
-satisfies the provided testing function. Otherwise undefined is returned.</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">findNode</span><span class="hl-1">(</span><span class="hl-6">val</span><span class="hl-1"> </span><span class="hl-3">=&gt;</span><span class="hl-1"> </span><span class="hl-6">val</span><span class="hl-1"> === </span><span class="hl-5">1</span><span class="hl-1">);</span><br/><span class="hl-8">// { prev: null, val: 1, next: SinglyLinkedListNode }</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The findNode function searches for a node in a singly linked list based on a given callback function.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">f</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>Function to test val against</p>
+<h5><span class="tsd-kind-parameter">callbackFn</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
+<div class="tsd-comment tsd-typography"><p>A callback function that takes three parameters: data, index, and list. It returns a boolean
+value indicating whether the current node matches the desired criteria.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div>
 <ul class="tsd-parameters">
@@ -337,32 +361,34 @@ satisfies the provided testing function. Otherwise undefined is returned.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5></li>
+<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4></li></ul></li></ul></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The function <code>findNode</code> returns a <code>SinglyLinkedListNode&lt;NodeVal&gt;</code> if a node satisfying the condition
+specified by the <code>callbackFn</code> is found in the linked list. If no such node is found, it returns <code>undefined</code>.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L211">src/data-structures/linked-list/singly-linked-list.ts:211</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L226">src/data-structures/linked-list/singly-linked-list.ts:226</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="findNodeIndex" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>find<wbr/>Node<wbr/>Index</span><a href="#findNodeIndex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="findNodeIndex.findNodeIndex-1"><span class="tsd-kind-call-signature">find<wbr/>Node<wbr/>Index</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">f</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">index</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">node</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><a href="#findNodeIndex.findNodeIndex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="findNodeIndex.findNodeIndex-1"><span class="tsd-kind-call-signature">find<wbr/>Node<wbr/>Index</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callbackFn</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">index</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">node</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><a href="#findNodeIndex.findNodeIndex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Return the first node and its index in the list that
-satisfies the testing function</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">findNodeIndex</span><span class="hl-1">(</span><span class="hl-6">val</span><span class="hl-1"> </span><span class="hl-3">=&gt;</span><span class="hl-1"> </span><span class="hl-6">val</span><span class="hl-1"> === </span><span class="hl-5">1</span><span class="hl-1">);</span><br/><span class="hl-8">// { node: SinglyLinkedListNode, index: 0 }</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The function <code>findNodeIndex</code> searches for a node in a singly linked list that satisfies a given condition and
+returns its index and the node itself.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">f</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>A function to be applied to the val of each node</p>
+<h5><span class="tsd-kind-parameter">callbackFn</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
+<div class="tsd-comment tsd-typography"><p>The callbackFn parameter is a function that takes three arguments: data, index, and list. It is
+used to determine whether a node in the singly linked list matches a certain condition. The function should return a
+boolean value indicating whether the condition is met for the given node.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div>
 <ul class="tsd-parameters">
@@ -374,31 +400,35 @@ satisfies the testing function</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5></li>
+<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4></li></ul></li></ul></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">index</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">node</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">index</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">node</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></h4><p>The function <code>findNodeIndex</code> returns an object with two properties: <code>node</code> and <code>index</code>. The <code>node</code> property
+contains the node that matches the condition specified in the <code>callbackFn</code> function, and the <code>index</code> property
+contains the index of that node in the linked list. If no node matches the condition, the function returns
+<code>undefined</code>.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L179">src/data-structures/linked-list/singly-linked-list.ts:179</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L196">src/data-structures/linked-list/singly-linked-list.ts:196</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="forEach" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>for<wbr/>Each</span><a href="#forEach" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="forEach.forEach-1"><span class="tsd-kind-call-signature">for<wbr/>Each</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">f</span>, <span class="tsd-kind-parameter">reverse</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#forEach.forEach-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="forEach.forEach-1"><span class="tsd-kind-call-signature">for<wbr/>Each</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callbackFn</span>, <span class="tsd-kind-parameter">reverse</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#forEach.forEach-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The forEach() method executes a provided function once for each list node.</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">forEach</span><span class="hl-1">(</span><span class="hl-6">val</span><span class="hl-1"> </span><span class="hl-3">=&gt;</span><span class="hl-1"> </span><span class="hl-0">log</span><span class="hl-1">(</span><span class="hl-6">val</span><span class="hl-1">)); </span><span class="hl-8">// 1 2 3</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>forEach</code> function iterates over a singly linked list and applies a callback function to each node, either in
+forward or reverse order.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">f</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>Function to execute for each element, taking up to three arguments.</p>
+<h5><span class="tsd-kind-parameter">callbackFn</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
+<div class="tsd-comment tsd-typography"><p>A callback function that will be called for each element in the linked list. It takes three
+parameters:</p>
 </div>
 <div class="tsd-comment tsd-typography"></div>
 <ul class="tsd-parameters">
@@ -414,152 +444,157 @@ satisfies the testing function</p>
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4></li></ul></li></ul></li>
 <li>
-<h5><span class="tsd-kind-parameter">reverse</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
-<div class="tsd-comment tsd-typography"><p>Indicates if the list should be walked in reverse order, default is false</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">reverse</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+<div class="tsd-comment tsd-typography"><p>A boolean value indicating whether to iterate over the linked list in reverse order. If set
+to true, the iteration will start from the tail of the linked list and move towards the head. If set to false
+(default), the iteration will start from the head and move towards the tail.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L623">src/data-structures/linked-list/singly-linked-list.ts:623</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L600">src/data-structures/linked-list/singly-linked-list.ts:600</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="get" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get</span><a href="#get" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="get.get-1"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><a href="#get.get-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="get.get-1"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><a href="#get.get-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Get the node val at a specified index, zero based</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">get</span><span class="hl-1">(</span><span class="hl-5">0</span><span class="hl-1">); </span><span class="hl-8">// 1</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>get</code> function returns the value of a node at a given index in a data structure.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>to retrieve val at</p>
+<div class="tsd-comment tsd-typography"><p>The index parameter is a number that represents the position of the node in the data
+structure.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h4><p>The method is returning the value of the node at the specified index if the node exists, otherwise it
+returns undefined.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L141">src/data-structures/linked-list/singly-linked-list.ts:141</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L157">src/data-structures/linked-list/singly-linked-list.ts:157</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getNode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Node</span><a href="#getNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getNode.getNode-1"><span class="tsd-kind-call-signature">get<wbr/>Node</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#getNode.getNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getNode.getNode-1"><span class="tsd-kind-call-signature">get<wbr/>Node</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#getNode.getNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Get the node at index, zero based</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">getNode</span><span class="hl-1">(</span><span class="hl-5">0</span><span class="hl-1">);</span><br/><span class="hl-8">// { prev: null, val: 1, next: SinglyLinkedListNode }</span>
-</code><button>Copy</button></pre>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L153">src/data-structures/linked-list/singly-linked-list.ts:153</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="insertAfter" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>insert<wbr/>After</span><a href="#insertAfter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="insertAfter.insertAfter-1"><span class="tsd-kind-call-signature">insert<wbr/>After</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">referenceNode</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#insertAfter.insertAfter-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Insert a new node after this one</p>
-<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">list</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">);</span><br/><span class="hl-6">list</span><span class="hl-1">.</span><span class="hl-0">insertAfter</span><span class="hl-1">(</span><span class="hl-6">list</span><span class="hl-1">.</span><span class="hl-6">head</span><span class="hl-1">, </span><span class="hl-5">1</span><span class="hl-1">); </span><span class="hl-8">// 1 &lt;=&gt; 2 &lt;=&gt; 3</span>
-</code><button>Copy</button></pre>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">referenceNode</span>: <a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The reference node</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5>
-<div class="tsd-comment tsd-typography"><p>Data to be saved in the node</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L484">src/data-structures/linked-list/singly-linked-list.ts:484</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="insertAt" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>insert<wbr/>At</span><a href="#insertAt" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="insertAt.insertAt-1"><span class="tsd-kind-call-signature">insert<wbr/>At</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#insertAt.insertAt-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Insert a new node at a given index position. If index is
-out of bounds, the node is appended, if index is negative
-or 0, it will be prepended.</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">insertAt</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">); </span><span class="hl-8">// 1 &lt;=&gt; 2 &lt;=&gt; 3</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The function <code>getNode</code> returns the node at a given index in a singly linked list.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The index to insert the new node at</p>
+<div class="tsd-comment tsd-typography"><p>The <code>index</code> parameter is a number that represents the position of the node we want to
+retrieve from the linked list.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>a SinglyLinkedListNode<NodeVal> object or undefined.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L168">src/data-structures/linked-list/singly-linked-list.ts:168</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="insertAfter" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>insert<wbr/>After</span><a href="#insertAfter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="insertAfter.insertAfter-1"><span class="tsd-kind-call-signature">insert<wbr/>After</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">referenceNode</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#insertAfter.insertAfter-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The <code>insertAfter</code> function inserts a new node with a given value after a specified reference node in a singly linked
+list.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">referenceNode</span>: <a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>The referenceNode parameter is the node after which the new node will be inserted.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5>
-<div class="tsd-comment tsd-typography"><p>Data to be stored on the new node</p>
+<h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5>
+<div class="tsd-comment tsd-typography"><p>The value of the new node that will be inserted after the reference node.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The <code>insertAfter</code> method is returning the updated <code>SinglyLinkedList</code> object.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L324">src/data-structures/linked-list/singly-linked-list.ts:324</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L481">src/data-structures/linked-list/singly-linked-list.ts:481</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="insertAt" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>insert<wbr/>At</span><a href="#insertAt" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="insertAt.insertAt-1"><span class="tsd-kind-call-signature">insert<wbr/>At</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#insertAt.insertAt-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The <code>insertAt</code> function inserts a value at a specified index in a singly linked list.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The index parameter is a number that represents the position at which the new node should be
+inserted in the linked list.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>val</code> parameter represents the value of the node that you want to insert into the linked
+list.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The method <code>insertAt</code> returns the updated <code>SinglyLinkedList</code> object.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L325">src/data-structures/linked-list/singly-linked-list.ts:325</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="insertBefore" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>insert<wbr/>Before</span><a href="#insertBefore" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="insertBefore.insertBefore-1"><span class="tsd-kind-call-signature">insert<wbr/>Before</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">referenceNode</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#insertBefore.insertBefore-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="insertBefore.insertBefore-1"><span class="tsd-kind-call-signature">insert<wbr/>Before</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">referenceNode</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#insertBefore.insertBefore-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Insert a new node before the reference node</p>
-<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">list</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">);</span><br/><span class="hl-6">list</span><span class="hl-1">.</span><span class="hl-0">insertBefore</span><span class="hl-1">(</span><span class="hl-6">list</span><span class="hl-1">.</span><span class="hl-6">tail</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">); </span><span class="hl-8">// 1 &lt;=&gt; 2 &lt;=&gt; 3</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>insertBefore</code> function inserts a new node with a given value before a specified reference node in a singly
+linked list.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">referenceNode</span>: <a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The node reference</p>
+<h5><span class="tsd-kind-parameter">referenceNode</span>: <a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>The referenceNode parameter is the node in the linked list before which the new node will be
+inserted.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5>
-<div class="tsd-comment tsd-typography"><p>Data to save in the node</p>
+<h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5>
+<div class="tsd-comment tsd-typography"><p>The value of the new node that will be inserted before the reference node.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The method is returning the updated SinglyLinkedList object.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L400">src/data-structures/linked-list/singly-linked-list.ts:400</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L398">src/data-structures/linked-list/singly-linked-list.ts:398</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="map" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>map</span><a href="#map" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="map.map-1"><span class="tsd-kind-call-signature">map</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">f</span>, <span class="tsd-kind-parameter">reverse</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#map.map-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="map.map-1"><span class="tsd-kind-call-signature">map</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callbackFn</span>, <span class="tsd-kind-parameter">reverse</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#map.map-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The map() method creates a new list with the results of
-calling a provided function on every node in the calling list.</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">map</span><span class="hl-1">(</span><span class="hl-6">val</span><span class="hl-1"> </span><span class="hl-3">=&gt;</span><span class="hl-1"> </span><span class="hl-6">val</span><span class="hl-1"> + </span><span class="hl-5">10</span><span class="hl-1">); </span><span class="hl-8">// 11 &lt;=&gt; 12 &lt;=&gt; 13</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The map function takes a callback function and applies it to each element in the linked list, returning a new linked
+list with the results.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">f</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>Function that produces an node of the new list, taking up to three arguments</p>
+<h5><span class="tsd-kind-parameter">callbackFn</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
+<div class="tsd-comment tsd-typography"><p>A callback function that will be applied to each element in the linked list. It takes three
+parameters:</p>
 </div>
 <div class="tsd-comment tsd-typography"></div>
 <ul class="tsd-parameters">
@@ -575,111 +610,109 @@ calling a provided function on every node in the calling list.</p>
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4></li></ul></li></ul></li>
 <li>
-<h5><span class="tsd-kind-parameter">reverse</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
-<div class="tsd-comment tsd-typography"><p>Indicates if the list should be mapped in reverse order, default is false</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">reverse</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>reverse</code> parameter is a boolean value that determines whether the mapping should be
+done in reverse order or not. If <code>reverse</code> is set to <code>true</code>, the mapping will be done in reverse order. If <code>reverse</code>
+is set to <code>false</code> or not provided, the mapping will be</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The <code>map</code> function is returning a new <code>SinglyLinkedList</code> object.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L649">src/data-structures/linked-list/singly-linked-list.ts:649</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L626">src/data-structures/linked-list/singly-linked-list.ts:626</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="merge" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>merge</span><a href="#merge" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="merge.merge-1"><span class="tsd-kind-call-signature">merge</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#merge.merge-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Merge the current list with another. Both lists will be
-equal after merging.</p>
-<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">list</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">);</span><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">otherList</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">3</span><span class="hl-1">);</span><br/><span class="hl-6">list</span><span class="hl-1">.</span><span class="hl-0">merge</span><span class="hl-1">(</span><span class="hl-6">otherList</span><span class="hl-1">);</span><br/><span class="hl-1">(</span><span class="hl-6">list</span><span class="hl-1"> === </span><span class="hl-6">otherList</span><span class="hl-1">); </span><span class="hl-8">// true</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The merge function merges two singly linked lists by updating the next and prev pointers, as well as the head, tail,
+and size properties.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The list to be merged</p>
+<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>The parameter &quot;list&quot; is a SinglyLinkedList object that contains nodes with data of type NodeVal.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L533">src/data-structures/linked-list/singly-linked-list.ts:533</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L518">src/data-structures/linked-list/singly-linked-list.ts:518</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="pop" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>pop</span><a href="#pop" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="pop.pop-1"><span class="tsd-kind-call-signature">pop</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><a href="#pop.pop-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="pop.pop-1"><span class="tsd-kind-call-signature">pop</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><a href="#pop.pop-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Remove the last node from the list and return the val of the removed node
-or undefined if the list was empty</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">pop</span><span class="hl-1">(); </span><span class="hl-8">// 3</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>pop()</code> function removes and returns the last element from a linked list.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h4><p>The <code>pop()</code> method is returning a value of type <code>NodeVal</code> or <code>undefined</code>.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L518">src/data-structures/linked-list/singly-linked-list.ts:518</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L509">src/data-structures/linked-list/singly-linked-list.ts:509</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="prepend" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>prepend</span><a href="#prepend" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="prepend.prepend-1"><span class="tsd-kind-call-signature">prepend</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#prepend.prepend-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="prepend.prepend-1"><span class="tsd-kind-call-signature">prepend</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#prepend.prepend-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Prepend any number of val arguments to the list. The
-argument list is prepended as a block to reduce confusion:</p>
-<pre><code class="language-javascript"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">3</span><span class="hl-1">, </span><span class="hl-5">4</span><span class="hl-1">).</span><span class="hl-0">prepend</span><span class="hl-1">(</span><span class="hl-5">0</span><span class="hl-1">, </span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">); </span><span class="hl-8">// [0, 1, 2, 3, 4]</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>prepend</code> function adds new nodes to the beginning of a singly linked list.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">[]</span></h5>
-<div class="tsd-comment tsd-typography"><p>Data to be stored in the node, accepts any number of arguments</p>
+<h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>An array of NodeVal objects.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The <code>prepend</code> method is returning the updated <code>SinglyLinkedList</code> object.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L298">src/data-structures/linked-list/singly-linked-list.ts:298</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L301">src/data-structures/linked-list/singly-linked-list.ts:301</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="push" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>push</span><a href="#push" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="push.push-1"><span class="tsd-kind-call-signature">push</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#push.push-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Synonym for append</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">).</span><span class="hl-0">push</span><span class="hl-1">(</span><span class="hl-5">2</span><span class="hl-1">).</span><span class="hl-0">push</span><span class="hl-1">(</span><span class="hl-5">3</span><span class="hl-1">, </span><span class="hl-5">4</span><span class="hl-1">); </span><span class="hl-8">// 1 &lt;=&gt; 2 &lt;=&gt; 3 &lt;=&gt; 4</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The push function appends multiple NodeVal objects to a data structure and returns the new size of the data
+structure.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">[]</span></h5>
-<div class="tsd-comment tsd-typography"><p>Data to be stored, takes any number of arguments</p>
+<h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>args is a rest parameter of type NodeVal[]. It allows the function to accept any number
+of arguments of type NodeVal.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The size of the data structure after the nodes are appended.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L285">src/data-structures/linked-list/singly-linked-list.ts:285</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L291">src/data-structures/linked-list/singly-linked-list.ts:291</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="reduce" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>reduce</span><a href="#reduce" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="reduce.reduce-1"><span class="tsd-kind-call-signature">reduce</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">f</span>, <span class="tsd-kind-parameter">start</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">reverse</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><a href="#reduce.reduce-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="reduce.reduce-1"><span class="tsd-kind-call-signature">reduce</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callbackFn</span>, <span class="tsd-kind-parameter">start</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">reverse</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><a href="#reduce.reduce-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Reduce over each node in the list</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">reduce</span><span class="hl-1">(</span><span class="hl-6">n</span><span class="hl-1"> </span><span class="hl-3">=&gt;</span><span class="hl-1"> </span><span class="hl-6">n</span><span class="hl-1"> += </span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">0</span><span class="hl-1">); </span><span class="hl-8">// 3</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>reduce</code> function iterates over a singly linked list and applies a callback function to each element,
+accumulating a single value.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">f</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">accumulator</span>, <span class="tsd-kind-parameter">currentNode</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>A reducer function</p>
+<h5><span class="tsd-kind-parameter">callbackFn</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">accumulator</span>, <span class="tsd-kind-parameter">currentNode</span>, <span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">list</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
+<div class="tsd-comment tsd-typography"><p>A callback function that will be called for each element in the linked list. It takes four
+parameters:</p>
 </div>
 <div class="tsd-comment tsd-typography"></div>
 <ul class="tsd-parameters">
@@ -693,158 +726,163 @@ argument list is prepended as a block to reduce confusion:</p>
 <li>
 <h5><span class="tsd-kind-parameter">accumulator</span>: <span class="tsd-signature-type">any</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">currentNode</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5></li>
+<h5><span class="tsd-kind-parameter">currentNode</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">list</span>: <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4></li></ul></li></ul></li>
 <li>
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">start</span>: <span class="tsd-signature-type">any</span></h5>
-<div class="tsd-comment tsd-typography"><p>An initial value</p>
+<div class="tsd-comment tsd-typography"><p>The <code>start</code> parameter is an optional initial value for the accumulator. If provided, the
+<code>reduce</code> function will start accumulating from this value. If not provided, the <code>reduce</code> function will use the value
+of the first element in the linked list as the initial value.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">reverse</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><p>The final state of the accumulator</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">reverse</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+<div class="tsd-comment tsd-typography"><p>A boolean value indicating whether to iterate over the linked list in reverse order. If set
+to true, the iteration will start from the tail of the linked list and move towards the head. If set to false
+(default), the iteration will start from the head and move towards the tail.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><p>The <code>reduce</code> method returns the accumulated value after applying the callback function to each element in
+the linked list.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L692">src/data-structures/linked-list/singly-linked-list.ts:692</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L673">src/data-structures/linked-list/singly-linked-list.ts:673</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="removeAt" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>At</span><a href="#removeAt" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="removeAt.removeAt-1"><span class="tsd-kind-call-signature">remove<wbr/>At</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#removeAt.removeAt-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="removeAt.removeAt-1"><span class="tsd-kind-call-signature">remove<wbr/>At</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#removeAt.removeAt-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Remove the node at the specified index</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">removeAt</span><span class="hl-1">(</span><span class="hl-5">2</span><span class="hl-1">); </span><span class="hl-8">// { prev: null, val: 3, next: null, list: null }</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>removeAt</code> function removes a node at a specified index from a singly linked list.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>Index at which to remove</p>
+<div class="tsd-comment tsd-typography"><p>The index parameter is a number that represents the position of the node to be removed in
+the singly linked list.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The method <code>removeAt</code> returns a <code>SinglyLinkedListNode&lt;NodeVal&gt;</code> if the node at the specified index is
+found and removed successfully. If the node is not found, it returns <code>undefined</code>.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L386">src/data-structures/linked-list/singly-linked-list.ts:386</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="removeFromAnyEnd" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>remove<wbr/>From<wbr/>Any<wbr/>End</span><a href="#removeFromAnyEnd" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-private">
-<li class="tsd-signature tsd-anchor-link" id="removeFromAnyEnd.removeFromAnyEnd-1"><span class="tsd-kind-call-signature">remove<wbr/>From<wbr/>Any<wbr/>End</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><a href="#removeFromAnyEnd.removeFromAnyEnd-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L385">src/data-structures/linked-list/singly-linked-list.ts:385</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="removeFromAnyEnd" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>remove<wbr/>From<wbr/>Any<wbr/>End</span><a href="#removeFromAnyEnd" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="removeFromAnyEnd.removeFromAnyEnd-1"><span class="tsd-kind-call-signature">remove<wbr/>From<wbr/>Any<wbr/>End</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><a href="#removeFromAnyEnd.removeFromAnyEnd-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Private helper function to reduce duplication of pop() and shift() methods</p>
+<div class="tsd-comment tsd-typography"><p>The function removes a node from either end of a singly linked list and returns its value.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h4>
+<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>node</code> parameter is a reference to a node in a singly
+linked list. It can be either a <code>SinglyLinkedListNode</code> object or <code>null</code>.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h4><p>The value of the removed node if the node is not null, otherwise undefined.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L764">src/data-structures/linked-list/singly-linked-list.ts:764</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L745">src/data-structures/linked-list/singly-linked-list.ts:745</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="removeNode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>Node</span><a href="#removeNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="removeNode.removeNode-1"><span class="tsd-kind-call-signature">remove<wbr/>Node</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#removeNode.removeNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="removeNode.removeNode-1"><span class="tsd-kind-call-signature">remove<wbr/>Node</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#removeNode.removeNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Remove the specified node from the list and return the removed
-node afterwards.</p>
-<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">list</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">);</span><br/><span class="hl-6">list</span><span class="hl-1">.</span><span class="hl-0">removeNode</span><span class="hl-1">(</span><span class="hl-6">list</span><span class="hl-1">.</span><span class="hl-6">tail</span><span class="hl-1">); </span><span class="hl-8">// { prev: null, val: 3, next: null, list: null }</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The removeNode function removes a node from a singly linked list and updates the head, tail, and size properties
+accordingly.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">node</span>: <a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The node to be removed</p>
+<h5><span class="tsd-kind-parameter">node</span>: <a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>node</code> parameter is of type <code>SinglyLinkedListNode&lt;NodeVal&gt;</code>, which represents a node in a singly
+linked list.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedListNode.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedListNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>the removed node.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L351">src/data-structures/linked-list/singly-linked-list.ts:351</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L350">src/data-structures/linked-list/singly-linked-list.ts:350</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="reverse" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>reverse</span><a href="#reverse" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="reverse.reverse-1"><span class="tsd-kind-call-signature">reverse</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#reverse.reverse-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="reverse.reverse-1"><span class="tsd-kind-call-signature">reverse</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#reverse.reverse-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The reverse() function reverses the list in place and returns the list
-itself.</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">reverse</span><span class="hl-1">(); </span><span class="hl-8">// 3 &lt;=&gt; 2 &lt;=&gt; 1</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The reverse() function reverses the order of nodes in a singly linked list.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The reverse() method is returning the reversed SinglyLinkedList.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L601">src/data-structures/linked-list/singly-linked-list.ts:601</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L577">src/data-structures/linked-list/singly-linked-list.ts:577</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="shift" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>shift</span><a href="#shift" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="shift.shift-1"><span class="tsd-kind-call-signature">shift</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><a href="#shift.shift-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="shift.shift-1"><span class="tsd-kind-call-signature">shift</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><a href="#shift.shift-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Remove the first node from the list and return the val of the removed node
-or undefined</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">shift</span><span class="hl-1">(); </span><span class="hl-8">// 1</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>shift()</code> function removes and returns the first element from a linked list.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h4><p>The <code>shift()</code> method is returning a value of type <code>NodeVal</code> or <code>undefined</code>.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L507">src/data-structures/linked-list/singly-linked-list.ts:507</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L501">src/data-structures/linked-list/singly-linked-list.ts:501</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="slice" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>slice</span><a href="#slice" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="slice.slice-1"><span class="tsd-kind-call-signature">slice</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">start</span>, <span class="tsd-kind-parameter">end</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#slice.slice-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="slice.slice-1"><span class="tsd-kind-call-signature">slice</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">start</span>, <span class="tsd-kind-parameter">end</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#slice.slice-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The slice() method returns a shallow copy of a
-portion of a list into a new list object selected
-from start to end (end not included).
-The original list will not be modified.</p>
-<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">list</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">, </span><span class="hl-5">4</span><span class="hl-1">, </span><span class="hl-5">5</span><span class="hl-1">);</span><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">newList</span><span class="hl-1"> = </span><span class="hl-6">list</span><span class="hl-1">.</span><span class="hl-0">slice</span><span class="hl-1">(</span><span class="hl-5">0</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">); </span><span class="hl-8">// 1 &lt;=&gt; 2 &lt;=&gt; 3</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>slice</code> function returns a new SinglyLinkedList containing a portion of the original list, starting from the
+specified index and ending at the optional end index.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">start</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>Start index</p>
+<div class="tsd-comment tsd-typography"><p>The <code>start</code> parameter is a number that represents the index at which to start slicing the
+linked list.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">end</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>End index, optional</p>
+<div class="tsd-comment tsd-typography"><p>The <code>end</code> parameter is an optional number that specifies the index at which to end the
+slicing. If no value is provided for <code>end</code>, or if the provided value is less than the <code>start</code> index, the slicing
+will continue until the end of the list.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>a new SinglyLinkedList containing the sliced elements from the original list.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L575">src/data-structures/linked-list/singly-linked-list.ts:575</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L554">src/data-structures/linked-list/singly-linked-list.ts:554</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="sort" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sort</span><a href="#sort" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="sort.sort-1"><span class="tsd-kind-call-signature">sort</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">compare</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span><a href="#sort.sort-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="sort.sort-1"><span class="tsd-kind-call-signature">sort</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">compare</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span><a href="#sort.sort-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Sorts the linked list using the provided compare function</p>
+<div class="tsd-comment tsd-typography"><p>The <code>sort</code> function uses the quicksort algorithm to sort the elements of a singly linked list based on a provided
+comparison function.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">compare</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">a</span>, <span class="tsd-kind-parameter">b</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>A function used to compare the val of two nodes. It should return
-               a boolean. True will insert a before b, false will insert b before a.
-               (a, b) =&gt; a &lt; b or (1, 2) =&gt; 1 &lt; 2 === true, 2 will be inserted after 1,
-               the sort order will be ascending.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div>
 <ul class="tsd-parameters">
 <li class="tsd-parameter-signature">
 <ul class="tsd-signatures">
@@ -854,56 +892,51 @@ The original list will not be modified.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">a</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5></li>
+<h5><span class="tsd-kind-parameter">a</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">b</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">b</span>: <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4></li></ul></li></ul></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The <code>sort</code> method is returning the sorted <code>SinglyLinkedList</code> object.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L423">src/data-structures/linked-list/singly-linked-list.ts:423</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L422">src/data-structures/linked-list/singly-linked-list.ts:422</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="toArray" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>to<wbr/>Array</span><a href="#toArray" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="toArray.toArray-1"><span class="tsd-kind-call-signature">to<wbr/>Array</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">[]</span><a href="#toArray.toArray-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="toArray.toArray-1"><span class="tsd-kind-call-signature">to<wbr/>Array</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">[]</span><a href="#toArray.toArray-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Convert the linked list to an array</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">).</span><span class="hl-0">toArray</span><span class="hl-1">(); </span><span class="hl-8">// [1, 2, 3]</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The toArray() function converts a NodeVal object into an array of NodeVal objects.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">NodeData</span><span class="tsd-signature-symbol">[]</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">NodeVal</span><span class="tsd-signature-symbol">[]</span></h4><p>An array of NodeVal objects.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L732">src/data-structures/linked-list/singly-linked-list.ts:732</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L711">src/data-structures/linked-list/singly-linked-list.ts:711</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="toString" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>to<wbr/>String</span><a href="#toString" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="toString.toString-1"><span class="tsd-kind-call-signature">to<wbr/>String</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">separator</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#toString.toString-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Convert a linked list to string</p>
-<pre><code class="language-ts"><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-0">LinkedList</span><span class="hl-1">(</span><span class="hl-2">&#39;one&#39;</span><span class="hl-1">, </span><span class="hl-2">&#39;two&#39;</span><span class="hl-1">, </span><span class="hl-2">&#39;three&#39;</span><span class="hl-1">).</span><span class="hl-0">toString</span><span class="hl-1">(</span><span class="hl-2">&#39; &lt;=&gt; &#39;</span><span class="hl-1">) === </span><span class="hl-2">&#39;one &lt;=&gt; two &lt;=&gt; three&#39;</span><span class="hl-1">;</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>toString</code> function takes an optional separator and returns a string representation of an array, with each
+element separated by the specified separator.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">separator</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#39; &#39;</span></h5>
-<div class="tsd-comment tsd-typography"><p>Optional string to be placed in between val nodes, default is one space</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">separator</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#39; &#39;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><p>The toString method is being returned as a string.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L743">src/data-structures/linked-list/singly-linked-list.ts:743</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L723">src/data-structures/linked-list/singly-linked-list.ts:723</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="from" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>from</span><a href="#from" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="from.from-1"><span class="tsd-kind-call-signature">from</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">iterable</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#from.from-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Convert any iterable to a new linked list</p>
-<pre><code class="language-javascript"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">array</span><span class="hl-1"> = [</span><span class="hl-5">1</span><span class="hl-1">, </span><span class="hl-5">2</span><span class="hl-1">, </span><span class="hl-5">3</span><span class="hl-1">];</span><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">list</span><span class="hl-1"> = </span><span class="hl-6">LinkedList</span><span class="hl-1">.</span><span class="hl-0">from</span><span class="hl-1">(</span><span class="hl-6">array</span><span class="hl-1">);</span>
-</code><button>Copy</button></pre>
+<div class="tsd-comment tsd-typography"><p>The <code>from</code> function in TypeScript creates a new SinglyLinkedList instance from an iterable object.</p>
 </div>
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
@@ -915,13 +948,15 @@ The original list will not be modified.</p>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">iterable</span>: <span class="tsd-signature-type ">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>Any iterable datatype like Array or Map</p>
+<div class="tsd-comment tsd-typography"><p>The <code>iterable</code> parameter is an object that can be iterated over, such as an array or a string. It
+contains a collection of elements of type <code>T</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="SinglyLinkedList.html" class="tsd-signature-type tsd-kind-class">SinglyLinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The method is returning a new instance of the SinglyLinkedList class.</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/4da5925/src/data-structures/linked-list/singly-linked-list.ts#L130">src/data-structures/linked-list/singly-linked-list.ts:130</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f040fd7/src/data-structures/linked-list/singly-linked-list.ts#L146">src/data-structures/linked-list/singly-linked-list.ts:146</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -942,10 +977,12 @@ The original list will not be modified.</p>
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
-<li><a href="#head" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>head</span></a></li>
-<li><a href="#size" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>size</span></a></li>
-<li><a href="#tail" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>tail</span></a></li>
-<li><a href="#length" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>length</span></a></li>
+<li><a href="#_head" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_head</span></a></li>
+<li><a href="#_size" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_size</span></a></li>
+<li><a href="#_tail" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_tail</span></a></li>
+<li><a href="#head" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>head</span></a></li>
+<li><a href="#size" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>size</span></a></li>
+<li><a href="#tail" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>tail</span></a></li>
 <li><a href="#_iterator_" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>[iterator]</span></a></li>
 <li><a href="#append" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>append</span></a></li>
 <li><a href="#clear" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>clear</span></a></li>
@@ -967,7 +1004,7 @@ The original list will not be modified.</p>
 <li><a href="#push" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>push</span></a></li>
 <li><a href="#reduce" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>reduce</span></a></li>
 <li><a href="#removeAt" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>At</span></a></li>
-<li><a href="#removeFromAnyEnd" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>From<wbr/>Any<wbr/>End</span></a></li>
+<li><a href="#removeFromAnyEnd" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>From<wbr/>Any<wbr/>End</span></a></li>
 <li><a href="#removeNode" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Node</span></a></li>
 <li><a href="#reverse" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>reverse</span></a></li>
 <li><a href="#shift" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>shift</span></a></li>
@@ -1029,7 +1066,38 @@ The original list will not be modified.</p>
 <li><a href="UndirectedEdge.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Undirected<wbr/>Edge</span></a></li>
 <li><a href="UndirectedGraph.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Undirected<wbr/>Graph</span></a></li>
 <li><a href="UndirectedVertex.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Undirected<wbr/>Vertex</span></a></li>
-<li><a href="Vector2D.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Vector2D</span></a></li></ul></nav></div></div></div>
+<li><a href="Vector2D.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Vector2D</span></a></li>
+<li><a href="../interfaces/AVLTreeDeleted.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-256"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)"></path></g></svg><span>AVLTree<wbr/>Deleted</span></a></li>
+<li><a href="../interfaces/BinaryTreeNodeObj.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Binary<wbr/>Tree<wbr/>Node<wbr/>Obj</span></a></li>
+<li><a href="../interfaces/HeapItem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Heap<wbr/>Item</span></a></li>
+<li><a href="../interfaces/HeapOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Heap<wbr/>Options</span></a></li>
+<li><a href="../interfaces/IDirectedGraph.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDirected<wbr/>Graph</span></a></li>
+<li><a href="../interfaces/IGraph.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IGraph</span></a></li>
+<li><a href="../interfaces/NavigatorParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Navigator<wbr/>Params</span></a></li>
+<li><a href="../interfaces/PriorityQueueOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Priority<wbr/>Queue<wbr/>Options</span></a></li>
+<li><a href="../types/BSTComparator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>BSTComparator</span></a></li>
+<li><a href="../types/BSTDeletedResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>BSTDeleted<wbr/>Result</span></a></li>
+<li><a href="../types/BinaryTreeDeleted.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Binary<wbr/>Tree<wbr/>Deleted</span></a></li>
+<li><a href="../types/BinaryTreeNodeId.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Binary<wbr/>Tree<wbr/>Node<wbr/>Id</span></a></li>
+<li><a href="../types/BinaryTreeNodePropertyName.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Binary<wbr/>Tree<wbr/>Node<wbr/>Property<wbr/>Name</span></a></li>
+<li><a href="../types/DFSOrderPattern.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>DFSOrder<wbr/>Pattern</span></a></li>
+<li><a href="../types/DijkstraResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Dijkstra<wbr/>Result</span></a></li>
+<li><a href="../types/Direction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Direction</span></a></li>
+<li><a href="../types/DoublyLinkedListGetBy.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Doubly<wbr/>Linked<wbr/>List<wbr/>Get<wbr/>By</span></a></li>
+<li><a href="../types/NodeOrPropertyName.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Node<wbr/>Or<wbr/>Property<wbr/>Name</span></a></li>
+<li><a href="../types/PriorityQueueComparator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Priority<wbr/>Queue<wbr/>Comparator</span></a></li>
+<li><a href="../types/PriorityQueueDFSOrderPattern.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Priority<wbr/>QueueDFSOrder<wbr/>Pattern</span></a></li>
+<li><a href="../types/ResultByProperty.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Result<wbr/>By<wbr/>Property</span></a></li>
+<li><a href="../types/ResultsByProperty.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Results<wbr/>By<wbr/>Property</span></a></li>
+<li><a href="../types/SegmentTreeNodeVal.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Segment<wbr/>Tree<wbr/>Node<wbr/>Val</span></a></li>
+<li><a href="../types/Thunk.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Thunk</span></a></li>
+<li><a href="../types/ToThunkFn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>To<wbr/>Thunk<wbr/>Fn</span></a></li>
+<li><a href="../types/TopologicalStatus.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Topological<wbr/>Status</span></a></li>
+<li><a href="../types/TreeMultiSetDeletedResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Tree<wbr/>Multi<wbr/>Set<wbr/>Deleted<wbr/>Result</span></a></li>
+<li><a href="../types/TrlAsyncFn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Trl<wbr/>Async<wbr/>Fn</span></a></li>
+<li><a href="../types/TrlFn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Trl<wbr/>Fn</span></a></li>
+<li><a href="../types/Turning.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Turning</span></a></li>
+<li><a href="../types/VertexId.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Vertex<wbr/>Id</span></a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div></body></html>
