@@ -19,9 +19,9 @@
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol"> extends </span><a href="DirectedVertex.html" class="tsd-signature-type tsd-kind-class">DirectedVertex</a></h4></li>
+<h4><span class="tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol"> extends </span><a href="DirectedVertex.html" class="tsd-signature-type tsd-kind-class">DirectedVertex</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4></li>
 <li>
-<h4><span class="tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol"> extends </span><a href="DirectedEdge.html" class="tsd-signature-type tsd-kind-class">DirectedEdge</a></h4></li></ul></section> 
+<h4><span class="tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol"> extends </span><a href="DirectedEdge.html" class="tsd-signature-type tsd-kind-class">DirectedEdge</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section> 
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
@@ -33,7 +33,7 @@
 <ul class="tsd-hierarchy">
 <li><a href="../interfaces/IDirectedGraph.html" class="tsd-signature-type tsd-kind-interface">IDirectedGraph</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L60">src/data-structures/graph/directed-graph.ts:60</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L77">src/data-structures/graph/directed-graph.ts:77</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -45,15 +45,31 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="DirectedGraph.html#_inEdgeMap" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>_in<wbr/>Edge<wbr/>Map</span></a>
-<a href="DirectedGraph.html#_outEdgeMap" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_out<wbr/>Edge<wbr/>Map</span></a>
-<a href="DirectedGraph.html#_vertices" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_vertices</span></a>
+<div class="tsd-index-list"><a href="DirectedGraph.html#_edgeConstructor" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>_edge<wbr/>Constructor</span></a>
+<a href="DirectedGraph.html#_inEdgeMap" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_in<wbr/>Edge<wbr/>Map</span></a>
+<a href="DirectedGraph.html#_outEdgeMap" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_out<wbr/>Edge<wbr/>Map</span></a>
+<a href="DirectedGraph.html#_vertexConstructor" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_vertex<wbr/>Constructor</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Accessors</h3>
+<div class="tsd-index-list"><a href="DirectedGraph.html#inEdgeMap" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-262144"><rect fill="var(--color-icon-background)" stroke="#FF4D4D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M8.85 16L11.13 7.24H12.582L14.85 16H13.758L13.182 13.672H10.53L9.954 16H8.85ZM10.746 12.76H12.954L12.282 10.06C12.154 9.548 12.054 9.12 11.982 8.776C11.91 8.432 11.866 8.208 11.85 8.104C11.834 8.208 11.79 8.432 11.718 8.776C11.646 9.12 11.546 9.544 11.418 10.048L10.746 12.76Z" fill="var(--color-text)"></path></g></svg><span>in<wbr/>Edge<wbr/>Map</span></a>
+<a href="DirectedGraph.html#outEdgeMap" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>out<wbr/>Edge<wbr/>Map</span></a>
+<a href="DirectedGraph.html#vertices" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>vertices</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="DirectedGraph.html#addEdge" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-2048"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)"></path></g></svg><span>add<wbr/>Edge</span></a>
+<div class="tsd-index-list"><a href="DirectedGraph.html#_createEdge" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-2048"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)"></path></g></svg><span>_create<wbr/>Edge</span></a>
+<a href="DirectedGraph.html#_createVertex" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_create<wbr/>Vertex</span></a>
+<a href="DirectedGraph.html#_getVertex" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Vertex</span></a>
+<a href="DirectedGraph.html#_getVertexId" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Vertex<wbr/>Id</span></a>
+<a href="DirectedGraph.html#_setInEdgeMap" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>In<wbr/>Edge<wbr/>Map</span></a>
+<a href="DirectedGraph.html#_setOutEdgeMap" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Out<wbr/>Edge<wbr/>Map</span></a>
+<a href="DirectedGraph.html#_setVertices" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Vertices</span></a>
+<a href="DirectedGraph.html#addEdge" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Edge</span></a>
 <a href="DirectedGraph.html#addVertex" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Vertex</span></a>
 <a href="DirectedGraph.html#bellmanFord" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>bellman<wbr/>Ford</span></a>
+<a href="DirectedGraph.html#createAddEdge" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>Add<wbr/>Edge</span></a>
+<a href="DirectedGraph.html#createAddVertex" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>Add<wbr/>Vertex</span></a>
 <a href="DirectedGraph.html#degreeOf" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>degree<wbr/>Of</span></a>
 <a href="DirectedGraph.html#dijkstra" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>dijkstra</span></a>
 <a href="DirectedGraph.html#dijkstraWithoutHeap" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>dijkstra<wbr/>Without<wbr/>Heap</span></a>
@@ -71,7 +87,6 @@
 <a href="DirectedGraph.html#getNeighbors" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Neighbors</span></a>
 <a href="DirectedGraph.html#getPathSumWeight" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Path<wbr/>Sum<wbr/>Weight</span></a>
 <a href="DirectedGraph.html#getVertex" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Vertex</span></a>
-<a href="DirectedGraph.html#getVertexId" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Vertex<wbr/>Id</span></a>
 <a href="DirectedGraph.html#hasEdge" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Edge</span></a>
 <a href="DirectedGraph.html#hasVertex" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Vertex</span></a>
 <a href="DirectedGraph.html#inDegreeOf" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>in<wbr/>Degree<wbr/>Of</span></a>
@@ -86,91 +101,305 @@
 <a href="DirectedGraph.html#setEdgeWeight" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>set<wbr/>Edge<wbr/>Weight</span></a>
 <a href="DirectedGraph.html#tarjan" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>tarjan</span></a>
 <a href="DirectedGraph.html#topologicalSort" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>topological<wbr/>Sort</span></a>
-<a href="DirectedGraph.html#vertexSet" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>vertex<wbr/>Set</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_DirectedGraph"><span class="tsd-kind-constructor-signature">new <wbr/>Directed<wbr/>Graph</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="DirectedGraph.html" class="tsd-signature-type tsd-kind-class">DirectedGraph</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_DirectedGraph" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_DirectedGraph"><span class="tsd-kind-constructor-signature">new <wbr/>Directed<wbr/>Graph</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexConstructor</span>, <span class="tsd-kind-parameter">edgeConstructor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="DirectedGraph.html" class="tsd-signature-type tsd-kind-class">DirectedGraph</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_DirectedGraph" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol"> extends </span><a href="DirectedVertex.html" class="tsd-signature-type tsd-kind-class">DirectedVertex</a></h4></li>
+<h4><span class="tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol"> extends </span><a href="DirectedVertex.html" class="tsd-signature-type tsd-kind-class">DirectedVertex</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4></li>
 <li>
-<h4><span class="tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol"> extends </span><a href="DirectedEdge.html" class="tsd-signature-type tsd-kind-class">DirectedEdge</a></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol"> extends </span><a href="DirectedEdge.html" class="tsd-signature-type tsd-kind-class">DirectedEdge</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">vertexConstructor</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">)</span></h5>
+<ul class="tsd-parameters">
+<li class="tsd-parameter-signature">
+<ul class="tsd-signatures">
+<li class="tsd-signature"><span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">id</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4></li></ul></li></ul></li>
+<li>
+<h5><span class="tsd-kind-parameter">edgeConstructor</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">src</span>, <span class="tsd-kind-parameter">dest</span>, <span class="tsd-kind-parameter">weight</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">)</span></h5>
+<ul class="tsd-parameters">
+<li class="tsd-parameter-signature">
+<ul class="tsd-signatures">
+<li class="tsd-signature"><span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">src</span>, <span class="tsd-kind-parameter">dest</span>, <span class="tsd-kind-parameter">weight</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">src</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">dest</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">weight</span>: <span class="tsd-signature-type">number</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4></li></ul></li></ul></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="DirectedGraph.html" class="tsd-signature-type tsd-kind-class">DirectedGraph</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L66">src/data-structures/graph/directed-graph.ts:66</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L81">src/data-structures/graph/directed-graph.ts:81</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member tsd-is-protected"><a id="_inEdgeMap" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_in<wbr/>Edge<wbr/>Map</span><a href="#_inEdgeMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_edgeConstructor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>_edge<wbr/>Constructor</span><a href="#_edgeConstructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_edge<wbr/>Constructor</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">src</span>, <span class="tsd-kind-parameter">dest</span>, <span class="tsd-kind-parameter">weight</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">)</span></div>
+<div class="tsd-type-declaration">
+<h4>Type declaration</h4>
+<ul class="tsd-parameters">
+<li class="tsd-parameter-signature">
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="_edgeConstructor.__type.new__edgeConstructor"><span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">src</span>, <span class="tsd-kind-parameter">dest</span>, <span class="tsd-kind-parameter">weight</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">src</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">dest</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">weight</span>: <span class="tsd-signature-type">number</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4></li></ul></li></ul></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L79">src/data-structures/graph/directed-graph.ts:79</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_inEdgeMap" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_in<wbr/>Edge<wbr/>Map</span><a href="#_inEdgeMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_in<wbr/>Edge<wbr/>Map</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L64">src/data-structures/graph/directed-graph.ts:64</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-protected"><a id="_outEdgeMap" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_out<wbr/>Edge<wbr/>Map</span><a href="#_outEdgeMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L93">src/data-structures/graph/directed-graph.ts:93</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_outEdgeMap" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_out<wbr/>Edge<wbr/>Map</span><a href="#_outEdgeMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_out<wbr/>Edge<wbr/>Map</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L62">src/data-structures/graph/directed-graph.ts:62</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_vertices" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_vertices</span><a href="#_vertices" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_vertices</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
-<p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#_vertices">_vertices</a></p>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L87">src/data-structures/graph/directed-graph.ts:87</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="_vertexConstructor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>_vertex<wbr/>Constructor</span><a href="#_vertexConstructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_vertex<wbr/>Constructor</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">)</span></div>
+<div class="tsd-type-declaration">
+<h4>Type declaration</h4>
+<ul class="tsd-parameters">
+<li class="tsd-parameter-signature">
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="_vertexConstructor.__type-1.new__vertexConstructor"><span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">id</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4></li></ul></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L65">src/data-structures/graph/abstract-graph.ts:65</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L78">src/data-structures/graph/directed-graph.ts:78</a></li></ul></aside></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Accessors</h2>
+<section class="tsd-panel tsd-member"><a id="inEdgeMap" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>in<wbr/>Edge<wbr/>Map</span><a href="#inEdgeMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="inEdgeMap.inEdgeMap-1"><span class="tsd-signature-symbol">get</span> inEdgeMap<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L95">src/data-structures/graph/directed-graph.ts:95</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="outEdgeMap" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>out<wbr/>Edge<wbr/>Map</span><a href="#outEdgeMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="outEdgeMap.outEdgeMap-1"><span class="tsd-signature-symbol">get</span> outEdgeMap<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L89">src/data-structures/graph/directed-graph.ts:89</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="vertices" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>vertices</span><a href="#vertices" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature" id="vertices.vertices-1"><span class="tsd-signature-symbol">get</span> vertices<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Inherited from AbstractGraph.vertices</p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L102">src/data-structures/graph/abstract-graph.ts:102</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
+<section class="tsd-panel tsd-member"><a id="_createEdge" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>_create<wbr/>Edge</span><a href="#_createEdge" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="_createEdge._createEdge-1"><span class="tsd-kind-call-signature">_create<wbr/>Edge</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">src</span>, <span class="tsd-kind-parameter">dest</span>, <span class="tsd-kind-parameter">weight</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><a href="#_createEdge._createEdge-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>In TypeScript, a subclass inherits the interface implementation of its parent class, without needing to implement the same interface again in the subclass. This behavior differs from Java&#39;s approach. In Java, if a parent class implements an interface, the subclass needs to explicitly implement the same interface, even if the parent class has already implemented it.
+This means that using abstract methods in the parent class cannot constrain the grandchild classes. Defining methods within an interface also cannot constrain the descendant classes. When inheriting from this class, developers need to be aware that this method needs to be overridden.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">src</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">dest</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">weight</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#_createEdge">_createEdge</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L117">src/data-structures/graph/directed-graph.ts:117</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="_createVertex" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>_create<wbr/>Vertex</span><a href="#_createVertex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="_createVertex._createVertex-1"><span class="tsd-kind-call-signature">_create<wbr/>Vertex</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><a href="#_createVertex._createVertex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>In TypeScript, a subclass inherits the interface implementation of its parent class, without needing to implement the same interface again in the subclass. This behavior differs from Java&#39;s approach. In Java, if a parent class implements an interface, the subclass needs to explicitly implement the same interface, even if the parent class has already implemented it.
+This means that using abstract methods in the parent class cannot constrain the grandchild classes. Defining methods within an interface also cannot constrain the descendant classes. When inheriting from this class, developers need to be aware that this method needs to be overridden.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">id</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#_createVertex">_createVertex</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L105">src/data-structures/graph/directed-graph.ts:105</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="_getVertex" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>_get<wbr/>Vertex</span><a href="#_getVertex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="_getVertex._getVertex-1"><span class="tsd-kind-call-signature">_get<wbr/>Vertex</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><a href="#_getVertex._getVertex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#_getVertex">_getVertex</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L128">src/data-structures/graph/abstract-graph.ts:128</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="_getVertexId" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>_get<wbr/>Vertex<wbr/>Id</span><a href="#_getVertexId" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="_getVertexId._getVertexId-1"><span class="tsd-kind-call-signature">_get<wbr/>Vertex<wbr/>Id</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><a href="#_getVertexId._getVertexId-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h4><aside class="tsd-sources">
+<p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#_getVertexId">_getVertexId</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L137">src/data-structures/graph/abstract-graph.ts:137</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_setInEdgeMap" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_set<wbr/>In<wbr/>Edge<wbr/>Map</span><a href="#_setInEdgeMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_setInEdgeMap._setInEdgeMap-1"><span class="tsd-kind-call-signature">_set<wbr/>In<wbr/>Edge<wbr/>Map</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_setInEdgeMap._setInEdgeMap-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L475">src/data-structures/graph/directed-graph.ts:475</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_setOutEdgeMap" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_set<wbr/>Out<wbr/>Edge<wbr/>Map</span><a href="#_setOutEdgeMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_setOutEdgeMap._setOutEdgeMap-1"><span class="tsd-kind-call-signature">_set<wbr/>Out<wbr/>Edge<wbr/>Map</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_setOutEdgeMap._setOutEdgeMap-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L471">src/data-structures/graph/directed-graph.ts:471</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_setVertices" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_set<wbr/>Vertices</span><a href="#_setVertices" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="_setVertices._setVertices-1"><span class="tsd-kind-call-signature">_set<wbr/>Vertices</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_setVertices._setVertices-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>--- start find cycles ---</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#_setVertices">_setVertices</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L975">src/data-structures/graph/abstract-graph.ts:975</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="addEdge" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Edge</span><a href="#addEdge" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="addEdge.addEdge-1"><span class="tsd-kind-call-signature">add<wbr/>Edge</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">edge</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#addEdge.addEdge-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The <code>addEdge</code> function adds an edge to a graph if the source and destination vertices exist.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>addEdge</code> function adds a directed edge to a graph if the source and destination vertices exist.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">edge</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>edge</code> is of type <code>E</code>, which represents an edge in the graph. It contains
-information about the source vertex (<code>src</code>) and the destination vertex (<code>dest</code>) of the edge.</p>
+<div class="tsd-comment tsd-typography"><p>The parameter <code>edge</code> is of type <code>E</code>, which represents a directed edge in a graph. It
+contains two properties:</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>The <code>addEdge</code> function returns a boolean value. It returns <code>true</code> if the edge was successfully added to the
-graph, and <code>false</code> if either the source or destination vertices of the edge are not present in the graph.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>The method <code>addEdge</code> returns a boolean value. It returns <code>true</code> if the edge was successfully added to the
+graph, and <code>false</code> if either the source or destination vertex of the edge is not present in the graph.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#addEdge">addEdge</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L103">src/data-structures/graph/directed-graph.ts:103</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L155">src/data-structures/graph/directed-graph.ts:155</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="addVertex" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Vertex</span><a href="#addVertex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="addVertex.addVertex-1"><span class="tsd-kind-call-signature">add<wbr/>Vertex</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">newVertex</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#addVertex.addVertex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The addVertex function adds a new vertex to a graph if it does not already exist.</p>
-</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">newVertex</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter &quot;newVertex&quot; is of type V, which represents a vertex in a graph.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>The method is returning a boolean value. If the newVertex is already contained in the graph, it will return
-false. Otherwise, it will add the newVertex to the graph and return true.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">newVertex</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#addVertex">addVertex</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L120">src/data-structures/graph/abstract-graph.ts:120</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L158">src/data-structures/graph/abstract-graph.ts:158</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="bellmanFord" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>bellman<wbr/>Ford</span><a href="#bellmanFord" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -227,28 +456,66 @@ vertex.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#bellmanFord">bellmanFord</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L661">src/data-structures/graph/abstract-graph.ts:661</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L700">src/data-structures/graph/abstract-graph.ts:700</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="createAddEdge" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>create<wbr/>Add<wbr/>Edge</span><a href="#createAddEdge" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="createAddEdge.createAddEdge-1"><span class="tsd-kind-call-signature">create<wbr/>Add<wbr/>Edge</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">src</span>, <span class="tsd-kind-parameter">dest</span>, <span class="tsd-kind-parameter">weight</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#createAddEdge.createAddEdge-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">src</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">dest</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">weight</span>: <span class="tsd-signature-type">number</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#createAddEdge">createAddEdge</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L213">src/data-structures/graph/abstract-graph.ts:213</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="createAddVertex" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>create<wbr/>Add<wbr/>Vertex</span><a href="#createAddVertex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="createAddVertex.createAddVertex-1"><span class="tsd-kind-call-signature">create<wbr/>Add<wbr/>Vertex</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#createAddVertex.createAddVertex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">id</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#createAddVertex">createAddVertex</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L153">src/data-structures/graph/abstract-graph.ts:153</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="degreeOf" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>degree<wbr/>Of</span><a href="#degreeOf" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="degreeOf.degreeOf-1"><span class="tsd-kind-call-signature">degree<wbr/>Of</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#degreeOf.degreeOf-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function &quot;degreeOf&quot; returns the total degree of a vertex, which is the sum of its out-degree and in-degree.</p>
+<div class="tsd-comment tsd-typography"><p>The function &quot;degreeOf&quot; returns the total degree of a vertex in a directed graph, which is the sum of its out-degree
+and in-degree.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>VertexId</code> or a <code>V</code>.</p>
+<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>VertexId</code> or a
+<code>V</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>the sum of the out-degree and in-degree of the specified vertex or vertex ID.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The sum of the out-degree and in-degree of the given vertex or vertex ID.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#degreeOf">degreeOf</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L243">src/data-structures/graph/directed-graph.ts:243</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L297">src/data-structures/graph/directed-graph.ts:297</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="dijkstra" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>dijkstra</span><a href="#dijkstra" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -293,7 +560,7 @@ shortest paths from the source vertex to all other vertices in the graph. If <co
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#dijkstra">dijkstra</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L529">src/data-structures/graph/abstract-graph.ts:529</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L564">src/data-structures/graph/abstract-graph.ts:564</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="dijkstraWithoutHeap" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>dijkstra<wbr/>Without<wbr/>Heap</span><a href="#dijkstraWithoutHeap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -337,41 +604,42 @@ shortest paths from the source vertex to all other vertices in the graph. If <co
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#dijkstraWithoutHeap">dijkstraWithoutHeap</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L391">src/data-structures/graph/abstract-graph.ts:391</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L437">src/data-structures/graph/abstract-graph.ts:437</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="edgeSet" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>edge<wbr/>Set</span><a href="#edgeSet" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="edgeSet.edgeSet-1"><span class="tsd-kind-call-signature">edge<wbr/>Set</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><a href="#edgeSet.edgeSet-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The <code>edgeSet</code> function returns an array of all the edges in the graph.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>edgeSet</code> function returns an array of all directed edges in the graph.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>The <code>edgeSet()</code> method returns an array of edges (<code>E[]</code>).</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>The <code>edgeSet()</code> method returns an array of <code>E</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#edgeSet">edgeSet</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L366">src/data-structures/graph/directed-graph.ts:366</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L417">src/data-structures/graph/directed-graph.ts:417</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="edgesOf" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>edges<wbr/>Of</span><a href="#edgesOf" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="edgesOf.edgesOf-1"><span class="tsd-kind-call-signature">edges<wbr/>Of</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><a href="#edgesOf.edgesOf-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function &quot;edgesOf&quot; returns an array of both outgoing and incoming edges of a given vertex or vertex ID.</p>
+<div class="tsd-comment tsd-typography"><p>The function &quot;edgesOf&quot; returns an array of both outgoing and incoming directed edges of a given vertex or vertex ID.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>VertexId</code> or a <code>V</code>.</p>
+<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>VertexId</code> or a
+<code>V</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>edgesOf</code> returns an array of edges.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>an array of directed edges.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#edgesOf">edgesOf</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L270">src/data-structures/graph/directed-graph.ts:270</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L327">src/data-structures/graph/directed-graph.ts:327</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="floyd" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>floyd</span><a href="#floyd" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -396,7 +664,7 @@ path between vertices in the</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#floyd">floyd</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L766">src/data-structures/graph/abstract-graph.ts:766</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L806">src/data-structures/graph/abstract-graph.ts:806</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getAllPathsBetween" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>All<wbr/>Paths<wbr/>Between</span><a href="#getAllPathsBetween" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -425,122 +693,122 @@ and v2).</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#getAllPathsBetween">getAllPathsBetween</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L208">src/data-structures/graph/abstract-graph.ts:208</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L254">src/data-structures/graph/abstract-graph.ts:254</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getDestinations" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Destinations</span><a href="#getDestinations" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="getDestinations.getDestinations-1"><span class="tsd-kind-call-signature">get<wbr/>Destinations</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertex</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[]</span><a href="#getDestinations.getDestinations-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getDestinations</code> returns an array of destination vertices connected to a given vertex.</p>
+<div class="tsd-comment tsd-typography"><p>The function <code>getDestinations</code> returns an array of directed vertices that are the destinations of outgoing edges
+from a given vertex.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">vertex</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>vertex</code> parameter represents the starting vertex from which we want to
-find the destinations. It can be either a <code>V</code> object, a <code>VertexId</code> (which is a unique identifier for a vertex), or
-<code>null</code> if we want to find destinations from all vertices.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>vertex</code> parameter can be one of the following:</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[]</span></h4><p>an array of vertices (V[]).</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[]</span></h4><p>an array of DirectedVertex objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L299">src/data-structures/graph/directed-graph.ts:299</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L356">src/data-structures/graph/directed-graph.ts:356</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEdge" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Edge</span><a href="#getEdge" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="getEdge.getEdge-1"><span class="tsd-kind-call-signature">get<wbr/>Edge</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">srcOrId</span>, <span class="tsd-kind-parameter">destOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><a href="#getEdge.getEdge-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getEdge</code> returns the first edge between two vertices, given their source and destination.</p>
+<div class="tsd-comment tsd-typography"><p>The function <code>getEdge</code> returns the directed edge between two vertices, given their source and destination.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">srcOrId</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>srcOrId</code> parameter can be either a vertex object (<code>V</code>), a vertex ID
-(<code>VertexId</code>), or <code>null</code>. It represents the source vertex of the edge.</p>
+<div class="tsd-comment tsd-typography"><p>The source vertex or its ID. It can be either a
+DirectedVertex object or a VertexId.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
 <h5><span class="tsd-kind-parameter">destOrId</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>destOrId</code> parameter is either a vertex object (<code>V</code>), a vertex ID
-(<code>VertexId</code>), or <code>null</code>. It represents the destination vertex of the edge.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>destOrId</code> parameter is the destination vertex or its
+ID. It can be either a <code>DirectedVertex</code> object or a <code>VertexId</code> value.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4><p>an edge (E) or null.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4><p>a E object or null.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#getEdge">getEdge</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L78">src/data-structures/graph/directed-graph.ts:78</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L130">src/data-structures/graph/directed-graph.ts:130</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEdgeDest" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Edge<wbr/>Dest</span><a href="#getEdgeDest" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="getEdgeDest.getEdgeDest-1"><span class="tsd-kind-call-signature">get<wbr/>Edge<wbr/>Dest</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">e</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><a href="#getEdgeDest.getEdgeDest-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function &quot;getEdgeDest&quot; returns the vertex associated with the destination of an edge.</p>
+<div class="tsd-comment tsd-typography"><p>The function &quot;getEdgeDest&quot; returns the destination vertex of a directed edge.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">e</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>e</code> is of type <code>E</code>, which represents an edge in a graph.</p>
+<div class="tsd-comment tsd-typography"><p>E - This is an object representing a directed edge in a graph. It contains information
+about the source vertex, destination vertex, and any associated data.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4><p>either a vertex object (of type V) or null.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4><p>either a DirectedVertex object or null.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IDirectedGraph.html">IDirectedGraph</a>.<a href="../interfaces/IDirectedGraph.html#getEdgeDest">getEdgeDest</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L288">src/data-structures/graph/directed-graph.ts:288</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L346">src/data-structures/graph/directed-graph.ts:346</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEdgeSrc" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Edge<wbr/>Src</span><a href="#getEdgeSrc" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="getEdgeSrc.getEdgeSrc-1"><span class="tsd-kind-call-signature">get<wbr/>Edge<wbr/>Src</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">e</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><a href="#getEdgeSrc.getEdgeSrc-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function &quot;getEdgeSrc&quot; returns the source vertex of an edge, or null if the edge does not exist.</p>
+<div class="tsd-comment tsd-typography"><p>The function &quot;getEdgeSrc&quot; returns the source vertex of a directed edge, or null if the edge does not exist.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">e</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h5>
-<div class="tsd-comment tsd-typography"><p>E - an edge object</p>
+<div class="tsd-comment tsd-typography"><p>A directed edge object of type E.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4><p>the source vertex of the given edge, or null if the edge does not exist.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4><p>either a DirectedVertex object or null.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IDirectedGraph.html">IDirectedGraph</a>.<a href="../interfaces/IDirectedGraph.html#getEdgeSrc">getEdgeSrc</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L279">src/data-structures/graph/directed-graph.ts:279</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L336">src/data-structures/graph/directed-graph.ts:336</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEndsOfEdge" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Ends<wbr/>Of<wbr/>Edge</span><a href="#getEndsOfEdge" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="getEndsOfEdge.getEndsOfEdge-1"><span class="tsd-kind-call-signature">get<wbr/>Ends<wbr/>Of<wbr/>Edge</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">edge</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">]</span><a href="#getEndsOfEdge.getEndsOfEdge-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function &quot;getEndsOfEdge&quot; returns the source and destination vertices of an edge if it exists in the graph,
-otherwise it returns null.</p>
+<div class="tsd-comment tsd-typography"><p>The function &quot;getEndsOfEdge&quot; returns the source and destination vertices of a directed edge if it exists in the
+graph, otherwise it returns null.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">edge</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter &quot;edge&quot; is of type E, which represents an edge in a graph.</p>
+<div class="tsd-comment tsd-typography"><p>A directed edge object with a generic type E.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">]</span></h4><p>an array containing two vertices [V, V] if the edge is found in the graph. If the edge is not found, it
-returns null.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">]</span></h4><p>an array containing the starting and ending vertices of the given directed edge, or null if the edge does
+not exist in the graph.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#getEndsOfEdge">getEndsOfEdge</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L403">src/data-structures/graph/directed-graph.ts:403</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L458">src/data-structures/graph/directed-graph.ts:458</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getMinCostBetween" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Min<wbr/>Cost<wbr/>Between</span><a href="#getMinCostBetween" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -578,7 +846,7 @@ vertices are not</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#getMinCostBetween">getMinCostBetween</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L266">src/data-structures/graph/abstract-graph.ts:266</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L312">src/data-structures/graph/abstract-graph.ts:312</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getMinPathBetween" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Min<wbr/>Path<wbr/>Between</span><a href="#getMinPathBetween" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -614,29 +882,29 @@ two vertices (<code>v1</code> and <code>v2</code>). If no path is found, it retu
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#getMinPathBetween">getMinPathBetween</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L323">src/data-structures/graph/abstract-graph.ts:323</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L369">src/data-structures/graph/abstract-graph.ts:369</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getNeighbors" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Neighbors</span><a href="#getNeighbors" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="getNeighbors.getNeighbors-1"><span class="tsd-kind-call-signature">get<wbr/>Neighbors</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[]</span><a href="#getNeighbors.getNeighbors-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getNeighbors</code> returns an array of neighboring vertices for a given vertex or vertex ID.</p>
+<div class="tsd-comment tsd-typography"><p>The function <code>getNeighbors</code> returns an array of neighboring vertices of a given vertex in a directed graph.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a vertex object (<code>V</code>) or a vertex ID
-(<code>VertexId</code>).</p>
+<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>V</code>
+object or a <code>VertexId</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[]</span></h4><p>an array of vertices (V[]).</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[]</span></h4><p>an array of DirectedVertex objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#getNeighbors">getNeighbors</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L380">src/data-structures/graph/directed-graph.ts:380</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L433">src/data-structures/graph/directed-graph.ts:433</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getPathSumWeight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Path<wbr/>Sum<wbr/>Weight</span><a href="#getPathSumWeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -657,53 +925,21 @@ two vertices (<code>v1</code> and <code>v2</code>). If no path is found, it retu
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#getPathSumWeight">getPathSumWeight</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L244">src/data-structures/graph/abstract-graph.ts:244</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L290">src/data-structures/graph/abstract-graph.ts:290</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getVertex" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Vertex</span><a href="#getVertex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="getVertex.getVertex-1"><span class="tsd-kind-call-signature">get<wbr/>Vertex</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><a href="#getVertex.getVertex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getVertex.getVertex-1"><span class="tsd-kind-call-signature">get<wbr/>Vertex</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><a href="#getVertex.getVertex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getVertex</code> returns the vertex object associated with a given vertex ID or vertex object, or null if it
-does not exist.</p>
-</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>VertexId</code> or a <code>V</code>.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4><p>The function <code>getVertex</code> returns the vertex object (<code>V</code>) corresponding to the given <code>vertexOrId</code> parameter.
-If the vertex is found in the <code>_vertices</code> map, it is returned. Otherwise, <code>null</code> is returned.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">vertexId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#getVertex">getVertex</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L78">src/data-structures/graph/abstract-graph.ts:78</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="getVertexId" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Vertex<wbr/>Id</span><a href="#getVertexId" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="getVertexId.getVertexId-1"><span class="tsd-kind-call-signature">get<wbr/>Vertex<wbr/>Id</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><a href="#getVertexId.getVertexId-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getVertexId</code> returns the id of a vertex, whether it is passed as an instance of <code>AbstractVertex</code> or as
-a <code>VertexId</code>.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a vertex object (<code>V</code>) or a vertex ID
-(<code>VertexId</code>).</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a></h4><p>the id of the vertex.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#getVertexId">getVertexId</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L90">src/data-structures/graph/abstract-graph.ts:90</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L133">src/data-structures/graph/abstract-graph.ts:133</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="hasEdge" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has<wbr/>Edge</span><a href="#hasEdge" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -732,7 +968,7 @@ vertices <code>v1</code> and <code>v2</code>, and <code>false</code> otherwise.<
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#hasEdge">hasEdge</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L169">src/data-structures/graph/abstract-graph.ts:169</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L208">src/data-structures/graph/abstract-graph.ts:208</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="hasVertex" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has<wbr/>Vertex</span><a href="#hasVertex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -754,20 +990,21 @@ vertices <code>v1</code> and <code>v2</code>, and <code>false</code> otherwise.<
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#hasVertex">hasVertex</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L100">src/data-structures/graph/abstract-graph.ts:100</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L147">src/data-structures/graph/abstract-graph.ts:147</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="inDegreeOf" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>in<wbr/>Degree<wbr/>Of</span><a href="#inDegreeOf" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="inDegreeOf.inDegreeOf-1"><span class="tsd-kind-call-signature">in<wbr/>Degree<wbr/>Of</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#inDegreeOf.inDegreeOf-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function &quot;inDegreeOf&quot; returns the number of incoming edges for a given vertex.</p>
+<div class="tsd-comment tsd-typography"><p>The function &quot;inDegreeOf&quot; returns the number of incoming edges for a given vertex or vertex ID in a directed graph.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>VertexId</code> or a <code>V</code>.</p>
+<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>VertexId</code> or a
+<code>V</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The number of incoming edges of the specified vertex or vertex ID.</p>
@@ -775,42 +1012,43 @@ vertices <code>v1</code> and <code>v2</code>, and <code>false</code> otherwise.<
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IDirectedGraph.html">IDirectedGraph</a>.<a href="../interfaces/IDirectedGraph.html#inDegreeOf">inDegreeOf</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L252">src/data-structures/graph/directed-graph.ts:252</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L307">src/data-structures/graph/directed-graph.ts:307</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="incomingEdgesOf" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>incoming<wbr/>Edges<wbr/>Of</span><a href="#incomingEdgesOf" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="incomingEdgesOf.incomingEdgesOf-1"><span class="tsd-kind-call-signature">incoming<wbr/>Edges<wbr/>Of</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><a href="#incomingEdgesOf.incomingEdgesOf-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>incomingEdgesOf</code> returns an array of incoming edges for a given vertex or vertex ID.</p>
+<div class="tsd-comment tsd-typography"><p>The function returns an array of incoming edges of a given vertex or vertex ID.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a vertex object (<code>V</code>) or a vertex ID
-(<code>VertexId</code>).</p>
+<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>V</code>
+object or a <code>VertexId</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>The method <code>incomingEdgesOf</code> returns an array of edges (<code>E[]</code>).</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>The method <code>incomingEdgesOf</code> returns an array of <code>E</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IDirectedGraph.html">IDirectedGraph</a>.<a href="../interfaces/IDirectedGraph.html#incomingEdgesOf">incomingEdgesOf</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L216">src/data-structures/graph/directed-graph.ts:216</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L268">src/data-structures/graph/directed-graph.ts:268</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="outDegreeOf" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>out<wbr/>Degree<wbr/>Of</span><a href="#outDegreeOf" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="outDegreeOf.outDegreeOf-1"><span class="tsd-kind-call-signature">out<wbr/>Degree<wbr/>Of</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#outDegreeOf.outDegreeOf-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>outDegreeOf</code> returns the number of outgoing edges from a given vertex.</p>
+<div class="tsd-comment tsd-typography"><p>The function &quot;outDegreeOf&quot; returns the number of outgoing edges from a given vertex.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>VertexId</code> or a <code>V</code>.</p>
+<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>VertexId</code> or a
+<code>V</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The number of outgoing edges from the specified vertex or vertex ID.</p>
@@ -818,29 +1056,29 @@ vertices <code>v1</code> and <code>v2</code>, and <code>false</code> otherwise.<
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IDirectedGraph.html">IDirectedGraph</a>.<a href="../interfaces/IDirectedGraph.html#outDegreeOf">outDegreeOf</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L261">src/data-structures/graph/directed-graph.ts:261</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L317">src/data-structures/graph/directed-graph.ts:317</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="outgoingEdgesOf" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>outgoing<wbr/>Edges<wbr/>Of</span><a href="#outgoingEdgesOf" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="outgoingEdgesOf.outgoingEdgesOf-1"><span class="tsd-kind-call-signature">outgoing<wbr/>Edges<wbr/>Of</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">vertexOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><a href="#outgoingEdgesOf.outgoingEdgesOf-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>outgoingEdgesOf</code> returns an array of outgoing edges from a given vertex or vertex ID.</p>
+<div class="tsd-comment tsd-typography"><p>The function <code>outgoingEdgesOf</code> returns an array of outgoing directed edges from a given vertex or vertex ID.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">vertexOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can accept either a vertex object (<code>V</code>) or a vertex ID
-(<code>VertexId</code>).</p>
+<div class="tsd-comment tsd-typography"><p>The parameter <code>vertexOrId</code> can be either a <code>V</code>
+object or a <code>VertexId</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>The method <code>outgoingEdgesOf</code> returns an array of outgoing edges from a given vertex or vertex ID.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>The method <code>outgoingEdgesOf</code> returns an array of <code>E</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IDirectedGraph.html">IDirectedGraph</a>.<a href="../interfaces/IDirectedGraph.html#outgoingEdgesOf">outgoingEdgesOf</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L230">src/data-structures/graph/directed-graph.ts:230</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L282">src/data-structures/graph/directed-graph.ts:282</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="removeAllEdges" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>All<wbr/>Edges</span><a href="#removeAllEdges" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -853,21 +1091,20 @@ vertices <code>v1</code> and <code>v2</code>, and <code>false</code> otherwise.<
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">src</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>src</code> parameter represents the source vertex from which the edges will be removed.
-It can be either a <code>VertexId</code> or a <code>V</code> type, which represents the identifier or object of the vertex.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>src</code> parameter can be either a <code>VertexId</code> or a <code>V</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
 <h5><span class="tsd-kind-parameter">dest</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>dest</code> parameter represents the destination vertex of an edge. It can be either a
-<code>VertexId</code> or a vertex object <code>V</code>.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>dest</code> parameter represents the destination vertex of an edge. It
+can be either a <code>VertexId</code> or a <code>V</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>An empty array is being returned.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>An empty array of DirectedEdge objects is being returned.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L206">src/data-structures/graph/directed-graph.ts:206</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L258">src/data-structures/graph/directed-graph.ts:258</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="removeAllVertices" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>All<wbr/>Vertices</span><a href="#removeAllVertices" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -890,60 +1127,61 @@ were removed.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#removeAllVertices">removeAllVertices</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L146">src/data-structures/graph/abstract-graph.ts:146</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L185">src/data-structures/graph/abstract-graph.ts:185</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="removeEdge" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>Edge</span><a href="#removeEdge" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="removeEdge.removeEdge-1"><span class="tsd-kind-call-signature">remove<wbr/>Edge</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">edge</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><a href="#removeEdge.removeEdge-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The removeEdge function removes an edge from a graph and returns the removed edge, or null if the edge was not
-found.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>removeEdge</code> function removes a directed edge from a graph and returns the removed edge, or null if the edge was
+not found.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">edge</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>edge</code> parameter is an object that represents an edge in a graph. It has two properties: <code>src</code>
-and <code>dest</code>, which represent the source and destination vertices of the edge, respectively.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>edge</code> parameter is an object of type <code>E</code>, which represents a directed edge in a
+graph. It has two properties:</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4><p>The method <code>removeEdge</code> returns the removed edge (<code>E</code>) if it exists, or <code>null</code> if the edge does not exist.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4><p>The function <code>removeEdge</code> returns a <code>E</code> object if an edge is successfully removed, or <code>null</code>
+if no edge is removed.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#removeEdge">removeEdge</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L178">src/data-structures/graph/directed-graph.ts:178</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L231">src/data-structures/graph/directed-graph.ts:231</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="removeEdgeBetween" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>Edge<wbr/>Between</span><a href="#removeEdgeBetween" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="removeEdgeBetween.removeEdgeBetween-1"><span class="tsd-kind-call-signature">remove<wbr/>Edge<wbr/>Between</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">srcOrId</span>, <span class="tsd-kind-parameter">destOrId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><a href="#removeEdgeBetween.removeEdgeBetween-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function removes an edge between two vertices in a directed graph and returns the removed edge.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>removeEdgeBetween</code> function removes an edge between two vertices in a directed graph and returns the removed
+edge, or null if the edge was not found.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">srcOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The source vertex or its ID.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>srcOrId</code> parameter represents either a <code>V</code>
+object or a <code>VertexId</code> value. It is used to specify the source vertex of the edge that you want to remove.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
 <h5><span class="tsd-kind-parameter">destOrId</span>: <a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>destOrId</code> parameter in the <code>removeEdgeBetween</code> function represents the
-destination vertex of the edge that needs to be removed. It can be either a vertex object (<code>V</code>) or a vertex ID
-(<code>VertexId</code>).</p>
+<div class="tsd-comment tsd-typography"><p>The <code>destOrId</code> parameter represents the destination vertex of the
+edge that you want to remove. It can be either a <code>V</code> object or a <code>VertexId</code> value.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4><p>The function <code>removeEdgeBetween</code> returns the removed edge (<code>E</code>) if the edge between the source and
-destination vertices is successfully removed. If either the source or destination vertex is not found, or if the
-edge does not exist, it returns <code>null</code>.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4><p>The function <code>removeEdgeBetween</code> returns the removed edge (<code>E</code>) if it exists, or <code>null</code> if
+the edge does not exist.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#removeEdgeBetween">removeEdgeBetween</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L142">src/data-structures/graph/directed-graph.ts:142</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L194">src/data-structures/graph/directed-graph.ts:194</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="removeVertex" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>Vertex</span><a href="#removeVertex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -965,7 +1203,7 @@ edge does not exist, it returns <code>null</code>.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#removeVertex">removeVertex</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L134">src/data-structures/graph/abstract-graph.ts:134</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L173">src/data-structures/graph/abstract-graph.ts:173</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="setEdgeWeight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>Edge<wbr/>Weight</span><a href="#setEdgeWeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1000,7 +1238,7 @@ the weight of the edge and return true. If the edge does not exist, the function
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#setEdgeWeight">setEdgeWeight</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L187">src/data-structures/graph/abstract-graph.ts:187</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L233">src/data-structures/graph/abstract-graph.ts:233</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="tarjan" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>tarjan</span><a href="#tarjan" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1062,36 +1300,21 @@ are arrays of vertices that form cycles within the SCCs.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#tarjan">tarjan</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L826">src/data-structures/graph/abstract-graph.ts:826</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/abstract-graph.ts#L869">src/data-structures/graph/abstract-graph.ts:869</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="topologicalSort" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>topological<wbr/>Sort</span><a href="#topologicalSort" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="topologicalSort.topologicalSort-1"><span class="tsd-kind-call-signature">topological<wbr/>Sort</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><a href="#topologicalSort.topologicalSort-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>when stored with adjacency list time: O(V+E)
-when stored with adjacency matrix time: O(V^2)
-The <code>topologicalSort</code> function performs a topological sort on a graph and returns the sorted vertices in reverse
-order, or null if the graph contains a cycle.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>topologicalSort</code> function performs a topological sort on a directed graph and returns the sorted vertices in
+reverse order, or null if the graph contains a cycle.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>topologicalSort()</code> returns an array of vertices in topological order if there is no cycle in
-the graph. If there is a cycle, it returns <code>null</code>.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>topologicalSort()</code> returns an array of <code>V</code> or <code>VertexId</code> objects in
+topological order, or <code>null</code> if there is a cycle in the graph.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/directed-graph.ts#L324">src/data-structures/graph/directed-graph.ts:324</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="vertexSet" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>vertex<wbr/>Set</span><a href="#vertexSet" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="vertexSet.vertexSet-1"><span class="tsd-kind-call-signature">vertex<wbr/>Set</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span><a href="#vertexSet.vertexSet-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>vertexSet()</code> returns a map of vertices.</p>
-</div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/VertexId.html" class="tsd-signature-type tsd-kind-type-alias">VertexId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The method <code>vertexSet()</code> returns a map of vertex IDs to vertex objects.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="AbstractGraph.html">AbstractGraph</a>.<a href="AbstractGraph.html#vertexSet">vertexSet</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c1b5969/src/data-structures/graph/abstract-graph.ts#L108">src/data-structures/graph/abstract-graph.ts:108</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/60e08d3/src/data-structures/graph/directed-graph.ts#L377">src/data-structures/graph/directed-graph.ts:377</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -1112,12 +1335,25 @@ the graph. If there is a cycle, it returns <code>null</code>.</p>
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
-<li><a href="#_inEdgeMap" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_in<wbr/>Edge<wbr/>Map</span></a></li>
-<li><a href="#_outEdgeMap" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_out<wbr/>Edge<wbr/>Map</span></a></li>
-<li><a href="#_vertices" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_vertices</span></a></li>
+<li><a href="#_edgeConstructor" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_edge<wbr/>Constructor</span></a></li>
+<li><a href="#_inEdgeMap" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_in<wbr/>Edge<wbr/>Map</span></a></li>
+<li><a href="#_outEdgeMap" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_out<wbr/>Edge<wbr/>Map</span></a></li>
+<li><a href="#_vertexConstructor" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_vertex<wbr/>Constructor</span></a></li>
+<li><a href="#inEdgeMap" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>in<wbr/>Edge<wbr/>Map</span></a></li>
+<li><a href="#outEdgeMap" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>out<wbr/>Edge<wbr/>Map</span></a></li>
+<li><a href="#vertices" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>vertices</span></a></li>
+<li><a href="#_createEdge" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_create<wbr/>Edge</span></a></li>
+<li><a href="#_createVertex" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_create<wbr/>Vertex</span></a></li>
+<li><a href="#_getVertex" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Vertex</span></a></li>
+<li><a href="#_getVertexId" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Vertex<wbr/>Id</span></a></li>
+<li><a href="#_setInEdgeMap" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>In<wbr/>Edge<wbr/>Map</span></a></li>
+<li><a href="#_setOutEdgeMap" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Out<wbr/>Edge<wbr/>Map</span></a></li>
+<li><a href="#_setVertices" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Vertices</span></a></li>
 <li><a href="#addEdge" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Edge</span></a></li>
 <li><a href="#addVertex" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Vertex</span></a></li>
 <li><a href="#bellmanFord" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>bellman<wbr/>Ford</span></a></li>
+<li><a href="#createAddEdge" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>Add<wbr/>Edge</span></a></li>
+<li><a href="#createAddVertex" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>Add<wbr/>Vertex</span></a></li>
 <li><a href="#degreeOf" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>degree<wbr/>Of</span></a></li>
 <li><a href="#dijkstra" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>dijkstra</span></a></li>
 <li><a href="#dijkstraWithoutHeap" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>dijkstra<wbr/>Without<wbr/>Heap</span></a></li>
@@ -1135,7 +1371,6 @@ the graph. If there is a cycle, it returns <code>null</code>.</p>
 <li><a href="#getNeighbors" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Neighbors</span></a></li>
 <li><a href="#getPathSumWeight" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Path<wbr/>Sum<wbr/>Weight</span></a></li>
 <li><a href="#getVertex" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Vertex</span></a></li>
-<li><a href="#getVertexId" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Vertex<wbr/>Id</span></a></li>
 <li><a href="#hasEdge" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Edge</span></a></li>
 <li><a href="#hasVertex" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Vertex</span></a></li>
 <li><a href="#inDegreeOf" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>in<wbr/>Degree<wbr/>Of</span></a></li>
@@ -1149,14 +1384,14 @@ the graph. If there is a cycle, it returns <code>null</code>.</p>
 <li><a href="#removeVertex" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Vertex</span></a></li>
 <li><a href="#setEdgeWeight" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>set<wbr/>Edge<wbr/>Weight</span></a></li>
 <li><a href="#tarjan" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>tarjan</span></a></li>
-<li><a href="#topologicalSort" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>topological<wbr/>Sort</span></a></li>
-<li><a href="#vertexSet" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>vertex<wbr/>Set</span></a></li></ul></div></details></div>
+<li><a href="#topologicalSort" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>topological<wbr/>Sort</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>data-<wbr/>structure-<wbr/>typed</span></a>
 <ul class="tsd-small-nested-navigation">
 <li><a href="../enums/CP.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-8"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-enum)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.45 16V7.24H14.49V8.224H10.518V10.936H14.07V11.908H10.518V15.016H14.49V16H9.45Z" fill="var(--color-text)"></path></g></svg><span>CP</span></a></li>
 <li><a href="../enums/FamilyPosition.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>Family<wbr/>Position</span></a></li>
 <li><a href="../enums/LoopType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>Loop<wbr/>Type</span></a></li>
+<li><a href="../enums/TopologicalProperty.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>Topological<wbr/>Property</span></a></li>
 <li><a href="AVLTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>AVLTree</span></a></li>
 <li><a href="AVLTreeNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>AVLTree<wbr/>Node</span></a></li>
 <li><a href="AaTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Aa<wbr/>Tree</span></a></li>
@@ -1193,7 +1428,6 @@ the graph. If there is a cycle, it returns <code>null</code>.</p>
 <li><a href="Pair.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Pair</span></a></li>
 <li><a href="PriorityQueue.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Priority<wbr/>Queue</span></a></li>
 <li><a href="Queue.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Queue</span></a></li>
-<li><a href="RBTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>RBTree</span></a></li>
 <li><a href="SegmentTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Segment<wbr/>Tree</span></a></li>
 <li><a href="SegmentTreeNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Segment<wbr/>Tree<wbr/>Node</span></a></li>
 <li><a href="SinglyLinkedList.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Singly<wbr/>Linked<wbr/>List</span></a></li>
@@ -1212,13 +1446,13 @@ the graph. If there is a cycle, it returns <code>null</code>.</p>
 <li><a href="UndirectedGraph.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Undirected<wbr/>Graph</span></a></li>
 <li><a href="UndirectedVertex.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Undirected<wbr/>Vertex</span></a></li>
 <li><a href="Vector2D.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Vector2D</span></a></li>
-<li><a href="../interfaces/AVLTreeDeleted.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-256"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)"></path></g></svg><span>AVLTree<wbr/>Deleted</span></a></li>
-<li><a href="../interfaces/HeapOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Heap<wbr/>Options</span></a></li>
+<li><a href="../interfaces/IBinaryTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-256"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)"></path></g></svg><span>IBinary<wbr/>Tree</span></a></li>
+<li><a href="../interfaces/IBinaryTreeNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IBinary<wbr/>Tree<wbr/>Node</span></a></li>
 <li><a href="../interfaces/IDirectedGraph.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDirected<wbr/>Graph</span></a></li>
 <li><a href="../interfaces/IGraph.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IGraph</span></a></li>
-<li><a href="../interfaces/NavigatorParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Navigator<wbr/>Params</span></a></li>
-<li><a href="../interfaces/PriorityQueueOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Priority<wbr/>Queue<wbr/>Options</span></a></li>
-<li><a href="../types/BSTComparator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>BSTComparator</span></a></li>
+<li><a href="../interfaces/IUNDirectedGraph.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IUNDirected<wbr/>Graph</span></a></li>
+<li><a href="../types/AVLTreeDeleted.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>AVLTree<wbr/>Deleted</span></a></li>
+<li><a href="../types/BSTComparator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>BSTComparator</span></a></li>
 <li><a href="../types/BSTDeletedResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>BSTDeleted<wbr/>Result</span></a></li>
 <li><a href="../types/BinaryTreeDeleted.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Binary<wbr/>Tree<wbr/>Deleted</span></a></li>
 <li><a href="../types/BinaryTreeNodeId.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Binary<wbr/>Tree<wbr/>Node<wbr/>Id</span></a></li>
@@ -1226,19 +1460,21 @@ the graph. If there is a cycle, it returns <code>null</code>.</p>
 <li><a href="../types/DFSOrderPattern.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>DFSOrder<wbr/>Pattern</span></a></li>
 <li><a href="../types/DijkstraResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Dijkstra<wbr/>Result</span></a></li>
 <li><a href="../types/Direction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Direction</span></a></li>
+<li><a href="../types/EdgeId.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Edge<wbr/>Id</span></a></li>
+<li><a href="../types/HeapOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Heap<wbr/>Options</span></a></li>
+<li><a href="../types/NavigatorParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Navigator<wbr/>Params</span></a></li>
 <li><a href="../types/NodeOrPropertyName.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Node<wbr/>Or<wbr/>Property<wbr/>Name</span></a></li>
 <li><a href="../types/PriorityQueueComparator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Priority<wbr/>Queue<wbr/>Comparator</span></a></li>
 <li><a href="../types/PriorityQueueDFSOrderPattern.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Priority<wbr/>QueueDFSOrder<wbr/>Pattern</span></a></li>
+<li><a href="../types/PriorityQueueOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Priority<wbr/>Queue<wbr/>Options</span></a></li>
+<li><a href="../types/RecursiveAVLTreeNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>RecursiveAVLTree<wbr/>Node</span></a></li>
+<li><a href="../types/RecursiveBSTNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>RecursiveBSTNode</span></a></li>
+<li><a href="../types/RecursiveBinaryTreeNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Recursive<wbr/>Binary<wbr/>Tree<wbr/>Node</span></a></li>
 <li><a href="../types/ResultByProperty.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Result<wbr/>By<wbr/>Property</span></a></li>
 <li><a href="../types/ResultsByProperty.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Results<wbr/>By<wbr/>Property</span></a></li>
 <li><a href="../types/SegmentTreeNodeVal.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Segment<wbr/>Tree<wbr/>Node<wbr/>Val</span></a></li>
-<li><a href="../types/SpecifyOptional.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Specify<wbr/>Optional</span></a></li>
-<li><a href="../types/Thunk.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Thunk</span></a></li>
-<li><a href="../types/ToThunkFn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>To<wbr/>Thunk<wbr/>Fn</span></a></li>
 <li><a href="../types/TopologicalStatus.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Topological<wbr/>Status</span></a></li>
 <li><a href="../types/TreeMultiSetDeletedResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Tree<wbr/>Multi<wbr/>Set<wbr/>Deleted<wbr/>Result</span></a></li>
-<li><a href="../types/TrlAsyncFn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Trl<wbr/>Async<wbr/>Fn</span></a></li>
-<li><a href="../types/TrlFn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Trl<wbr/>Fn</span></a></li>
 <li><a href="../types/Turning.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Turning</span></a></li>
 <li><a href="../types/VertexId.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Vertex<wbr/>Id</span></a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
