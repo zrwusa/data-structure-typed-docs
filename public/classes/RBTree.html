@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>AVLTree | data-structure-typed</title><meta name="description" content="Documentation for data-structure-typed"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>RBTree | data-structure-typed</title><meta name="description" content="Documentation for data-structure-typed"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,25 +13,25 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">data-structure-typed</a></li>
-<li><a href="AVLTree.html">AVLTree</a></li></ul>
-<h1>Class AVLTree&lt;N&gt;</h1></div> 
+<li><a href="RBTree.html">RBTree</a></li></ul>
+<h1>Class RBTree&lt;N&gt;</h1></div> 
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section> 
+<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="RBTreeNode.html" class="tsd-signature-type tsd-kind-class">RBTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section> 
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
 <li><a href="BST.html" class="tsd-signature-type tsd-kind-class">BST</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span>
 <ul class="tsd-hierarchy">
-<li><span class="target">AVLTree</span></li></ul></li></ul></section>
+<li><span class="target">RBTree</span></li></ul></li></ul></section>
 <section class="tsd-panel">
 <h4>Implements</h4>
 <ul class="tsd-hierarchy">
-<li><a href="../interfaces/IAVLTree.html" class="tsd-signature-type tsd-kind-interface">IAVLTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section><aside class="tsd-sources">
+<li><span class="tsd-signature-type ">IRBTree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L18">src/data-structures/binary-tree/avl-tree.ts:18</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/rb-tree.ts#L71">src/data-structures/binary-tree/rb-tree.ts:71</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -39,110 +39,109 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Constructors</h3>
-<div class="tsd-index-list"><a href="AVLTree.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-512"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>constructor</span></a>
+<div class="tsd-index-list"><a href="RBTree.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-512"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>constructor</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="AVLTree.html#_comparator" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>_comparator</span></a>
+<div class="tsd-index-list"><a href="RBTree.html#_comparator" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>_comparator</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Accessors</h3>
-<div class="tsd-index-list"><a href="AVLTree.html#autoIncrementId" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-262144"><rect fill="var(--color-icon-background)" stroke="#FF4D4D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M8.85 16L11.13 7.24H12.582L14.85 16H13.758L13.182 13.672H10.53L9.954 16H8.85ZM10.746 12.76H12.954L12.282 10.06C12.154 9.548 12.054 9.12 11.982 8.776C11.91 8.432 11.866 8.208 11.85 8.104C11.834 8.208 11.79 8.432 11.718 8.776C11.646 9.12 11.546 9.544 11.418 10.048L10.746 12.76Z" fill="var(--color-text)"></path></g></svg><span>auto<wbr/>Increment<wbr/>Id</span></a>
-<a href="AVLTree.html#count" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>count</span></a>
-<a href="AVLTree.html#isDuplicatedVal" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>is<wbr/>Duplicated<wbr/>Val</span></a>
-<a href="AVLTree.html#loopType" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>loop<wbr/>Type</span></a>
-<a href="AVLTree.html#maxId" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>max<wbr/>Id</span></a>
-<a href="AVLTree.html#root" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>root</span></a>
-<a href="AVLTree.html#size" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>size</span></a>
-<a href="AVLTree.html#visitedCount" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Count</span></a>
-<a href="AVLTree.html#visitedId" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Id</span></a>
-<a href="AVLTree.html#visitedLeftSum" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Left<wbr/>Sum</span></a>
-<a href="AVLTree.html#visitedNode" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Node</span></a>
-<a href="AVLTree.html#visitedVal" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Val</span></a>
+<div class="tsd-index-list"><a href="RBTree.html#autoIncrementId" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-262144"><rect fill="var(--color-icon-background)" stroke="#FF4D4D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M8.85 16L11.13 7.24H12.582L14.85 16H13.758L13.182 13.672H10.53L9.954 16H8.85ZM10.746 12.76H12.954L12.282 10.06C12.154 9.548 12.054 9.12 11.982 8.776C11.91 8.432 11.866 8.208 11.85 8.104C11.834 8.208 11.79 8.432 11.718 8.776C11.646 9.12 11.546 9.544 11.418 10.048L10.746 12.76Z" fill="var(--color-text)"></path></g></svg><span>auto<wbr/>Increment<wbr/>Id</span></a>
+<a href="RBTree.html#count" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>count</span></a>
+<a href="RBTree.html#isDuplicatedVal" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>is<wbr/>Duplicated<wbr/>Val</span></a>
+<a href="RBTree.html#loopType" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>loop<wbr/>Type</span></a>
+<a href="RBTree.html#maxId" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>max<wbr/>Id</span></a>
+<a href="RBTree.html#root" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>root</span></a>
+<a href="RBTree.html#size" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>size</span></a>
+<a href="RBTree.html#visitedCount" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Count</span></a>
+<a href="RBTree.html#visitedId" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Id</span></a>
+<a href="RBTree.html#visitedLeftSum" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Left<wbr/>Sum</span></a>
+<a href="RBTree.html#visitedNode" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Node</span></a>
+<a href="RBTree.html#visitedVal" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>visited<wbr/>Val</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="AVLTree.html#BFS" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-2048"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)"></path></g></svg><span>BFS</span></a>
-<a href="AVLTree.html#DFS" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>DFS</span></a>
-<a href="AVLTree.html#DFSIterative" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>DFSIterative</span></a>
-<a href="AVLTree.html#_accumulatedByPropertyName" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_accumulated<wbr/>By<wbr/>Property<wbr/>Name</span></a>
-<a href="AVLTree.html#_compare" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_compare</span></a>
-<a href="AVLTree.html#_getResultByPropertyName" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Result<wbr/>By<wbr/>Property<wbr/>Name</span></a>
-<a href="AVLTree.html#_pushByPropertyNameStopOrNot" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_push<wbr/>By<wbr/>Property<wbr/>Name<wbr/>Stop<wbr/>Or<wbr/>Not</span></a>
-<a href="AVLTree.html#_resetResults" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_reset<wbr/>Results</span></a>
-<a href="AVLTree.html#_setAutoIncrementId" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Auto<wbr/>Increment<wbr/>Id</span></a>
-<a href="AVLTree.html#_setCount" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Count</span></a>
-<a href="AVLTree.html#_setIsDuplicatedVal" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Is<wbr/>Duplicated<wbr/>Val</span></a>
-<a href="AVLTree.html#_setLoopType" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Loop<wbr/>Type</span></a>
-<a href="AVLTree.html#_setMaxId" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Max<wbr/>Id</span></a>
-<a href="AVLTree.html#_setRoot" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Root</span></a>
-<a href="AVLTree.html#_setSize" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Size</span></a>
-<a href="AVLTree.html#_setVisitedId" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Id</span></a>
-<a href="AVLTree.html#_setVisitedLeftSum" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Left<wbr/>Sum</span></a>
-<a href="AVLTree.html#_setVisitedNode" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Node</span></a>
-<a href="AVLTree.html#_setVisitedVal" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Val</span></a>
-<a href="AVLTree.html#add" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add</span></a>
-<a href="AVLTree.html#addMany" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Many</span></a>
-<a href="AVLTree.html#addTo" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>To</span></a>
-<a href="AVLTree.html#allGreaterNodesAdd" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>all<wbr/>Greater<wbr/>Nodes<wbr/>Add</span></a>
-<a href="AVLTree.html#balance" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balance</span></a>
-<a href="AVLTree.html#balanceFactor" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balance<wbr/>Factor</span></a>
-<a href="AVLTree.html#balanceLL" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balanceLL</span></a>
-<a href="AVLTree.html#balanceLR" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balanceLR</span></a>
-<a href="AVLTree.html#balancePath" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balance<wbr/>Path</span></a>
-<a href="AVLTree.html#balanceRL" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balanceRL</span></a>
-<a href="AVLTree.html#balanceRR" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balanceRR</span></a>
-<a href="AVLTree.html#clear" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>clear</span></a>
-<a href="AVLTree.html#createNode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>Node</span></a>
-<a href="AVLTree.html#fill" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fill</span></a>
-<a href="AVLTree.html#get" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get</span></a>
-<a href="AVLTree.html#getDepth" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Depth</span></a>
-<a href="AVLTree.html#getHeight" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Height</span></a>
-<a href="AVLTree.html#getLeftMost" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Left<wbr/>Most</span></a>
-<a href="AVLTree.html#getMinHeight" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Min<wbr/>Height</span></a>
-<a href="AVLTree.html#getNodes" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Nodes</span></a>
-<a href="AVLTree.html#getPathToRoot" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Path<wbr/>To<wbr/>Root</span></a>
-<a href="AVLTree.html#getPredecessor" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Predecessor</span></a>
-<a href="AVLTree.html#getRightMost" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Right<wbr/>Most</span></a>
-<a href="AVLTree.html#getSubTreeSizeAndCount" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Sub<wbr/>Tree<wbr/>Size<wbr/>And<wbr/>Count</span></a>
-<a href="AVLTree.html#has" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has</span></a>
-<a href="AVLTree.html#isAVLBalanced" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>isAVLBalanced</span></a>
-<a href="AVLTree.html#isBST" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>isBST</span></a>
-<a href="AVLTree.html#isBSTByRooted" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>isBSTBy<wbr/>Rooted</span></a>
-<a href="AVLTree.html#isBalanced" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Balanced</span></a>
-<a href="AVLTree.html#isEmpty" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Empty</span></a>
-<a href="AVLTree.html#lastKey" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>last<wbr/>Key</span></a>
-<a href="AVLTree.html#lesserSum" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lesser<wbr/>Sum</span></a>
-<a href="AVLTree.html#levelIterative" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>level<wbr/>Iterative</span></a>
-<a href="AVLTree.html#listLevels" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Levels</span></a>
-<a href="AVLTree.html#morris" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>morris</span></a>
-<a href="AVLTree.html#remove" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove</span></a>
-<a href="AVLTree.html#setVisitedCount" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>set<wbr/>Visited<wbr/>Count</span></a>
-<a href="AVLTree.html#subTreeAdd" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sub<wbr/>Tree<wbr/>Add</span></a>
-<a href="AVLTree.html#subTreeSum" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sub<wbr/>Tree<wbr/>Sum</span></a>
-<a href="AVLTree.html#updateHeight" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>update<wbr/>Height</span></a>
+<div class="tsd-index-list"><a href="RBTree.html#BFS" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-2048"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)"></path></g></svg><span>BFS</span></a>
+<a href="RBTree.html#DFS" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>DFS</span></a>
+<a href="RBTree.html#DFSIterative" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>DFSIterative</span></a>
+<a href="RBTree.html#_accumulatedByPropertyName" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_accumulated<wbr/>By<wbr/>Property<wbr/>Name</span></a>
+<a href="RBTree.html#_compare" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_compare</span></a>
+<a href="RBTree.html#_getResultByPropertyName" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Result<wbr/>By<wbr/>Property<wbr/>Name</span></a>
+<a href="RBTree.html#_pushByPropertyNameStopOrNot" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_push<wbr/>By<wbr/>Property<wbr/>Name<wbr/>Stop<wbr/>Or<wbr/>Not</span></a>
+<a href="RBTree.html#_resetResults" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_reset<wbr/>Results</span></a>
+<a href="RBTree.html#_setAutoIncrementId" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Auto<wbr/>Increment<wbr/>Id</span></a>
+<a href="RBTree.html#_setCount" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Count</span></a>
+<a href="RBTree.html#_setIsDuplicatedVal" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Is<wbr/>Duplicated<wbr/>Val</span></a>
+<a href="RBTree.html#_setLoopType" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Loop<wbr/>Type</span></a>
+<a href="RBTree.html#_setMaxId" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Max<wbr/>Id</span></a>
+<a href="RBTree.html#_setRoot" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Root</span></a>
+<a href="RBTree.html#_setSize" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Size</span></a>
+<a href="RBTree.html#_setVisitedId" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Id</span></a>
+<a href="RBTree.html#_setVisitedLeftSum" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Left<wbr/>Sum</span></a>
+<a href="RBTree.html#_setVisitedNode" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Node</span></a>
+<a href="RBTree.html#_setVisitedVal" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Val</span></a>
+<a href="RBTree.html#add" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add</span></a>
+<a href="RBTree.html#addMany" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Many</span></a>
+<a href="RBTree.html#addTo" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>To</span></a>
+<a href="RBTree.html#allGreaterNodesAdd" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>all<wbr/>Greater<wbr/>Nodes<wbr/>Add</span></a>
+<a href="RBTree.html#balance" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balance</span></a>
+<a href="RBTree.html#clear" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>clear</span></a>
+<a href="RBTree.html#createNode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>Node</span></a>
+<a href="RBTree.html#deleteFixup" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>delete<wbr/>Fixup</span></a>
+<a href="RBTree.html#fill" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fill</span></a>
+<a href="RBTree.html#get" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get</span></a>
+<a href="RBTree.html#getDepth" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Depth</span></a>
+<a href="RBTree.html#getHeight" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Height</span></a>
+<a href="RBTree.html#getLeftMost" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Left<wbr/>Most</span></a>
+<a href="RBTree.html#getMinHeight" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Min<wbr/>Height</span></a>
+<a href="RBTree.html#getNodes" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Nodes</span></a>
+<a href="RBTree.html#getPathToRoot" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Path<wbr/>To<wbr/>Root</span></a>
+<a href="RBTree.html#getPredecessor" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Predecessor</span></a>
+<a href="RBTree.html#getRightMost" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Right<wbr/>Most</span></a>
+<a href="RBTree.html#getSubTreeSizeAndCount" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Sub<wbr/>Tree<wbr/>Size<wbr/>And<wbr/>Count</span></a>
+<a href="RBTree.html#has" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has</span></a>
+<a href="RBTree.html#insert" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>insert</span></a>
+<a href="RBTree.html#insertFixup" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>insert<wbr/>Fixup</span></a>
+<a href="RBTree.html#isAVLBalanced" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>isAVLBalanced</span></a>
+<a href="RBTree.html#isBST" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>isBST</span></a>
+<a href="RBTree.html#isBSTByRooted" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>isBSTBy<wbr/>Rooted</span></a>
+<a href="RBTree.html#isBalanced" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Balanced</span></a>
+<a href="RBTree.html#isEmpty" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Empty</span></a>
+<a href="RBTree.html#lastKey" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>last<wbr/>Key</span></a>
+<a href="RBTree.html#leftRotate" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>left<wbr/>Rotate</span></a>
+<a href="RBTree.html#lesserSum" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lesser<wbr/>Sum</span></a>
+<a href="RBTree.html#levelIterative" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>level<wbr/>Iterative</span></a>
+<a href="RBTree.html#listLevels" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Levels</span></a>
+<a href="RBTree.html#morris" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>morris</span></a>
+<a href="RBTree.html#remove" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove</span></a>
+<a href="RBTree.html#rightRotate" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>right<wbr/>Rotate</span></a>
+<a href="RBTree.html#setVisitedCount" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>set<wbr/>Visited<wbr/>Count</span></a>
+<a href="RBTree.html#subTreeAdd" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sub<wbr/>Tree<wbr/>Add</span></a>
+<a href="RBTree.html#subTreeSum" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sub<wbr/>Tree<wbr/>Sum</span></a>
+<a href="RBTree.html#transplant" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>transplant</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_AVLTree"><span class="tsd-kind-constructor-signature">new AVLTree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="AVLTree.html" class="tsd-signature-type tsd-kind-class">AVLTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_AVLTree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_RBTree"><span class="tsd-kind-constructor-signature">new RBTree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="RBTree.html" class="tsd-signature-type tsd-kind-class">RBTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_RBTree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="../types/RecursiveAVLTreeNode.html" class="tsd-signature-type tsd-kind-type-alias">RecursiveAVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="RBTreeNode.html" class="tsd-signature-type tsd-kind-class">RBTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">options</span>: <a href="../types/AVLTreeOptions.html" class="tsd-signature-type tsd-kind-type-alias">AVLTreeOptions</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="AVLTree.html" class="tsd-signature-type tsd-kind-class">AVLTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">options</span>: <a href="../types/AbstractBinaryTreeOptions.html" class="tsd-signature-type tsd-kind-type-alias">AbstractBinaryTreeOptions</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="RBTree.html" class="tsd-signature-type tsd-kind-class">RBTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="BST.html">BST</a>.<a href="BST.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L19">src/data-structures/binary-tree/avl-tree.ts:19</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/rb-tree.ts#L72">src/data-structures/binary-tree/rb-tree.ts:72</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_comparator" class="tsd-anchor"></a>
@@ -159,7 +158,7 @@
 <li class="tsd-signature" id="autoIncrementId.autoIncrementId-1"><span class="tsd-signature-symbol">get</span> autoIncrementId<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.autoIncrementId</p>
+<p>Implementation of IRBTree.autoIncrementId</p>
 <p>Inherited from BST.autoIncrementId</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L224">src/data-structures/binary-tree/abstract-binary-tree.ts:224</a></li></ul></aside></li></ul></section>
@@ -169,7 +168,7 @@
 <li class="tsd-signature" id="count.count-1"><span class="tsd-signature-symbol">get</span> count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.count</p>
+<p>Implementation of IRBTree.count</p>
 <p>Inherited from BST.count</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L254">src/data-structures/binary-tree/abstract-binary-tree.ts:254</a></li></ul></aside></li></ul></section>
@@ -179,7 +178,7 @@
 <li class="tsd-signature" id="isDuplicatedVal.isDuplicatedVal-1"><span class="tsd-signature-symbol">get</span> isDuplicatedVal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.isDuplicatedVal</p>
+<p>Implementation of IRBTree.isDuplicatedVal</p>
 <p>Inherited from BST.isDuplicatedVal</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L236">src/data-structures/binary-tree/abstract-binary-tree.ts:236</a></li></ul></aside></li></ul></section>
@@ -189,7 +188,7 @@
 <li class="tsd-signature" id="loopType.loopType-1"><span class="tsd-signature-symbol">get</span> loopType<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/LoopType.html" class="tsd-signature-type tsd-kind-enum">LoopType</a></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../enums/LoopType.html" class="tsd-signature-type tsd-kind-enum">LoopType</a></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.loopType</p>
+<p>Implementation of IRBTree.loopType</p>
 <p>Inherited from BST.loopType</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L189">src/data-structures/binary-tree/abstract-binary-tree.ts:189</a></li></ul></aside></li></ul></section>
@@ -199,7 +198,7 @@
 <li class="tsd-signature" id="maxId.maxId-1"><span class="tsd-signature-symbol">get</span> maxId<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.maxId</p>
+<p>Implementation of IRBTree.maxId</p>
 <p>Inherited from BST.maxId</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L230">src/data-structures/binary-tree/abstract-binary-tree.ts:230</a></li></ul></aside></li></ul></section>
@@ -209,7 +208,7 @@
 <li class="tsd-signature" id="root.root-1"><span class="tsd-signature-symbol">get</span> root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.root</p>
+<p>Implementation of IRBTree.root</p>
 <p>Inherited from BST.root</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L242">src/data-structures/binary-tree/abstract-binary-tree.ts:242</a></li></ul></aside></li></ul></section>
@@ -219,7 +218,7 @@
 <li class="tsd-signature" id="size.size-1"><span class="tsd-signature-symbol">get</span> size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.size</p>
+<p>Implementation of IRBTree.size</p>
 <p>Inherited from BST.size</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L248">src/data-structures/binary-tree/abstract-binary-tree.ts:248</a></li></ul></aside></li></ul></section>
@@ -229,7 +228,7 @@
 <li class="tsd-signature" id="visitedCount.visitedCount-1"><span class="tsd-signature-symbol">get</span> visitedCount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.visitedCount</p>
+<p>Implementation of IRBTree.visitedCount</p>
 <p>Inherited from BST.visitedCount</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L212">src/data-structures/binary-tree/abstract-binary-tree.ts:212</a></li></ul></aside></li></ul></section>
@@ -239,7 +238,7 @@
 <li class="tsd-signature" id="visitedId.visitedId-1"><span class="tsd-signature-symbol">get</span> visitedId<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.visitedId</p>
+<p>Implementation of IRBTree.visitedId</p>
 <p>Inherited from BST.visitedId</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L194">src/data-structures/binary-tree/abstract-binary-tree.ts:194</a></li></ul></aside></li></ul></section>
@@ -249,7 +248,7 @@
 <li class="tsd-signature" id="visitedLeftSum.visitedLeftSum-1"><span class="tsd-signature-symbol">get</span> visitedLeftSum<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.visitedLeftSum</p>
+<p>Implementation of IRBTree.visitedLeftSum</p>
 <p>Inherited from BST.visitedLeftSum</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L218">src/data-structures/binary-tree/abstract-binary-tree.ts:218</a></li></ul></aside></li></ul></section>
@@ -259,7 +258,7 @@
 <li class="tsd-signature" id="visitedNode.visitedNode-1"><span class="tsd-signature-symbol">get</span> visitedNode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.visitedNode</p>
+<p>Implementation of IRBTree.visitedNode</p>
 <p>Inherited from BST.visitedNode</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L206">src/data-structures/binary-tree/abstract-binary-tree.ts:206</a></li></ul></aside></li></ul></section>
@@ -269,7 +268,7 @@
 <li class="tsd-signature" id="visitedVal.visitedVal-1"><span class="tsd-signature-symbol">get</span> visitedVal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
-<p>Implementation of IAVLTree.visitedVal</p>
+<p>Implementation of IRBTree.visitedVal</p>
 <p>Inherited from BST.visitedVal</p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L200">src/data-structures/binary-tree/abstract-binary-tree.ts:200</a></li></ul></aside></li></ul></section></section>
@@ -286,7 +285,7 @@ or property name.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#BFS">BFS</a></p>
+<p>Implementation of IRBTree.BFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#BFS">BFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L963">src/data-structures/binary-tree/abstract-binary-tree.ts:963</a></li></ul></aside></li>
@@ -309,7 +308,7 @@ performed starting from the root node</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#BFS">BFS</a></p>
+<p>Implementation of IRBTree.BFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#BFS">BFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L965">src/data-structures/binary-tree/abstract-binary-tree.ts:965</a></li></ul></aside></li>
@@ -332,7 +331,7 @@ performed starting from the root node</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#BFS">BFS</a></p>
+<p>Implementation of IRBTree.BFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#BFS">BFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L967">src/data-structures/binary-tree/abstract-binary-tree.ts:967</a></li></ul></aside></li>
@@ -355,7 +354,7 @@ performed starting from the root node</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#BFS">BFS</a></p>
+<p>Implementation of IRBTree.BFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#BFS">BFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L969">src/data-structures/binary-tree/abstract-binary-tree.ts:969</a></li></ul></aside></li>
@@ -378,7 +377,7 @@ performed starting from the root node</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#BFS">BFS</a></p>
+<p>Implementation of IRBTree.BFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#BFS">BFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L971">src/data-structures/binary-tree/abstract-binary-tree.ts:971</a></li></ul></aside></li></ul></section>
@@ -393,7 +392,7 @@ specified pattern and node or property name.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFS">DFS</a></p>
+<p>Implementation of IRBTree.DFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFS">DFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L999">src/data-structures/binary-tree/abstract-binary-tree.ts:999</a></li></ul></aside></li>
@@ -423,7 +422,7 @@ no value</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFS">DFS</a></p>
+<p>Implementation of IRBTree.DFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFS">DFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1001">src/data-structures/binary-tree/abstract-binary-tree.ts:1001</a></li></ul></aside></li>
@@ -453,7 +452,7 @@ no value</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFS">DFS</a></p>
+<p>Implementation of IRBTree.DFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFS">DFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1003">src/data-structures/binary-tree/abstract-binary-tree.ts:1003</a></li></ul></aside></li>
@@ -483,7 +482,7 @@ no value</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFS">DFS</a></p>
+<p>Implementation of IRBTree.DFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFS">DFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1005">src/data-structures/binary-tree/abstract-binary-tree.ts:1005</a></li></ul></aside></li>
@@ -513,7 +512,7 @@ no value</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFS">DFS</a></p>
+<p>Implementation of IRBTree.DFS</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFS">DFS</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1007">src/data-structures/binary-tree/abstract-binary-tree.ts:1007</a></li></ul></aside></li></ul></section>
@@ -527,7 +526,7 @@ Space complexity of Iterative DFS equals to recursive DFS which is O(n) because 
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFSIterative">DFSIterative</a></p>
+<p>Implementation of IRBTree.DFSIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFSIterative">DFSIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1049">src/data-structures/binary-tree/abstract-binary-tree.ts:1049</a></li></ul></aside></li>
@@ -547,7 +546,7 @@ Space complexity of Iterative DFS equals to recursive DFS which is O(n) because 
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFSIterative">DFSIterative</a></p>
+<p>Implementation of IRBTree.DFSIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFSIterative">DFSIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1051">src/data-structures/binary-tree/abstract-binary-tree.ts:1051</a></li></ul></aside></li>
@@ -567,7 +566,7 @@ Space complexity of Iterative DFS equals to recursive DFS which is O(n) because 
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFSIterative">DFSIterative</a></p>
+<p>Implementation of IRBTree.DFSIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFSIterative">DFSIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1053">src/data-structures/binary-tree/abstract-binary-tree.ts:1053</a></li></ul></aside></li>
@@ -587,7 +586,7 @@ Space complexity of Iterative DFS equals to recursive DFS which is O(n) because 
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFSIterative">DFSIterative</a></p>
+<p>Implementation of IRBTree.DFSIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFSIterative">DFSIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1055">src/data-structures/binary-tree/abstract-binary-tree.ts:1055</a></li></ul></aside></li>
@@ -607,7 +606,7 @@ Space complexity of Iterative DFS equals to recursive DFS which is O(n) because 
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#DFSIterative">DFSIterative</a></p>
+<p>Implementation of IRBTree.DFSIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#DFSIterative">DFSIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1057">src/data-structures/binary-tree/abstract-binary-tree.ts:1057</a></li></ul></aside></li></ul></section>
@@ -904,43 +903,43 @@ stop after finding the first matching node or continue searching for all matchin
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#_setVisitedVal">_setVisitedVal</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1361">src/data-structures/binary-tree/abstract-binary-tree.ts:1361</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="add" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="add" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add</span><a href="#add" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="add.add-1"><span class="tsd-kind-call-signature">add</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">val</span>, <span class="tsd-kind-parameter">count</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#add.add-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function overrides the add method of a Binary Search Tree to insert a node with a given id and value, and then
-balances the tree.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>add</code> function inserts a new node into a binary search tree, updating the count and value of an existing node if
+the ID matches, and returns the inserted node.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">id</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>id</code> parameter is the identifier of the binary tree node that we want to add or
-update in the AVL tree.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>id</code> parameter represents the identifier of the binary tree node. It is used to
+determine the position of the node in the binary search tree.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
 <h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>val</code> parameter represents the value that you want to assign to the node with the given
-<code>id</code>. It can be of type <code>N</code> (the generic type) or <code>null</code>.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>val</code> parameter represents the value to be stored in the binary search tree node. It can
+be of type <code>N</code> (the generic type) or <code>null</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">count</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>count</code> parameter is an optional parameter of type <code>number</code>. It represents the number
-of times the value <code>val</code> should be inserted into the AVL tree. If the <code>count</code> parameter is not provided, it defaults
-to <code>1</code>, indicating that the value should be inserted once.</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">count</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>count</code> parameter represents the number of times the value should be inserted into
+the binary search tree. By default, it is set to 1, meaning that if no count is specified, the value will be
+inserted once.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>The method is returning either an N object or null.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>The method <code>add</code> returns a <code>N</code> object or <code>null</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#add">add</a></p>
-<p>Overrides <a href="BST.html">BST</a>.<a href="BST.html#add">add</a></p>
+<p>Implementation of IRBTree.add</p>
+<p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#add">add</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L39">src/data-structures/binary-tree/avl-tree.ts:39</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/bst.ts#L70">src/data-structures/binary-tree/bst.ts:70</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="addMany" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Many</span><a href="#addMany" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -961,7 +960,7 @@ array of <code>N</code> objects.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>addMany</code> returns an array of <code>N</code>, <code>null</code>, or <code>undefined</code> values.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#addMany">addMany</a></p>
+<p>Implementation of IRBTree.addMany</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#addMany">addMany</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L380">src/data-structures/binary-tree/abstract-binary-tree.ts:380</a></li></ul></aside></li></ul></section>
@@ -991,7 +990,7 @@ child.</p>
 <code>undefined</code> in certain cases.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#addTo">addTo</a></p>
+<p>Implementation of IRBTree.addTo</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#addTo">addTo</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L340">src/data-structures/binary-tree/abstract-binary-tree.ts:340</a></li></ul></aside></li></ul></section>
@@ -1028,7 +1027,7 @@ defaults to &#39;id&#39;.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>a boolean value.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#allGreaterNodesAdd">allGreaterNodesAdd</a></p>
+<p>Implementation of IRBTree.allGreaterNodesAdd</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#allGreaterNodesAdd">allGreaterNodesAdd</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/bst.ts#L362">src/data-structures/binary-tree/bst.ts:362</a></li></ul></aside></li></ul></section>
@@ -1043,133 +1042,10 @@ recursive or iterative approach.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>The <code>balance()</code> function returns a boolean value.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#balance">balance</a></p>
+<p>Implementation of IRBTree.balance</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#balance">balance</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/bst.ts#L413">src/data-structures/binary-tree/bst.ts:413</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="balanceFactor" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>balance<wbr/>Factor</span><a href="#balanceFactor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="balanceFactor.balanceFactor-1"><span class="tsd-kind-call-signature">balance<wbr/>Factor</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#balanceFactor.balanceFactor-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The balance factor of a given AVL tree node is calculated by subtracting the height of its left subtree from the
-height of its right subtree.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter &quot;node&quot; is of type N, which represents a node in an AVL tree.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The balance factor of the given AVL tree node.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#balanceFactor">balanceFactor</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L71">src/data-structures/binary-tree/avl-tree.ts:71</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="balanceLL" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>balanceLL</span><a href="#balanceLL" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="balanceLL.balanceLL-1"><span class="tsd-kind-call-signature">balanceLL</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#balanceLL.balanceLL-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The <code>balanceLL</code> function performs a left-left rotation on an AVL tree to balance it.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">A</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter A is an AVLTreeNode object.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#balanceLL">balanceLL</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L133">src/data-structures/binary-tree/avl-tree.ts:133</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="balanceLR" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>balanceLR</span><a href="#balanceLR" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="balanceLR.balanceLR-1"><span class="tsd-kind-call-signature">balanceLR</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#balanceLR.balanceLR-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The <code>balanceLR</code> function performs a left-right rotation to balance an AVL tree.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">A</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>A is an AVLTreeNode object.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#balanceLR">balanceLR</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L163">src/data-structures/binary-tree/avl-tree.ts:163</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="balancePath" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>balance<wbr/>Path</span><a href="#balancePath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="balancePath.balancePath-1"><span class="tsd-kind-call-signature">balance<wbr/>Path</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#balancePath.balancePath-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The <code>balancePath</code> function balances the AVL tree by performing appropriate rotations based on the balance factor of
-each node in the path from the given node to the root.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>node</code> parameter is an AVLTreeNode object, which represents a node in an AVL tree.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#balancePath">balancePath</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L102">src/data-structures/binary-tree/avl-tree.ts:102</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="balanceRL" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>balanceRL</span><a href="#balanceRL" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="balanceRL.balanceRL-1"><span class="tsd-kind-call-signature">balanceRL</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#balanceRL.balanceRL-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The <code>balanceRL</code> function performs a right-left rotation to balance an AVL tree.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">A</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>A is an AVLTreeNode object.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#balanceRL">balanceRL</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L246">src/data-structures/binary-tree/avl-tree.ts:246</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="balanceRR" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>balanceRR</span><a href="#balanceRR" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="balanceRR.balanceRR-1"><span class="tsd-kind-call-signature">balanceRR</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#balanceRR.balanceRR-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The <code>balanceRR</code> function performs a right-right rotation on an AVL tree to balance it.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">A</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter A is an AVLTreeNode object.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#balanceRR">balanceRR</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L211">src/data-structures/binary-tree/avl-tree.ts:211</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="clear" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>clear</span><a href="#clear" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1179,7 +1055,7 @@ each node in the path from the given node to the root.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#clear">clear</a></p>
+<p>Implementation of IRBTree.clear</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#clear">clear</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L263">src/data-structures/binary-tree/abstract-binary-tree.ts:263</a></li></ul></aside></li></ul></section>
@@ -1214,10 +1090,23 @@ of a particular value in the binary search tree node.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>a new instance of the BSTNode class, casted as type N.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#createNode">createNode</a></p>
+<p>Implementation of IRBTree.createNode</p>
 <p>Overrides <a href="BST.html">BST</a>.<a href="BST.html#createNode">createNode</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L23">src/data-structures/binary-tree/avl-tree.ts:23</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/rb-tree.ts#L76">src/data-structures/binary-tree/rb-tree.ts:76</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="deleteFixup" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>delete<wbr/>Fixup</span><a href="#deleteFixup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="deleteFixup.deleteFixup-1"><span class="tsd-kind-call-signature">delete<wbr/>Fixup</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#deleteFixup.deleteFixup-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/rb-tree.ts#L102">src/data-structures/binary-tree/rb-tree.ts:102</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="fill" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>fill</span><a href="#fill" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1238,7 +1127,7 @@ array of <code>N</code> objects.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>The method is returning a boolean value.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#fill">fill</a></p>
+<p>Implementation of IRBTree.fill</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#fill">fill</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L441">src/data-structures/binary-tree/abstract-binary-tree.ts:441</a></li></ul></aside></li></ul></section>
@@ -1268,7 +1157,7 @@ specifies the property name to use for searching the binary search tree nodes. I
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>The method is returning a N object or null.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#get">get</a></p>
+<p>Implementation of IRBTree.get</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#get">get</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/bst.ts#L144">src/data-structures/binary-tree/bst.ts:144</a></li></ul></aside></li></ul></section>
@@ -1291,7 +1180,7 @@ meaning it can represent any type of data that we want to store in the node.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The depth of the given binary tree node.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getDepth">getDepth</a></p>
+<p>Implementation of IRBTree.getDepth</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getDepth">getDepth</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L499">src/data-structures/binary-tree/abstract-binary-tree.ts:499</a></li></ul></aside></li></ul></section>
@@ -1316,7 +1205,7 @@ If no value is provided for <code>beginRoot</code>, the function will use the <c
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>the height of the binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getHeight">getHeight</a></p>
+<p>Implementation of IRBTree.getHeight</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getHeight">getHeight</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L516">src/data-structures/binary-tree/abstract-binary-tree.ts:516</a></li></ul></aside></li></ul></section>
@@ -1331,7 +1220,7 @@ recursion optimization.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>The <code>getLeftMost</code> function returns the leftmost node in a binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getLeftMost">getLeftMost</a></p>
+<p>Implementation of IRBTree.getLeftMost</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getLeftMost">getLeftMost</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L703">src/data-structures/binary-tree/abstract-binary-tree.ts:703</a></li></ul></aside></li>
@@ -1352,7 +1241,7 @@ provided, the function will use the root node of the binary tree.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>The <code>getLeftMost</code> function returns the leftmost node in a binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getLeftMost">getLeftMost</a></p>
+<p>Implementation of IRBTree.getLeftMost</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getLeftMost">getLeftMost</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L705">src/data-structures/binary-tree/abstract-binary-tree.ts:705</a></li></ul></aside></li></ul></section>
@@ -1377,7 +1266,7 @@ tree. If no value is provided for <code>beginRoot</code>, the function will use 
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The function <code>getMinHeight</code> returns the minimum height of the binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getMinHeight">getMinHeight</a></p>
+<p>Implementation of IRBTree.getMinHeight</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getMinHeight">getMinHeight</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L565">src/data-structures/binary-tree/abstract-binary-tree.ts:565</a></li></ul></aside></li></ul></section>
@@ -1415,7 +1304,7 @@ to false or not provided, the function will return all nodes that match the give
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>an array of N objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getNodes">getNodes</a></p>
+<p>Implementation of IRBTree.getNodes</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getNodes">getNodes</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/bst.ts#L234">src/data-structures/binary-tree/bst.ts:234</a></li></ul></aside></li></ul></section>
@@ -1439,7 +1328,7 @@ root of a binary tree.</p>
 the given <code>node</code> to the root of the binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getPathToRoot">getPathToRoot</a></p>
+<p>Implementation of IRBTree.getPathToRoot</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getPathToRoot">getPathToRoot</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L693">src/data-structures/binary-tree/abstract-binary-tree.ts:693</a></li></ul></aside></li></ul></section>
@@ -1461,7 +1350,7 @@ the given <code>node</code> to the root of the binary tree.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>the predecessor of the given node in a binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getPredecessor">getPredecessor</a></p>
+<p>Implementation of IRBTree.getPredecessor</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getPredecessor">getPredecessor</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1231">src/data-structures/binary-tree/abstract-binary-tree.ts:1231</a></li></ul></aside></li></ul></section>
@@ -1476,7 +1365,7 @@ tail recursion optimization.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>The <code>getRightMost</code> function returns the rightmost node in a binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getRightMost">getRightMost</a></p>
+<p>Implementation of IRBTree.getRightMost</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getRightMost">getRightMost</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L738">src/data-structures/binary-tree/abstract-binary-tree.ts:738</a></li></ul></aside></li>
@@ -1497,7 +1386,7 @@ provided, the function will use the root node of the binary tree.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>The <code>getRightMost</code> function returns the rightmost node in a binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getRightMost">getRightMost</a></p>
+<p>Implementation of IRBTree.getRightMost</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getRightMost">getRightMost</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L740">src/data-structures/binary-tree/abstract-binary-tree.ts:740</a></li></ul></aside></li></ul></section>
@@ -1522,7 +1411,7 @@ tree.</p>
 represents the size of the subtree, and the second element represents the count of the nodes in the subtree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#getSubTreeSizeAndCount">getSubTreeSizeAndCount</a></p>
+<p>Implementation of IRBTree.getSubTreeSizeAndCount</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getSubTreeSizeAndCount">getSubTreeSizeAndCount</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L825">src/data-structures/binary-tree/abstract-binary-tree.ts:825</a></li></ul></aside></li></ul></section>
@@ -1552,10 +1441,38 @@ specifies the name of the property to check for in the nodes.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>a boolean value.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#has">has</a></p>
+<p>Implementation of IRBTree.has</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#has">has</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L668">src/data-structures/binary-tree/abstract-binary-tree.ts:668</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="insert" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>insert</span><a href="#insert" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="insert.insert-1"><span class="tsd-kind-call-signature">insert</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#insert.insert-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">id</span>: <span class="tsd-signature-type">number</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/rb-tree.ts#L86">src/data-structures/binary-tree/rb-tree.ts:86</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="insertFixup" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>insert<wbr/>Fixup</span><a href="#insertFixup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="insertFixup.insertFixup-1"><span class="tsd-kind-call-signature">insert<wbr/>Fixup</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#insertFixup.insertFixup-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/rb-tree.ts#L98">src/data-structures/binary-tree/rb-tree.ts:98</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="isAVLBalanced" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>isAVLBalanced</span><a href="#isAVLBalanced" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1567,7 +1484,7 @@ specifies the name of the property to check for in the nodes.</p>
 is balanced according to the AVL tree property, and <code>false</code> otherwise.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#isAVLBalanced">isAVLBalanced</a></p>
+<p>Implementation of IRBTree.isAVLBalanced</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#isAVLBalanced">isAVLBalanced</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/bst.ts#L454">src/data-structures/binary-tree/bst.ts:454</a></li></ul></aside></li></ul></section>
@@ -1590,7 +1507,7 @@ search tree (BST).</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>a boolean value.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#isBST">isBST</a></p>
+<p>Implementation of IRBTree.isBST</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#isBST">isBST</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L813">src/data-structures/binary-tree/abstract-binary-tree.ts:813</a></li></ul></aside></li></ul></section>
@@ -1612,7 +1529,7 @@ search tree (BST).</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>a boolean value.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#isBSTByRooted">isBSTByRooted</a></p>
+<p>Implementation of IRBTree.isBSTByRooted</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#isBSTByRooted">isBSTByRooted</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L778">src/data-structures/binary-tree/abstract-binary-tree.ts:778</a></li></ul></aside></li></ul></section>
@@ -1635,7 +1552,7 @@ of type <code>N | null</code>, which means it can either be a <code>BinaryTreeNo
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>The method is returning a boolean value.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#isBalanced">isBalanced</a></p>
+<p>Implementation of IRBTree.isBalanced</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#isBalanced">isBalanced</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L613">src/data-structures/binary-tree/abstract-binary-tree.ts:613</a></li></ul></aside></li></ul></section>
@@ -1649,7 +1566,7 @@ of type <code>N | null</code>, which means it can either be a <code>BinaryTreeNo
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>A boolean value indicating whether the size of the object is 0 or not.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#isEmpty">isEmpty</a></p>
+<p>Implementation of IRBTree.isEmpty</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#isEmpty">isEmpty</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L274">src/data-structures/binary-tree/abstract-binary-tree.ts:274</a></li></ul></aside></li></ul></section>
@@ -1667,10 +1584,23 @@ greater than, it returns the ID of the leftmost node. Otherwise, it also returns
 there are no nodes in</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#lastKey">lastKey</a></p>
+<p>Implementation of IRBTree.lastKey</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#lastKey">lastKey</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/bst.ts#L157">src/data-structures/binary-tree/bst.ts:157</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="leftRotate" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>left<wbr/>Rotate</span><a href="#leftRotate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="leftRotate.leftRotate-1"><span class="tsd-kind-call-signature">left<wbr/>Rotate</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#leftRotate.leftRotate-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/rb-tree.ts#L90">src/data-structures/binary-tree/rb-tree.ts:90</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="lesserSum" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>lesser<wbr/>Sum</span><a href="#lesserSum" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1698,7 +1628,7 @@ specifies the property of the binary tree node to use for calculating the sum. I
 binary search tree that have a property value lesser than the given <code>id</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#lesserSum">lesserSum</a></p>
+<p>Implementation of IRBTree.lesserSum</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#lesserSum">lesserSum</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/bst.ts#L285">src/data-structures/binary-tree/bst.ts:285</a></li></ul></aside></li></ul></section>
@@ -1723,7 +1653,7 @@ the tree is used as the starting node.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>levelIterative</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#levelIterative">levelIterative</a></p>
+<p>Implementation of IRBTree.levelIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#levelIterative">levelIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1108">src/data-structures/binary-tree/abstract-binary-tree.ts:1108</a></li></ul></aside></li>
@@ -1753,7 +1683,7 @@ accumulating results</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>levelIterative</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#levelIterative">levelIterative</a></p>
+<p>Implementation of IRBTree.levelIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#levelIterative">levelIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1110">src/data-structures/binary-tree/abstract-binary-tree.ts:1110</a></li></ul></aside></li>
@@ -1783,7 +1713,7 @@ accumulating results</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>levelIterative</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#levelIterative">levelIterative</a></p>
+<p>Implementation of IRBTree.levelIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#levelIterative">levelIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1112">src/data-structures/binary-tree/abstract-binary-tree.ts:1112</a></li></ul></aside></li>
@@ -1813,7 +1743,7 @@ accumulating results</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>levelIterative</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#levelIterative">levelIterative</a></p>
+<p>Implementation of IRBTree.levelIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#levelIterative">levelIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1114">src/data-structures/binary-tree/abstract-binary-tree.ts:1114</a></li></ul></aside></li>
@@ -1843,7 +1773,7 @@ accumulating results</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>levelIterative</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#levelIterative">levelIterative</a></p>
+<p>Implementation of IRBTree.levelIterative</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#levelIterative">levelIterative</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1116">src/data-structures/binary-tree/abstract-binary-tree.ts:1116</a></li></ul></aside></li></ul></section>
@@ -1866,7 +1796,7 @@ root node of a binary tree. If it is null, the function will use the root node o
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>listLevels</code> returns a 2D array of <code>AbstractBinaryTreeNodeProperty&lt;N&gt;</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#listLevels">listLevels</a></p>
+<p>Implementation of IRBTree.listLevels</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#listLevels">listLevels</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1154">src/data-structures/binary-tree/abstract-binary-tree.ts:1154</a></li></ul></aside></li>
@@ -1893,7 +1823,7 @@ values:</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>listLevels</code> returns a 2D array of <code>AbstractBinaryTreeNodeProperty&lt;N&gt;</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#listLevels">listLevels</a></p>
+<p>Implementation of IRBTree.listLevels</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#listLevels">listLevels</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1156">src/data-structures/binary-tree/abstract-binary-tree.ts:1156</a></li></ul></aside></li>
@@ -1920,7 +1850,7 @@ values:</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>listLevels</code> returns a 2D array of <code>AbstractBinaryTreeNodeProperty&lt;N&gt;</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#listLevels">listLevels</a></p>
+<p>Implementation of IRBTree.listLevels</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#listLevels">listLevels</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1158">src/data-structures/binary-tree/abstract-binary-tree.ts:1158</a></li></ul></aside></li>
@@ -1947,7 +1877,7 @@ values:</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>listLevels</code> returns a 2D array of <code>AbstractBinaryTreeNodeProperty&lt;N&gt;</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#listLevels">listLevels</a></p>
+<p>Implementation of IRBTree.listLevels</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#listLevels">listLevels</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1160">src/data-structures/binary-tree/abstract-binary-tree.ts:1160</a></li></ul></aside></li>
@@ -1974,7 +1904,7 @@ values:</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>listLevels</code> returns a 2D array of <code>AbstractBinaryTreeNodeProperty&lt;N&gt;</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#listLevels">listLevels</a></p>
+<p>Implementation of IRBTree.listLevels</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#listLevels">listLevels</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1162">src/data-structures/binary-tree/abstract-binary-tree.ts:1162</a></li></ul></aside></li></ul></section>
@@ -1991,7 +1921,7 @@ The space complexity  Morris traversal is O(1) because no using stack</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>morris</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#morris">morris</a></p>
+<p>Implementation of IRBTree.morris</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#morris">morris</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1245">src/data-structures/binary-tree/abstract-binary-tree.ts:1245</a></li></ul></aside></li>
@@ -2021,7 +1951,7 @@ property. If not provided, it defaults to <code>&#39;id&#39;</code>.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>morris</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#morris">morris</a></p>
+<p>Implementation of IRBTree.morris</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#morris">morris</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1247">src/data-structures/binary-tree/abstract-binary-tree.ts:1247</a></li></ul></aside></li>
@@ -2051,7 +1981,7 @@ property. If not provided, it defaults to <code>&#39;id&#39;</code>.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>morris</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#morris">morris</a></p>
+<p>Implementation of IRBTree.morris</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#morris">morris</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1249">src/data-structures/binary-tree/abstract-binary-tree.ts:1249</a></li></ul></aside></li>
@@ -2081,7 +2011,7 @@ property. If not provided, it defaults to <code>&#39;id&#39;</code>.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>morris</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#morris">morris</a></p>
+<p>Implementation of IRBTree.morris</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#morris">morris</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1251">src/data-structures/binary-tree/abstract-binary-tree.ts:1251</a></li></ul></aside></li>
@@ -2111,41 +2041,54 @@ property. If not provided, it defaults to <code>&#39;id&#39;</code>.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>morris</code> returns an object of type <code>AbstractBinaryTreeNodeProperties&lt;N&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#morris">morris</a></p>
+<p>Implementation of IRBTree.morris</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#morris">morris</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L1253">src/data-structures/binary-tree/abstract-binary-tree.ts:1253</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="remove" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="remove" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove</span><a href="#remove" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="remove.remove-1"><span class="tsd-kind-call-signature">remove</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">isUpdateAllLeftSum</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><a href="#remove.remove-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="remove.remove-1"><span class="tsd-kind-call-signature">remove</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">id</span>, <span class="tsd-kind-parameter">ignoreCount</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><a href="#remove.remove-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function overrides the remove method of the Binary Search Tree class, performs the removal operation, and
-then balances the tree if necessary.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>remove</code> function in this TypeScript code removes a node from a binary search tree and returns information about
+the deleted node and any nodes that need to be balanced.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">id</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>id</code> parameter represents the identifier of the binary tree node that needs to be
-removed from the AVL tree.</p>
+<div class="tsd-comment tsd-typography"><p>The <code>id</code> parameter is the identifier of the binary tree node that needs to be removed
+from the binary search tree.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">isUpdateAllLeftSum</span>: <span class="tsd-signature-type">boolean</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>isUpdateAllLeftSum</code> parameter is an optional boolean parameter that
-determines whether the left sum of all nodes in the AVL tree should be updated after removing a node. If
-<code>isUpdateAllLeftSum</code> is set to <code>true</code>, the left sum of all nodes will be recalculated.</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">ignoreCount</span>: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>A boolean flag indicating whether to ignore the count of the node being removed. If
+set to true, the count of the node will not be considered and the node will be removed regardless of its count. If
+set to false or not provided, the count of the node will be taken into account and the</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>The method is returning an array of <code>AVLTreeDeleted&lt;N&gt;</code> objects.</p>
+<h4 class="tsd-returns-title">Returns <a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>an array of <code>BSTDeletedResult&lt;N&gt;</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#remove">remove</a></p>
-<p>Overrides <a href="BST.html">BST</a>.<a href="BST.html#remove">remove</a></p>
+<p>Implementation of IRBTree.remove</p>
+<p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#remove">remove</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L55">src/data-structures/binary-tree/avl-tree.ts:55</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/bst.ts#L173">src/data-structures/binary-tree/bst.ts:173</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="rightRotate" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>right<wbr/>Rotate</span><a href="#rightRotate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="rightRotate.rightRotate-1"><span class="tsd-kind-call-signature">right<wbr/>Rotate</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#rightRotate.rightRotate-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/rb-tree.ts#L94">src/data-structures/binary-tree/rb-tree.ts:94</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="setVisitedCount" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>set<wbr/>Visited<wbr/>Count</span><a href="#setVisitedCount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -2190,7 +2133,7 @@ specifies the property of the <code>BinaryTreeNode</code> that should be modifie
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>a boolean value, which is <code>true</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#subTreeAdd">subTreeAdd</a></p>
+<p>Implementation of IRBTree.subTreeAdd</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#subTreeAdd">subTreeAdd</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L922">src/data-structures/binary-tree/abstract-binary-tree.ts:922</a></li></ul></aside></li></ul></section>
@@ -2221,30 +2164,25 @@ provided, it defaults to <code>&#39;val&#39;</code>.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>a number, which is the sum of the values of the nodes in the subtree rooted at <code>subTreeRoot</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#subTreeSum">subTreeSum</a></p>
+<p>Implementation of IRBTree.subTreeSum</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#subTreeSum">subTreeSum</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/abstract-binary-tree.ts#L866">src/data-structures/binary-tree/abstract-binary-tree.ts:866</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="updateHeight" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>update<wbr/>Height</span><a href="#updateHeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="updateHeight.updateHeight-1"><span class="tsd-kind-call-signature">update<wbr/>Height</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#updateHeight.updateHeight-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<section class="tsd-panel tsd-member tsd-is-private"><a id="transplant" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>transplant</span><a href="#transplant" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-private">
+<li class="tsd-signature tsd-anchor-link" id="transplant.transplant-1"><span class="tsd-kind-call-signature">transplant</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">u</span>, <span class="tsd-kind-parameter">v</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#transplant.transplant-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function updates the height of a node in an AVL tree based on the heights of its left and right subtrees.</p>
-</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>node</code> is an AVLTreeNode object, which represents a node in an AVL tree.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IAVLTree.html">IAVLTree</a>.<a href="../interfaces/IAVLTree.html#updateHeight">updateHeight</a></p>
+<h5><span class="tsd-kind-parameter">u</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">v</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/avl-tree.ts#L84">src/data-structures/binary-tree/avl-tree.ts:84</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/2ea57d2/src/data-structures/binary-tree/rb-tree.ts#L106">src/data-structures/binary-tree/rb-tree.ts:106</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -2297,19 +2235,14 @@ provided, it defaults to <code>&#39;val&#39;</code>.</p>
 <li><a href="#_setVisitedLeftSum" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Left<wbr/>Sum</span></a></li>
 <li><a href="#_setVisitedNode" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Node</span></a></li>
 <li><a href="#_setVisitedVal" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Visited<wbr/>Val</span></a></li>
-<li><a href="#add" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add</span></a></li>
+<li><a href="#add" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add</span></a></li>
 <li><a href="#addMany" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Many</span></a></li>
 <li><a href="#addTo" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>To</span></a></li>
 <li><a href="#allGreaterNodesAdd" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>all<wbr/>Greater<wbr/>Nodes<wbr/>Add</span></a></li>
 <li><a href="#balance" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balance</span></a></li>
-<li><a href="#balanceFactor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balance<wbr/>Factor</span></a></li>
-<li><a href="#balanceLL" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balanceLL</span></a></li>
-<li><a href="#balanceLR" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balanceLR</span></a></li>
-<li><a href="#balancePath" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balance<wbr/>Path</span></a></li>
-<li><a href="#balanceRL" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balanceRL</span></a></li>
-<li><a href="#balanceRR" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>balanceRR</span></a></li>
 <li><a href="#clear" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>clear</span></a></li>
 <li><a href="#createNode" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>Node</span></a></li>
+<li><a href="#deleteFixup" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>delete<wbr/>Fixup</span></a></li>
 <li><a href="#fill" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fill</span></a></li>
 <li><a href="#get" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get</span></a></li>
 <li><a href="#getDepth" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Depth</span></a></li>
@@ -2322,21 +2255,25 @@ provided, it defaults to <code>&#39;val&#39;</code>.</p>
 <li><a href="#getRightMost" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Right<wbr/>Most</span></a></li>
 <li><a href="#getSubTreeSizeAndCount" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Sub<wbr/>Tree<wbr/>Size<wbr/>And<wbr/>Count</span></a></li>
 <li><a href="#has" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has</span></a></li>
+<li><a href="#insert" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>insert</span></a></li>
+<li><a href="#insertFixup" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>insert<wbr/>Fixup</span></a></li>
 <li><a href="#isAVLBalanced" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>isAVLBalanced</span></a></li>
 <li><a href="#isBST" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>isBST</span></a></li>
 <li><a href="#isBSTByRooted" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>isBSTBy<wbr/>Rooted</span></a></li>
 <li><a href="#isBalanced" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Balanced</span></a></li>
 <li><a href="#isEmpty" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Empty</span></a></li>
 <li><a href="#lastKey" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>last<wbr/>Key</span></a></li>
+<li><a href="#leftRotate" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>left<wbr/>Rotate</span></a></li>
 <li><a href="#lesserSum" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lesser<wbr/>Sum</span></a></li>
 <li><a href="#levelIterative" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>level<wbr/>Iterative</span></a></li>
 <li><a href="#listLevels" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Levels</span></a></li>
 <li><a href="#morris" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>morris</span></a></li>
-<li><a href="#remove" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove</span></a></li>
+<li><a href="#remove" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove</span></a></li>
+<li><a href="#rightRotate" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>right<wbr/>Rotate</span></a></li>
 <li><a href="#setVisitedCount" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>set<wbr/>Visited<wbr/>Count</span></a></li>
 <li><a href="#subTreeAdd" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sub<wbr/>Tree<wbr/>Add</span></a></li>
 <li><a href="#subTreeSum" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sub<wbr/>Tree<wbr/>Sum</span></a></li>
-<li><a href="#updateHeight" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>update<wbr/>Height</span></a></li></ul></div></details></div>
+<li><a href="#transplant" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>transplant</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>data-<wbr/>structure-<wbr/>typed</span></a>
 <ul class="tsd-small-nested-navigation">
@@ -2345,7 +2282,7 @@ provided, it defaults to <code>&#39;val&#39;</code>.</p>
 <li><a href="../enums/LoopType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>Loop<wbr/>Type</span></a></li>
 <li><a href="../enums/RBColor.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>RBColor</span></a></li>
 <li><a href="../enums/TopologicalProperty.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>Topological<wbr/>Property</span></a></li>
-<li><a href="AVLTree.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>AVLTree</span></a></li>
+<li><a href="AVLTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>AVLTree</span></a></li>
 <li><a href="AVLTreeNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>AVLTree<wbr/>Node</span></a></li>
 <li><a href="AaTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Aa<wbr/>Tree</span></a></li>
 <li><a href="AbstractBinaryTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Abstract<wbr/>Binary<wbr/>Tree</span></a></li>
@@ -2383,7 +2320,7 @@ provided, it defaults to <code>&#39;val&#39;</code>.</p>
 <li><a href="Pair.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Pair</span></a></li>
 <li><a href="PriorityQueue.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Priority<wbr/>Queue</span></a></li>
 <li><a href="Queue.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Queue</span></a></li>
-<li><a href="RBTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>RBTree</span></a></li>
+<li><a href="RBTree.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>RBTree</span></a></li>
 <li><a href="RBTreeNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>RBTree<wbr/>Node</span></a></li>
 <li><a href="SegmentTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Segment<wbr/>Tree</span></a></li>
 <li><a href="SegmentTreeNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Segment<wbr/>Tree<wbr/>Node</span></a></li>
