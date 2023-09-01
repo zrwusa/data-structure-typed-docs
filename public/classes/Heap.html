@@ -28,7 +28,7 @@
 <li><a href="MaxHeap.html" class="tsd-signature-type tsd-kind-class">MaxHeap</a></li>
 <li><a href="MinHeap.html" class="tsd-signature-type tsd-kind-class">MinHeap</a></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L46">src/data-structures/heap/heap.ts:46</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L46">src/data-structures/heap/heap.ts:46</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -58,6 +58,7 @@
 <a href="Heap.html#peek" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>peek</span></a>
 <a href="Heap.html#peekLast" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>peek<wbr/>Last</span></a>
 <a href="Heap.html#poll" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>poll</span></a>
+<a href="Heap.html#sort" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sort</span></a>
 <a href="Heap.html#toArray" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>to<wbr/>Array</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -86,14 +87,14 @@ options provided.</p>
 <h4 class="tsd-returns-title">Returns <a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L52">src/data-structures/heap/heap.ts:52</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L52">src/data-structures/heap/heap.ts:52</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_pq" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <code class="tsd-tag ts-flagAbstract">Abstract</code> <span>_pq</span><a href="#_pq" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_pq</span><span class="tsd-signature-symbol">:</span> <a href="PriorityQueue.html" class="tsd-signature-type tsd-kind-class">PriorityQueue</a><span class="tsd-signature-symbol">&lt;</span><a href="HeapItem.html" class="tsd-signature-type tsd-kind-class">HeapItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L64">src/data-structures/heap/heap.ts:64</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L64">src/data-structures/heap/heap.ts:64</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_priorityExtractor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_priority<wbr/>Extractor</span><a href="#_priorityExtractor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_priority<wbr/>Extractor</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span></div>
@@ -111,7 +112,7 @@ options provided.</p>
 <h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">T</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4></li></ul></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L70">src/data-structures/heap/heap.ts:70</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L70">src/data-structures/heap/heap.ts:70</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member"><a id="pq" class="tsd-anchor"></a>
@@ -121,7 +122,7 @@ options provided.</p>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="PriorityQueue.html" class="tsd-signature-type tsd-kind-class">PriorityQueue</a><span class="tsd-signature-symbol">&lt;</span><a href="HeapItem.html" class="tsd-signature-type tsd-kind-class">HeapItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L66">src/data-structures/heap/heap.ts:66</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L66">src/data-structures/heap/heap.ts:66</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="priorityExtractor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>priority<wbr/>Extractor</span><a href="#priorityExtractor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -140,7 +141,7 @@ options provided.</p>
 <h5><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">T</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4></li></ul></li></ul><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L71">src/data-structures/heap/heap.ts:71</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L71">src/data-structures/heap/heap.ts:71</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="size" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>size</span><a href="#size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -152,7 +153,7 @@ options provided.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L79">src/data-structures/heap/heap.ts:79</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L79">src/data-structures/heap/heap.ts:79</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="add" class="tsd-anchor"></a>
@@ -184,7 +185,7 @@ type.</p>
 <h4>Throws</h4><p>if priority is not a valid number</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L127">src/data-structures/heap/heap.ts:127</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L127">src/data-structures/heap/heap.ts:127</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="clear" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>clear</span><a href="#clear" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -195,7 +196,7 @@ type.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L180">src/data-structures/heap/heap.ts:180</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L197">src/data-structures/heap/heap.ts:197</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="has" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has</span><a href="#has" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -215,7 +216,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L154">src/data-structures/heap/heap.ts:154</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L154">src/data-structures/heap/heap.ts:154</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isEmpty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Empty</span><a href="#isEmpty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -227,7 +228,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L87">src/data-structures/heap/heap.ts:87</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L87">src/data-structures/heap/heap.ts:87</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="peek" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>peek</span><a href="#peek" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -244,7 +245,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L91">src/data-structures/heap/heap.ts:91</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L91">src/data-structures/heap/heap.ts:91</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="peek.peek-2"><span class="tsd-kind-call-signature">peek</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><a href="#peek.peek-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>peek</code> function returns the top item in the priority queue without removing it.</p>
@@ -258,7 +259,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L92">src/data-structures/heap/heap.ts:92</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L92">src/data-structures/heap/heap.ts:92</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="peek.peek-3"><span class="tsd-kind-call-signature">peek</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="HeapItem.html" class="tsd-signature-type tsd-kind-class">HeapItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#peek.peek-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>peek</code> function returns the top item in the priority queue without removing it.</p>
@@ -272,7 +273,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L93">src/data-structures/heap/heap.ts:93</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L93">src/data-structures/heap/heap.ts:93</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="peekLast" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>peek<wbr/>Last</span><a href="#peekLast" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -289,7 +290,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L104">src/data-structures/heap/heap.ts:104</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L104">src/data-structures/heap/heap.ts:104</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="peekLast.peekLast-2"><span class="tsd-kind-call-signature">peek<wbr/>Last</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><a href="#peekLast.peekLast-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>peekLast</code> function returns the last item in the heap.</p>
@@ -303,7 +304,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L105">src/data-structures/heap/heap.ts:105</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L105">src/data-structures/heap/heap.ts:105</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="peekLast.peekLast-3"><span class="tsd-kind-call-signature">peek<wbr/>Last</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="HeapItem.html" class="tsd-signature-type tsd-kind-class">HeapItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#peekLast.peekLast-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>peekLast</code> function returns the last item in the heap.</p>
@@ -317,7 +318,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L106">src/data-structures/heap/heap.ts:106</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L106">src/data-structures/heap/heap.ts:106</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="poll" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>poll</span><a href="#poll" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -334,7 +335,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L133">src/data-structures/heap/heap.ts:133</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L133">src/data-structures/heap/heap.ts:133</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="poll.poll-2"><span class="tsd-kind-call-signature">poll</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><a href="#poll.poll-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>poll</code> function returns the top item from a priority queue or null if the queue is empty.Removes and returns an val with the highest priority in the queue</p>
@@ -348,7 +349,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L134">src/data-structures/heap/heap.ts:134</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L134">src/data-structures/heap/heap.ts:134</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="poll.poll-3"><span class="tsd-kind-call-signature">poll</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="HeapItem.html" class="tsd-signature-type tsd-kind-class">HeapItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#poll.poll-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>poll</code> function returns the top item from a priority queue or null if the queue is empty.Removes and returns an val with the highest priority in the queue</p>
@@ -362,7 +363,67 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L135">src/data-structures/heap/heap.ts:135</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L135">src/data-structures/heap/heap.ts:135</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="sort" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>sort</span><a href="#sort" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="sort.sort-1"><span class="tsd-kind-call-signature">sort</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><a href="#sort.sort-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function sorts the elements in the priority queue and returns either the sorted items or their values depending
+on the value of the isItem parameter.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">isItem</span>: <span class="tsd-signature-type">undefined</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>isItem</code> parameter is a boolean flag that indicates whether the sorted result should
+be an array of <code>HeapItem&lt;T&gt;</code> objects or an array of the values (<code>T</code>) of those objects. If <code>isItem</code> is <code>true</code>, the
+sorted result will be an array of <code>HeapItem @returns an array of either </code>HeapItem<T><code>, </code>null<code>, </code>T<code>, or </code>undefined` values.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L177">src/data-structures/heap/heap.ts:177</a></li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="sort.sort-2"><span class="tsd-kind-call-signature">sort</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><a href="#sort.sort-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function sorts the elements in the priority queue and returns either the sorted items or their values depending
+on the value of the isItem parameter.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">isItem</span>: <span class="tsd-signature-type">false</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>isItem</code> parameter is a boolean flag that indicates whether the sorted result should
+be an array of <code>HeapItem&lt;T&gt;</code> objects or an array of the values (<code>T</code>) of those objects. If <code>isItem</code> is <code>true</code>, the
+sorted result will be an array of <code>HeapItem @returns an array of either </code>HeapItem<T><code>, </code>null<code>, </code>T<code>, or </code>undefined` values.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L178">src/data-structures/heap/heap.ts:178</a></li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="sort.sort-3"><span class="tsd-kind-call-signature">sort</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="HeapItem.html" class="tsd-signature-type tsd-kind-class">HeapItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><a href="#sort.sort-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function sorts the elements in the priority queue and returns either the sorted items or their values depending
+on the value of the isItem parameter.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">isItem</span>: <span class="tsd-signature-type">true</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>isItem</code> parameter is a boolean flag that indicates whether the sorted result should
+be an array of <code>HeapItem&lt;T&gt;</code> objects or an array of the values (<code>T</code>) of those objects. If <code>isItem</code> is <code>true</code>, the
+sorted result will be an array of <code>HeapItem @returns an array of either </code>HeapItem<T><code>, </code>null<code>, </code>T<code>, or </code>undefined` values.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="HeapItem.html" class="tsd-signature-type tsd-kind-class">HeapItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L179">src/data-structures/heap/heap.ts:179</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="toArray" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>to<wbr/>Array</span><a href="#toArray" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -379,7 +440,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L164">src/data-structures/heap/heap.ts:164</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L164">src/data-structures/heap/heap.ts:164</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="toArray.toArray-2"><span class="tsd-kind-call-signature">to<wbr/>Array</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><a href="#toArray.toArray-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>toArray</code> function returns an array of <code>HeapItem&lt;T&gt;</code> objects.</p>
@@ -393,7 +454,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L165">src/data-structures/heap/heap.ts:165</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L165">src/data-structures/heap/heap.ts:165</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="toArray.toArray-3"><span class="tsd-kind-call-signature">to<wbr/>Array</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">isItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="HeapItem.html" class="tsd-signature-type tsd-kind-class">HeapItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><a href="#toArray.toArray-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>toArray</code> function returns an array of <code>HeapItem&lt;T&gt;</code> objects.</p>
@@ -407,7 +468,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/d93895d/src/data-structures/heap/heap.ts#L166">src/data-structures/heap/heap.ts:166</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/6f86f71/src/data-structures/heap/heap.ts#L166">src/data-structures/heap/heap.ts:166</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -440,6 +501,7 @@ type.</p>
 <li><a href="#peek" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>peek</span></a></li>
 <li><a href="#peekLast" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>peek<wbr/>Last</span></a></li>
 <li><a href="#poll" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>poll</span></a></li>
+<li><a href="#sort" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sort</span></a></li>
 <li><a href="#toArray" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>to<wbr/>Array</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>data-<wbr/>structure-<wbr/>typed</span></a>
