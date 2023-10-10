@@ -997,7 +997,7 @@ parent property of the value to undefined.</p>
 <section class="tsd-panel tsd-member"><a id="add" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add</span><a href="#add" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="add.add-1"><span class="tsd-kind-call-signature">add</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">idOrNode</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">count</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#add.add-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="add.add-1"><span class="tsd-kind-call-signature">add</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">keyOrNode</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">count</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#add.add-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>add</code> function adds a new node to a binary search tree, maintaining the tree&#39;s properties and balancing if
 necessary.</p>
@@ -1006,8 +1006,8 @@ necessary.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">idOrNode</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>idOrNode</code> parameter can be either a <code>BinaryTreeNodeKey</code> or a <code>N</code> (which
+<h5><span class="tsd-kind-parameter">keyOrNode</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>keyOrNode</code> parameter can be either a <code>BinaryTreeNodeKey</code> or a <code>N</code> (which
 represents a <code>BinaryTreeNode</code>).</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
@@ -1049,7 +1049,7 @@ objects, or null values.</p>
 <li>
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>data</code> parameter is an optional array of values (<code>N[&#39;val&#39;][]</code>) that corresponds to
-the nodes being added. It is used when adding nodes using the <code>idOrNode</code> and <code>data</code> arguments in the <code>this.add()</code>
+the nodes being added. It is used when adding nodes using the <code>keyOrNode</code> and <code>data</code> arguments in the <code>this.add()</code>
 method. If provided, the <code>data</code> array should</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
