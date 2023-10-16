@@ -14,23 +14,23 @@
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">data-structure-typed</a></li>
 <li><a href="PriorityQueue.html">PriorityQueue</a></li></ul>
-<h1>Class PriorityQueue&lt;T&gt;</h1></div> 
+<h1>Class PriorityQueue&lt;E&gt;</h1></div> 
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">T</span></h4></li></ul></section> 
+<h4><span class="tsd-kind-type-parameter">E</span></h4></li></ul></section> 
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span>
+<li><a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span>
 <ul class="tsd-hierarchy">
 <li><span class="target">PriorityQueue</span>
 <ul class="tsd-hierarchy">
 <li><a href="MinPriorityQueue.html" class="tsd-signature-type tsd-kind-class">MinPriorityQueue</a></li>
 <li><a href="MaxPriorityQueue.html" class="tsd-signature-type tsd-kind-class">MaxPriorityQueue</a></li></ul></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/priority-queue/priority-queue.ts#L12">src/data-structures/priority-queue/priority-queue.ts:12</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/priority-queue/priority-queue.ts#L12">src/data-structures/priority-queue/priority-queue.ts:12</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -41,8 +41,13 @@
 <div class="tsd-index-list"><a href="PriorityQueue.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a>
 </div></section>
 <section class="tsd-index-section">
+<h3 class="tsd-index-heading">Properties</h3>
+<div class="tsd-index-list"><a href="PriorityQueue.html#nodes" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>nodes</span></a>
+</div></section>
+<section class="tsd-index-section">
 <h3 class="tsd-index-heading">Accessors</h3>
-<div class="tsd-index-list"><a href="PriorityQueue.html#size" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>size</span></a>
+<div class="tsd-index-list"><a href="PriorityQueue.html#leaf" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>leaf</span></a>
+<a href="PriorityQueue.html#size" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>size</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
@@ -55,7 +60,6 @@
 <a href="PriorityQueue.html#getNodes" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Nodes</span></a>
 <a href="PriorityQueue.html#has" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has</span></a>
 <a href="PriorityQueue.html#isEmpty" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Empty</span></a>
-<a href="PriorityQueue.html#leaf" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>leaf</span></a>
 <a href="PriorityQueue.html#peek" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>peek</span></a>
 <a href="PriorityQueue.html#poll" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>poll</span></a>
 <a href="PriorityQueue.html#refill" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>refill</span></a>
@@ -69,24 +73,45 @@
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_PriorityQueue"><span class="tsd-kind-constructor-signature">new <wbr/>Priority<wbr/>Queue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">comparator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PriorityQueue.html" class="tsd-signature-type tsd-kind-class">PriorityQueue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_PriorityQueue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_PriorityQueue"><span class="tsd-kind-constructor-signature">new <wbr/>Priority<wbr/>Queue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">comparator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PriorityQueue.html" class="tsd-signature-type tsd-kind-class">PriorityQueue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_PriorityQueue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">T</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">E</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">comparator</span>: <a href="../types/CompareFunction.html" class="tsd-signature-type tsd-kind-type-alias">CompareFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="PriorityQueue.html" class="tsd-signature-type tsd-kind-class">PriorityQueue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">comparator</span>: <a href="../types/CompareFunction.html" class="tsd-signature-type tsd-kind-type-alias">CompareFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="PriorityQueue.html" class="tsd-signature-type tsd-kind-class">PriorityQueue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="Heap.html">Heap</a>.<a href="Heap.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/priority-queue/priority-queue.ts#L13">src/data-structures/priority-queue/priority-queue.ts:13</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/priority-queue/priority-queue.ts#L13">src/data-structures/priority-queue/priority-queue.ts:13</a></li></ul></aside></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Properties</h2>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="nodes" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>nodes</span><a href="#nodes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">nodes</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div><aside class="tsd-sources">
+<p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#nodes">nodes</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L11">src/data-structures/heap/heap.ts:11</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="leaf" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>leaf</span><a href="#leaf" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature" id="leaf.leaf-1"><span class="tsd-signature-symbol">get</span> leaf<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Get the last element in the heap, which is not necessarily a leaf node.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4><p>The last element or null if the heap is empty.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from Heap.leaf</p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L119">src/data-structures/heap/heap.ts:119</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="size" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>size</span><a href="#size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -98,13 +123,13 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from Heap.size</p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L112">src/data-structures/heap/heap.ts:112</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L111">src/data-structures/heap/heap.ts:111</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="add" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add</span><a href="#add" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="add.add-1"><span class="tsd-kind-call-signature">add</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#add.add-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="add.add-1"><span class="tsd-kind-call-signature">add</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><a href="#add.add-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Insert an element into the heap and maintain the heap properties.</p>
 </div>
@@ -112,15 +137,15 @@
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type tsd-kind-type-parameter">T</span></h5>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h5>
 <div class="tsd-comment tsd-typography"><p>The element to be inserted.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#add">add</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L23">src/data-structures/heap/heap.ts:23</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L22">src/data-structures/heap/heap.ts:22</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="bubbleUp" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>bubble<wbr/>Up</span><a href="#bubbleUp" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -140,33 +165,36 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#bubbleUp">bubbleUp</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L51">src/data-structures/heap/heap.ts:51</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L50">src/data-structures/heap/heap.ts:50</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="clear" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>clear</span><a href="#clear" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="clear.clear-1"><span class="tsd-kind-call-signature">clear</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#clear.clear-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>Reset the nodes of the heap. Make the nodes empty.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#clear">clear</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L132">src/data-structures/heap/heap.ts:132</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L134">src/data-structures/heap/heap.ts:134</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="clone" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>clone</span><a href="#clone" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="clone.clone-1"><span class="tsd-kind-call-signature">clone</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#clone.clone-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="clone.clone-1"><span class="tsd-kind-call-signature">clone</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><a href="#clone.clone-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Clone the heap, creating a new heap with the same elements.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A new Heap instance containing the same elements.</p>
+<h4 class="tsd-returns-title">Returns <a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A new Heap instance containing the same elements.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#clone">clone</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L222">src/data-structures/heap/heap.ts:222</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L204">src/data-structures/heap/heap.ts:204</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="dfs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>dfs</span><a href="#dfs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="dfs.dfs-1"><span class="tsd-kind-call-signature">dfs</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">order</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span><a href="#dfs.dfs-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="dfs.dfs-1"><span class="tsd-kind-call-signature">dfs</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">order</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><a href="#dfs.dfs-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Depth-first search (DFS) method, different traversal orders can be selected。</p>
 </div>
@@ -178,12 +206,12 @@
 <div class="tsd-comment tsd-typography"><p>Traversal order parameter: &#39;in&#39; (in-order), &#39;pre&#39; (pre-order) or &#39;post&#39; (post-order).</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span></h4><p>An array containing elements traversed in the specified order.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>An array containing elements traversed in the specified order.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#dfs">dfs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L179">src/data-structures/heap/heap.ts:179</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L161">src/data-structures/heap/heap.ts:161</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="fix" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>fix</span><a href="#fix" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -195,16 +223,16 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#fix">fix</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L94">src/data-structures/heap/heap.ts:94</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L93">src/data-structures/heap/heap.ts:93</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getNodes" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Nodes</span><a href="#getNodes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-1"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-1"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#getNodes">getNodes</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L214">src/data-structures/heap/heap.ts:214</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L196">src/data-structures/heap/heap.ts:196</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="has" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has</span><a href="#has" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -216,7 +244,7 @@
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type tsd-kind-type-parameter">T</span></h5>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span></h5>
 <div class="tsd-comment tsd-typography"><p>the element to check.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
@@ -225,7 +253,7 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#has">has</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L146">src/data-structures/heap/heap.ts:146</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L152">src/data-structures/heap/heap.ts:152</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="isEmpty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Empty</span><a href="#isEmpty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -238,60 +266,51 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#isEmpty">isEmpty</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L128">src/data-structures/heap/heap.ts:128</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="leaf" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>leaf</span><a href="#leaf" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="leaf.leaf-1"><span class="tsd-kind-call-signature">leaf</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><a href="#leaf.leaf-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Get the last element in the heap, which is not necessarily a leaf node.</p>
-</div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span></h4><p>The last element or null if the heap is empty.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#leaf">leaf</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L120">src/data-structures/heap/heap.ts:120</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L127">src/data-structures/heap/heap.ts:127</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="peek" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>peek</span><a href="#peek" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="peek.peek-1"><span class="tsd-kind-call-signature">peek</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><a href="#peek.peek-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="peek.peek-1"><span class="tsd-kind-call-signature">peek</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><a href="#peek.peek-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Peek at the top element of the heap without removing it.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span></h4><p>The top element or null if the heap is empty.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4><p>The top element or null if the heap is empty.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#peek">peek</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L102">src/data-structures/heap/heap.ts:102</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L101">src/data-structures/heap/heap.ts:101</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="poll" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>poll</span><a href="#poll" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="poll.poll-1"><span class="tsd-kind-call-signature">poll</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><a href="#poll.poll-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="poll.poll-1"><span class="tsd-kind-call-signature">poll</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><a href="#poll.poll-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Remove and return the top element (smallest or largest element) from the heap.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span></h4><p>The top element or null if the heap is empty.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span></h4><p>The top element or null if the heap is empty.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#poll">poll</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L33">src/data-structures/heap/heap.ts:33</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L32">src/data-structures/heap/heap.ts:32</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="refill" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>refill</span><a href="#refill" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="refill.refill-1"><span class="tsd-kind-call-signature">refill</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">nodes</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#refill.refill-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Clear and add nodes of the heap</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">nodes</span>: <span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">nodes</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#refill">refill</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L136">src/data-structures/heap/heap.ts:136</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L142">src/data-structures/heap/heap.ts:142</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="sinkDown" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>sink<wbr/>Down</span><a href="#sinkDown" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -311,37 +330,37 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#sinkDown">sinkDown</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L70">src/data-structures/heap/heap.ts:70</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L69">src/data-structures/heap/heap.ts:69</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="sort" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sort</span><a href="#sort" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="sort.sort-1"><span class="tsd-kind-call-signature">sort</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span><a href="#sort.sort-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="sort.sort-1"><span class="tsd-kind-call-signature">sort</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><a href="#sort.sort-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Sort the elements in the heap and return them as an array.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span></h4><p>An array containing the elements sorted in ascending order.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>An array containing the elements sorted in ascending order.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#sort">sort</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L232">src/data-structures/heap/heap.ts:232</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L214">src/data-structures/heap/heap.ts:214</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="toArray" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>to<wbr/>Array</span><a href="#toArray" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="toArray.toArray-1"><span class="tsd-kind-call-signature">to<wbr/>Array</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span><a href="#toArray.toArray-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="toArray.toArray-1"><span class="tsd-kind-call-signature">to<wbr/>Array</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span><a href="#toArray.toArray-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Convert the heap to an array.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span></h4><p>An array containing the elements of the heap.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h4><p>An array containing the elements of the heap.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#toArray">toArray</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L210">src/data-structures/heap/heap.ts:210</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L192">src/data-structures/heap/heap.ts:192</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="heapify" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>heapify</span><a href="#heapify" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="heapify.heapify-1"><span class="tsd-kind-call-signature">heapify</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">nodes</span>, <span class="tsd-kind-parameter">comparator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#heapify.heapify-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="heapify.heapify-1"><span class="tsd-kind-call-signature">heapify</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">nodes</span>, <span class="tsd-kind-parameter">comparator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span><a href="#heapify.heapify-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Static method that creates a binary heap from an array of nodes and a comparison function.</p>
 </div>
@@ -349,24 +368,24 @@
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">T</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">E</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">nodes</span>: <span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">[]</span></h5>
+<h5><span class="tsd-kind-parameter">nodes</span>: <span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">[]</span></h5>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">comparator</span>: <a href="../types/CompareFunction.html" class="tsd-signature-type tsd-kind-type-alias">CompareFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<h5><span class="tsd-kind-parameter">comparator</span>: <a href="../types/CompareFunction.html" class="tsd-signature-type tsd-kind-type-alias">CompareFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
 <div class="tsd-comment tsd-typography"><p>Comparison function.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A new Heap instance.</p>
+<h4 class="tsd-returns-title">Returns <a href="Heap.html" class="tsd-signature-type tsd-kind-class">Heap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">E</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A new Heap instance.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="Heap.html">Heap</a>.<a href="Heap.html#heapify">heapify</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c6177ff/src/data-structures/heap/heap.ts#L248">src/data-structures/heap/heap.ts:248</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/1740b35/src/data-structures/heap/heap.ts#L230">src/data-structures/heap/heap.ts:230</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -387,6 +406,8 @@
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
+<li><a href="#nodes" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>nodes</span></a></li>
+<li><a href="#leaf" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>leaf</span></a></li>
 <li><a href="#size" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>size</span></a></li>
 <li><a href="#add" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add</span></a></li>
 <li><a href="#bubbleUp" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>bubble<wbr/>Up</span></a></li>
@@ -397,7 +418,6 @@
 <li><a href="#getNodes" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Nodes</span></a></li>
 <li><a href="#has" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has</span></a></li>
 <li><a href="#isEmpty" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Empty</span></a></li>
-<li><a href="#leaf" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>leaf</span></a></li>
 <li><a href="#peek" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>peek</span></a></li>
 <li><a href="#poll" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>poll</span></a></li>
 <li><a href="#refill" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>refill</span></a></li>
