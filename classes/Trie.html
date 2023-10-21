@@ -24,7 +24,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">Trie</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L54">src/data-structures/trie/trie.ts:54</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L54">src/data-structures/trie/trie.ts:54</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -47,6 +47,7 @@
 <h3 class="tsd-index-heading">Methods</h3>
 <div class="tsd-index-list"><a href="Trie.html#_caseProcess" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_case<wbr/>Process</span></a>
 <a href="Trie.html#add" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add</span></a>
+<a href="Trie.html#delete" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>delete</span></a>
 <a href="Trie.html#getHeight" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Height</span></a>
 <a href="Trie.html#getLongestCommonPrefix" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Longest<wbr/>Common<wbr/>Prefix</span></a>
 <a href="Trie.html#getWords" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Words</span></a>
@@ -54,7 +55,6 @@
 <a href="Trie.html#hasCommonPrefix" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Common<wbr/>Prefix</span></a>
 <a href="Trie.html#hasPrefix" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Prefix</span></a>
 <a href="Trie.html#hasPurePrefix" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Pure<wbr/>Prefix</span></a>
-<a href="Trie.html#remove" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
@@ -72,19 +72,19 @@
 <h5><span class="tsd-kind-parameter">caseSensitive</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="Trie.html" class="tsd-signature-type tsd-kind-class">Trie</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L55">src/data-structures/trie/trie.ts:55</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L55">src/data-structures/trie/trie.ts:55</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_caseSensitive" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>_case<wbr/>Sensitive</span><a href="#_caseSensitive" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_case<wbr/>Sensitive</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L75">src/data-structures/trie/trie.ts:75</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L75">src/data-structures/trie/trie.ts:75</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_root" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_root</span><a href="#_root" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_root</span><span class="tsd-signature-symbol">:</span> <a href="TrieNode.html" class="tsd-signature-type tsd-kind-class">TrieNode</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L65">src/data-structures/trie/trie.ts:65</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L65">src/data-structures/trie/trie.ts:65</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member"><a id="root" class="tsd-anchor"></a>
@@ -94,7 +94,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="TrieNode.html" class="tsd-signature-type tsd-kind-class">TrieNode</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L67">src/data-structures/trie/trie.ts:67</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L67">src/data-structures/trie/trie.ts:67</a></li></ul></aside></li>
 <li class="tsd-signature" id="root.root-2"><span class="tsd-signature-symbol">set</span> root<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">v</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
@@ -104,7 +104,7 @@
 <h5><span class="tsd-kind-parameter">v</span>: <a href="TrieNode.html" class="tsd-signature-type tsd-kind-class">TrieNode</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L71">src/data-structures/trie/trie.ts:71</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L71">src/data-structures/trie/trie.ts:71</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_caseProcess" class="tsd-anchor"></a>
@@ -119,7 +119,7 @@
 <h5><span class="tsd-kind-parameter">str</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L113">src/data-structures/trie/trie.ts:113</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L113">src/data-structures/trie/trie.ts:113</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="add" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add</span><a href="#add" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -139,7 +139,25 @@
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L82">src/data-structures/trie/trie.ts:82</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L82">src/data-structures/trie/trie.ts:82</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="delete" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>delete</span><a href="#delete" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="delete.delete-1"><span class="tsd-kind-call-signature">delete</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">word</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#delete.delete-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Remove a word from the Trie structure.
+@param{string} word - The word to delete.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">word</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>True if the word was successfully removed.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L125">src/data-structures/trie/trie.ts:125</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getHeight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Height</span><a href="#getHeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -147,7 +165,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L158">src/data-structures/trie/trie.ts:158</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L158">src/data-structures/trie/trie.ts:158</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getLongestCommonPrefix" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Longest<wbr/>Common<wbr/>Prefix</span><a href="#getLongestCommonPrefix" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -159,7 +177,7 @@
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L234">src/data-structures/trie/trie.ts:234</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L234">src/data-structures/trie/trie.ts:234</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getWords" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Words</span><a href="#getWords" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -185,7 +203,7 @@ trie. It is an optional parameter, so if no prefix is provided, it will default 
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L253">src/data-structures/trie/trie.ts:253</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L253">src/data-structures/trie/trie.ts:253</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="has" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has</span><a href="#has" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -205,7 +223,7 @@ trie. It is an optional parameter, so if no prefix is provided, it will default 
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L102">src/data-structures/trie/trie.ts:102</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L102">src/data-structures/trie/trie.ts:102</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="hasCommonPrefix" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has<wbr/>Common<wbr/>Prefix</span><a href="#hasCommonPrefix" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -225,7 +243,7 @@ trie. It is an optional parameter, so if no prefix is provided, it will default 
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L216">src/data-structures/trie/trie.ts:216</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L216">src/data-structures/trie/trie.ts:216</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="hasPrefix" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has<wbr/>Prefix</span><a href="#hasPrefix" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -245,7 +263,7 @@ trie. It is an optional parameter, so if no prefix is provided, it will default 
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L200">src/data-structures/trie/trie.ts:200</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L200">src/data-structures/trie/trie.ts:200</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="hasPurePrefix" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has<wbr/>Pure<wbr/>Prefix</span><a href="#hasPurePrefix" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -265,25 +283,7 @@ trie. It is an optional parameter, so if no prefix is provided, it will default 
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L184">src/data-structures/trie/trie.ts:184</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="remove" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>remove</span><a href="#remove" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="remove.remove-1"><span class="tsd-kind-call-signature">remove</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">word</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#remove.remove-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Remove a word from the Trie structure.
-@param{string} word - The word to remove.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">word</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>True if the word was successfully removed.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/39baccd/src/data-structures/trie/trie.ts#L125">src/data-structures/trie/trie.ts:125</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/trie/trie.ts#L184">src/data-structures/trie/trie.ts:184</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -309,14 +309,14 @@ trie. It is an optional parameter, so if no prefix is provided, it will default 
 <li><a href="#root" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>root</span></a></li>
 <li><a href="#_caseProcess" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_case<wbr/>Process</span></a></li>
 <li><a href="#add" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add</span></a></li>
+<li><a href="#delete" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>delete</span></a></li>
 <li><a href="#getHeight" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Height</span></a></li>
 <li><a href="#getLongestCommonPrefix" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Longest<wbr/>Common<wbr/>Prefix</span></a></li>
 <li><a href="#getWords" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Words</span></a></li>
 <li><a href="#has" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has</span></a></li>
 <li><a href="#hasCommonPrefix" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Common<wbr/>Prefix</span></a></li>
 <li><a href="#hasPrefix" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Prefix</span></a></li>
-<li><a href="#hasPurePrefix" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Pure<wbr/>Prefix</span></a></li>
-<li><a href="#remove" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove</span></a></li></ul></div></details></div>
+<li><a href="#hasPurePrefix" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>has<wbr/>Pure<wbr/>Prefix</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>data-structure-typed</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
