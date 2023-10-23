@@ -14,14 +14,24 @@
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">data-structure-typed</a></li>
 <li><a href="BinaryTreeNode.html">BinaryTreeNode</a></li></ul>
-<h1>Class BinaryTreeNode&lt;V, FAMILY&gt;</h1></div> 
+<h1>Class BinaryTreeNode&lt;V, FAMILY&gt;</h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography"><p>Represents a node in a binary tree.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></section> 
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">V</span> = <span class="tsd-signature-type">any</span></h4></li>
+<h4><span class="tsd-kind-type-parameter">V</span> = <span class="tsd-signature-type">any</span></h4>
+<div class="tsd-comment tsd-typography"><p>The type of the node&#39;s value.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h4><span class="tsd-kind-type-parameter">FAMILY</span><span class="tsd-signature-symbol"> extends </span><a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span><span class="tsd-signature-symbol">&gt;</span> = <a href="../types/BinaryTreeNodeNested.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeNodeNested</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section> 
+<h4><span class="tsd-kind-type-parameter">FAMILY</span><span class="tsd-signature-symbol"> extends </span><a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span><span class="tsd-signature-symbol">&gt;</span> = <a href="../types/BinaryTreeNodeNested.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeNodeNested</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<div class="tsd-comment tsd-typography"><p>The type of the node&#39;s family, defaults to BinaryTreeNodeNested.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></section> 
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
@@ -29,7 +39,7 @@
 <ul class="tsd-hierarchy">
 <li><a href="BSTNode.html" class="tsd-signature-type tsd-kind-class">BSTNode</a></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L28">src/data-structures/binary-tree/binary-tree.ts:28</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L28">src/data-structures/binary-tree/binary-tree.ts:28</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -60,7 +70,7 @@
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="constructor.new_BinaryTreeNode"><span class="tsd-kind-constructor-signature">new <wbr/>Binary<wbr/>Tree<wbr/>Node</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">key</span>, <span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_BinaryTreeNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The constructor function initializes a BinaryTreeNode object with a key and an optional value.</p>
+<div class="tsd-comment tsd-typography"><p>Constructs a BinaryTreeNode instance.</p>
 </div>
 <section class="tsd-panel">
 <h4>Type Parameters</h4>
@@ -74,47 +84,60 @@
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">key</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>key</code> parameter is of type <code>BinaryTreeNodeKey</code> and represents the unique identifier
-of the binary tree node. It is used to distinguish one node from another in the binary tree.</p>
+<div class="tsd-comment tsd-typography"><p>The key of the node.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
-<div class="tsd-comment tsd-typography"><p>The &quot;val&quot; parameter is an optional parameter of type V. It represents the value that will be
-stored in the binary tree node. If no value is provided, it will be set to undefined.</p>
+<div class="tsd-comment tsd-typography"><p>The value of the node (optional).</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L36">src/data-structures/binary-tree/binary-tree.ts:36</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L34">src/data-structures/binary-tree/binary-tree.ts:34</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_left" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_left</span><a href="#_left" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_left</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">_left</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></div>
+<div class="tsd-comment tsd-typography"><p>The left child of the node.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L45">src/data-structures/binary-tree/binary-tree.ts:45</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L55">src/data-structures/binary-tree/binary-tree.ts:55</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_right" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_right</span><a href="#_right" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_right</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">_right</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></div>
+<div class="tsd-comment tsd-typography"><p>The right child of the node.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L58">src/data-structures/binary-tree/binary-tree.ts:58</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L80">src/data-structures/binary-tree/binary-tree.ts:80</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="key" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>key</span><a href="#key" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">key</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">key</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-comment tsd-typography"><p>The key of the node.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L41">src/data-structures/binary-tree/binary-tree.ts:41</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L43">src/data-structures/binary-tree/binary-tree.ts:43</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="parent" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>parent</span><a href="#parent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">parent</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">parent</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></div>
+<div class="tsd-comment tsd-typography"><p>The parent node of this node.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L71">src/data-structures/binary-tree/binary-tree.ts:71</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L105">src/data-structures/binary-tree/binary-tree.ts:105</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="val" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>val</span><a href="#val" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">V</span></div>
+<div class="tsd-comment tsd-typography"><p>The value of the node, if provided.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L43">src/data-structures/binary-tree/binary-tree.ts:43</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L49">src/data-structures/binary-tree/binary-tree.ts:49</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member"><a id="familyPosition" class="tsd-anchor"></a>
@@ -122,49 +145,69 @@ stored in the binary tree node. If no value is provided, it will be set to undef
 <ul class="tsd-signatures">
 <li class="tsd-signature" id="familyPosition.familyPosition-1"><span class="tsd-signature-symbol">get</span> familyPosition<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/FamilyPosition.html" class="tsd-signature-type tsd-kind-enum">FamilyPosition</a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function determines the position of a node in a family tree structure.</p>
+<div class="tsd-comment tsd-typography"><p>Get the family position of the node within the tree.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <a href="../enums/FamilyPosition.html" class="tsd-signature-type tsd-kind-enum">FamilyPosition</a></h4><p>a value of type <code>FamilyPosition</code>.</p>
+<h4 class="tsd-returns-title">Returns <a href="../enums/FamilyPosition.html" class="tsd-signature-type tsd-kind-enum">FamilyPosition</a></h4><p>The family position of the node.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L77">src/data-structures/binary-tree/binary-tree.ts:77</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L111">src/data-structures/binary-tree/binary-tree.ts:111</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="left" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>left</span><a href="#left" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature" id="left.left-1"><span class="tsd-signature-symbol">get</span> left<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>Get the left child of the node.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></h4><p>The left child of the node.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L47">src/data-structures/binary-tree/binary-tree.ts:47</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L61">src/data-structures/binary-tree/binary-tree.ts:61</a></li></ul></aside></li>
 <li class="tsd-signature" id="left.left-2"><span class="tsd-signature-symbol">set</span> left<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">v</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Set the left child of the node.</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">v</span>: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">v</span>: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></h5>
+<div class="tsd-comment tsd-typography"><p>The left child to set.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L51">src/data-structures/binary-tree/binary-tree.ts:51</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L69">src/data-structures/binary-tree/binary-tree.ts:69</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="right" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>right</span><a href="#right" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature" id="right.right-1"><span class="tsd-signature-symbol">get</span> right<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>Get the right child of the node.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></h4><p>The right child of the node.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L60">src/data-structures/binary-tree/binary-tree.ts:60</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L86">src/data-structures/binary-tree/binary-tree.ts:86</a></li></ul></aside></li>
 <li class="tsd-signature" id="right.right-2"><span class="tsd-signature-symbol">set</span> right<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">v</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Set the right child of the node.</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">v</span>: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">v</span>: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">FAMILY</span></h5>
+<div class="tsd-comment tsd-typography"><p>The right child to set.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f05793e/src/data-structures/binary-tree/binary-tree.ts#L64">src/data-structures/binary-tree/binary-tree.ts:64</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/44c29d8/src/data-structures/binary-tree/binary-tree.ts#L94">src/data-structures/binary-tree/binary-tree.ts:94</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -198,7 +241,7 @@ stored in the binary tree node. If no value is provided, it will be set to undef
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
 <li><a href="../enums/CP.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>CP</a></li>
 <li><a href="../enums/FamilyPosition.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>FamilyPosition</a></li>
-<li><a href="../enums/LoopType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>LoopType</a></li>
+<li><a href="../enums/IterationType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>IterationType</a></li>
 <li><a href="../enums/RBColor.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>RBColor</a></li>
 <li><a href="../enums/TopologicalProperty.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>TopologicalProperty</a></li>
 <li><a href="AVLTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AVLTree</a></li>
