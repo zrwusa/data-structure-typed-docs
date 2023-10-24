@@ -15,22 +15,12 @@
 <li><a href="../modules.html">data-structure-typed</a></li>
 <li><a href="BinaryIndexedTree.html">BinaryIndexedTree</a></li></ul>
 <h1>Class BinaryIndexedTree</h1></div>
-<section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>data-structure-typed</p>
-</div>
-<div class="tsd-comment tsd-typography">
-<h4>Author</h4><p>Tyler Zeng</p>
-
-<h4>Copyright</h4><p>Copyright (c) 2022 Tyler Zeng <a href="mailto:zrwusa@gmail.com">zrwusa@gmail.com</a></p>
-
-<h4>License</h4><p>MIT License</p>
-</div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
 <li><span class="target">BinaryIndexedTree</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L8">src/data-structures/binary-tree/binary-indexed-tree.ts:8</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L10">src/data-structures/binary-tree/binary-indexed-tree.ts:10</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -42,164 +32,537 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="BinaryIndexedTree.html#_sumTree" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_sum<wbr/>Tree</span></a>
+<div class="tsd-index-list"><a href="BinaryIndexedTree.html#_freq" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_freq</span></a>
+<a href="BinaryIndexedTree.html#_freqMap" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_freq<wbr/>Map</span></a>
+<a href="BinaryIndexedTree.html#_max" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_max</span></a>
+<a href="BinaryIndexedTree.html#_msb" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_msb</span></a>
+<a href="BinaryIndexedTree.html#_negativeCount" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_negative<wbr/>Count</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Accessors</h3>
-<div class="tsd-index-list"><a href="BinaryIndexedTree.html#sumTree" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>sum<wbr/>Tree</span></a>
+<div class="tsd-index-list"><a href="BinaryIndexedTree.html#freq" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>freq</span></a>
+<a href="BinaryIndexedTree.html#freqMap" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>freq<wbr/>Map</span></a>
+<a href="BinaryIndexedTree.html#max" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>max</span></a>
+<a href="BinaryIndexedTree.html#msb" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>msb</span></a>
+<a href="BinaryIndexedTree.html#negativeCount" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>negative<wbr/>Count</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="BinaryIndexedTree.html#_setSumTree" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Sum<wbr/>Tree</span></a>
-<a href="BinaryIndexedTree.html#getPrefixSum" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Prefix<wbr/>Sum</span></a>
-<a href="BinaryIndexedTree.html#getRangeSum" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Range<wbr/>Sum</span></a>
+<div class="tsd-index-list"><a href="BinaryIndexedTree.html#_binarySearch" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_binary<wbr/>Search</span></a>
+<a href="BinaryIndexedTree.html#_checkIndex" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_check<wbr/>Index</span></a>
+<a href="BinaryIndexedTree.html#_getFrequency" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Frequency</span></a>
+<a href="BinaryIndexedTree.html#_read" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_read</span></a>
+<a href="BinaryIndexedTree.html#_readSingle" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_read<wbr/>Single</span></a>
+<a href="BinaryIndexedTree.html#_update" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_update</span></a>
+<a href="BinaryIndexedTree.html#_updateFrequency" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_update<wbr/>Frequency</span></a>
+<a href="BinaryIndexedTree.html#_updateNegativeCount" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_update<wbr/>Negative<wbr/>Count</span></a>
+<a href="BinaryIndexedTree.html#_writeSingle" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_write<wbr/>Single</span></a>
+<a href="BinaryIndexedTree.html#lowerBound" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lower<wbr/>Bound</span></a>
+<a href="BinaryIndexedTree.html#read" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read</span></a>
+<a href="BinaryIndexedTree.html#readSingle" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read<wbr/>Single</span></a>
 <a href="BinaryIndexedTree.html#update" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>update</span></a>
-<a href="BinaryIndexedTree.html#lowBit" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>low<wbr/>Bit</span></a>
+<a href="BinaryIndexedTree.html#upperBound" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>upper<wbr/>Bound</span></a>
+<a href="BinaryIndexedTree.html#writeSingle" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>write<wbr/>Single</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_BinaryIndexedTree"><span class="tsd-kind-constructor-signature">new <wbr/>Binary<wbr/>Indexed<wbr/>Tree</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">n</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="BinaryIndexedTree.html" class="tsd-signature-type tsd-kind-class">BinaryIndexedTree</a><a href="#constructor.new_BinaryIndexedTree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_BinaryIndexedTree"><span class="tsd-kind-constructor-signature">new <wbr/>Binary<wbr/>Indexed<wbr/>Tree</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">-</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="BinaryIndexedTree.html" class="tsd-signature-type tsd-kind-class">BinaryIndexedTree</a><a href="#constructor.new_BinaryIndexedTree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The constructor initializes an array with a specified length and fills it with zeros.</p>
+<div class="tsd-comment tsd-typography"><p>The constructor initializes the properties of an object, including default frequency, maximum
+value, a freqMap data structure, the most significant bit, and the count of negative frequencies.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">n</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>n</code> represents the size of the array that will be used to store the sum tree. The
-sum tree is a binary tree data structure used to efficiently calculate the sum of a range of elements in an array.
-The size of the sum tree array is <code>n + 1</code> because</p>
+<h5><span class="tsd-kind-parameter">-</span>: <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">frequency</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">max</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></h5>
+<div class="tsd-comment tsd-typography"><p><code>frequency</code>: The default frequency value. It is optional and has a default
+value of 0.</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<div class="tsd-comment tsd-typography"></div>
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">frequency</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">max</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5></li></ul></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="BinaryIndexedTree.html" class="tsd-signature-type tsd-kind-class">BinaryIndexedTree</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L15">src/data-structures/binary-tree/binary-indexed-tree.ts:15</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L20">src/data-structures/binary-tree/binary-indexed-tree.ts:20</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="_sumTree" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_sum<wbr/>Tree</span><a href="#_sumTree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_sum<wbr/>Tree</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_freq" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>_freq</span><a href="#_freq" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_freq</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L19">src/data-structures/binary-tree/binary-indexed-tree.ts:19</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L11">src/data-structures/binary-tree/binary-indexed-tree.ts:11</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_freqMap" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_freq<wbr/>Map</span><a href="#_freqMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_freq<wbr/>Map</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L28">src/data-structures/binary-tree/binary-indexed-tree.ts:28</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_max" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>_max</span><a href="#_max" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_max</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L12">src/data-structures/binary-tree/binary-indexed-tree.ts:12</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_msb" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_msb</span><a href="#_msb" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_msb</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L38">src/data-structures/binary-tree/binary-indexed-tree.ts:38</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_negativeCount" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_negative<wbr/>Count</span><a href="#_negativeCount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_negative<wbr/>Count</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L48">src/data-structures/binary-tree/binary-indexed-tree.ts:48</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
-<section class="tsd-panel tsd-member"><a id="sumTree" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>sum<wbr/>Tree</span><a href="#sumTree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<section class="tsd-panel tsd-member"><a id="freq" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>freq</span><a href="#freq" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature" id="sumTree.sumTree-1"><span class="tsd-signature-symbol">get</span> sumTree<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+<li class="tsd-signature" id="freq.freq-1"><span class="tsd-signature-symbol">get</span> freq<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L21">src/data-structures/binary-tree/binary-indexed-tree.ts:21</a></li></ul></aside></li></ul></section></section>
-<section class="tsd-panel-group tsd-member-group">
-<h2>Methods</h2>
-<section class="tsd-panel tsd-member tsd-is-protected"><a id="_setSumTree" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_set<wbr/>Sum<wbr/>Tree</span><a href="#_setSumTree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-protected">
-<li class="tsd-signature tsd-anchor-link" id="_setSumTree._setSumTree-1"><span class="tsd-kind-call-signature">_set<wbr/>Sum<wbr/>Tree</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_setSumTree._setSumTree-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L58">src/data-structures/binary-tree/binary-indexed-tree.ts:58</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="freqMap" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>freq<wbr/>Map</span><a href="#freqMap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="freqMap.freqMap-1"><span class="tsd-signature-symbol">get</span> freqMap<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L30">src/data-structures/binary-tree/binary-indexed-tree.ts:30</a></li></ul></aside></li>
+<li class="tsd-signature" id="freqMap.freqMap-2"><span class="tsd-signature-symbol">set</span> freqMap<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L73">src/data-structures/binary-tree/binary-indexed-tree.ts:73</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="getPrefixSum" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Prefix<wbr/>Sum</span><a href="#getPrefixSum" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L34">src/data-structures/binary-tree/binary-indexed-tree.ts:34</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="max" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>max</span><a href="#max" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getPrefixSum.getPrefixSum-1"><span class="tsd-kind-call-signature">get<wbr/>Prefix<wbr/>Sum</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">i</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#getPrefixSum.getPrefixSum-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature" id="max.max-1"><span class="tsd-signature-symbol">get</span> max<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function calculates the prefix sum of an array using a binary indexed tree.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">i</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter &quot;i&quot; in the function &quot;getPrefixSum&quot; represents the index of the element in the
-array for which we want to calculate the prefix sum.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The function <code>getPrefixSum</code> returns the prefix sum of the elements in the binary indexed tree up to index
-<code>i</code>.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L51">src/data-structures/binary-tree/binary-indexed-tree.ts:51</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="getRangeSum" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Range<wbr/>Sum</span><a href="#getRangeSum" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L62">src/data-structures/binary-tree/binary-indexed-tree.ts:62</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="msb" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>msb</span><a href="#msb" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getRangeSum.getRangeSum-1"><span class="tsd-kind-call-signature">get<wbr/>Range<wbr/>Sum</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">start</span>, <span class="tsd-kind-parameter">end</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#getRangeSum.getRangeSum-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature" id="msb.msb-1"><span class="tsd-signature-symbol">get</span> msb<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getRangeSum</code> calculates the sum of a range of numbers in an array.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L40">src/data-structures/binary-tree/binary-indexed-tree.ts:40</a></li></ul></aside></li>
+<li class="tsd-signature" id="msb.msb-2"><span class="tsd-signature-symbol">set</span> msb<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L44">src/data-structures/binary-tree/binary-indexed-tree.ts:44</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="negativeCount" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>negative<wbr/>Count</span><a href="#negativeCount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="negativeCount.negativeCount-1"><span class="tsd-signature-symbol">get</span> negativeCount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L50">src/data-structures/binary-tree/binary-indexed-tree.ts:50</a></li></ul></aside></li>
+<li class="tsd-signature" id="negativeCount.negativeCount-2"><span class="tsd-signature-symbol">set</span> negativeCount<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L54">src/data-structures/binary-tree/binary-indexed-tree.ts:54</a></li></ul></aside></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Methods</h2>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_binarySearch" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_binary<wbr/>Search</span><a href="#_binarySearch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_binarySearch._binarySearch-1"><span class="tsd-kind-call-signature">_binary<wbr/>Search</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">sum</span>, <span class="tsd-kind-parameter">before</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#_binarySearch._binarySearch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function <code>_binarySearch</code> performs a binary search to find the largest number that satisfies a given
+condition.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">start</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The start parameter is the starting index of the range for which we want to calculate the
-sum.</p>
+<h5><span class="tsd-kind-parameter">sum</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The sum parameter is a number that represents the target sum value.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">end</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The &quot;end&quot; parameter represents the ending index of the range for which we want to calculate
-the sum.</p>
+<h5><span class="tsd-kind-parameter">before</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">x</span>, <span class="tsd-kind-parameter">y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>before</code> parameter is a function that takes two numbers <code>x</code> and <code>y</code> as
+arguments and returns a boolean value. It is used to determine if <code>x</code> is less than or equal to
+<code>y</code>. The purpose of this function is to compare two numbers and determine their order.</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>the sum of the elements in the range specified by the start and end indices.</p>
+<div class="tsd-comment tsd-typography"></div>
+<ul class="tsd-parameters">
+<li class="tsd-parameter-signature">
+<ul class="tsd-signatures">
+<li class="tsd-signature"><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">x</span>, <span class="tsd-kind-parameter">y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">x</span>: <span class="tsd-signature-type">number</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">y</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4></li></ul></li></ul></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>the value of the variable &quot;left&quot;.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L68">src/data-structures/binary-tree/binary-indexed-tree.ts:68</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="update" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>update</span><a href="#update" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="update.update-1"><span class="tsd-kind-call-signature">update</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">i</span>, <span class="tsd-kind-parameter">delta</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#update.update-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L280">src/data-structures/binary-tree/binary-indexed-tree.ts:280</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_checkIndex" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_check<wbr/>Index</span><a href="#_checkIndex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_checkIndex._checkIndex-1"><span class="tsd-kind-call-signature">_check<wbr/>Index</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_checkIndex._checkIndex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The update function updates the values in a binary indexed tree by adding a delta value to the specified index and
-its ancestors.</p>
+<div class="tsd-comment tsd-typography"><p>The function checks if the given index is valid and within the range.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">i</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The parameter <code>i</code> represents the index of the element in the <code>_sumTree</code> array that needs to be
-updated.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">delta</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The &quot;delta&quot; parameter represents the change in value that needs to be added to the element
-at index &quot;i&quot; in the &quot;_sumTree&quot; array.</p>
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The parameter &quot;index&quot; is of type number and represents the index value
+that needs to be checked.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L37">src/data-structures/binary-tree/binary-indexed-tree.ts:37</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="lowBit" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>low<wbr/>Bit</span><a href="#lowBit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="lowBit.lowBit-1"><span class="tsd-kind-call-signature">low<wbr/>Bit</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">x</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#lowBit.lowBit-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L177">src/data-structures/binary-tree/binary-indexed-tree.ts:177</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_getFrequency" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_get<wbr/>Frequency</span><a href="#_getFrequency" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_getFrequency._getFrequency-1"><span class="tsd-kind-call-signature">_get<wbr/>Frequency</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#_getFrequency._getFrequency-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function returns the value of a specific index in a freqMap data structure, or a default value if
+the index is not found.</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">x</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>index</code> parameter is a number that represents the index of a node in a
+freqMap data structure.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>a number.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L25">src/data-structures/binary-tree/binary-indexed-tree.ts:25</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L153">src/data-structures/binary-tree/binary-indexed-tree.ts:153</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_read" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_read</span><a href="#_read" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_read._read-1"><span class="tsd-kind-call-signature">_read</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">count</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#_read._read-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The <code>_read</code> function calculates the sum of values in a binary freqMap up to a given count.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">count</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>count</code> parameter is a number that represents the number of elements
+to read from the freqMap.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>the sum of the values obtained from calling the <code>_getFrequency</code> method for each index in the
+range from <code>count</code> to 1.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L260">src/data-structures/binary-tree/binary-indexed-tree.ts:260</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_readSingle" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_read<wbr/>Single</span><a href="#_readSingle" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_readSingle._readSingle-1"><span class="tsd-kind-call-signature">_read<wbr/>Single</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#_readSingle._readSingle-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function calculates the sum of elements in an array up to a given index using a binary indexed
+freqMap.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>index</code> parameter is a number that represents the index of an element in a
+data structure.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>a number.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L193">src/data-structures/binary-tree/binary-indexed-tree.ts:193</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_update" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_update</span><a href="#_update" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_update._update-1"><span class="tsd-kind-call-signature">_update</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">delta</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_update._update-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The <code>_update</code> function updates the values in a binary indexed freqMap starting from a given index and
+propagating the changes to its parent nodes.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>index</code> parameter is a number that represents the index of the element in
+the data structure that needs to be updated.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">delta</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>delta</code> parameter represents the change in value that needs to be
+applied to the elements in the data structure.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L229">src/data-structures/binary-tree/binary-indexed-tree.ts:229</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_updateFrequency" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_update<wbr/>Frequency</span><a href="#_updateFrequency" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_updateFrequency._updateFrequency-1"><span class="tsd-kind-call-signature">_update<wbr/>Frequency</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">delta</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_updateFrequency._updateFrequency-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function _updateFrequency adds a delta value to the element at the specified index in the freqMap array.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The index parameter is a number that represents the index of the freqMap
+element that needs to be updated.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">delta</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>delta</code> parameter represents the change in value that needs to be
+added to the freqMap at the specified <code>index</code>.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L168">src/data-structures/binary-tree/binary-indexed-tree.ts:168</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_updateNegativeCount" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_update<wbr/>Negative<wbr/>Count</span><a href="#_updateNegativeCount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_updateNegativeCount._updateNegativeCount-1"><span class="tsd-kind-call-signature">_update<wbr/>Negative<wbr/>Count</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">freqCur</span>, <span class="tsd-kind-parameter">freqNew</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_updateNegativeCount._updateNegativeCount-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function <code>_updateNegativeCount</code> updates a counter based on changes in frequency values.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">freqCur</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The current frequency value.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">freqNew</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The freqNew parameter represents the new frequency value.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L213">src/data-structures/binary-tree/binary-indexed-tree.ts:213</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_writeSingle" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_write<wbr/>Single</span><a href="#_writeSingle" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_writeSingle._writeSingle-1"><span class="tsd-kind-call-signature">_write<wbr/>Single</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">freq</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_writeSingle._writeSingle-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The <code>_writeSingle</code> function updates the frequency at a specific index and triggers a callback if
+the frequency has changed.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>index</code> parameter is a number that represents the index of the element
+being modified or accessed.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">freq</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>freq</code> parameter represents the new frequency value that needs to be
+written to the specified index <code>index</code>.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L246">src/data-structures/binary-tree/binary-indexed-tree.ts:246</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="lowerBound" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>lower<wbr/>Bound</span><a href="#lowerBound" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="lowerBound.lowerBound-1"><span class="tsd-kind-call-signature">lower<wbr/>Bound</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">sum</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#lowerBound.lowerBound-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function returns the lower bound of a non-descending sequence that sums up to a given number.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">sum</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>sum</code> parameter is a number that represents the target sum that we want
+to find in the sequence.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The lowerBound function is returning a number.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L125">src/data-structures/binary-tree/binary-indexed-tree.ts:125</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="read" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>read</span><a href="#read" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="read.read-1"><span class="tsd-kind-call-signature">read</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">count</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#read.read-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The read function takes a count parameter, checks if it is an integer, and returns the result of
+calling the _read function with the count parameter clamped between 0 and the maximum value.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">count</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>count</code> parameter is a number that represents the number of items to
+read.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>a number.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L112">src/data-structures/binary-tree/binary-indexed-tree.ts:112</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="readSingle" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>read<wbr/>Single</span><a href="#readSingle" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="readSingle.readSingle-1"><span class="tsd-kind-call-signature">read<wbr/>Single</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#readSingle.readSingle-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function &quot;readSingle&quot; reads a single number from a specified index.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>index</code> parameter is a number that represents the index of an element in a
+collection or array.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>a number.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L72">src/data-structures/binary-tree/binary-indexed-tree.ts:72</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="update" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>update</span><a href="#update" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="update.update-1"><span class="tsd-kind-call-signature">update</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">position</span>, <span class="tsd-kind-parameter">change</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#update.update-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The &quot;update&quot; function updates the value at a given index by adding a delta and triggers a callback
+to notify of the change.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">position</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>index</code> parameter represents the index of the element that needs to be
+updated in the data structure.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">change</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The &quot;delta&quot; parameter represents the change in value that needs to be
+applied to the frequency at the specified index.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L85">src/data-structures/binary-tree/binary-indexed-tree.ts:85</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="upperBound" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>upper<wbr/>Bound</span><a href="#upperBound" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="upperBound.upperBound-1"><span class="tsd-kind-call-signature">upper<wbr/>Bound</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">sum</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#upperBound.upperBound-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The upperBound function returns the index of the first element in a sequence that is greater than
+or equal to a given sum.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">sum</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The &quot;sum&quot; parameter is a number that represents the target sum that we want
+to find in the sequence.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The upperBound function is returning a number.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L139">src/data-structures/binary-tree/binary-indexed-tree.ts:139</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="writeSingle" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>write<wbr/>Single</span><a href="#writeSingle" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="writeSingle.writeSingle-1"><span class="tsd-kind-call-signature">write<wbr/>Single</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span>, <span class="tsd-kind-parameter">freq</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#writeSingle.writeSingle-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The function &quot;writeSingle&quot; checks the index and writes a single value with a given frequency.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>index</code> parameter is a number that represents the index of an element. It
+is used to identify the specific element that needs to be written.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">freq</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>freq</code> parameter represents the frequency value that needs to be
+written.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/74d4294/src/data-structures/binary-tree/binary-indexed-tree.ts#L100">src/data-structures/binary-tree/binary-indexed-tree.ts:100</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -220,13 +583,31 @@ at index &quot;i&quot; in the &quot;_sumTree&quot; array.</p>
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
-<li><a href="#_sumTree" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_sum<wbr/>Tree</span></a></li>
-<li><a href="#sumTree" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>sum<wbr/>Tree</span></a></li>
-<li><a href="#_setSumTree" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Sum<wbr/>Tree</span></a></li>
-<li><a href="#getPrefixSum" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Prefix<wbr/>Sum</span></a></li>
-<li><a href="#getRangeSum" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Range<wbr/>Sum</span></a></li>
+<li><a href="#_freq" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_freq</span></a></li>
+<li><a href="#_freqMap" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_freq<wbr/>Map</span></a></li>
+<li><a href="#_max" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_max</span></a></li>
+<li><a href="#_msb" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_msb</span></a></li>
+<li><a href="#_negativeCount" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_negative<wbr/>Count</span></a></li>
+<li><a href="#freq" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>freq</span></a></li>
+<li><a href="#freqMap" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>freq<wbr/>Map</span></a></li>
+<li><a href="#max" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>max</span></a></li>
+<li><a href="#msb" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>msb</span></a></li>
+<li><a href="#negativeCount" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>negative<wbr/>Count</span></a></li>
+<li><a href="#_binarySearch" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_binary<wbr/>Search</span></a></li>
+<li><a href="#_checkIndex" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_check<wbr/>Index</span></a></li>
+<li><a href="#_getFrequency" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Frequency</span></a></li>
+<li><a href="#_read" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_read</span></a></li>
+<li><a href="#_readSingle" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_read<wbr/>Single</span></a></li>
+<li><a href="#_update" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_update</span></a></li>
+<li><a href="#_updateFrequency" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_update<wbr/>Frequency</span></a></li>
+<li><a href="#_updateNegativeCount" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_update<wbr/>Negative<wbr/>Count</span></a></li>
+<li><a href="#_writeSingle" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_write<wbr/>Single</span></a></li>
+<li><a href="#lowerBound" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lower<wbr/>Bound</span></a></li>
+<li><a href="#read" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read</span></a></li>
+<li><a href="#readSingle" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read<wbr/>Single</span></a></li>
 <li><a href="#update" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>update</span></a></li>
-<li><a href="#lowBit" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>low<wbr/>Bit</span></a></li></ul></div></details></div>
+<li><a href="#upperBound" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>upper<wbr/>Bound</span></a></li>
+<li><a href="#writeSingle" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>write<wbr/>Single</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>data-structure-typed</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
