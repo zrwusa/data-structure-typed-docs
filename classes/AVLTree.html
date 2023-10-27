@@ -25,7 +25,7 @@
 <li>
 <h4><span class="tsd-kind-type-parameter">V</span> = <span class="tsd-signature-type">any</span></h4></li>
 <li>
-<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a></h4>
+<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><a href="../types/AVLTreeNodeNested.html" class="tsd-signature-type tsd-kind-type-alias">AVLTreeNodeNested</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"><p>The type of the binary tree&#39;s nodes.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></section> 
@@ -101,6 +101,7 @@
 <a href="AVLTree.html#isSubtreeBST" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>SubtreeBST</span></a>
 <a href="AVLTree.html#lastKey" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>last<wbr/>Key</span></a>
 <a href="AVLTree.html#lesserOrGreaterTraverse" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lesser<wbr/>Or<wbr/>Greater<wbr/>Traverse</span></a>
+<a href="AVLTree.html#listLevels" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Levels</span></a>
 <a href="AVLTree.html#morris" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>morris</span></a>
 <a href="AVLTree.html#perfectlyBalance" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>perfectly<wbr/>Balance</span></a>
 <a href="AVLTree.html#refill" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>refill</span></a>
@@ -121,7 +122,7 @@
 <li>
 <h4><span class="tsd-kind-type-parameter">V</span> = <span class="tsd-signature-type">any</span></h4></li>
 <li>
-<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../types/AVLTreeNodeNested.html" class="tsd-signature-type tsd-kind-type-alias">AVLTreeNodeNested</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="AVLTreeNode.html" class="tsd-signature-type tsd-kind-class">AVLTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><a href="../types/AVLTreeNodeNested.html" class="tsd-signature-type tsd-kind-type-alias">AVLTreeNodeNested</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
@@ -136,7 +137,7 @@ options.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="BST.html">BST</a>.<a href="BST.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L32">src/data-structures/binary-tree/avl-tree.ts:32</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L31">src/data-structures/binary-tree/avl-tree.ts:31</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_comparator" class="tsd-anchor"></a>
@@ -157,7 +158,7 @@ This is because the purpose of the Morris algorithm is to save space rather than
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#_defaultCallbackByKey">_defaultCallbackByKey</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1125">src/data-structures/binary-tree/binary-tree.ts:1125</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1180">src/data-structures/binary-tree/binary-tree.ts:1180</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="iterationType" class="tsd-anchor"></a>
@@ -245,7 +246,7 @@ If the parent node is null, the function also returns undefined.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#_addTo">_addTo</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1138">src/data-structures/binary-tree/binary-tree.ts:1138</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1193">src/data-structures/binary-tree/binary-tree.ts:1193</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_balanceFactor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_balance<wbr/>Factor</span><a href="#_balanceFactor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -266,7 +267,7 @@ height of the left subtree from the height of the right subtree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L123">src/data-structures/binary-tree/avl-tree.ts:123</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L122">src/data-structures/binary-tree/avl-tree.ts:122</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_balanceLL" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_balanceLL</span><a href="#_balanceLL" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -285,7 +286,7 @@ height of the left subtree from the height of the right subtree.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L196">src/data-structures/binary-tree/avl-tree.ts:196</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L195">src/data-structures/binary-tree/avl-tree.ts:195</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_balanceLR" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_balanceLR</span><a href="#_balanceLR" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -304,7 +305,7 @@ height of the left subtree from the height of the right subtree.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L226">src/data-structures/binary-tree/avl-tree.ts:226</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L225">src/data-structures/binary-tree/avl-tree.ts:225</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_balancePath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_balance<wbr/>Path</span><a href="#_balancePath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -325,7 +326,7 @@ AVL tree that needs to be balanced.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L153">src/data-structures/binary-tree/avl-tree.ts:153</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L152">src/data-structures/binary-tree/avl-tree.ts:152</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_balanceRL" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_balanceRL</span><a href="#_balanceRL" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -344,7 +345,7 @@ AVL tree that needs to be balanced.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L309">src/data-structures/binary-tree/avl-tree.ts:309</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L308">src/data-structures/binary-tree/avl-tree.ts:308</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_balanceRR" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_balanceRR</span><a href="#_balanceRR" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -363,7 +364,7 @@ AVL tree that needs to be balanced.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L274">src/data-structures/binary-tree/avl-tree.ts:274</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L273">src/data-structures/binary-tree/avl-tree.ts:273</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_compare" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_compare</span><a href="#_compare" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -413,7 +414,7 @@ type <code>N</code> or <code>null</code>.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#_setRoot">_setRoot</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1168">src/data-structures/binary-tree/binary-tree.ts:1168</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1223">src/data-structures/binary-tree/binary-tree.ts:1223</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_setSize" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_set<wbr/>Size</span><a href="#_setSize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -434,7 +435,7 @@ set.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#_setSize">_setSize</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1180">src/data-structures/binary-tree/binary-tree.ts:1180</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1235">src/data-structures/binary-tree/binary-tree.ts:1235</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_swap" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_swap</span><a href="#_swap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -462,7 +463,7 @@ from the source node (<code>srcNode</code>) will be swapped to.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="BST.html">BST</a>.<a href="BST.html#_swap">_swap</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L98">src/data-structures/binary-tree/avl-tree.ts:98</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L97">src/data-structures/binary-tree/avl-tree.ts:97</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_updateHeight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_update<wbr/>Height</span><a href="#_updateHeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -482,7 +483,7 @@ right children.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L138">src/data-structures/binary-tree/avl-tree.ts:138</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L137">src/data-structures/binary-tree/avl-tree.ts:137</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="add" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add</span><a href="#add" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -512,7 +513,7 @@ are adding to the binary search tree.</p>
 <p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#add">add</a></p>
 <p>Overrides <a href="BST.html">BST</a>.<a href="BST.html#add">add</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L58">src/data-structures/binary-tree/avl-tree.ts:58</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L57">src/data-structures/binary-tree/avl-tree.ts:57</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="addMany" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Many</span><a href="#addMany" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -546,7 +547,7 @@ array of <code>BinaryTreeNodeKey</code> or <code>N</code> (which represents the 
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="bfs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>bfs</span><a href="#bfs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="bfs.bfs-1"><span class="tsd-kind-call-signature">bfs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">withLevel</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><a href="#bfs.bfs-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="bfs.bfs-1"><span class="tsd-kind-call-signature">bfs</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><a href="#bfs.bfs-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The bfs function performs a breadth-first search traversal on a binary tree, executing a callback
 function on each node.</p>
@@ -563,11 +564,9 @@ function on each node.</p>
 <h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that will be called for each node in the
 breadth-first search. It takes a node of type <code>N</code> as its argument and returns a value of type
-<code>BFSCallbackReturn&lt;N&gt;</code>. The default value for this parameter is <code>this._defaultCallbackByKey @param {boolean} [withLevel=false] - The </code>withLevel<code>parameter is a boolean flag that determines whether to include the level of each node in the callback function. If</code>withLevel<code>is set to</code>true<code>, the level of each node will be passed as an argument to the callback function. If </code>withLevel<code>is @param {N | null} beginRoot - The</code>beginRoot<code>parameter is the starting node for the breadth-first search. It determines from which node the search will begin. If</code>beginRoot<code>is</code>null<code>, the search will not be performed and an empty array will be returned. @param iterationType - The </code>iterationType<code>parameter determines the type of iteration to be used in the breadth-first search (BFS) algorithm. It can have two possible values: @returns The function</code>bfs<code>returns an array of</code>BFSCallbackReturn<N>[]`.</p>
+<code>BFSCallbackReturn&lt;N&gt;</code>. The default value for this parameter is <code>this._defaultCallbackByKey @param {N | null} beginRoot - The </code>beginRoot<code>parameter is the starting node for the breadth-first search. It determines from which node the search will begin. If</code>beginRoot<code>is</code>null<code>, the search will not be performed and an empty array will be returned. @param iterationType - The </code>iterationType<code>parameter determines the type of iteration to be used in the breadth-first search (BFS) algorithm. It can have two possible values: @returns The function</code>bfs<code>returns an array of</code>BFSCallbackReturn<N>[]`.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">withLevel</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> = ...</span></h5></li>
 <li>
@@ -576,7 +575,7 @@ breadth-first search. It takes a node of type <code>N</code> as its argument and
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#bfs">bfs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L944">src/data-structures/binary-tree/binary-tree.ts:944</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L940">src/data-structures/binary-tree/binary-tree.ts:940</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="clear" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>clear</span><a href="#clear" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -618,7 +617,7 @@ node type <code>N</code>.</p>
 <p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#createNode">createNode</a></p>
 <p>Overrides <a href="BST.html">BST</a>.<a href="BST.html#createNode">createNode</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L45">src/data-structures/binary-tree/avl-tree.ts:45</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L44">src/data-structures/binary-tree/avl-tree.ts:44</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="delete" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>delete</span><a href="#delete" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -656,7 +655,7 @@ included in the result. The <code>callback</code> parameter has a default value 
 <p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#delete">delete</a></p>
 <p>Overrides <a href="BST.html">BST</a>.<a href="BST.html#delete">delete</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L77">src/data-structures/binary-tree/avl-tree.ts:77</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/avl-tree.ts#L76">src/data-structures/binary-tree/avl-tree.ts:76</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="dfs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>dfs</span><a href="#dfs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -986,7 +985,7 @@ reversed before returning it. If <code>isReverse</code> is set to <code>false</c
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#getPredecessor">getPredecessor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L982">src/data-structures/binary-tree/binary-tree.ts:982</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1037">src/data-structures/binary-tree/binary-tree.ts:1037</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="getRightMost" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Right<wbr/>Most</span><a href="#getRightMost" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1351,6 +1350,50 @@ done recursively or iteratively. It can have two possible values:</p>
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#lesserOrGreaterTraverse">lesserOrGreaterTraverse</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/bst.ts#L366">src/data-structures/binary-tree/bst.ts:366</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="listLevels" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>list<wbr/>Levels</span><a href="#listLevels" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="listLevels.listLevels-1"><span class="tsd-kind-call-signature">list<wbr/>Levels</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><a href="#listLevels.listLevels-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>The <code>listLevels</code> function takes a binary tree node and a callback function, and returns an array
+of arrays representing the levels of the tree.</p>
+</div>
+<section class="tsd-panel">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameter-list">
+<li>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/BFSCallback.html" class="tsd-signature-type tsd-kind-type-alias">BFSCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="../types/BFSCallback.html" class="tsd-signature-type tsd-kind-type-alias">BFSCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> = ...</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that will be called on each node in
+the tree. It takes a node as input and returns a value. The return type of the callback function
+is determined by the generic type <code>C</code>.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> = ...</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>beginRoot</code> parameter represents the starting node of the binary tree
+traversal. It can be any node in the binary tree. If no node is provided, the traversal will start
+from the root node of the binary tree.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">iterationType</span>: <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a><span class="tsd-signature-symbol"> = ...</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>iterationType</code> parameter determines whether the tree traversal is done
+recursively or iteratively. It can have two possible values:</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>listLevels</code> returns an array of arrays, where each inner array represents a
+level in a binary tree. Each inner array contains the return type of the provided callback
+function <code>C</code> applied to the nodes at that level.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#listLevels">listLevels</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L998">src/data-structures/binary-tree/binary-tree.ts:998</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="morris" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>morris</span><a href="#morris" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1393,7 +1436,7 @@ traversal. It specifies the root node of the tree from which the traversal shoul
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="BST.html">BST</a>.<a href="BST.html#morris">morris</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1012">src/data-structures/binary-tree/binary-tree.ts:1012</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1067">src/data-structures/binary-tree/binary-tree.ts:1067</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="perfectlyBalance" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>perfectly<wbr/>Balance</span><a href="#perfectlyBalance" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1551,6 +1594,7 @@ performed on the binary tree. It can have two possible values:</p>
 <li><a href="#isSubtreeBST" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>SubtreeBST</span></a></li>
 <li><a href="#lastKey" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>last<wbr/>Key</span></a></li>
 <li><a href="#lesserOrGreaterTraverse" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>lesser<wbr/>Or<wbr/>Greater<wbr/>Traverse</span></a></li>
+<li><a href="#listLevels" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Levels</span></a></li>
 <li><a href="#morris" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>morris</span></a></li>
 <li><a href="#perfectlyBalance" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>perfectly<wbr/>Balance</span></a></li>
 <li><a href="#refill" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>refill</span></a></li>
