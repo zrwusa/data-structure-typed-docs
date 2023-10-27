@@ -14,7 +14,7 @@
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">data-structure-typed</a></li>
 <li><a href="BinaryTree.html">BinaryTree</a></li></ul>
-<h1>Class BinaryTree&lt;N&gt;</h1></div>
+<h1>Class BinaryTree&lt;V, N&gt;</h1></div>
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>Represents a binary tree data structure.</p>
 </div>
@@ -23,7 +23,9 @@
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a></h4>
+<h4><span class="tsd-kind-type-parameter">V</span> = <span class="tsd-signature-type">any</span></h4></li>
+<li>
+<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a></h4>
 <div class="tsd-comment tsd-typography"><p>The type of the binary tree&#39;s nodes.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></section> 
@@ -36,9 +38,9 @@
 <section class="tsd-panel">
 <h4>Implements</h4>
 <ul class="tsd-hierarchy">
-<li><a href="../interfaces/IBinaryTree.html" class="tsd-signature-type tsd-kind-interface">IBinaryTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section><aside class="tsd-sources">
+<li><a href="../interfaces/IBinaryTree.html" class="tsd-signature-type tsd-kind-interface">IBinaryTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L118">src/data-structures/binary-tree/binary-tree.ts:118</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L118">src/data-structures/binary-tree/binary-tree.ts:118</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -97,7 +99,7 @@
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_BinaryTree"><span class="tsd-kind-constructor-signature">new <wbr/>Binary<wbr/>Tree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="BinaryTree.html" class="tsd-signature-type tsd-kind-class">BinaryTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_BinaryTree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_BinaryTree"><span class="tsd-kind-constructor-signature">new <wbr/>Binary<wbr/>Tree</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="BinaryTree.html" class="tsd-signature-type tsd-kind-class">BinaryTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_BinaryTree" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Creates a new instance of BinaryTree.</p>
 </div>
@@ -105,7 +107,9 @@
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../types/BinaryTreeNodeNested.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeNodeNested</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">V</span> = <span class="tsd-signature-type">any</span></h4></li>
+<li>
+<h4><span class="tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> extends </span><a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="BinaryTreeNode.html" class="tsd-signature-type tsd-kind-class">BinaryTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../types/BinaryTreeNodeNested.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeNodeNested</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
@@ -114,10 +118,10 @@
 <div class="tsd-comment tsd-typography"><p>The options for the binary tree.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="BinaryTree.html" class="tsd-signature-type tsd-kind-class">BinaryTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="BinaryTree.html" class="tsd-signature-type tsd-kind-class">BinaryTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L125">src/data-structures/binary-tree/binary-tree.ts:125</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L123">src/data-structures/binary-tree/binary-tree.ts:123</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_defaultCallbackByKey" class="tsd-anchor"></a>
@@ -131,22 +135,22 @@ This is because the purpose of the Morris algorithm is to save space rather than
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L1125">src/data-structures/binary-tree/binary-tree.ts:1125</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1125">src/data-structures/binary-tree/binary-tree.ts:1125</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_iterationType" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_iteration<wbr/>Type</span><a href="#_iterationType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_iteration<wbr/>Type</span><span class="tsd-signature-symbol">:</span> <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a><span class="tsd-signature-symbol"> = IterationType.ITERATIVE</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L119">src/data-structures/binary-tree/binary-tree.ts:119</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L130">src/data-structures/binary-tree/binary-tree.ts:130</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_root" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_root</span><a href="#_root" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_root</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> = null</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L132">src/data-structures/binary-tree/binary-tree.ts:132</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L147">src/data-structures/binary-tree/binary-tree.ts:147</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_size" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_size</span><a href="#_size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_size</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L141">src/data-structures/binary-tree/binary-tree.ts:141</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L156">src/data-structures/binary-tree/binary-tree.ts:156</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member"><a id="iterationType" class="tsd-anchor"></a>
@@ -159,7 +163,7 @@ This is because the purpose of the Morris algorithm is to save space rather than
 <h4 class="tsd-returns-title">Returns <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L153">src/data-structures/binary-tree/binary-tree.ts:153</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L135">src/data-structures/binary-tree/binary-tree.ts:135</a></li></ul></aside></li>
 <li class="tsd-signature" id="iterationType.iterationType-2"><span class="tsd-signature-symbol">set</span> iterationType<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">v</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Set the iteration type for the binary tree.</p>
@@ -175,7 +179,7 @@ This is because the purpose of the Morris algorithm is to save space rather than
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L161">src/data-structures/binary-tree/binary-tree.ts:161</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L143">src/data-structures/binary-tree/binary-tree.ts:143</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="root" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>root</span><a href="#root" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -186,7 +190,7 @@ This is because the purpose of the Morris algorithm is to save space rather than
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L137">src/data-structures/binary-tree/binary-tree.ts:137</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L152">src/data-structures/binary-tree/binary-tree.ts:152</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="size" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>size</span><a href="#size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -197,7 +201,7 @@ This is because the purpose of the Morris algorithm is to save space rather than
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L146">src/data-structures/binary-tree/binary-tree.ts:146</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L161">src/data-structures/binary-tree/binary-tree.ts:161</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_addTo" class="tsd-anchor"></a>
@@ -229,7 +233,7 @@ If the parent node is null, the function also returns undefined.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L1138">src/data-structures/binary-tree/binary-tree.ts:1138</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1138">src/data-structures/binary-tree/binary-tree.ts:1138</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_setRoot" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_set<wbr/>Root</span><a href="#_setRoot" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -250,7 +254,7 @@ type <code>N</code> or <code>null</code>.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L1168">src/data-structures/binary-tree/binary-tree.ts:1168</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1168">src/data-structures/binary-tree/binary-tree.ts:1168</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_setSize" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_set<wbr/>Size</span><a href="#_setSize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -270,7 +274,7 @@ set.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L1180">src/data-structures/binary-tree/binary-tree.ts:1180</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1180">src/data-structures/binary-tree/binary-tree.ts:1180</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_swap" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_swap</span><a href="#_swap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -297,7 +301,7 @@ set.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L1103">src/data-structures/binary-tree/binary-tree.ts:1103</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1103">src/data-structures/binary-tree/binary-tree.ts:1103</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="add" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add</span><a href="#add" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -314,7 +318,7 @@ set.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
 <div class="tsd-comment tsd-typography"><p>The value for the new node (optional).</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
@@ -325,7 +329,7 @@ set.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#add">add</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L197">src/data-structures/binary-tree/binary-tree.ts:197</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L197">src/data-structures/binary-tree/binary-tree.ts:197</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="addMany" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Many</span><a href="#addMany" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -344,8 +348,8 @@ objects, or null values.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">values</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>values</code> parameter is an optional array of values (<code>N[&#39;val&#39;][]</code>) that corresponds to
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">values</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[]</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>values</code> parameter is an optional array of values (<code>V[]</code>) that corresponds to
 the nodes or node IDs being added. It is used to set the value of each node being added. If <code>values</code> is not provided,
 the value of the nodes will be <code>undefined</code>.</p>
 </div>
@@ -354,7 +358,7 @@ the value of the nodes will be <code>undefined</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L257">src/data-structures/binary-tree/binary-tree.ts:257</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L257">src/data-structures/binary-tree/binary-tree.ts:257</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="bfs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>bfs</span><a href="#bfs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -387,7 +391,7 @@ breadth-first search. It takes a node of type <code>N</code> as its argument and
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L944">src/data-structures/binary-tree/binary-tree.ts:944</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L944">src/data-structures/binary-tree/binary-tree.ts:944</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="clear" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>clear</span><a href="#clear" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -398,7 +402,7 @@ breadth-first search. It takes a node of type <code>N</code> as its argument and
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L178">src/data-structures/binary-tree/binary-tree.ts:178</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L178">src/data-structures/binary-tree/binary-tree.ts:178</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="createNode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>create<wbr/>Node</span><a href="#createNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -415,7 +419,7 @@ breadth-first search. It takes a node of type <code>N</code> as its argument and
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span></h5>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span></h5>
 <div class="tsd-comment tsd-typography"><p>The value for the new node.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
@@ -426,7 +430,7 @@ breadth-first search. It takes a node of type <code>N</code> as its argument and
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#createNode">createNode</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L171">src/data-structures/binary-tree/binary-tree.ts:171</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L171">src/data-structures/binary-tree/binary-tree.ts:171</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="delete" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>delete</span><a href="#delete" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -457,7 +461,7 @@ searching for. It can be a specific key value or any other property of the node.
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#delete">delete</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L287">src/data-structures/binary-tree/binary-tree.ts:287</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L287">src/data-structures/binary-tree/binary-tree.ts:287</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="delete.delete-2"><span class="tsd-kind-call-signature">delete</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><a href="#delete.delete-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>delete</code> function removes a node from a binary search tree and returns the deleted node along
@@ -493,7 +497,7 @@ included in the result. The <code>callback</code> parameter has a default value 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of IBinaryTree.delete</p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L289">src/data-structures/binary-tree/binary-tree.ts:289</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L289">src/data-structures/binary-tree/binary-tree.ts:289</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="dfs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>dfs</span><a href="#dfs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -540,7 +544,7 @@ iteration used in the depth-first search algorithm. It can have two possible val
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L856">src/data-structures/binary-tree/binary-tree.ts:856</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L856">src/data-structures/binary-tree/binary-tree.ts:856</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="get" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get</span><a href="#get" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -567,7 +571,7 @@ type.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L612">src/data-structures/binary-tree/binary-tree.ts:612</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L612">src/data-structures/binary-tree/binary-tree.ts:612</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="get.get-2"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>get</code> returns the first node in a binary tree that matches the given property or key.</p>
@@ -599,7 +603,7 @@ whether the node matches the criteria or not. The default callback function
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L614">src/data-structures/binary-tree/binary-tree.ts:614</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L614">src/data-structures/binary-tree/binary-tree.ts:614</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="get.get-3"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>get</code> returns the first node in a binary tree that matches the given property or key.</p>
@@ -629,7 +633,7 @@ the root node from which the search should begin.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L616">src/data-structures/binary-tree/binary-tree.ts:616</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L616">src/data-structures/binary-tree/binary-tree.ts:616</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="get.get-4"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>get</code> returns the first node in a binary tree that matches the given property or key.</p>
@@ -667,7 +671,7 @@ the root node from which the search should begin.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L618">src/data-structures/binary-tree/binary-tree.ts:618</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L618">src/data-structures/binary-tree/binary-tree.ts:618</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="get.get-5"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">beginRoot</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>get</code> returns the first node in a binary tree that matches the given property or key.</p>
@@ -711,7 +715,7 @@ performed when searching for a node in the binary tree. It can have one of the f
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L620">src/data-structures/binary-tree/binary-tree.ts:620</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L620">src/data-structures/binary-tree/binary-tree.ts:620</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getDepth" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Depth</span><a href="#getDepth" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -742,7 +746,7 @@ node of the binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L363">src/data-structures/binary-tree/binary-tree.ts:363</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L363">src/data-structures/binary-tree/binary-tree.ts:363</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getHeight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Height</span><a href="#getHeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -770,7 +774,7 @@ possible values:</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L389">src/data-structures/binary-tree/binary-tree.ts:389</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L389">src/data-structures/binary-tree/binary-tree.ts:389</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getLeftMost" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Left<wbr/>Most</span><a href="#getLeftMost" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -800,7 +804,7 @@ no leftmost node, it returns <code>null</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L687">src/data-structures/binary-tree/binary-tree.ts:687</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L687">src/data-structures/binary-tree/binary-tree.ts:687</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getMinHeight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Min<wbr/>Height</span><a href="#getMinHeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -829,7 +833,7 @@ to calculate the minimum height of a binary tree. It can have two possible value
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L438">src/data-structures/binary-tree/binary-tree.ts:438</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L438">src/data-structures/binary-tree/binary-tree.ts:438</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getNodes" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Nodes</span><a href="#getNodes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -857,7 +861,7 @@ searching for. It can be a specific key value or any other property of the node.
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L491">src/data-structures/binary-tree/binary-tree.ts:491</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L491">src/data-structures/binary-tree/binary-tree.ts:491</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-2"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
@@ -890,7 +894,7 @@ included in the result. The <code>callback</code> parameter has a default value 
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L493">src/data-structures/binary-tree/binary-tree.ts:493</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L493">src/data-structures/binary-tree/binary-tree.ts:493</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-3"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">onlyOne</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
@@ -923,7 +927,7 @@ function will continue searching for all</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L495">src/data-structures/binary-tree/binary-tree.ts:495</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L495">src/data-structures/binary-tree/binary-tree.ts:495</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-4"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">onlyOne</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
@@ -964,7 +968,7 @@ function will continue searching for all</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L497">src/data-structures/binary-tree/binary-tree.ts:497</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L497">src/data-structures/binary-tree/binary-tree.ts:497</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-5"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">onlyOne</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
@@ -1012,7 +1016,7 @@ tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L499">src/data-structures/binary-tree/binary-tree.ts:499</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L499">src/data-structures/binary-tree/binary-tree.ts:499</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-6"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">onlyOne</span>, <span class="tsd-kind-parameter">beginRoot</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
@@ -1066,7 +1070,7 @@ traverse the binary tree. It can have two possible values:</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L506">src/data-structures/binary-tree/binary-tree.ts:506</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L506">src/data-structures/binary-tree/binary-tree.ts:506</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getPathToRoot" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Path<wbr/>To<wbr/>Root</span><a href="#getPathToRoot" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1095,7 +1099,7 @@ reversed before returning it. If <code>isReverse</code> is set to <code>false</c
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L663">src/data-structures/binary-tree/binary-tree.ts:663</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L663">src/data-structures/binary-tree/binary-tree.ts:663</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getPredecessor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Predecessor</span><a href="#getPredecessor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1115,7 +1119,7 @@ reversed before returning it. If <code>isReverse</code> is set to <code>false</c
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L982">src/data-structures/binary-tree/binary-tree.ts:982</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L982">src/data-structures/binary-tree/binary-tree.ts:982</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getRightMost" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Right<wbr/>Most</span><a href="#getRightMost" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1145,7 +1149,7 @@ be performed when finding the rightmost node in a binary tree. It can have two p
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L721">src/data-structures/binary-tree/binary-tree.ts:721</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L721">src/data-structures/binary-tree/binary-tree.ts:721</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="has" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has</span><a href="#has" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1172,7 +1176,7 @@ generic type <code>N</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L576">src/data-structures/binary-tree/binary-tree.ts:576</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L576">src/data-structures/binary-tree/binary-tree.ts:576</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="has.has-2"><span class="tsd-kind-call-signature">has</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#has.has-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function checks if a binary tree has a node with a given property or key.</p>
@@ -1204,7 +1208,7 @@ whether the node matches the criteria or not. The default callback function
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L578">src/data-structures/binary-tree/binary-tree.ts:578</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L578">src/data-structures/binary-tree/binary-tree.ts:578</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="has.has-3"><span class="tsd-kind-call-signature">has</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#has.has-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function checks if a binary tree has a node with a given property or key.</p>
@@ -1236,7 +1240,7 @@ as</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L580">src/data-structures/binary-tree/binary-tree.ts:580</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L580">src/data-structures/binary-tree/binary-tree.ts:580</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="has.has-4"><span class="tsd-kind-call-signature">has</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#has.has-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function checks if a binary tree has a node with a given property or key.</p>
@@ -1276,7 +1280,7 @@ as</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L582">src/data-structures/binary-tree/binary-tree.ts:582</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L582">src/data-structures/binary-tree/binary-tree.ts:582</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isBST" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>isBST</span><a href="#isBST" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1299,7 +1303,7 @@ provided in</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L790">src/data-structures/binary-tree/binary-tree.ts:790</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L790">src/data-structures/binary-tree/binary-tree.ts:790</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isEmpty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Empty</span><a href="#isEmpty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1313,7 +1317,7 @@ provided in</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L187">src/data-structures/binary-tree/binary-tree.ts:187</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L187">src/data-structures/binary-tree/binary-tree.ts:187</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isPerfectlyBalanced" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Perfectly<wbr/>Balanced</span><a href="#isPerfectlyBalanced" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1335,7 +1339,7 @@ either be of type <code>N</code> (representing a node in a tree) or <code>null</
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L487">src/data-structures/binary-tree/binary-tree.ts:487</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L487">src/data-structures/binary-tree/binary-tree.ts:487</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isSubtreeBST" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>SubtreeBST</span><a href="#isSubtreeBST" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1363,7 +1367,7 @@ possible values:</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L752">src/data-structures/binary-tree/binary-tree.ts:752</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L752">src/data-structures/binary-tree/binary-tree.ts:752</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="morris" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>morris</span><a href="#morris" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1405,7 +1409,7 @@ traversal. It specifies the root node of the tree from which the traversal shoul
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L1012">src/data-structures/binary-tree/binary-tree.ts:1012</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L1012">src/data-structures/binary-tree/binary-tree.ts:1012</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="refill" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>refill</span><a href="#refill" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1423,7 +1427,7 @@ traversal. It specifies the root node of the tree from which the traversal shoul
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;val&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h5>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">[]</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>data</code> parameter is an optional array of values that will be assigned to
 the nodes being added. If provided, the length of the <code>data</code> array should be equal to the length of the <code>keysOrNodes</code>
 array. Each value in the <code>data</code> array will be assigned to the</p>
@@ -1433,7 +1437,7 @@ array. Each value in the <code>data</code> array will be assigned to the</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L282">src/data-structures/binary-tree/binary-tree.ts:282</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L282">src/data-structures/binary-tree/binary-tree.ts:282</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="subTreeTraverse" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sub<wbr/>Tree<wbr/>Traverse</span><a href="#subTreeTraverse" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1475,7 +1479,7 @@ performed on the binary tree. It can have two possible values:</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/f2d3be7/src/data-structures/binary-tree/binary-tree.ts#L809">src/data-structures/binary-tree/binary-tree.ts:809</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/edad774/src/data-structures/binary-tree/binary-tree.ts#L809">src/data-structures/binary-tree/binary-tree.ts:809</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
