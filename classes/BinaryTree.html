@@ -40,7 +40,7 @@
 <ul class="tsd-hierarchy">
 <li><a href="../interfaces/IBinaryTree.html" class="tsd-signature-type tsd-kind-interface">IBinaryTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L118">src/data-structures/binary-tree/binary-tree.ts:118</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L110">src/data-structures/binary-tree/binary-tree.ts:110</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -122,12 +122,12 @@
 <h4 class="tsd-returns-title">Returns <a href="BinaryTree.html" class="tsd-signature-type tsd-kind-class">BinaryTree</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L124">src/data-structures/binary-tree/binary-tree.ts:124</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L117">src/data-structures/binary-tree/binary-tree.ts:117</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_defaultCallbackByKey" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_default<wbr/>Callback<wbr/>By<wbr/>Key</span><a href="#_defaultCallbackByKey" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_default<wbr/>Callback<wbr/>By<wbr/>Key</span><span class="tsd-signature-symbol">:</span> <a href="../types/DefaultMapCallback.html" class="tsd-signature-type tsd-kind-type-alias">DefaultMapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+<div class="tsd-signature"><span class="tsd-kind-property">_default<wbr/>Callback<wbr/>By<wbr/>Key</span><span class="tsd-signature-symbol">:</span> <a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 <div class="tsd-comment tsd-typography"><p>Time complexity is O(n)
 Space complexity of Iterative dfs equals to recursive dfs which is O(n) because of the stack
 The Morris algorithm only modifies the tree&#39;s structure during traversal; once the traversal is complete,
@@ -136,22 +136,22 @@ This is because the purpose of the Morris algorithm is to save space rather than
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L1180">src/data-structures/binary-tree/binary-tree.ts:1180</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L1124">src/data-structures/binary-tree/binary-tree.ts:1124</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_iterationType" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_iteration<wbr/>Type</span><a href="#_iterationType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_iteration<wbr/>Type</span><span class="tsd-signature-symbol">:</span> <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a><span class="tsd-signature-symbol"> = IterationType.ITERATIVE</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L131">src/data-structures/binary-tree/binary-tree.ts:131</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L124">src/data-structures/binary-tree/binary-tree.ts:124</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_root" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_root</span><a href="#_root" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_root</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> = null</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L148">src/data-structures/binary-tree/binary-tree.ts:148</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L141">src/data-structures/binary-tree/binary-tree.ts:141</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_size" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_size</span><a href="#_size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_size</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L157">src/data-structures/binary-tree/binary-tree.ts:157</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L150">src/data-structures/binary-tree/binary-tree.ts:150</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member"><a id="iterationType" class="tsd-anchor"></a>
@@ -164,7 +164,7 @@ This is because the purpose of the Morris algorithm is to save space rather than
 <h4 class="tsd-returns-title">Returns <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L136">src/data-structures/binary-tree/binary-tree.ts:136</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L129">src/data-structures/binary-tree/binary-tree.ts:129</a></li></ul></aside></li>
 <li class="tsd-signature" id="iterationType.iterationType-2"><span class="tsd-signature-symbol">set</span> iterationType<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">v</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Set the iteration type for the binary tree.</p>
@@ -180,7 +180,7 @@ This is because the purpose of the Morris algorithm is to save space rather than
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L144">src/data-structures/binary-tree/binary-tree.ts:144</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L137">src/data-structures/binary-tree/binary-tree.ts:137</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="root" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>root</span><a href="#root" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -191,7 +191,7 @@ This is because the purpose of the Morris algorithm is to save space rather than
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L153">src/data-structures/binary-tree/binary-tree.ts:153</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L146">src/data-structures/binary-tree/binary-tree.ts:146</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="size" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>size</span><a href="#size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -202,7 +202,7 @@ This is because the purpose of the Morris algorithm is to save space rather than
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L162">src/data-structures/binary-tree/binary-tree.ts:162</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L155">src/data-structures/binary-tree/binary-tree.ts:155</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_addTo" class="tsd-anchor"></a>
@@ -234,7 +234,7 @@ If the parent node is null, the function also returns undefined.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L1193">src/data-structures/binary-tree/binary-tree.ts:1193</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L1137">src/data-structures/binary-tree/binary-tree.ts:1137</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_setRoot" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_set<wbr/>Root</span><a href="#_setRoot" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -255,7 +255,7 @@ type <code>N</code> or <code>null</code>.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L1223">src/data-structures/binary-tree/binary-tree.ts:1223</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L1167">src/data-structures/binary-tree/binary-tree.ts:1167</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_setSize" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_set<wbr/>Size</span><a href="#_setSize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -275,7 +275,7 @@ set.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L1235">src/data-structures/binary-tree/binary-tree.ts:1235</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L1179">src/data-structures/binary-tree/binary-tree.ts:1179</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_swap" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_swap</span><a href="#_swap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -302,7 +302,7 @@ set.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L1158">src/data-structures/binary-tree/binary-tree.ts:1158</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L1102">src/data-structures/binary-tree/binary-tree.ts:1102</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="add" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add</span><a href="#add" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -330,7 +330,7 @@ set.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#add">add</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L198">src/data-structures/binary-tree/binary-tree.ts:198</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L191">src/data-structures/binary-tree/binary-tree.ts:191</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="addMany" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Many</span><a href="#addMany" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -359,7 +359,7 @@ the value of the nodes will be <code>undefined</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L258">src/data-structures/binary-tree/binary-tree.ts:258</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L251">src/data-structures/binary-tree/binary-tree.ts:251</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="bfs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>bfs</span><a href="#bfs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -372,7 +372,7 @@ function on each node.</p>
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/BFSCallback.html" class="tsd-signature-type tsd-kind-type-alias">BFSCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="../types/BFSCallback.html" class="tsd-signature-type tsd-kind-type-alias">BFSCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
@@ -380,7 +380,7 @@ function on each node.</p>
 <h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that will be called for each node in the
 breadth-first search. It takes a node of type <code>N</code> as its argument and returns a value of type
-<code>BFSCallbackReturn&lt;N&gt;</code>. The default value for this parameter is <code>this._defaultCallbackByKey @param {N | null} beginRoot - The </code>beginRoot<code>parameter is the starting node for the breadth-first search. It determines from which node the search will begin. If</code>beginRoot<code>is</code>null<code>, the search will not be performed and an empty array will be returned. @param iterationType - The </code>iterationType<code>parameter determines the type of iteration to be used in the breadth-first search (BFS) algorithm. It can have two possible values: @returns The function</code>bfs<code>returns an array of</code>BFSCallbackReturn<N>[]`.</p>
+<code>ReturnType&lt;OneParamCallback&lt;N&gt;&gt;</code>. The default value for this parameter is <code>this._defaultCallbackByKey @param {N | null} beginRoot - The </code>beginRoot<code>parameter is the starting node for the breadth-first search. It determines from which node the search will begin. If</code>beginRoot<code>is</code>null<code>, the search will not be performed and an empty array will be returned. @param iterationType - The </code>iterationType<code>parameter determines the type of iteration to be used in the breadth-first search (BFS) algorithm. It can have two possible values: @returns The function</code>bfs<code>returns an array of</code>ReturnType&lt;OneParamCallback<N>&gt;[]`.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
@@ -390,7 +390,7 @@ breadth-first search. It takes a node of type <code>N</code> as its argument and
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L941">src/data-structures/binary-tree/binary-tree.ts:941</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L885">src/data-structures/binary-tree/binary-tree.ts:885</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="clear" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>clear</span><a href="#clear" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -401,7 +401,7 @@ breadth-first search. It takes a node of type <code>N</code> as its argument and
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L179">src/data-structures/binary-tree/binary-tree.ts:179</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L172">src/data-structures/binary-tree/binary-tree.ts:172</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="createNode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>create<wbr/>Node</span><a href="#createNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -429,11 +429,11 @@ breadth-first search. It takes a node of type <code>N</code> as its argument and
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#createNode">createNode</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L172">src/data-structures/binary-tree/binary-tree.ts:172</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L165">src/data-structures/binary-tree/binary-tree.ts:165</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="delete" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>delete</span><a href="#delete" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="delete.delete-1"><span class="tsd-kind-call-signature">delete</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><a href="#delete.delete-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="delete.delete-1"><span class="tsd-kind-call-signature">delete</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><a href="#delete.delete-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The <code>delete</code> function removes a node from a binary search tree and returns the deleted node along
 with the parent node that needs to be balanced.
@@ -444,47 +444,19 @@ binary tree.</p>
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is either a
-<code>BinaryTreeNodeKey</code> or a generic type <code>N</code>. It represents the property of the node that we are
-searching for. It can be a specific key value or any other property of the node.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>an array of <code>BinaryTreeDeletedResult&lt;N&gt;</code> objects.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#delete">delete</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L288">src/data-structures/binary-tree/binary-tree.ts:288</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="delete.delete-2"><span class="tsd-kind-call-signature">delete</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><a href="#delete.delete-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The <code>delete</code> function removes a node from a binary search tree and returns the deleted node along
-with the parent node that needs to be balanced.
-a key (<code>BinaryTreeNodeKey</code>). If it is a key, the function will find the corresponding node in the
-binary tree.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is either a
 <code>BinaryTreeNodeKey</code> or a generic type <code>N</code>. It represents the property of the node that we are
 searching for. It can be a specific key value or any other property of the node.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
+<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that takes a node as input and returns a
 value. This value is compared with the <code>identifier</code> parameter to determine if the node should be
 included in the result. The <code>callback</code> parameter has a default value of
@@ -494,9 +466,9 @@ included in the result. The <code>callback</code> parameter has a default value 
 <h4 class="tsd-returns-title">Returns <a href="../types/BinaryTreeDeletedResult.html" class="tsd-signature-type tsd-kind-type-alias">BinaryTreeDeletedResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>an array of <code>BinaryTreeDeletedResult&lt;N&gt;</code> objects.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of IBinaryTree.delete</p>
+<p>Implementation of <a href="../interfaces/IBinaryTree.html">IBinaryTree</a>.<a href="../interfaces/IBinaryTree.html#delete">delete</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L290">src/data-structures/binary-tree/binary-tree.ts:290</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L295">src/data-structures/binary-tree/binary-tree.ts:295</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="dfs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>dfs</span><a href="#dfs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -509,7 +481,7 @@ function on each node according to a specified order pattern.</p>
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
@@ -539,15 +511,15 @@ is <code>null</code>, an empty array will be returned.</p>
 iteration used in the depth-first search algorithm. It can have two possible values:</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>dfs</code> returns an array of <code>MapCallbackReturn&lt;N&gt;</code> values.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>dfs</code> returns an array of <code>ReturnType&lt;OneParamCallback&lt;N&gt;&gt;</code> values.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L857">src/data-structures/binary-tree/binary-tree.ts:857</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L801">src/data-structures/binary-tree/binary-tree.ts:801</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="get" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get</span><a href="#get" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="get.get-1"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="get.get-1"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>get</code> returns the first node in a binary tree that matches the given property or key.</p>
 </div>
@@ -555,105 +527,19 @@ iteration used in the depth-first search algorithm. It can have two possible val
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is the key or value of
-the node that you want to find in the binary tree. It can be either a <code>BinaryTreeNodeKey</code> or <code>N</code>
-type.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>either the found node (of type N) or null if no node is found.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L613">src/data-structures/binary-tree/binary-tree.ts:613</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="get.get-2"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>get</code> returns the first node in a binary tree that matches the given property or key.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is the key or value of
 the node that you want to find in the binary tree. It can be either a <code>BinaryTreeNodeKey</code> or <code>N</code>
 type.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that is used to determine whether a node
-matches the desired criteria. It takes a node as input and returns a boolean value indicating
-whether the node matches the criteria or not. The default callback function
-(<code>this._defaultCallbackByKey</code>) is used if no callback function is</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>either the found node (of type N) or null if no node is found.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L615">src/data-structures/binary-tree/binary-tree.ts:615</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="get.get-3"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>get</code> returns the first node in a binary tree that matches the given property or key.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is the key or value of
-the node that you want to find in the binary tree. It can be either a <code>BinaryTreeNodeKey</code> or <code>N</code>
-type.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>beginRoot</code> parameter is the starting point for the search. It specifies
-the root node from which the search should begin.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>either the found node (of type N) or null if no node is found.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L617">src/data-structures/binary-tree/binary-tree.ts:617</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="get.get-4"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>get</code> returns the first node in a binary tree that matches the given property or key.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is the key or value of
-the node that you want to find in the binary tree. It can be either a <code>BinaryTreeNodeKey</code> or <code>N</code>
-type.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
+<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that is used to determine whether a node
 matches the desired criteria. It takes a node as input and returns a boolean value indicating
 whether the node matches the criteria or not. The default callback function
@@ -661,51 +547,13 @@ whether the node matches the criteria or not. The default callback function
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>beginRoot</code> parameter is the starting point for the search. It specifies
-the root node from which the search should begin.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h4><p>either the found node (of type N) or null if no node is found.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L619">src/data-structures/binary-tree/binary-tree.ts:619</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="get.get-5"><span class="tsd-kind-call-signature">get</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">beginRoot</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><a href="#get.get-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>get</code> returns the first node in a binary tree that matches the given property or key.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is the key or value of
-the node that you want to find in the binary tree. It can be either a <code>BinaryTreeNodeKey</code> or <code>N</code>
-type.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that is used to determine whether a node
-matches the desired criteria. It takes a node as input and returns a boolean value indicating
-whether the node matches the criteria or not. The default callback function
-(<code>this._defaultCallbackByKey</code>) is used if no callback function is</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
+<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>beginRoot</code> parameter is the starting point for the search. It specifies
 the root node from which the search should begin.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">iterationType</span>: <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a></h5>
+<h5><span class="tsd-kind-parameter">iterationType</span>: <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>iterationType</code> parameter specifies the type of iteration to be
 performed when searching for a node in the binary tree. It can have one of the following values:</p>
 </div>
@@ -714,7 +562,7 @@ performed when searching for a node in the binary tree. It can have one of the f
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L621">src/data-structures/binary-tree/binary-tree.ts:621</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L587">src/data-structures/binary-tree/binary-tree.ts:587</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getDepth" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Depth</span><a href="#getDepth" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -745,7 +593,7 @@ node of the binary tree.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L364">src/data-structures/binary-tree/binary-tree.ts:364</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L354">src/data-structures/binary-tree/binary-tree.ts:354</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getHeight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Height</span><a href="#getHeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -773,7 +621,7 @@ possible values:</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L390">src/data-structures/binary-tree/binary-tree.ts:390</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L380">src/data-structures/binary-tree/binary-tree.ts:380</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getLeftMost" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Left<wbr/>Most</span><a href="#getLeftMost" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -803,7 +651,7 @@ no leftmost node, it returns <code>null</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L688">src/data-structures/binary-tree/binary-tree.ts:688</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L632">src/data-structures/binary-tree/binary-tree.ts:632</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getMinHeight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Min<wbr/>Height</span><a href="#getMinHeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -832,11 +680,11 @@ to calculate the minimum height of a binary tree. It can have two possible value
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L439">src/data-structures/binary-tree/binary-tree.ts:439</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L429">src/data-structures/binary-tree/binary-tree.ts:429</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getNodes" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Nodes</span><a href="#getNodes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-1"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-1"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">onlyOne</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
 recursive or iterative traversal.</p>
@@ -845,110 +693,19 @@ recursive or iterative traversal.</p>
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is either a
-<code>BinaryTreeNodeKey</code> or a generic type <code>N</code>. It represents the property of the node that we are
-searching for. It can be a specific key value or any other property of the node.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>getNodes</code> returns an array of nodes (<code>N[]</code>).</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L492">src/data-structures/binary-tree/binary-tree.ts:492</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-2"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
-recursive or iterative traversal.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is either a
 <code>BinaryTreeNodeKey</code> or a generic type <code>N</code>. It represents the property of the node that we are
 searching for. It can be a specific key value or any other property of the node.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that takes a node as input and returns a
-value. This value is compared with the <code>identifier</code> parameter to determine if the node should be
-included in the result. The <code>callback</code> parameter has a default value of
-<code>this._defaultCallbackByKey</code>, which</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>getNodes</code> returns an array of nodes (<code>N[]</code>).</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L494">src/data-structures/binary-tree/binary-tree.ts:494</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-3"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">onlyOne</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
-recursive or iterative traversal.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is either a
-<code>BinaryTreeNodeKey</code> or a generic type <code>N</code>. It represents the property of the node that we are
-searching for. It can be a specific key value or any other property of the node.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">onlyOne</span>: <span class="tsd-signature-type">boolean</span></h5>
-<div class="tsd-comment tsd-typography"><p>A boolean value indicating whether to stop searching after finding the
-first node that matches the identifier. If set to true, the function will return an array with
-only one element (or an empty array if no matching node is found). If set to false (default), the
-function will continue searching for all</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>getNodes</code> returns an array of nodes (<code>N[]</code>).</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L496">src/data-structures/binary-tree/binary-tree.ts:496</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-4"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">onlyOne</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
-recursive or iterative traversal.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is either a
-<code>BinaryTreeNodeKey</code> or a generic type <code>N</code>. It represents the property of the node that we are
-searching for. It can be a specific key value or any other property of the node.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
+<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that takes a node as input and returns a
 value. This value is compared with the <code>identifier</code> parameter to determine if the node should be
 included in the result. The <code>callback</code> parameter has a default value of
@@ -956,48 +713,7 @@ included in the result. The <code>callback</code> parameter has a default value 
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">onlyOne</span>: <span class="tsd-signature-type">boolean</span></h5>
-<div class="tsd-comment tsd-typography"><p>A boolean value indicating whether to stop searching after finding the
-first node that matches the identifier. If set to true, the function will return an array with
-only one element (or an empty array if no matching node is found). If set to false (default), the
-function will continue searching for all</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>getNodes</code> returns an array of nodes (<code>N[]</code>).</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L498">src/data-structures/binary-tree/binary-tree.ts:498</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-5"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">onlyOne</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
-recursive or iterative traversal.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is either a
-<code>BinaryTreeNodeKey</code> or a generic type <code>N</code>. It represents the property of the node that we are
-searching for. It can be a specific key value or any other property of the node.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that takes a node as input and returns a
-value. This value is compared with the <code>identifier</code> parameter to determine if the node should be
-included in the result. The <code>callback</code> parameter has a default value of
-<code>this._defaultCallbackByKey</code>, which</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">onlyOne</span>: <span class="tsd-signature-type">boolean</span></h5>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">onlyOne</span>: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 <div class="tsd-comment tsd-typography"><p>A boolean value indicating whether to stop searching after finding the
 first node that matches the identifier. If set to true, the function will return an array with
 only one element (or an empty array if no matching node is found). If set to false (default), the
@@ -1005,62 +721,14 @@ function will continue searching for all</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>beginRoot</code> parameter is the starting node from which the
-traversal of the binary tree will begin. It is optional and defaults to the root of the binary
-tree.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>getNodes</code> returns an array of nodes (<code>N[]</code>).</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L500">src/data-structures/binary-tree/binary-tree.ts:500</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="getNodes.getNodes-6"><span class="tsd-kind-call-signature">get<wbr/>Nodes</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">onlyOne</span>, <span class="tsd-kind-parameter">beginRoot</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">[]</span><a href="#getNodes.getNodes-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function <code>getNodes</code> returns an array of nodes that match a given node property, using either
-recursive or iterative traversal.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is either a
-<code>BinaryTreeNodeKey</code> or a generic type <code>N</code>. It represents the property of the node that we are
-searching for. It can be a specific key value or any other property of the node.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that takes a node as input and returns a
-value. This value is compared with the <code>identifier</code> parameter to determine if the node should be
-included in the result. The <code>callback</code> parameter has a default value of
-<code>this._defaultCallbackByKey</code>, which</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">onlyOne</span>: <span class="tsd-signature-type">boolean</span></h5>
-<div class="tsd-comment tsd-typography"><p>A boolean value indicating whether to stop searching after finding the
-first node that matches the identifier. If set to true, the function will return an array with
-only one element (or an empty array if no matching node is found). If set to false (default), the
-function will continue searching for all</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
+<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>beginRoot</code> parameter is the starting node from which the
 traversal of the binary tree will begin. It is optional and defaults to the root of the binary
 tree.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">iterationType</span>: <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a></h5>
+<h5><span class="tsd-kind-parameter">iterationType</span>: <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>iterationType</code> parameter determines the type of iteration used to
 traverse the binary tree. It can have two possible values:</p>
 </div>
@@ -1069,7 +737,7 @@ traverse the binary tree. It can have two possible values:</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L507">src/data-structures/binary-tree/binary-tree.ts:507</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L503">src/data-structures/binary-tree/binary-tree.ts:503</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getPathToRoot" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Path<wbr/>To<wbr/>Root</span><a href="#getPathToRoot" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1098,7 +766,7 @@ reversed before returning it. If <code>isReverse</code> is set to <code>false</c
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L664">src/data-structures/binary-tree/binary-tree.ts:664</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L608">src/data-structures/binary-tree/binary-tree.ts:608</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getPredecessor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Predecessor</span><a href="#getPredecessor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1118,7 +786,7 @@ reversed before returning it. If <code>isReverse</code> is set to <code>false</c
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L1037">src/data-structures/binary-tree/binary-tree.ts:1037</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L981">src/data-structures/binary-tree/binary-tree.ts:981</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getRightMost" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Right<wbr/>Most</span><a href="#getRightMost" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1148,11 +816,11 @@ be performed when finding the rightmost node in a binary tree. It can have two p
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L722">src/data-structures/binary-tree/binary-tree.ts:722</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L666">src/data-structures/binary-tree/binary-tree.ts:666</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="has" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>has</span><a href="#has" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="has.has-1"><span class="tsd-kind-call-signature">has</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#has.has-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="has.has-1"><span class="tsd-kind-call-signature">has</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">iterationType</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#has.has-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The function checks if a binary tree has a node with a given property or key.</p>
 </div>
@@ -1160,107 +828,19 @@ be performed when finding the rightmost node in a binary tree. It can have two p
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is the key or value of
-the node that you want to find in the binary tree. It can be either a <code>BinaryTreeNodeKey</code> or a
-generic type <code>N</code>.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>a boolean value.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L577">src/data-structures/binary-tree/binary-tree.ts:577</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="has.has-2"><span class="tsd-kind-call-signature">has</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#has.has-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function checks if a binary tree has a node with a given property or key.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is the key or value of
 the node that you want to find in the binary tree. It can be either a <code>BinaryTreeNodeKey</code> or a
 generic type <code>N</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that is used to determine whether a node
-matches the desired criteria. It takes a node as input and returns a boolean value indicating
-whether the node matches the criteria or not. The default callback function
-<code>this._defaultCallbackByKey</code> is used if no callback function is</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>a boolean value.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L579">src/data-structures/binary-tree/binary-tree.ts:579</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="has.has-3"><span class="tsd-kind-call-signature">has</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#has.has-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function checks if a binary tree has a node with a given property or key.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is the key or value of
-the node that you want to find in the binary tree. It can be either a <code>BinaryTreeNodeKey</code> or a
-generic type <code>N</code>.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>beginRoot</code> parameter is the starting point for the search. It specifies
-the node from which the search should begin. By default, it is set to <code>this.root</code>, which means the
-search will start from the root node of the binary tree. However, you can provide a different node
-as</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>a boolean value.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L581">src/data-structures/binary-tree/binary-tree.ts:581</a></li></ul></aside></li>
-<li class="tsd-signature tsd-anchor-link" id="has.has-4"><span class="tsd-kind-call-signature">has</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">identifier</span>, <span class="tsd-kind-parameter">callback</span>, <span class="tsd-kind-parameter">beginRoot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#has.has-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>The function checks if a binary tree has a node with a given property or key.</p>
-</div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">identifier</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>The <code>identifier</code> parameter is the key or value of
-the node that you want to find in the binary tree. It can be either a <code>BinaryTreeNodeKey</code> or a
-generic type <code>N</code>.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span></h5>
+<h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that is used to determine whether a node
 matches the desired criteria. It takes a node as input and returns a boolean value indicating
 whether the node matches the criteria or not. The default callback function
@@ -1268,18 +848,24 @@ whether the node matches the criteria or not. The default callback function
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
+<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>beginRoot</code> parameter is the starting point for the search. It specifies
 the node from which the search should begin. By default, it is set to <code>this.root</code>, which means the
 search will start from the root node of the binary tree. However, you can provide a different node
 as</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">iterationType</span>: <a href="../enums/IterationType.html" class="tsd-signature-type tsd-kind-enum">IterationType</a><span class="tsd-signature-symbol"> = ...</span></h5>
+<div class="tsd-comment tsd-typography"><p>The <code>iterationType</code> parameter specifies the type of iteration to be
+performed when searching for nodes in the binary tree. It can have one of the following values:</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>a boolean value.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L583">src/data-structures/binary-tree/binary-tree.ts:583</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L561">src/data-structures/binary-tree/binary-tree.ts:561</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isBST" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>isBST</span><a href="#isBST" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1302,7 +888,7 @@ provided in</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L791">src/data-structures/binary-tree/binary-tree.ts:791</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L735">src/data-structures/binary-tree/binary-tree.ts:735</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isEmpty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Empty</span><a href="#isEmpty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1316,7 +902,7 @@ provided in</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L188">src/data-structures/binary-tree/binary-tree.ts:188</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L181">src/data-structures/binary-tree/binary-tree.ts:181</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isPerfectlyBalanced" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Perfectly<wbr/>Balanced</span><a href="#isPerfectlyBalanced" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1338,7 +924,7 @@ either be of type <code>N</code> (representing a node in a tree) or <code>null</
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L488">src/data-structures/binary-tree/binary-tree.ts:488</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L478">src/data-structures/binary-tree/binary-tree.ts:478</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isSubtreeBST" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>SubtreeBST</span><a href="#isSubtreeBST" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1350,7 +936,7 @@ either be of type <code>N</code> (representing a node in a tree) or <code>null</
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
+<h5><span class="tsd-kind-parameter">beginRoot</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">N</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>beginRoot</code> parameter is the root node of the binary tree that you want
 to check if it is a binary search tree (BST) subtree.</p>
 </div>
@@ -1366,7 +952,7 @@ possible values:</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L753">src/data-structures/binary-tree/binary-tree.ts:753</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L697">src/data-structures/binary-tree/binary-tree.ts:697</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="listLevels" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>list<wbr/>Levels</span><a href="#listLevels" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1379,7 +965,7 @@ of arrays representing the levels of the tree.</p>
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/BFSCallback.html" class="tsd-signature-type tsd-kind-type-alias">BFSCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span> = <a href="../types/BFSCallback.html" class="tsd-signature-type tsd-kind-type-alias">BFSCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
@@ -1409,7 +995,7 @@ function <code>C</code> applied to the nodes at that level.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L998">src/data-structures/binary-tree/binary-tree.ts:998</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L942">src/data-structures/binary-tree/binary-tree.ts:942</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="morris" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>morris</span><a href="#morris" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1422,14 +1008,14 @@ algorithm and returns an array of values obtained by applying a callback functio
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">callback</span>: <span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>The <code>callback</code> parameter is a function that will be called on each node in the
-tree. It takes a node of type <code>N</code> as input and returns a value of type <code>MapCallbackReturn&lt;N&gt;</code>. The
+tree. It takes a node of type <code>N</code> as input and returns a value of type <code>ReturnType&lt;OneParamCallback&lt;N&gt;&gt;</code>. The
 default value for this parameter is <code>this._defaultCallbackByKey</code>.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
@@ -1447,11 +1033,11 @@ traversal. It specifies the root node of the tree from which the traversal shoul
 <code>beginRoot</code> is <code>null</code>, an empty array will be returned.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>The <code>morris</code> function returns an array of <code>MapCallbackReturn&lt;N&gt;</code> values.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>The <code>morris</code> function returns an array of <code>ReturnType&lt;OneParamCallback&lt;N&gt;&gt;</code> values.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L1067">src/data-structures/binary-tree/binary-tree.ts:1067</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L1011">src/data-structures/binary-tree/binary-tree.ts:1011</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="refill" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>refill</span><a href="#refill" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1479,7 +1065,7 @@ array. Each value in the <code>data</code> array will be assigned to the</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L283">src/data-structures/binary-tree/binary-tree.ts:283</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L276">src/data-structures/binary-tree/binary-tree.ts:276</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="subTreeTraverse" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sub<wbr/>Tree<wbr/>Traverse</span><a href="#subTreeTraverse" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1492,7 +1078,7 @@ node, either recursively or iteratively.</p>
 <h4>Type Parameters</h4>
 <ul class="tsd-type-parameter-list">
 <li>
-<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/MapCallback.html" class="tsd-signature-type tsd-kind-type-alias">MapCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
+<h4><span class="tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol"> extends </span><a href="../types/OneParamCallback.html" class="tsd-signature-type tsd-kind-type-alias">OneParamCallback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">N</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
@@ -1517,11 +1103,11 @@ start from the root of the tree.</p>
 performed on the binary tree. It can have two possible values:</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>subTreeTraverse</code> returns an array of <code>MapCallbackReturn&lt;N&gt;</code>.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><p>The function <code>subTreeTraverse</code> returns an array of <code>ReturnType&lt;OneParamCallback&lt;N&gt;&gt;</code>.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/c11cc45/src/data-structures/binary-tree/binary-tree.ts#L810">src/data-structures/binary-tree/binary-tree.ts:810</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zrwusa/data-structure-typed/blob/bd17209/src/data-structures/binary-tree/binary-tree.ts#L754">src/data-structures/binary-tree/binary-tree.ts:754</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
