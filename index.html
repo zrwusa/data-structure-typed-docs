@@ -439,7 +439,15 @@ our <a href="https://github.com/zrwusa/vivid-algorithm" target="_blank" class="e
 <p>Intel UHD Graphics 630 1536 MB</p>
 <p>macOS Big Sur</p>
 <p>Version 11.7.9</p>
-<p><em><strong>Our performance testing is conducted directly on the TypeScript source code. The actual performance of the compiled JavaScript code is generally 3 times higher. We have compared it with C++, and it is only 30% slower than C++.</strong></em></p>
+<p><em><strong>Our performance testing is conducted directly on the TypeScript source code. The actual performance of the compiled JavaScript code is generally 3 times higher. We have compared it with C++, and it is only 30% slower than C++.</strong></em>
+Try it <a href="https://gitpod.io#snapshot/93383de4-ca4c-4854-8c80-4359e681a96f" target="_blank" class="external">on gitpod</a></p>
+<p>Just run</p>
+<pre><code class="shell"><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-2">perf:rbtree</span>
+</code><button type="button">Copy</button></pre>
+
+<pre><code class="html"><span class="hl-1">1,000,000 add randomly: 1.367s</span><br/><span class="hl-1">1,000,000 add: 374.859ms</span><br/><span class="hl-1">1,000,000 get: 8.025ms</span><br/><span class="hl-1">1,000,000 getNode: 1.293s</span>
+</code><button type="button">Copy</button></pre>
+
 <div class="json-to-html-collapse clearfix 0">
       <div class='collapsible level0' ><span class='json-to-html-label'>heap</span></div>
       <div class="content"><table style="display: table; width:100%; table-layout: fixed;"><tr><th>test name</th><th>time taken (ms)</th><th>sample mean (secs)</th><th>sample deviation</th></tr><tr><td>100,000 add</td><td>6.85</td><td>0.01</td><td>3.38e-4</td></tr><tr><td>100,000 add & poll</td><td>35.35</td><td>0.04</td><td>8.44e-4</td></tr></table></div>
@@ -608,7 +616,7 @@ our <a href="https://github.com/zrwusa/vivid-algorithm" target="_blank" class="e
     <td>Counter</td>
   </tr>
   <tr>
-    <td>LinkedHashMap&lt;K, V&gt;</td>
+    <td>ES6 Map&lt;K, V&gt;</td>
     <td>-</td>
     <td>LinkedHashMap&lt;K, V&gt;</td>
     <td>OrderedDict</td>
