@@ -47,14 +47,137 @@ Understand how data-structure-typed performs, and when to use each structure.
 
 [//]: # (No deletion!!! Start of Replace Section)
 
-<h2>red-black-tree</h2><table><thead><tr><th>Test Case</th><th>Latency Avg (ms)</th><th>Min (ms)</th><th>Max (ms)</th><th>Stability</th></tr></thead><tbody><tr><td>1,000,000 set</td><td>508.80</td><td>407.39</td><td>735.02</td><td>±16.47%</td></tr><tr><td>1,000,000 get</td><td>3.60</td><td>2.59</td><td>10.73</td><td>±12.76%</td></tr><tr><td>1,000,000 iterator</td><td>181.28</td><td>131.67</td><td>399.35</td><td>±21.13%</td></tr><tr><td>Competitor 1,000,000 set</td><td>657.36</td><td>646.08</td><td>668.05</td><td>±0.94%</td></tr><tr><td>Competitor 1,000,000 get</td><td>707.92</td><td>661.39</td><td>774.77</td><td>±4.43%</td></tr></tbody></table><h2>queue</h2><table><thead><tr><th>Test Case</th><th>Latency Avg (ms)</th><th>Min (ms)</th><th>Max (ms)</th><th>Stability</th></tr></thead><tbody><tr><td>1,000,000 push</td><td>26.83</td><td>21.26</td><td>67.52</td><td>±7.94%</td></tr><tr><td>100,000 push & shift</td><td>2.71</td><td>2.40</td><td>3.56</td><td>±1.99%</td></tr><tr><td>Native JS
-Array 100,000 push & shift</td><td>1214.60</td><td>1060.42</td><td>1423.06</td><td>±10.02%</td></tr></tbody></table><h2>deque</h2><table><thead><tr><th>Test Case</th><th>Latency Avg (ms)</th><th>Min (ms)</th><th>Max (ms)</th><th>Stability</th></tr></thead><tbody><tr><td>1,000,000 push</td><td>8.85</td><td>8.48</td><td>9.64</td><td>±0.50%</td></tr><tr><td>1,000,000 push & pop</td><td>13.52</td><td>13.02</td><td>14.76</td><td>±0.54%</td></tr><tr><td>1,000,000 push & shift</td><td>14.08</td><td>13.62</td><td>15.34</td><td>±0.51%</td></tr><tr><td>100,000 push & shift</td><td>1.35</td><td>1.31</td><td>1.44</td><td>±0.33%</td></tr><tr><td>Native JS Array 100,000 push & shift</td><td>1429.15</td><td>944.17</td><td>1975.05</td><td>±26.96%</td></tr><tr><td>100,000 unshift & shift</td><td>1.29</td><td>1.25</td><td>1.54</td><td>±0.68%</td></tr><tr><td>Native JS Array 100,000 unshift & shift</td><td>2200.25</td><td>1844.73</td><td>2839.30</td><td>±17.78%</td></tr></tbody></table><h2>
-heap</h2><table><thead><tr><th>Test Case</th><th>Latency Avg (ms)</th><th>Min (ms)</th><th>Max (ms)</th><th>Stability</th></tr></thead><tbody><tr><td>100,000 add</td><td>4.70</td><td>4.36</td><td>5.15</td><td>±0.81%</td></tr><tr><td>100,000 add & poll</td><td>17.31</td><td>16.65</td><td>18.67</td><td>±0.57%</td></tr></tbody></table><h2>avl-tree</h2><table><thead><tr><th>Test Case</th><th>Latency Avg (ms)</th><th>Min (ms)</th><th>Max (ms)</th><th>Stability</th></tr></thead><tbody><tr><td>100,000 set randomly</td><td>354.58</td><td>320.37</td><td>396.77</td><td>±5.90%</td></tr><tr><td>100,000 set</td><td>310.29</td><td>294.79</td><td>362.25</td><td>±4.57%</td></tr><tr><td>100,000 get</td><td>0.26</td><td>0.25</td><td>0.29</td><td>±0.44%</td></tr><tr><td>100,000 getNode</td><td>199.21</td><td>170.37</td><td>228.69</td><td>±4.40%</td></tr><tr><td>100,000 iterator</td><td>15.41</td><td>13.39</td><td>29.67</td><td>±4.05%</td></tr><tr><td>100,000 set & delete orderly</td><td>436.63</td><td>
-426.38</td><td>457.78</td><td>±1.52%</td></tr><tr><td>100,000 set & delete randomly</td><td>526.98</td><td>512.67</td><td>544.63</td><td>±1.87%</td></tr></tbody></table><h2>hash-map</h2><table><thead><tr><th>Test Case</th><th>Latency Avg (ms)</th><th>Min (ms)</th><th>Max (ms)</th><th>Stability</th></tr></thead><tbody><tr><td>1,000,000 set</td><td>40.68</td><td>33.35</td><td>59.21</td><td>±4.69%</td></tr><tr><td>Native JS Map 1,000,000 set</td><td>144.13</td><td>131.77</td><td>167.71</td><td>±3.43%</td></tr><tr><td>Native JS Set 1,000,000 add</td><td>112.65</td><td>104.13</td><td>148.36</td><td>±4.84%</td></tr><tr><td>1,000,000 set & get</td><td>45.40</td><td>36.83</td><td>57.24</td><td>±4.56%</td></tr><tr><td>Native JS Map 1,000,000 set & get</td><td>195.80</td><td>184.61</td><td>220.64</td><td>±3.12%</td></tr><tr><td>Native JS Set 1,000,000 add & has</td><td>159.47</td><td>148.45</td><td>196.09</td><td>±4.13%</td></tr><tr><td>1,000,000 ObjKey set & get</td><td>239.09</td><td>
-210.63</td><td>272.97</td><td>±5.14%</td></tr><tr><td>Native JS Map 1,000,000 ObjKey set & get</td><td>207.48</td><td>181.81</td><td>240.56</td><td>±5.90%</td></tr><tr><td>Native JS Set 1,000,000 ObjKey add & has</td><td>188.86</td><td>162.40</td><td>246.83</td><td>±8.41%</td></tr></tbody></table><h2>directed-graph</h2><table><thead><tr><th>Test Case</th><th>Latency Avg (ms)</th><th>Min (ms)</th><th>Max (ms)</th><th>Stability</th></tr></thead><tbody><tr><td>1,000 addVertex</td><td>0.05</td><td>0.04</td><td>0.05</td><td>±0.37%</td></tr><tr><td>1,000 addEdge</td><td>3.00</td><td>2.78</td><td>5.35</td><td>±2.48%</td></tr><tr><td>1,000 getVertex</td><td>0.04</td><td>0.04</td><td>0.04</td><td>±0.52%</td></tr><tr><td>1,000 getEdge</td><td>44.78</td><td>40.89</td><td>97.02</td><td>±5.62%</td></tr><tr><td>tarjan</td><td>241.55</td><td>235.87</td><td>269.07</td><td>±1.82%</td></tr><tr><td>topologicalSort</td><td>200.74</td><td>197.47</td><td>219.65</td><td>±1.30%</td></tr></tbody></table><h2>
-trie</h2><table><thead><tr><th>Test Case</th><th>Latency Avg (ms)</th><th>Min (ms)</th><th>Max (ms)</th><th>Stability</th></tr></thead><tbody><tr><td>100,000 push</td><td>27.66</td><td>25.13</td><td>37.31</td><td>±1.98%</td></tr><tr><td>100,000 getWords</td><td>64.62</td><td>37.66</td><td>288.42</td><td>±29.56%</td></tr></tbody></table><h2>stack</h2><table><thead><tr><th>Test Case</th><th>Latency Avg (ms)</th><th>Min (ms)</th><th>Max (ms)</th><th>Stability</th></tr></thead><tbody><tr><td>1,000,000 push</td><td>26.57</td><td>22.36</td><td>33.50</td><td>±3.44%</td></tr><tr><td>1,000,000 push & pop</td><td>30.30</td><td>25.14</td><td>55.18</td><td>±4.78%</td></tr></tbody></table>
+### RedBlackTree
 
-[//]: # (No deletion!!! End of Replace Section)
+| Test Case     | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|---------------|----------|----------|----------|-----------|--------------|
+| 1,000,000 set | 867.55   | 790.66   | 1193.22  | ±15.37%   | 168.93       |
+| 1,000,000 get | 88.65    | 86.8     | 91.48    | ±0.44%    | 45.4         |
+
+### Queue
+
+| Test Case                            | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|--------------------------------------|----------|----------|----------|-----------|--------------|
+| 1,000,000 push                       | 33.4     | 26.33    | 145.41   | ±13.78%   | 1.69         |
+| 100,000 push & shift                 | 3.32     | 2.8      | 15.5     | ±8.8%     | 0.36         |
+| Native JS Array 100,000 push & shift | 1590.01  | 1447.58  | 1794.71  | ±7.89%    | 0.2          |
+
+### Deque
+
+| Test Case                            | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|--------------------------------------|----------|----------|----------|-----------|--------------|
+| 1M push                              | 13.29    | 6.8      | 37.04    | ±10.88%   | 1.68         |
+| 1M push & pop                        | 13.29    | 10.32    | 42.8     | ±8.41%    | 2.31         |
+| 1M push & shift                      | 13.1     | 10.59    | 35       | ±6.13%    | 2.01         |
+| 100K push & shift                    | 1.42     | 1.36     | 2.37     | ±2.04%    | 0.23         |
+| Native JS Array 100K push & shift    | 1569.8   | 1387.13  | 1780.44  | ±9.3%     | 344.14       |
+| 100K unshift & shift                 | 1.22     | 1.16     | 1.66     | ±1.6%     | 0.19         |
+| Native JS Array 100K unshift & shift | 2503.14  | 2456.1   | 2547.76  | ±2.15%    | 696.72       |
+
+### Heap
+
+| Test Case       | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|-----------------|----------|----------|----------|-----------|--------------|
+| 100K add        | 4.22     | 3.95     | 6.3      | ±1.44%    | -            |
+| 100K add & poll | 19.01    | 18.2     | 27.53    | ±1.54%    | -            |
+
+### AVLTree
+
+| Test Case                  | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|----------------------------|----------|----------|----------|-----------|--------------|
+| 100K add randomly          | 508.25   | 496.73   | 530      | ±1.8%     | 17.35        |
+| 100K add                   | 486.81   | 456.54   | 591.94   | ±7.95%    | 15.88        |
+| 100K get                   | 0.76     | 0.73     | 0.8      | ±0.32%    | 8.59         |
+| 100K getNode               | 393.83   | 386.54   | 396.46   | ±0.5%     | 8.45         |
+| 100K iterator              | 8.92     | 8.5      | 10.17    | ±0.62%    | 1.43         |
+| 100K add & delete orderly  | 800.09   | 788.46   | 829.76   | ±1.69%    | 20.95        |
+| 100K add & delete randomly | 890.77   | 885.4    | 896.23   | ±0.41%    | 39.22        |
+
+### DoublyLinkedList
+
+| Test Case            | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|----------------------|----------|----------|----------|-----------|--------------|
+| 100k push            | 5.07     | 4.54     | 10.96    | ±4.36%    | 5.48         |
+| 100k unshift         | 5.35     | 4.63     | 6.95     | ±2.64%    | 5.79         |
+| 100k unshift & shift | 4.35     | 4.18     | 5.02     | ±0.5%     | 5.56         |
+| 100k addBefore       | 5199.92  | 4822.27  | 5823.22  | ±10.06%   | 0.51         |
+
+### SinglyLinkedList
+
+| Test Case         | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|-------------------|----------|----------|----------|-----------|--------------|
+| 100k push & shift | 4.11     | 3.91     | 7.15     | ±1.94%    | 4.83         |
+| 10K push & pop    | 119.08   | 114.23   | 130.69   | ±1.7%     | 0.48         |
+| 10K addBefore     | 9.4      | 8.74     | 11.15    | ±1.37%    | 0.04         |
+
+### HashMap
+
+| Test Case                         | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|-----------------------------------|----------|----------|----------|-----------|--------------|
+| 1M set                            | 64.33    | 48.57    | 239.35   | ±20.65%   | 71.98        |
+| Native JS Map 1M set              | 175.28   | 155.95   | 379.37   | ±13.86%   | 165.34       |
+| Native JS Set 1M add              | 136.08   | 119.23   | 162.36   | ±3.72%    | 70.68        |
+| 1M set & get                      | 54.51    | 41.9     | 92.59    | ±6.32%    | 80.43        |
+| Native JS Map 1M set & get        | 224.67   | 218.39   | 236.74   | ±1.23%    | 212.85       |
+| Native JS Set 1M add & has        | 192.1    | 171.8    | 355.48   | ±11.12%   | 75.83        |
+| 1M ObjKey set & get               | 290.88   | 258.37   | 459.73   | ±11.35%   | 78.62        |
+| Native JS Map 1M ObjKey set & get | 235.2    | 213.86   | 373.52   | ±9.39%    | 211.57       |
+| Native JS Set 1M ObjKey add & has | 207.8    | 189.68   | 333.77   | ±8.99%    | 77.24        |
+
+### DirectedGraph
+
+| Test Case       | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|-----------------|----------|----------|----------|-----------|--------------|
+| 1,000 addVertex | 0.05     | 0.05     | 0.05     | ±0.21%    | -            |
+| 1,000 addEdge   | 3.24     | 3.04     | 3.74     | ±0.89%    | -            |
+| 1,000 getVertex | 0.04     | 0.04     | 0.05     | ±1.26%    | -            |
+| 1,000 getEdge   | 40.79    | 36.83    | 86.7     | ±5.04%    | -            |
+| tarjan          | 242.7    | 236.18   | 268.13   | ±1.82%    | -            |
+| topologicalSort | 204.39   | 197.56   | 224.19   | ±2.3%     | -            |
+
+### BST
+
+| Test Case                    | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|------------------------------|----------|----------|----------|-----------|--------------|
+| 10,000 add randomly          | 4.62     | 4.34     | 6.05     | ±1.22%    | -            |
+| 10,000 add & delete randomly | 47.24    | 45.84    | 51.57    | ±0.74%    | -            |
+| 10,000 addMany               | 10.13    | 9.47     | 14.6     | ±1.71%    | -            |
+| 10,000 get                   | 9.9      | 9.57     | 10.74    | ±0.58%    | -            |
+
+### Trie
+
+| Test Case        | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|------------------|----------|----------|----------|-----------|--------------|
+| 100,000 add      | 27.56    | 25.99    | 30.17    | ±1.02%    | -            |
+| 100,000 getWords | 127.19   | 114.45   | 142.51   | ±1.82%    | -            |
+
+### Stack
+
+| Test Case     | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|---------------|----------|----------|----------|-----------|--------------|
+| 1M push       | 29.34    | 25.63    | 86.31    | ±6.65%    | 1.66         |
+| 1M push & pop | 30.5     | 28.66    | 34.27    | ±0.99%    | 2.62         |
+
+### AVLRBRangeSearch
+
+| Test Case                            | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|--------------------------------------|----------|----------|----------|-----------|--------------|
+| AVL Tree 100,000 rangeSearch         | 0.01     | 0.01     | 0.01     | ±0.52%    | -            |
+| Red-Black Tree 1,000,000 rangeSearch | 0.01     | 0.01     | 0.01     | ±0.22%    | -            |
+
+### BinaryTree
+
+| Test Case                   | Avg (ms) | Min (ms) | Max (ms) | Stability | C++ Avg (ms) |
+|-----------------------------|----------|----------|----------|-----------|--------------|
+| 1,000 add randomly          | 16.4     | 15.96    | 17.14    | ±0.3%     | -            |
+| 1,000 add & delete randomly | 24.27    | 23.23    | 30.21    | ±1.56%    | -            |
+| 1,000 addMany               | 16.49    | 15.94    | 16.97    | ±0.36%    | -            |
+| 1,000 get                   | 18.15    | 16.14    | 31.26    | ±4.97%    | -            |
+| 1,000 has                   | 27.8     | 27       | 30.24    | ±0.55%    | -            |
+| 1,000 dfs                   | 154.85   | 148.78   | 211.52   | ±4.35%    | -            |
+| 1,000 bfs                   | 74.24    | 65.09    | 116.69   | ±6.38%    | -            |
+| 1,000 morris                | 65.19    | 61.73    | 89.57    | ±2.18%    | -            |
+
 
 ## Real-World Scenarios
 
