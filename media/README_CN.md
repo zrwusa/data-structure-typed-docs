@@ -6,9 +6,9 @@
 
 ![npm](https://img.shields.io/npm/dm/data-structure-typed)
 ![GitHub contributors](https://img.shields.io/github/contributors/zrwusa/data-structure-typed)
-![npm package minimized gzipped size (select exports)](https://img.shields.io/bundlejs/size/data-structure-typed)
 ![GitHub top language](https://img.shields.io/github/languages/top/zrwusa/data-structure-typed)
 ![GITHUB Star](https://img.shields.io/github/stars/zrwusa/data-structure-typed)
+[![codecov](https://img.shields.io/codecov/c/github/zrwusa/data-structure-typed)](https://codecov.io/gh/zrwusa/data-structure-typed)
 ![eslint](https://aleen42.github.io/badges/src/eslint.svg)
 ![NPM](https://img.shields.io/npm/l/data-structure-typed)
 ![npm](https://img.shields.io/npm/v/data-structure-typed)
@@ -74,17 +74,17 @@ for (let i = 0; i < 100000; i++) {
   deque.shift();  // O(1) - 仅移动指针
 }
 // 耗时: 5.83ms ✅
-// **快 484 倍！**
+// **约快 485 倍！**
 ```
 
 ---
 
 ## 🚀 性能 (简版)
 
-- **快 10-40%** 比常见 JS 实现在热路径中
-  - Array.sort() O(n log n) → TreeSet O(log n) 插入
-  - 重复 Array.shift() O(n) → Queue O(1)
-  - 手动索引跟踪 → RB-Tree 自动平衡
+- **针对 V8 热路径优化**（以 [PERFORMANCE_CN.md](./docs/PERFORMANCE_CN.md) 的实测基准为准）
+  - 重复 Array.shift() O(n) → Deque O(1)
+  - 频繁更新且需要保持有序 → RedBlackTree O(log n)
+  - 如果每次更新后都要保持排序，尽量避免反复 `Array.sort()`
 
 - **针对 V8 JIT 优化** (Node.js 18+、现代浏览器)
 
