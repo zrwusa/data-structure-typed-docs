@@ -54,11 +54,11 @@ Understand how data-structure-typed performs, and when to use each structure.
 ### DoublyLinkedList
 | Test Case | Avg (ms) | Min (ms) | Max (ms) | Stability |
 |-----------|----------|----------|----------|-----------|
-| 100k push | 6.2519 | 4.7194 | 19.14 | ±6.56% |
-| 100k unshift | 5.1345 | 4.3093 | 21.8298 | ±12.08% |
-| 100k unshift & shift | 3.834 | 3.7556 | 4.3002 | ±0.49% |
-| 100k addAt(mid) | 1387.08 | 1135.41 | 1836.53 | ±21.9% |
-| 100k addBefore (cursor) | 5.5929 | 4.9605 | 9.1778 | ±3.64% |
+| 100k push | 5.3214 | 4.322 | 23.8263 | ±11.96% |
+| 100k unshift | 5.6022 | 4.6106 | 16.7947 | ±8.28% |
+| 100k unshift & shift | 3.9145 | 3.7706 | 5.0804 | ±1.32% |
+| 100k addAt(mid) | 1391.45 | 1191.73 | 1772.25 | ±17.46% |
+| 100k addBefore (cursor) | 7.3741 | 5.1968 | 43.4887 | ±15.39% |
 
 #### DoublyLinkedList (side-by-side)
 
@@ -67,11 +67,11 @@ Understand how data-structure-typed performs, and when to use each structure.
 
 | Test Case | DST (ms) | js-sdsl (ms) | Native (ms) | C++ (ms) |
 | ----------- | ---------: | ---------: | ---------: | ---------: |
-| 100k push | 6.2519 | 1.7794 | 1.8739 | 5.7 |
-| 100k unshift | 5.1345 | 1.6322 | 891.36 | 5.85 |
-| 100k unshift & shift | 3.834 | 2.0059 | 1992.65 | 5.74 |
-| 100k addAt(mid) | 1387.08 | - | - | 754.81 |
-| 100k addBefore (cursor) | 5.5929 | - | - | 6.18 |
+| 100k push | 5.3214 | 1.7305 | 1.893 | 5.7 |
+| 100k unshift | 5.6022 | 1.6119 | 889.89 | 5.85 |
+| 100k unshift & shift | 3.9145 | 1.9446 | 2119.81 | 5.74 |
+| 100k addAt(mid) | 1391.45 | - | - | 754.81 |
+| 100k addBefore (cursor) | 7.3741 | - | - | 6.18 |
 
 
 ### SinglyLinkedList
@@ -430,12 +430,12 @@ Understand how data-structure-typed performs, and when to use each structure.
 ### red-black-tree-cjs
 | Test Case | Avg (ms) | Min (ms) | Max (ms) | Stability |
 |-----------|----------|----------|----------|-----------|
-| 1M get | 123.51 | 99.96 | 141.18 | ±21.53% |
-| 1M upd SEQ | 138.08 | 119.8 | 154.69 | ±14.65% |
-| 1M upd RAND | 169.94 | 153.81 | 177.44 | ±6.93% |
-| 1M ins SEQ | 772.3 | 664.22 | 1188.71 | ±37.43% |
-| 1M ins RAND | 1337.02 | 1009.75 | 1463.93 | ±17.20% |
-| 1M keys-only | 4.2044 | 2.7263 | 5.9702 | ±42.33% |
+| 1M get | 97.57 | 75.66 | 115.14 | ±22.94% |
+| 1M upd SEQ | 85.76 | 78.96 | 92.92 | ±8.16% |
+| 1M upd RAND | 113.48 | 101.84 | 120.9 | ±7.77% |
+| 1M ins SEQ | 493.45 | 436.86 | 670.44 | ±25.42% |
+| 1M ins RAND | 1023.19 | 976.56 | 1094.17 | ±5.36% |
+| 1M keys-only | 4.2208 | 2.7142 | 5.9026 | ±41.83% |
 
 #### red-black-tree-cjs (side-by-side)
 
@@ -444,12 +444,12 @@ Understand how data-structure-typed performs, and when to use each structure.
 
 | Test Case | DST (ms) | js-sdsl (ms) | Native (ms) | C++ (ms) |
 | ----------- | ---------: | ---------: | ---------: | ---------: |
-| 1M get | 123.51 | 234.37 | - | - |
-| 1M upd SEQ | 138.08 | 343.47 | - | - |
-| 1M upd RAND | 169.94 | 633.05 | - | - |
-| 1M ins SEQ | 772.3 | 138.62 | - | - |
-| 1M ins RAND | 1337.02 | 942.67 | - | - |
-| 1M keys-only | 4.2044 | - | - | - |
+| 1M get | 97.57 | - | - | - |
+| 1M upd SEQ | 85.76 | - | - | - |
+| 1M upd RAND | 113.48 | - | - | - |
+| 1M ins SEQ | 493.45 | - | - | - |
+| 1M ins RAND | 1023.19 | - | - | - |
+| 1M keys-only | 4.2208 | - | - | - |
 
 
 
