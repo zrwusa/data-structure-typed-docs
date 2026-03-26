@@ -125,7 +125,149 @@
 <p><strong>Tree-shakable</strong> ESM / CJS / legacy builds</p>
 </li>
 </ul>
-<p>📊 <a href="media/benchmark.html">Full benchmarks →</a></p>
+<table>
+<thead>
+<tr>
+<th>Data Structure</th>
+<th>Test Case</th>
+<th>DST (ms)</th>
+<th>Native (ms)</th>
+<th>C++ (ms)</th>
+<th>js-sdsl (ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Queue</td>
+<td>1M push</td>
+<td>26.93</td>
+<td>23.83</td>
+<td>1.70</td>
+<td>27.59</td>
+</tr>
+<tr>
+<td>Deque</td>
+<td>1M push</td>
+<td>9.77</td>
+<td>26.81</td>
+<td>1.76</td>
+<td>7.79</td>
+</tr>
+<tr>
+<td>DoublyLinkedList</td>
+<td>100k push</td>
+<td>5.70</td>
+<td>2.40</td>
+<td>5.70</td>
+<td>1.90</td>
+</tr>
+<tr>
+<td>SinglyLinkedList</td>
+<td>100K unshift &amp; shift</td>
+<td>3.77</td>
+<td>1958.39</td>
+<td>4.80</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PriorityQueue</td>
+<td>100K add</td>
+<td>4.00</td>
+<td>-</td>
+<td>1.05</td>
+<td>4.96</td>
+</tr>
+<tr>
+<td>TreeSet</td>
+<td>1M add</td>
+<td>962.76</td>
+<td>-</td>
+<td>462.00</td>
+<td>640.31</td>
+</tr>
+<tr>
+<td>TreeMap</td>
+<td>1M set</td>
+<td>996.95</td>
+<td>-</td>
+<td>512.00</td>
+<td>624.82</td>
+</tr>
+<tr>
+<td>TreeMultiSet</td>
+<td>1M add (TreeMultiSet expanded iteration)</td>
+<td>218.78</td>
+<td>-</td>
+<td>752.00</td>
+<td>-</td>
+</tr>
+<tr>
+<td>TreeMultiMap</td>
+<td>1M add (TreeMultiMap bucketed)</td>
+<td>387.80</td>
+<td>-</td>
+<td>731.00</td>
+<td>-</td>
+</tr>
+<tr>
+<td>RedBlackTree</td>
+<td>1M get</td>
+<td>108.02</td>
+<td>-</td>
+<td>52.97</td>
+<td>-</td>
+</tr>
+<tr>
+<td>BST</td>
+<td>10K add randomly</td>
+<td>5.50</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>BinaryTree</td>
+<td>1K add randomly</td>
+<td>9.77</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>HashMap</td>
+<td>1M set</td>
+<td>146.17</td>
+<td>144.83</td>
+<td>76.26</td>
+<td>94.16</td>
+</tr>
+<tr>
+<td>Trie</td>
+<td>100K add</td>
+<td>141.10</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>DirectedGraph</td>
+<td>1K addVertex</td>
+<td>0.05</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Stack</td>
+<td>1M push</td>
+<td>46.38</td>
+<td>30.28</td>
+<td>1.65</td>
+<td>32.38</td>
+</tr>
+</tbody>
+</table>
+<p>📊 <a href="media/PERFORMANCE.md">Full benchmarks →</a> | <a href="media/benchmark.html">Interactive report →</a></p>
 <hr>
 <a id="md:✨-key-features" class="tsd-anchor"></a><h2 class="tsd-anchor-link">✨ Key Features<a href="#md:✨-key-features" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><a id="md:🏠-uniform-api" class="tsd-anchor"></a><h3 class="tsd-anchor-link">🏠 Uniform API<a href="#md:🏠-uniform-api" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>Don't learn new APIs. Just use <code>push</code>, <code>pop</code>, <code>map</code>, <code>filter</code>, and <code>reduce</code> everywhere.</p>
 <pre><code class="javascript"><span class="hl-3">// All linear structures use THE SAME 4 methods</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">deque</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-0">Deque</span><span class="hl-1">([</span><span class="hl-6">1</span><span class="hl-1">, </span><span class="hl-6">2</span><span class="hl-1">, </span><span class="hl-6">3</span><span class="hl-1">]);</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">queue</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-0">Queue</span><span class="hl-1">([</span><span class="hl-6">1</span><span class="hl-1">, </span><span class="hl-6">2</span><span class="hl-1">, </span><span class="hl-6">3</span><span class="hl-1">]);</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">doublyLinkeList</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-0">DoublyLinkedList</span><span class="hl-1">([</span><span class="hl-6">1</span><span class="hl-1">, </span><span class="hl-6">2</span><span class="hl-1">, </span><span class="hl-6">3</span><span class="hl-1">]);</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">singlyLinkedList</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-0">SinglyLinkedList</span><span class="hl-1">([</span><span class="hl-6">1</span><span class="hl-1">, </span><span class="hl-6">2</span><span class="hl-1">, </span><span class="hl-6">3</span><span class="hl-1">]);</span><br/><br/><span class="hl-3">// They ALL support:</span><br/><span class="hl-8">structure</span><span class="hl-1">.</span><span class="hl-0">push</span><span class="hl-1">(</span><span class="hl-8">item</span><span class="hl-1">);          </span><span class="hl-3">// Add to end</span><br/><span class="hl-8">structure</span><span class="hl-1">.</span><span class="hl-0">pop</span><span class="hl-1">();               </span><span class="hl-3">// Remove from end</span><br/><span class="hl-8">structure</span><span class="hl-1">.</span><span class="hl-0">shift</span><span class="hl-1">();             </span><span class="hl-3">// Remove from start</span><br/><span class="hl-8">structure</span><span class="hl-1">.</span><span class="hl-0">unshift</span><span class="hl-1">(</span><span class="hl-8">item</span><span class="hl-1">);       </span><span class="hl-3">// Add to start</span>
