@@ -250,13 +250,19 @@
 {"instruction":"What is the time complexity of AVLTree.map()?","output":"AVLTree.map() runs in O(N log N) time complexity.","type":"factual"}
 {"instruction":"How fast is map in AVLTree?","output":"AVLTree.map() operates in O(N log N) time.","type":"factual"}
 {"instruction":"What does AVLTree.map() do?","output":"Creates a new AVLTree by mapping each [key, value] pair.","type":"factual"}
-{"instruction":"What does BinaryIndexedTree.readSingle() do?","output":"The function \"readSingle\" reads a single number from a specified index.","type":"factual"}
-{"instruction":"What does BinaryIndexedTree.update() do?","output":"The \"update\" function updates the value at a given index by adding a delta and triggers a callback\nto notify of the change.","type":"factual"}
-{"instruction":"What does BinaryIndexedTree.writeSingle() do?","output":"The function \"writeSingle\" checks the index and writes a single value with a given frequency.","type":"factual"}
-{"instruction":"What does BinaryIndexedTree.read() do?","output":"The read function takes a count parameter, checks if it is an integer, and returns the result of\ncalling the _read function with the count parameter clamped between 0 and the maximum value.","type":"factual"}
-{"instruction":"What does BinaryIndexedTree.lowerBound() do?","output":"The function returns the lower bound of a non-descending sequence that sums up to a given number.","type":"factual"}
-{"instruction":"What does BinaryIndexedTree.upperBound() do?","output":"The upperBound function returns the index of the first element in a sequence that is greater than\nor equal to a given sum.","type":"factual"}
-{"instruction":"What does BinaryIndexedTree.getPrefixSum() do?","output":"The function calculates the prefix sum of an array using a binary indexed tree.","type":"factual"}
+{"instruction":"What does BinaryIndexedTree.update() do?","output":"Point update: add delta to the value at index (0-based).\nTime: O(log n)","type":"factual"}
+{"instruction":"How do I set in BinaryIndexedTree?","output":"Use BinaryIndexedTree.set(). BinaryIndexedTree.set() Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)","type":"howto"}
+{"instruction":"How to call set on a BinaryIndexedTree?","output":"Call BinaryIndexedTree.set(index, value). Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)","type":"howto"}
+{"instruction":"What does BinaryIndexedTree.set() do?","output":"Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)","type":"factual"}
+{"instruction":"Show me an example of using BinaryIndexedTree.set()","output":"const ds = new BinaryIndexedTree();\nds.set(42, 42); // Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)","type":"howto"}
+{"instruction":"What does BinaryIndexedTree.get() do?","output":"Get the point value at index (0-based).\nTime: O(log n)","type":"factual"}
+{"instruction":"Show me an example of using BinaryIndexedTree.get()","output":"const ds = new BinaryIndexedTree();\nds.get(42); // Get the point value at index (0-based).\nTime: O(log n)","type":"howto"}
+{"instruction":"What does BinaryIndexedTree.query() do?","output":"Prefix sum query: returns sum of elements [0..index] (inclusive, 0-based).\nTime: O(log n)","type":"factual"}
+{"instruction":"What does BinaryIndexedTree.queryRange() do?","output":"Range sum query: returns sum of elements [start..end] (inclusive, 0-based).\nTime: O(log n)","type":"factual"}
+{"instruction":"What does BinaryIndexedTree.lowerBound() do?","output":"Find the smallest index i such that prefix sum [0..i] >= sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n)","type":"factual"}
+{"instruction":"What does BinaryIndexedTree.upperBound() do?","output":"Find the smallest index i such that prefix sum [0..i] > sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n)","type":"factual"}
+{"instruction":"What does BinaryIndexedTree.toArray() do?","output":"Returns the point values as a plain array.\nTime: O(n log n)","type":"factual"}
+{"instruction":"What does BinaryIndexedTree.[Symbol.iterator]() do?","output":"Iterate over point values in index order.","type":"factual"}
 {"instruction":"What is the time complexity of BinaryTree.createNode()?","output":"BinaryTree.createNode() runs in O(1) time complexity.","type":"factual"}
 {"instruction":"How fast is createNode in BinaryTree?","output":"BinaryTree.createNode() operates in O(1) time.","type":"factual"}
 {"instruction":"Is BinaryTree.createNode() efficient?","output":"Yes, BinaryTree.createNode() is very efficient with constant time O(1) complexity.","type":"factual"}
@@ -507,12 +513,19 @@
 {"instruction":"How to call delete on a RedBlackTree?","output":"Call RedBlackTree.delete(keyNodeEntryRawOrPredicate). Delete a node by key/node/entry and rebalance as needed.","type":"howto"}
 {"instruction":"What does RedBlackTree.delete() do?","output":"Delete a node by key/node/entry and rebalance as needed.","type":"factual"}
 {"instruction":"Show me an example of using RedBlackTree.delete()","output":"const ds = new RedBlackTree();\nds.delete(element); // Delete a node by key/node/entry and rebalance as needed.","type":"howto"}
-{"instruction":"What is the time complexity of RedBlackTree.map()?","output":"RedBlackTree.map() runs in O(n) time complexity.","type":"factual"}
-{"instruction":"How fast is map in RedBlackTree?","output":"RedBlackTree.map() operates in O(n) time.","type":"factual"}
-{"instruction":"What does RedBlackTree.map() do?","output":"Transform entries into a like-kind red-black tree with possibly different key/value types.","type":"factual"}
-{"instruction":"What does SegmentTree.build() do?","output":"The build function creates a segment tree by recursively dividing the given range into smaller segments and assigning\nthe sum of values to each segment.","type":"factual"}
-{"instruction":"What does SegmentTree.updateNode() do?","output":"The function updates the value of a node in a segment tree and recalculates the sum of its children if they exist.","type":"factual"}
-{"instruction":"What does SegmentTree.querySumByRange() do?","output":"The function `querySumByRange` calculates the sum of values within a given range in a segment tree.","type":"factual"}
+{"instruction":"What is the time complexity of RedBlackTree.perfectlyBalance()?","output":"RedBlackTree.perfectlyBalance() runs in O(n) time complexity.","type":"factual"}
+{"instruction":"How fast is perfectlyBalance in RedBlackTree?","output":"RedBlackTree.perfectlyBalance() operates in O(n) time.","type":"factual"}
+{"instruction":"What does RedBlackTree.perfectlyBalance() do?","output":"Transform entries into a like-kind red-black tree with possibly different key/value types.","type":"factual"}
+{"instruction":"What does SegmentTree.sum() do?","output":"Create a sum segment tree.","type":"factual"}
+{"instruction":"What does SegmentTree.min() do?","output":"Create a min segment tree.","type":"factual"}
+{"instruction":"What does SegmentTree.max() do?","output":"Create a max segment tree.","type":"factual"}
+{"instruction":"What does SegmentTree.update() do?","output":"Point update: set element at index to value.\nTime: O(log n)","type":"factual"}
+{"instruction":"What does SegmentTree.query() do?","output":"Range query: returns merger result over [start, end] (inclusive).\nTime: O(log n)","type":"factual"}
+{"instruction":"What does SegmentTree.get() do?","output":"Get element at index.\nTime: O(1)","type":"factual"}
+{"instruction":"Show me an example of using SegmentTree.get()","output":"const ds = new SegmentTree();\nds.get(42); // Get element at index.\nTime: O(1)","type":"howto"}
+{"instruction":"What does SegmentTree.maxRight() do?","output":"Find the largest r such that predicate(query(left, r)) is true.\nReturns left-1 if predicate(identity) is false.\nReturns n-1 if predicate holds for the entire range [left, n-1].\nTime: O(log n)","type":"factual"}
+{"instruction":"What does SegmentTree.minLeft() do?","output":"Find the smallest l such that predicate(query(l, right)) is true.\nReturns right+1 if predicate(identity) is false.\nReturns 0 if predicate holds for the entire range [0, right].\nTime: O(log n)","type":"factual"}
+{"instruction":"What does SegmentTree.[Symbol.iterator]() do?","output":"Iterates over leaf values in index order.","type":"factual"}
 {"instruction":"What does TreeMap.createDefaultComparator() do?","output":"Create the strict default comparator.\n\nSupports:\n- `number` (rejects `NaN`; treats `-0` and `0` as equal)\n- `string`\n- `Date` (orders by `getTime()`, rejects invalid dates)\n\nFor other key types, a custom comparator must be provided.","type":"factual"}
 {"instruction":"What does TreeMap.isEmpty() do?","output":"Whether the map is empty.","type":"factual"}
 {"instruction":"What is the time complexity of TreeMap.set()?","output":"TreeMap.set() runs in O(log n) time complexity.","type":"factual"}
@@ -572,6 +585,9 @@
 {"instruction":"What does TreeMap.higher() do?","output":"Smallest entry whose key is > the given key.","type":"factual"}
 {"instruction":"What does TreeMap.lower() do?","output":"Largest entry whose key is < the given key.","type":"factual"}
 {"instruction":"What does TreeMap.rangeSearch() do?","output":"Return all entries in a given key range.","type":"factual"}
+{"instruction":"What is the time complexity of TreeMap.clone()?","output":"TreeMap.clone() runs in O(n log n) time complexity.","type":"factual"}
+{"instruction":"How fast is clone in TreeMap?","output":"TreeMap.clone() operates in O(n log n) time.","type":"factual"}
+{"instruction":"What does TreeMap.clone() do?","output":"Creates a shallow clone of this map.","type":"factual"}
 {"instruction":"What is the time complexity of TreeMultiMap.isEmpty()?","output":"TreeMultiMap.isEmpty() runs in O(1) time complexity.","type":"factual"}
 {"instruction":"How fast is isEmpty in TreeMultiMap?","output":"TreeMultiMap.isEmpty() operates in O(1) time.","type":"factual"}
 {"instruction":"Is TreeMultiMap.isEmpty() efficient?","output":"Yes, TreeMultiMap.isEmpty() is very efficient with constant time O(1) complexity.","type":"factual"}
@@ -840,6 +856,9 @@
 {"instruction":"What does TreeSet.higher() do?","output":"Smallest key that is > the given key.","type":"factual"}
 {"instruction":"What does TreeSet.lower() do?","output":"Largest key that is < the given key.","type":"factual"}
 {"instruction":"What does TreeSet.rangeSearch() do?","output":"Return all keys in a given range.","type":"factual"}
+{"instruction":"What is the time complexity of TreeSet.clone()?","output":"TreeSet.clone() runs in O(n log n) time complexity.","type":"factual"}
+{"instruction":"How fast is clone in TreeSet?","output":"TreeSet.clone() operates in O(n log n) time.","type":"factual"}
+{"instruction":"What does TreeSet.clone() do?","output":"Creates a shallow clone of this set.","type":"factual"}
 {"instruction":"What is the time complexity of AbstractGraph.createVertex()?","output":"AbstractGraph.createVertex() runs in O(1) time complexity.","type":"factual"}
 {"instruction":"How fast is createVertex in AbstractGraph?","output":"AbstractGraph.createVertex() operates in O(1) time.","type":"factual"}
 {"instruction":"Is AbstractGraph.createVertex() efficient?","output":"Yes, AbstractGraph.createVertex() is very efficient with constant time O(1) complexity.","type":"factual"}
@@ -950,6 +969,9 @@
 {"instruction":"What is the time complexity of AbstractGraph.clone()?","output":"AbstractGraph.clone() runs in O(V + E) time complexity.","type":"factual"}
 {"instruction":"How fast is clone in AbstractGraph?","output":"AbstractGraph.clone() operates in O(V + E) time.","type":"factual"}
 {"instruction":"What does AbstractGraph.clone() do?","output":"Create a deep clone of the graph with the same species.","type":"factual"}
+{"instruction":"What does AbstractGraph.toVisual() do?","output":"Generate a text-based visual representation of the graph.\n\n**Adjacency list format:**\n```\nGraph (5 vertices, 6 edges):\nA -> B (1), C (2)\nB -> D (3)\nC -> (no outgoing edges)\nD -> A (1)\nE (isolated)\n```","type":"factual"}
+{"instruction":"What does AbstractGraph.toDot() do?","output":"Generate DOT language representation for Graphviz.","type":"factual"}
+{"instruction":"What does AbstractGraph.print() do?","output":"Print the graph to console.","type":"factual"}
 {"instruction":"What is the time complexity of DirectedGraph.fromKeys()?","output":"DirectedGraph.fromKeys() runs in O(V) time complexity.","type":"factual"}
 {"instruction":"How fast is fromKeys in DirectedGraph?","output":"DirectedGraph.fromKeys() operates in O(V) time.","type":"factual"}
 {"instruction":"What does DirectedGraph.fromKeys() do?","output":"Construct a directed graph from keys with value initializer `v => v`.","type":"factual"}
@@ -1085,6 +1107,7 @@
 {"instruction":"What is the time complexity of UndirectedGraph.edgeSet()?","output":"UndirectedGraph.edgeSet() runs in O(E) time complexity.","type":"factual"}
 {"instruction":"How fast is edgeSet in UndirectedGraph?","output":"UndirectedGraph.edgeSet() operates in O(E) time.","type":"factual"}
 {"instruction":"What does UndirectedGraph.edgeSet() do?","output":"Unique set of undirected edges across endpoints.","type":"factual"}
+{"instruction":"What does UndirectedGraph.getNeighbors() do?","output":"UndirectedGraph connectivity and neighbors","type":"factual"}
 {"instruction":"What is the time complexity of UndirectedGraph.getEndsOfEdge()?","output":"UndirectedGraph.getEndsOfEdge() runs in O(1) time complexity.","type":"factual"}
 {"instruction":"How fast is getEndsOfEdge in UndirectedGraph?","output":"UndirectedGraph.getEndsOfEdge() operates in O(1) time.","type":"factual"}
 {"instruction":"Is UndirectedGraph.getEndsOfEdge() efficient?","output":"Yes, UndirectedGraph.getEndsOfEdge() is very efficient with constant time O(1) complexity.","type":"factual"}
@@ -1102,6 +1125,12 @@
 {"instruction":"What is the time complexity of UndirectedGraph.tarjan()?","output":"UndirectedGraph.tarjan() runs in O(V + E) time complexity.","type":"factual"}
 {"instruction":"How fast is tarjan in UndirectedGraph?","output":"UndirectedGraph.tarjan() operates in O(V + E) time.","type":"factual"}
 {"instruction":"What does UndirectedGraph.tarjan() do?","output":"Tarjan-based bridge and articulation point detection.","type":"factual"}
+{"instruction":"What is the time complexity of UndirectedGraph.getBiconnectedComponents()?","output":"UndirectedGraph.getBiconnectedComponents() runs in O(V + E) time complexity.","type":"factual"}
+{"instruction":"How fast is getBiconnectedComponents in UndirectedGraph?","output":"UndirectedGraph.getBiconnectedComponents() operates in O(V + E) time.","type":"factual"}
+{"instruction":"What does UndirectedGraph.getBiconnectedComponents() do?","output":"Find biconnected components using edge-stack Tarjan variant.\nA biconnected component is a maximal biconnected subgraph.","type":"factual"}
+{"instruction":"What is the time complexity of UndirectedGraph.hasCycle()?","output":"UndirectedGraph.hasCycle() runs in O(V + E) time complexity.","type":"factual"}
+{"instruction":"How fast is hasCycle in UndirectedGraph?","output":"UndirectedGraph.hasCycle() operates in O(V + E) time.","type":"factual"}
+{"instruction":"What does UndirectedGraph.hasCycle() do?","output":"Detect whether the graph contains a cycle.\nUses DFS with parent tracking.","type":"factual"}
 {"instruction":"What is the time complexity of UndirectedGraph.getBridges()?","output":"UndirectedGraph.getBridges() runs in O(B) time complexity.","type":"factual"}
 {"instruction":"How fast is getBridges in UndirectedGraph?","output":"UndirectedGraph.getBridges() operates in O(B) time.","type":"factual"}
 {"instruction":"What does UndirectedGraph.getBridges() do?","output":"Get bridges discovered by `tarjan()`.","type":"factual"}
@@ -1537,13 +1566,29 @@
 {"instruction":"What is the time complexity of SinglyLinkedList.map()?","output":"SinglyLinkedList.map() runs in O(N) time complexity.","type":"factual"}
 {"instruction":"How fast is map in SinglyLinkedList?","output":"SinglyLinkedList.map() operates in O(N) time.","type":"factual"}
 {"instruction":"What does SinglyLinkedList.map() do?","output":"Map values into a new list (possibly different element type).","type":"factual"}
-{"instruction":"How do I add in SkipList?","output":"Use SkipList.add(). SkipList.add() ","type":"howto"}
-{"instruction":"How to call add on a SkipList?","output":"Call SkipList.add(key, value). ","type":"howto"}
-{"instruction":"Show me an example of using SkipList.add()","output":"const ds = new SkipList();\nds.add(element, element); // ","type":"howto"}
-{"instruction":"Show me an example of using SkipList.get()","output":"const ds = new SkipList();\nds.get(element); // ","type":"howto"}
-{"instruction":"How do I delete in SkipList?","output":"Use SkipList.delete(). SkipList.delete() ","type":"howto"}
-{"instruction":"How to call delete on a SkipList?","output":"Call SkipList.delete(key). ","type":"howto"}
-{"instruction":"Show me an example of using SkipList.delete()","output":"const ds = new SkipList();\nds.delete(element); // ","type":"howto"}
+{"instruction":"What does SkipList.createDefaultComparator() do?","output":"Creates a default comparator supporting number, string, Date, and bigint.","type":"factual"}
+{"instruction":"How do I set in SkipList?","output":"Use SkipList.set(). SkipList.set() Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.","type":"howto"}
+{"instruction":"How to call set on a SkipList?","output":"Call SkipList.set(key, value). Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.","type":"howto"}
+{"instruction":"What does SkipList.set() do?","output":"Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.","type":"factual"}
+{"instruction":"Show me an example of using SkipList.set()","output":"const ds = new SkipList();\nds.set(element, element); // Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.","type":"howto"}
+{"instruction":"What does SkipList.get() do?","output":"Get the value for a key, or `undefined` if not found.\nOverrides base O(n) with O(log n) skip-list search.","type":"factual"}
+{"instruction":"Show me an example of using SkipList.get()","output":"const ds = new SkipList();\nds.get(element); // Get the value for a key, or `undefined` if not found.\nOverrides base O(n) with O(log n) skip-list search.","type":"howto"}
+{"instruction":"What does SkipList.has() do?","output":"Check if a key exists.\nOverrides base O(n) with O(log n) skip-list search.","type":"factual"}
+{"instruction":"How do I delete in SkipList?","output":"Use SkipList.delete(). SkipList.delete() Delete a key. Returns `true` if the key was found and removed.","type":"howto"}
+{"instruction":"How to call delete on a SkipList?","output":"Call SkipList.delete(key). Delete a key. Returns `true` if the key was found and removed.","type":"howto"}
+{"instruction":"What does SkipList.delete() do?","output":"Delete a key. Returns `true` if the key was found and removed.","type":"factual"}
+{"instruction":"Show me an example of using SkipList.delete()","output":"const ds = new SkipList();\nds.delete(element); // Delete a key. Returns `true` if the key was found and removed.","type":"howto"}
+{"instruction":"What does SkipList.first() do?","output":"Returns the first (smallest key) entry, or `undefined` if empty.","type":"factual"}
+{"instruction":"What does SkipList.last() do?","output":"Returns the last (largest key) entry, or `undefined` if empty.","type":"factual"}
+{"instruction":"What does SkipList.pollFirst() do?","output":"Remove and return the first (smallest key) entry.","type":"factual"}
+{"instruction":"What does SkipList.pollLast() do?","output":"Remove and return the last (largest key) entry.","type":"factual"}
+{"instruction":"What does SkipList.ceiling() do?","output":"Least entry ≥ key, or `undefined`.","type":"factual"}
+{"instruction":"What does SkipList.floor() do?","output":"Greatest entry ≤ key, or `undefined`.","type":"factual"}
+{"instruction":"What does SkipList.higher() do?","output":"Least entry strictly > key, or `undefined`.","type":"factual"}
+{"instruction":"What does SkipList.lower() do?","output":"Greatest entry strictly < key, or `undefined`.","type":"factual"}
+{"instruction":"What does SkipList.rangeSearch() do?","output":"Returns entries within the given key range.","type":"factual"}
+{"instruction":"What does SkipList.map() do?","output":"Creates a new SkipList with entries transformed by callback.","type":"factual"}
+{"instruction":"What does SkipList.filter() do?","output":"Creates a new SkipList with entries that pass the predicate.","type":"factual"}
 {"instruction":"What does Matrix.get() do?","output":"The `get` function returns the value at the specified row and column index if it is a valid index.","type":"factual"}
 {"instruction":"Show me an example of using Matrix.get()","output":"const ds = new Matrix();\nds.get(42, 42); // The `get` function returns the value at the specified row and column index if it is a valid index.","type":"howto"}
 {"instruction":"How do I set in Matrix?","output":"Use Matrix.set(). Matrix.set() The set function updates the value at a specified row and column in a two-dimensional array.","type":"howto"}
@@ -1562,6 +1607,14 @@
 {"instruction":"What does Matrix.dot() do?","output":"The dot function calculates the dot product of two matrices and returns a new matrix.","type":"factual"}
 {"instruction":"What does Matrix.isValidIndex() do?","output":"The function checks if a given row and column index is valid within a specified range.","type":"factual"}
 {"instruction":"What does Matrix.clone() do?","output":"The `clone` function returns a new instance of the Matrix class with the same data and properties\nas the original instance.","type":"factual"}
+{"instruction":"What does Matrix.toArray() do?","output":"Returns a deep copy of the data as a plain 2D array.","type":"factual"}
+{"instruction":"What does Matrix.flatten() do?","output":"Returns a flat row-major array.","type":"factual"}
+{"instruction":"What does Matrix.[Symbol.iterator]() do?","output":"Iterates over rows.","type":"factual"}
+{"instruction":"What does Matrix.forEach() do?","output":"Visits each element with its row and column index.","type":"factual"}
+{"instruction":"What does Matrix.map() do?","output":"Maps each element (number → number) and returns a new Matrix.","type":"factual"}
+{"instruction":"What does Matrix.zeros() do?","output":"Creates a rows×cols zero matrix.","type":"factual"}
+{"instruction":"What does Matrix.identity() do?","output":"Creates an n×n identity matrix.","type":"factual"}
+{"instruction":"What does Matrix.from() do?","output":"Creates a Matrix from a plain 2D array (deep copy).","type":"factual"}
 {"instruction":"What does Navigator.start() do?","output":"The \"start\" function moves the character in its current direction until it encounters an obstacle, then it turns the\ncharacter and repeats the process.","type":"factual"}
 {"instruction":"What does Navigator.check() do?","output":"The function checks if there is a valid move in the specified direction in a matrix.","type":"factual"}
 {"instruction":"What does Navigator.move() do?","output":"The `move` function updates the current position based on the given direction and updates the matrix accordingly.","type":"factual"}
@@ -1660,9 +1713,9 @@
 {"instruction":"What is the time complexity of Deque.unique()?","output":"Deque.unique() runs in O(N) time complexity.","type":"factual"}
 {"instruction":"How fast is unique in Deque?","output":"Deque.unique() operates in O(N) time.","type":"factual"}
 {"instruction":"What does Deque.unique() do?","output":"Deduplicate consecutive equal elements in-place.","type":"factual"}
-{"instruction":"What is the time complexity of Deque.shrinkToFit()?","output":"Deque.shrinkToFit() runs in O(N) time complexity.","type":"factual"}
-{"instruction":"How fast is shrinkToFit in Deque?","output":"Deque.shrinkToFit() operates in O(N) time.","type":"factual"}
-{"instruction":"What does Deque.shrinkToFit() do?","output":"Trim unused buckets to fit exactly the active range.","type":"factual"}
+{"instruction":"What is the time complexity of Deque.compact()?","output":"Deque.compact() runs in O(N) time complexity.","type":"factual"}
+{"instruction":"How fast is compact in Deque?","output":"Deque.compact() operates in O(N) time.","type":"factual"}
+{"instruction":"What does Deque.compact() do?","output":"Compact the deque by removing unused buckets.","type":"factual"}
 {"instruction":"What is the time complexity of Deque.clone()?","output":"Deque.clone() runs in O(N) time complexity.","type":"factual"}
 {"instruction":"How fast is clone in Deque?","output":"Deque.clone() operates in O(N) time.","type":"factual"}
 {"instruction":"What does Deque.clone() do?","output":"Deep clone this deque, preserving options.","type":"factual"}
@@ -1916,10 +1969,10 @@
 {"instruction":"What are the time complexities for AVLTree operations?","output":"createNode: O(1), isNode: O(1), set: O(log N), delete: O(log N), perfectlyBalance: O(N)","type":"factual"}
 {"instruction":"How to create a AVLTree?","output":"const ds = new AVLTree(); // Creates an empty AVLTree","type":"howto"}
 {"instruction":"What operations does AVLTree support?","output":"AVLTree supports: createNode, isNode, set, delete, perfectlyBalance, map","type":"factual"}
-{"instruction":"What is BinaryIndexedTree in data-structure-typed?","output":"BinaryIndexedTree is a tree data structure","type":"factual"}
-{"instruction":"Explain BinaryIndexedTree data structure","output":"BinaryIndexedTree is a tree data structure. BinaryIndexedTree is a tree data structure","type":"factual"}
-{"instruction":"When should I use BinaryIndexedTree?","output":"Use BinaryIndexedTree when you need tree, hierarchical, recursive operations. BinaryIndexedTree is a tree data structure","type":"reasoning"}
-{"instruction":"What are the use cases for BinaryIndexedTree?","output":"BinaryIndexedTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. BinaryIndexedTree is a tree data structure","type":"reasoning"}
+{"instruction":"What is BinaryIndexedTree in data-structure-typed?","output":"Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.","type":"factual"}
+{"instruction":"Explain BinaryIndexedTree data structure","output":"BinaryIndexedTree is a tree data structure. Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.","type":"factual"}
+{"instruction":"When should I use BinaryIndexedTree?","output":"Use BinaryIndexedTree when you need tree, hierarchical, recursive operations. Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.","type":"reasoning"}
+{"instruction":"What are the use cases for BinaryIndexedTree?","output":"BinaryIndexedTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.","type":"reasoning"}
 {"instruction":"How to create a BinaryIndexedTree?","output":"const ds = new BinaryIndexedTree(); // Creates an empty BinaryIndexedTree","type":"howto"}
 {"instruction":"What is BinaryTreeNode in data-structure-typed?","output":"BinaryTreeNode is a tree data structure","type":"factual"}
 {"instruction":"Explain BinaryTreeNode data structure","output":"BinaryTreeNode is a tree data structure. BinaryTreeNode is a tree data structure","type":"factual"}
@@ -1956,17 +2009,17 @@
 {"instruction":"What are the use cases for RedBlackTree?","output":"RedBlackTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. Represents a Red-Black Tree (self-balancing BST) supporting map-like mode and stable O(log n) updates.","type":"reasoning"}
 {"instruction":"What are the time complexities for RedBlackTree operations?","output":"createNode: O(1), isNode: O(1), clear: O(n), setWithHintNode: O(log n), setWithHint: O(log n)","type":"factual"}
 {"instruction":"How to create a RedBlackTree?","output":"const ds = new RedBlackTree(); // Creates an empty RedBlackTree","type":"howto"}
-{"instruction":"What operations does RedBlackTree support?","output":"RedBlackTree supports: createNode, isNode, clear, setWithHintNode, setWithHint, set, delete, map","type":"factual"}
+{"instruction":"What operations does RedBlackTree support?","output":"RedBlackTree supports: createNode, isNode, clear, setWithHintNode, setWithHint, set, delete, perfectlyBalance","type":"factual"}
+{"instruction":"What is SegmentTree in data-structure-typed?","output":"Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.","type":"factual"}
+{"instruction":"Explain SegmentTree data structure","output":"SegmentTree is a tree data structure. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.","type":"factual"}
+{"instruction":"When should I use SegmentTree?","output":"Use SegmentTree when you need tree, hierarchical, recursive operations. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.","type":"reasoning"}
+{"instruction":"What are the use cases for SegmentTree?","output":"SegmentTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.","type":"reasoning"}
+{"instruction":"How to create a SegmentTree?","output":"const ds = new SegmentTree(); // Creates an empty SegmentTree","type":"howto"}
 {"instruction":"What is SegmentTreeNode in data-structure-typed?","output":"SegmentTreeNode is a tree data structure","type":"factual"}
 {"instruction":"Explain SegmentTreeNode data structure","output":"SegmentTreeNode is a tree data structure. SegmentTreeNode is a tree data structure","type":"factual"}
 {"instruction":"When should I use SegmentTreeNode?","output":"Use SegmentTreeNode when you need tree, hierarchical, recursive operations. SegmentTreeNode is a tree data structure","type":"reasoning"}
 {"instruction":"What are the use cases for SegmentTreeNode?","output":"SegmentTreeNode is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. SegmentTreeNode is a tree data structure","type":"reasoning"}
 {"instruction":"How to create a SegmentTreeNode?","output":"const ds = new SegmentTreeNode(); // Creates an empty SegmentTreeNode","type":"howto"}
-{"instruction":"What is SegmentTree in data-structure-typed?","output":"SegmentTree is a tree data structure","type":"factual"}
-{"instruction":"Explain SegmentTree data structure","output":"SegmentTree is a tree data structure. SegmentTree is a tree data structure","type":"factual"}
-{"instruction":"When should I use SegmentTree?","output":"Use SegmentTree when you need tree, hierarchical, recursive operations. SegmentTree is a tree data structure","type":"reasoning"}
-{"instruction":"What are the use cases for SegmentTree?","output":"SegmentTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. SegmentTree is a tree data structure","type":"reasoning"}
-{"instruction":"How to create a SegmentTree?","output":"const ds = new SegmentTree(); // Creates an empty SegmentTree","type":"howto"}
 {"instruction":"What is TreeMap in data-structure-typed?","output":"An ordered Map backed by a red-black tree.\n\n- Iteration order is ascending by key.\n- No node exposure: all APIs use keys/values only.","type":"factual"}
 {"instruction":"Explain TreeMap data structure","output":"TreeMap is a tree data structure. An ordered Map backed by a red-black tree.\n\n- Iteration order is ascending by key.\n- No node exposure: all APIs use keys/values only.","type":"factual"}
 {"instruction":"When should I use TreeMap?","output":"Use TreeMap when you need tree, hierarchical, recursive operations. An ordered Map backed by a red-black tree.\n\n- Iteration order is ascending by key.\n- No node exposure: all APIs use keys/values only.","type":"reasoning"}
@@ -2140,10 +2193,10 @@
 {"instruction":"When should I use SkipListNode?","output":"Use SkipListNode when you need linear, sequential, ordered operations. SkipListNode is a linear data structure","type":"reasoning"}
 {"instruction":"What are the use cases for SkipListNode?","output":"SkipListNode is ideal for: linear, sequential, ordered, probabilistic, skip-list. SkipListNode is a linear data structure","type":"reasoning"}
 {"instruction":"How to create a SkipListNode?","output":"const ds = new SkipListNode(); // Creates an empty SkipListNode","type":"howto"}
-{"instruction":"What is SkipList in data-structure-typed?","output":"SkipList is a linear data structure","type":"factual"}
-{"instruction":"Explain SkipList data structure","output":"SkipList is a linear data structure. SkipList is a linear data structure","type":"factual"}
-{"instruction":"When should I use SkipList?","output":"Use SkipList when you need linear, sequential, ordered operations. SkipList is a linear data structure","type":"reasoning"}
-{"instruction":"What are the use cases for SkipList?","output":"SkipList is ideal for: linear, sequential, ordered, probabilistic, skip-list. SkipList is a linear data structure","type":"reasoning"}
+{"instruction":"What is SkipList in data-structure-typed?","output":"SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).","type":"factual"}
+{"instruction":"Explain SkipList data structure","output":"SkipList is a linear data structure. SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).","type":"factual"}
+{"instruction":"When should I use SkipList?","output":"Use SkipList when you need linear, sequential, ordered operations. SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).","type":"reasoning"}
+{"instruction":"What are the use cases for SkipList?","output":"SkipList is ideal for: linear, sequential, ordered, probabilistic, skip-list. SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).","type":"reasoning"}
 {"instruction":"How to create a SkipList?","output":"const ds = new SkipList(); // Creates an empty SkipList","type":"howto"}
 {"instruction":"What is Matrix in data-structure-typed?","output":"Matrix is a matrix data structure","type":"factual"}
 {"instruction":"Explain Matrix data structure","output":"Matrix is a matrix data structure. Matrix is a matrix data structure","type":"factual"}
@@ -2345,7 +2398,7 @@
 {"instruction":"What type of arguments does DirectedGraph.addEdge() take?","output":"Takes (src: VertexKey, dest: VertexKey, weight?: number). Creates directed edge from src to dest.","type":"factual"}
 {"instruction":"What parameters does PriorityQueue.add() accept?","output":"Takes element: E. Priority determined by comparator (default: min-heap by value).","type":"factual"}
 {"instruction":"What type of arguments does PriorityQueue.add() take?","output":"Takes element: E. Priority determined by comparator (default: min-heap by value).","type":"factual"}
-{"instruction":"What tree data structures are available?","output":"Available tree structures: AVLTreeNode, AVLTree, BinaryIndexedTree, BinaryTreeNode, BinaryTree, BSTNode, BST, RedBlackTreeNode, RedBlackTree, SegmentTreeNode, SegmentTree, TreeMap, TreeMultiMapNode, TreeMultiMap, TreeMultiSet, TreeSet","type":"factual"}
+{"instruction":"What tree data structures are available?","output":"Available tree structures: AVLTreeNode, AVLTree, BinaryIndexedTree, BinaryTreeNode, BinaryTree, BSTNode, BST, RedBlackTreeNode, RedBlackTree, SegmentTree, SegmentTreeNode, TreeMap, TreeMultiMapNode, TreeMultiMap, TreeMultiSet, TreeSet","type":"factual"}
 {"instruction":"What graph data structures are available?","output":"Available graph structures: AbstractVertex, AbstractEdge, AbstractGraph, DirectedVertex, DirectedEdge, DirectedGraph, MapVertex, MapEdge, MapGraph, UndirectedVertex, UndirectedEdge, UndirectedGraph","type":"factual"}
 {"instruction":"What hash data structures are available?","output":"Available hash structures: HashMap, LinkedHashMap","type":"factual"}
 {"instruction":"What heap data structures are available?","output":"Available heap structures: Heap, FibonacciHeapNode, FibonacciHeap, MaxHeap, MinHeap","type":"factual"}

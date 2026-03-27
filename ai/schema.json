@@ -1,8 +1,8 @@
 {
   "library": "data-structure-typed",
-  "version": "2.4.1",
+  "version": "2.4.5",
   "language": "TypeScript",
-  "generatedAt": "2026-03-01T02:32:25.290Z",
+  "generatedAt": "2026-03-26T20:33:47.414Z",
   "atoms": [
     {
       "id": "IterableElementBase",
@@ -3022,6 +3022,7 @@
         "height-balanced"
       ],
       "related": [
+        "RedBlackTree.perfectlyBalance",
         "BST.perfectlyBalance"
       ]
     },
@@ -3088,48 +3089,17 @@
       "id": "BinaryIndexedTree",
       "type": "class",
       "fqName": "BinaryIndexedTree",
-      "semanticSummary": "BinaryIndexedTree data structure",
-      "technicalSummary": "",
-      "embeddingText": "BinaryIndexedTree. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.",
+      "technicalSummary": "Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.",
+      "embeddingText": "BinaryIndexedTree. Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "tags": [
         "tree",
         "hierarchical",
         "recursive",
         "sorted",
         "logarithmic-access",
-        "binary"
-      ],
-      "related": []
-    },
-    {
-      "id": "BinaryIndexedTree.readSingle",
-      "type": "method",
-      "fqName": "BinaryIndexedTree.readSingle",
-      "parent": "BinaryIndexedTree",
-      "semanticSummary": "BinaryIndexedTree.readSingle() The function \"readSingle\" reads a single number from a specified index.",
-      "technicalSummary": "The function \"readSingle\" reads a single number from a specified index.",
-      "embeddingText": "BinaryIndexedTree.readSingle(index: number). returns number. The function \"readSingle\" reads a single number from a specified index. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "behavior": {
-        "mutates": false,
-        "pure": false,
-        "sideEffects": []
-      },
-      "parameters": [
-        {
-          "name": "index",
-          "type": "number"
-        }
-      ],
-      "returns": {
-        "type": "number"
-      },
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access",
-        "binary"
+        "binary",
+        "logarithmic-ops"
       ],
       "related": []
     },
@@ -3138,47 +3108,9 @@
       "type": "method",
       "fqName": "BinaryIndexedTree.update",
       "parent": "BinaryIndexedTree",
-      "semanticSummary": "BinaryIndexedTree.update() The \"update\" function updates the value at a given index by adding a delta and triggers a callback\nto notify of the change.",
-      "technicalSummary": "The \"update\" function updates the value at a given index by adding a delta and triggers a callback\nto notify of the change.",
-      "embeddingText": "BinaryIndexedTree.update(position: number, change: number). returns void. The \"update\" function updates the value at a given index by adding a delta and triggers a callback\nto notify of the change. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "behavior": {
-        "mutates": false,
-        "pure": false,
-        "sideEffects": []
-      },
-      "parameters": [
-        {
-          "name": "position",
-          "type": "number"
-        },
-        {
-          "name": "change",
-          "type": "number"
-        }
-      ],
-      "returns": {
-        "type": "void"
-      },
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access",
-        "binary",
-        "lookup",
-        "read-only"
-      ],
-      "related": []
-    },
-    {
-      "id": "BinaryIndexedTree.writeSingle",
-      "type": "method",
-      "fqName": "BinaryIndexedTree.writeSingle",
-      "parent": "BinaryIndexedTree",
-      "semanticSummary": "BinaryIndexedTree.writeSingle() The function \"writeSingle\" checks the index and writes a single value with a given frequency.",
-      "technicalSummary": "The function \"writeSingle\" checks the index and writes a single value with a given frequency.",
-      "embeddingText": "BinaryIndexedTree.writeSingle(index: number, freq: number). returns void. The function \"writeSingle\" checks the index and writes a single value with a given frequency. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "BinaryIndexedTree.update() Point update: add delta to the value at index (0-based).\nTime: O(log n)",
+      "technicalSummary": "Point update: add delta to the value at index (0-based).\nTime: O(log n)",
+      "embeddingText": "BinaryIndexedTree.update(index: number, delta: number). returns void. Point update: add delta to the value at index (0-based).\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "behavior": {
         "mutates": false,
         "pure": false,
@@ -3190,7 +3122,7 @@
           "type": "number"
         },
         {
-          "name": "freq",
+          "name": "delta",
           "type": "number"
         }
       ],
@@ -3203,31 +3135,40 @@
         "recursive",
         "sorted",
         "logarithmic-access",
-        "binary"
+        "binary",
+        "logarithmic-ops",
+        "lookup",
+        "read-only"
       ],
       "related": []
     },
     {
-      "id": "BinaryIndexedTree.read",
+      "id": "BinaryIndexedTree.set",
       "type": "method",
-      "fqName": "BinaryIndexedTree.read",
+      "fqName": "BinaryIndexedTree.set",
       "parent": "BinaryIndexedTree",
-      "semanticSummary": "BinaryIndexedTree.read() The read function takes a count parameter, checks if it is an integer, and returns the result of\ncalling the _read function with the count parameter clamped between 0 and the maximum value.",
-      "technicalSummary": "The read function takes a count parameter, checks if it is an integer, and returns the result of\ncalling the _read function with the count parameter clamped between 0 and the maximum value.",
-      "embeddingText": "BinaryIndexedTree.read(count: number). returns number. The read function takes a count parameter, checks if it is an integer, and returns the result of\ncalling the _read function with the count parameter clamped between 0 and the maximum value. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "BinaryIndexedTree.set() Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)",
+      "technicalSummary": "Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)",
+      "embeddingText": "BinaryIndexedTree.set(index: number, value: number). returns void. Point set: set the value at index to an absolute value (0-based).\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "behavior": {
-        "mutates": false,
+        "mutates": true,
         "pure": false,
-        "sideEffects": []
+        "sideEffects": [
+          "modifies internal state"
+        ]
       },
       "parameters": [
         {
-          "name": "count",
+          "name": "index",
+          "type": "number"
+        },
+        {
+          "name": "value",
           "type": "number"
         }
       ],
       "returns": {
-        "type": "number"
+        "type": "void"
       },
       "tags": [
         "tree",
@@ -3235,82 +3176,23 @@
         "recursive",
         "sorted",
         "logarithmic-access",
-        "binary"
+        "binary",
+        "logarithmic-ops",
+        "insertion",
+        "mutating"
       ],
-      "related": []
+      "related": [
+        "BinaryIndexedTree.get"
+      ]
     },
     {
-      "id": "BinaryIndexedTree.lowerBound",
+      "id": "BinaryIndexedTree.get",
       "type": "method",
-      "fqName": "BinaryIndexedTree.lowerBound",
+      "fqName": "BinaryIndexedTree.get",
       "parent": "BinaryIndexedTree",
-      "semanticSummary": "BinaryIndexedTree.lowerBound() The function returns the lower bound of a non-descending sequence that sums up to a given number.",
-      "technicalSummary": "The function returns the lower bound of a non-descending sequence that sums up to a given number.",
-      "embeddingText": "BinaryIndexedTree.lowerBound(sum: number). returns number. The function returns the lower bound of a non-descending sequence that sums up to a given number. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "behavior": {
-        "mutates": false,
-        "pure": false,
-        "sideEffects": []
-      },
-      "parameters": [
-        {
-          "name": "sum",
-          "type": "number"
-        }
-      ],
-      "returns": {
-        "type": "number"
-      },
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access",
-        "binary"
-      ],
-      "related": []
-    },
-    {
-      "id": "BinaryIndexedTree.upperBound",
-      "type": "method",
-      "fqName": "BinaryIndexedTree.upperBound",
-      "parent": "BinaryIndexedTree",
-      "semanticSummary": "BinaryIndexedTree.upperBound() The upperBound function returns the index of the first element in a sequence that is greater than\nor equal to a given sum.",
-      "technicalSummary": "The upperBound function returns the index of the first element in a sequence that is greater than\nor equal to a given sum.",
-      "embeddingText": "BinaryIndexedTree.upperBound(sum: number). returns number. The upperBound function returns the index of the first element in a sequence that is greater than\nor equal to a given sum. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "behavior": {
-        "mutates": false,
-        "pure": false,
-        "sideEffects": []
-      },
-      "parameters": [
-        {
-          "name": "sum",
-          "type": "number"
-        }
-      ],
-      "returns": {
-        "type": "number"
-      },
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access",
-        "binary"
-      ],
-      "related": []
-    },
-    {
-      "id": "BinaryIndexedTree.getPrefixSum",
-      "type": "method",
-      "fqName": "BinaryIndexedTree.getPrefixSum",
-      "parent": "BinaryIndexedTree",
-      "semanticSummary": "BinaryIndexedTree.getPrefixSum() The function calculates the prefix sum of an array using a binary indexed tree.",
-      "technicalSummary": "The function calculates the prefix sum of an array using a binary indexed tree.",
-      "embeddingText": "BinaryIndexedTree.getPrefixSum(i: number). returns number. The function calculates the prefix sum of an array using a binary indexed tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "BinaryIndexedTree.get() Get the point value at index (0-based).\nTime: O(log n)",
+      "technicalSummary": "Get the point value at index (0-based).\nTime: O(log n)",
+      "embeddingText": "BinaryIndexedTree.get(index: number). returns number. Get the point value at index (0-based).\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "behavior": {
         "mutates": false,
         "pure": true,
@@ -3318,7 +3200,7 @@
       },
       "parameters": [
         {
-          "name": "i",
+          "name": "index",
           "type": "number"
         }
       ],
@@ -3332,8 +3214,362 @@
         "sorted",
         "logarithmic-access",
         "binary",
+        "logarithmic-ops",
         "lookup",
         "read-only"
+      ],
+      "related": [
+        "BinaryIndexedTree.set"
+      ]
+    },
+    {
+      "id": "BinaryIndexedTree.query",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.query",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.query() Prefix sum query: returns sum of elements [0..index] (inclusive, 0-based).\nTime: O(log n)",
+      "technicalSummary": "Prefix sum query: returns sum of elements [0..index] (inclusive, 0-based).\nTime: O(log n)",
+      "embeddingText": "BinaryIndexedTree.query(index: number). returns number. Prefix sum query: returns sum of elements [0.index] (inclusive, 0-based).\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "index",
+          "type": "number"
+        }
+      ],
+      "returns": {
+        "type": "number"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops"
+      ],
+      "related": []
+    },
+    {
+      "id": "BinaryIndexedTree.queryRange",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.queryRange",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.queryRange() Range sum query: returns sum of elements [start..end] (inclusive, 0-based).\nTime: O(log n)",
+      "technicalSummary": "Range sum query: returns sum of elements [start..end] (inclusive, 0-based).\nTime: O(log n)",
+      "embeddingText": "BinaryIndexedTree.queryRange(start: number, end: number). returns number. Range sum query: returns sum of elements [start.end] (inclusive, 0-based).\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "start",
+          "type": "number"
+        },
+        {
+          "name": "end",
+          "type": "number"
+        }
+      ],
+      "returns": {
+        "type": "number"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops"
+      ],
+      "related": []
+    },
+    {
+      "id": "BinaryIndexedTree.lowerBound",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.lowerBound",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.lowerBound() Find the smallest index i such that prefix sum [0..i] >= sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n)",
+      "technicalSummary": "Find the smallest index i such that prefix sum [0..i] >= sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n)",
+      "embeddingText": "BinaryIndexedTree.lowerBound(sum: number). returns number. Find the smallest index i such that prefix sum [0.i] >= sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "sum",
+          "type": "number"
+        }
+      ],
+      "returns": {
+        "type": "number"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops"
+      ],
+      "related": []
+    },
+    {
+      "id": "BinaryIndexedTree.upperBound",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.upperBound",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.upperBound() Find the smallest index i such that prefix sum [0..i] > sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n)",
+      "technicalSummary": "Find the smallest index i such that prefix sum [0..i] > sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n)",
+      "embeddingText": "BinaryIndexedTree.upperBound(sum: number). returns number. Find the smallest index i such that prefix sum [0.i] > sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "sum",
+          "type": "number"
+        }
+      ],
+      "returns": {
+        "type": "number"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops"
+      ],
+      "related": []
+    },
+    {
+      "id": "BinaryIndexedTree.isEmpty",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.isEmpty",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.isEmpty() ",
+      "technicalSummary": "",
+      "embeddingText": "BinaryIndexedTree.isEmpty(). returns boolean. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "boolean"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops",
+        "predicate",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "BinaryIndexedTree.clear",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.clear",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.clear() ",
+      "technicalSummary": "",
+      "embeddingText": "BinaryIndexedTree.clear(). returns void. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": true,
+        "pure": false,
+        "sideEffects": [
+          "modifies internal state"
+        ]
+      },
+      "parameters": [],
+      "returns": {
+        "type": "void"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops",
+        "bulk-delete",
+        "mutating"
+      ],
+      "related": [
+        "BinaryIndexedTree.isEmpty"
+      ]
+    },
+    {
+      "id": "BinaryIndexedTree.clone",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.clone",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.clone() ",
+      "technicalSummary": "",
+      "embeddingText": "BinaryIndexedTree.clone(). returns BinaryIndexedTree. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "BinaryIndexedTree"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops",
+        "copying",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "BinaryIndexedTree.toArray",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.toArray",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.toArray() Returns the point values as a plain array.\nTime: O(n log n)",
+      "technicalSummary": "Returns the point values as a plain array.\nTime: O(n log n)",
+      "embeddingText": "BinaryIndexedTree.toArray(). returns number[]. Returns the point values as a plain array.\nTime: O(n log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "number[]"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops"
+      ],
+      "related": []
+    },
+    {
+      "id": "BinaryIndexedTree.[Symbol.iterator]",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.[Symbol.iterator]",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.[Symbol.iterator]() Iterate over point values in index order.",
+      "technicalSummary": "Iterate over point values in index order.",
+      "embeddingText": "BinaryIndexedTree.[Symbol.iterator](). returns IterableIterator<number>. Iterate over point values in index order. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "IterableIterator<number>"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops",
+        "lookup",
+        "read-only",
+        "iteration"
+      ],
+      "related": []
+    },
+    {
+      "id": "BinaryIndexedTree.forEach",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.forEach",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.forEach() ",
+      "technicalSummary": "",
+      "embeddingText": "BinaryIndexedTree.forEach(callback: (value: number, index: number) => void). returns void. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "(value: number, index: number) => void"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops",
+        "iteration"
+      ],
+      "related": []
+    },
+    {
+      "id": "BinaryIndexedTree.print",
+      "type": "method",
+      "fqName": "BinaryIndexedTree.print",
+      "parent": "BinaryIndexedTree",
+      "semanticSummary": "BinaryIndexedTree.print() ",
+      "technicalSummary": "",
+      "embeddingText": "BinaryIndexedTree.print(). returns void. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "void"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "binary",
+        "logarithmic-ops"
       ],
       "related": []
     },
@@ -7108,13 +7344,13 @@
       ]
     },
     {
-      "id": "RedBlackTree.map",
+      "id": "RedBlackTree.perfectlyBalance",
       "type": "method",
-      "fqName": "RedBlackTree.map",
+      "fqName": "RedBlackTree.perfectlyBalance",
       "parent": "RedBlackTree",
-      "semanticSummary": "RedBlackTree.map() Transform entries into a like-kind red-black tree with possibly different key/value types. Runs in O(n) time.",
+      "semanticSummary": "RedBlackTree.perfectlyBalance() Transform entries into a like-kind red-black tree with possibly different key/value types. Runs in O(n) time.",
       "technicalSummary": "Transform entries into a like-kind red-black tree with possibly different key/value types.",
-      "embeddingText": "RedBlackTree.map(callback: EntryCallback<K, V | undefined, [MK, MV]>, options: Partial<RedBlackTreeOptions<MK, MV, MR>> | undefined, thisArg: unknown). returns RedBlackTree<MK, MV, MR>. Transform entries into a like-kind red-black tree with possibly different key/value types. Time complexity: O(n). Space complexity: O(n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "embeddingText": "RedBlackTree.perfectlyBalance(iterationType: IterationType | undefined). returns boolean. Transform entries into a like-kind red-black tree with possibly different key/value types. Time complexity: O(n). Space complexity: O(n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "complexity": {
         "time": {
           "best": "O(n)",
@@ -7127,6 +7363,43 @@
           "worst": "O(n)"
         }
       },
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "iterationType",
+          "type": "IterationType | undefined"
+        }
+      ],
+      "returns": {
+        "type": "boolean"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "self-balancing",
+        "red-black",
+        "logarithmic-ops"
+      ],
+      "related": [
+        "AVLTree.perfectlyBalance",
+        "BST.perfectlyBalance"
+      ]
+    },
+    {
+      "id": "RedBlackTree.map",
+      "type": "method",
+      "fqName": "RedBlackTree.map",
+      "parent": "RedBlackTree",
+      "semanticSummary": "RedBlackTree.map() ",
+      "technicalSummary": "",
+      "embeddingText": "RedBlackTree.map(callback: EntryCallback<K, V | undefined, [MK, MV]>, options: Partial<RedBlackTreeOptions<MK, MV, MR>> | undefined, thisArg: unknown). returns RedBlackTree<MK, MV, MR>. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "behavior": {
         "mutates": false,
         "pure": false,
@@ -7167,28 +7440,12 @@
       ]
     },
     {
-      "id": "SegmentTreeNode",
-      "type": "class",
-      "fqName": "SegmentTreeNode",
-      "semanticSummary": "SegmentTreeNode data structure",
-      "technicalSummary": "",
-      "embeddingText": "SegmentTreeNode. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access"
-      ],
-      "related": []
-    },
-    {
       "id": "SegmentTree",
       "type": "class",
       "fqName": "SegmentTree",
-      "semanticSummary": "SegmentTree data structure",
-      "technicalSummary": "",
-      "embeddingText": "SegmentTree. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.",
+      "technicalSummary": "Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.",
+      "embeddingText": "SegmentTree. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "tags": [
         "tree",
         "hierarchical",
@@ -7199,13 +7456,13 @@
       "related": []
     },
     {
-      "id": "SegmentTree.build",
+      "id": "SegmentTree.sum",
       "type": "method",
-      "fqName": "SegmentTree.build",
+      "fqName": "SegmentTree.sum",
       "parent": "SegmentTree",
-      "semanticSummary": "SegmentTree.build() The build function creates a segment tree by recursively dividing the given range into smaller segments and assigning\nthe sum of values to each segment.",
-      "technicalSummary": "The build function creates a segment tree by recursively dividing the given range into smaller segments and assigning\nthe sum of values to each segment.",
-      "embeddingText": "SegmentTree.build(start: number, end: number). returns SegmentTreeNode. The build function creates a segment tree by recursively dividing the given range into smaller segments and assigning\nthe sum of values to each segment. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "SegmentTree.sum() Create a sum segment tree.",
+      "technicalSummary": "Create a sum segment tree.",
+      "embeddingText": "SegmentTree.sum(elements: number[]). returns SegmentTree<number>. Create a sum segment tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "behavior": {
         "mutates": false,
         "pure": false,
@@ -7213,16 +7470,12 @@
       },
       "parameters": [
         {
-          "name": "start",
-          "type": "number"
-        },
-        {
-          "name": "end",
-          "type": "number"
+          "name": "elements",
+          "type": "number[]"
         }
       ],
       "returns": {
-        "type": "SegmentTreeNode"
+        "type": "SegmentTree<number>"
       },
       "tags": [
         "tree",
@@ -7234,13 +7487,75 @@
       "related": []
     },
     {
-      "id": "SegmentTree.updateNode",
+      "id": "SegmentTree.min",
       "type": "method",
-      "fqName": "SegmentTree.updateNode",
+      "fqName": "SegmentTree.min",
       "parent": "SegmentTree",
-      "semanticSummary": "SegmentTree.updateNode() The function updates the value of a node in a segment tree and recalculates the sum of its children if they exist.",
-      "technicalSummary": "The function updates the value of a node in a segment tree and recalculates the sum of its children if they exist.",
-      "embeddingText": "SegmentTree.updateNode(index: number, sum: number, value: number | undefined). returns void. The function updates the value of a node in a segment tree and recalculates the sum of its children if they exist. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "SegmentTree.min() Create a min segment tree.",
+      "technicalSummary": "Create a min segment tree.",
+      "embeddingText": "SegmentTree.min(elements: number[]). returns SegmentTree<number>. Create a min segment tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "elements",
+          "type": "number[]"
+        }
+      ],
+      "returns": {
+        "type": "SegmentTree<number>"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.max",
+      "type": "method",
+      "fqName": "SegmentTree.max",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.max() Create a max segment tree.",
+      "technicalSummary": "Create a max segment tree.",
+      "embeddingText": "SegmentTree.max(elements: number[]). returns SegmentTree<number>. Create a max segment tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "elements",
+          "type": "number[]"
+        }
+      ],
+      "returns": {
+        "type": "SegmentTree<number>"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.update",
+      "type": "method",
+      "fqName": "SegmentTree.update",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.update() Point update: set element at index to value.\nTime: O(log n)",
+      "technicalSummary": "Point update: set element at index to value.\nTime: O(log n)",
+      "embeddingText": "SegmentTree.update(index: number, value: E). returns void. Point update: set element at index to value.\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "behavior": {
         "mutates": false,
         "pure": false,
@@ -7252,12 +7567,8 @@
           "type": "number"
         },
         {
-          "name": "sum",
-          "type": "number"
-        },
-        {
           "name": "value",
-          "type": "number | undefined"
+          "type": "E"
         }
       ],
       "returns": {
@@ -7275,13 +7586,13 @@
       "related": []
     },
     {
-      "id": "SegmentTree.querySumByRange",
+      "id": "SegmentTree.query",
       "type": "method",
-      "fqName": "SegmentTree.querySumByRange",
+      "fqName": "SegmentTree.query",
       "parent": "SegmentTree",
-      "semanticSummary": "SegmentTree.querySumByRange() The function `querySumByRange` calculates the sum of values within a given range in a segment tree.",
-      "technicalSummary": "The function `querySumByRange` calculates the sum of values within a given range in a segment tree.",
-      "embeddingText": "SegmentTree.querySumByRange(indexA: number, indexB: number). returns number. The function `querySumByRange` calculates the sum of values within a given range in a segment tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "SegmentTree.query() Range query: returns merger result over [start, end] (inclusive).\nTime: O(log n)",
+      "technicalSummary": "Range query: returns merger result over [start, end] (inclusive).\nTime: O(log n)",
+      "embeddingText": "SegmentTree.query(start: number, end: number). returns E. Range query: returns merger result over [start, end] (inclusive).\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "behavior": {
         "mutates": false,
         "pure": false,
@@ -7289,17 +7600,305 @@
       },
       "parameters": [
         {
-          "name": "indexA",
+          "name": "start",
           "type": "number"
         },
         {
-          "name": "indexB",
+          "name": "end",
           "type": "number"
+        }
+      ],
+      "returns": {
+        "type": "E"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.get",
+      "type": "method",
+      "fqName": "SegmentTree.get",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.get() Get element at index.\nTime: O(1)",
+      "technicalSummary": "Get element at index.\nTime: O(1)",
+      "embeddingText": "SegmentTree.get(index: number). returns E. Get element at index.\nTime: O(1). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "index",
+          "type": "number"
+        }
+      ],
+      "returns": {
+        "type": "E"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "lookup",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.maxRight",
+      "type": "method",
+      "fqName": "SegmentTree.maxRight",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.maxRight() Find the largest r such that predicate(query(left, r)) is true.\nReturns left-1 if predicate(identity) is false.\nReturns n-1 if predicate holds for the entire range [left, n-1].\nTime: O(log n)",
+      "technicalSummary": "Find the largest r such that predicate(query(left, r)) is true.\nReturns left-1 if predicate(identity) is false.\nReturns n-1 if predicate holds for the entire range [left, n-1].\nTime: O(log n)",
+      "embeddingText": "SegmentTree.maxRight(left: number, predicate: (segValue: E) => boolean). returns number. Find the largest r such that predicate(query(left, r)) is true.\nReturns left-1 if predicate(identity) is false.\nReturns n-1 if predicate holds for the entire range [left, n-1].\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "left",
+          "type": "number"
+        },
+        {
+          "name": "predicate",
+          "type": "(segValue: E) => boolean"
         }
       ],
       "returns": {
         "type": "number"
       },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.minLeft",
+      "type": "method",
+      "fqName": "SegmentTree.minLeft",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.minLeft() Find the smallest l such that predicate(query(l, right)) is true.\nReturns right+1 if predicate(identity) is false.\nReturns 0 if predicate holds for the entire range [0, right].\nTime: O(log n)",
+      "technicalSummary": "Find the smallest l such that predicate(query(l, right)) is true.\nReturns right+1 if predicate(identity) is false.\nReturns 0 if predicate holds for the entire range [0, right].\nTime: O(log n)",
+      "embeddingText": "SegmentTree.minLeft(right: number, predicate: (segValue: E) => boolean). returns number. Find the smallest l such that predicate(query(l, right)) is true.\nReturns right+1 if predicate(identity) is false.\nReturns 0 if predicate holds for the entire range [0, right].\nTime: O(log n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "right",
+          "type": "number"
+        },
+        {
+          "name": "predicate",
+          "type": "(segValue: E) => boolean"
+        }
+      ],
+      "returns": {
+        "type": "number"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.isEmpty",
+      "type": "method",
+      "fqName": "SegmentTree.isEmpty",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.isEmpty() ",
+      "technicalSummary": "",
+      "embeddingText": "SegmentTree.isEmpty(). returns boolean. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "boolean"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "predicate",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.clone",
+      "type": "method",
+      "fqName": "SegmentTree.clone",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.clone() ",
+      "technicalSummary": "",
+      "embeddingText": "SegmentTree.clone(). returns SegmentTree<E>. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "SegmentTree<E>"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "copying",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.toArray",
+      "type": "method",
+      "fqName": "SegmentTree.toArray",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.toArray() ",
+      "technicalSummary": "",
+      "embeddingText": "SegmentTree.toArray(). returns E[]. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "E[]"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.[Symbol.iterator]",
+      "type": "method",
+      "fqName": "SegmentTree.[Symbol.iterator]",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.[Symbol.iterator]() Iterates over leaf values in index order.",
+      "technicalSummary": "Iterates over leaf values in index order.",
+      "embeddingText": "SegmentTree.[Symbol.iterator](). returns IterableIterator<E>. Iterates over leaf values in index order. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "IterableIterator<E>"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "lookup",
+        "read-only",
+        "iteration"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.forEach",
+      "type": "method",
+      "fqName": "SegmentTree.forEach",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.forEach() ",
+      "technicalSummary": "",
+      "embeddingText": "SegmentTree.forEach(callback: (value: E, index: number) => void). returns void. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "(value: E, index: number) => void"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "iteration"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTree.print",
+      "type": "method",
+      "fqName": "SegmentTree.print",
+      "parent": "SegmentTree",
+      "semanticSummary": "SegmentTree.print() ",
+      "technicalSummary": "",
+      "embeddingText": "SegmentTree.print(). returns void. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "void"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access"
+      ],
+      "related": []
+    },
+    {
+      "id": "SegmentTreeNode",
+      "type": "class",
+      "fqName": "SegmentTreeNode",
+      "semanticSummary": "SegmentTreeNode data structure",
+      "technicalSummary": "",
+      "embeddingText": "SegmentTreeNode. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "tags": [
         "tree",
         "hierarchical",
@@ -8485,6 +9084,51 @@
       ],
       "related": [
         "TreeSet.rangeSearch"
+      ]
+    },
+    {
+      "id": "TreeMap.clone",
+      "type": "method",
+      "fqName": "TreeMap.clone",
+      "parent": "TreeMap",
+      "semanticSummary": "TreeMap.clone() Creates a shallow clone of this map. Runs in O(n log n) time.",
+      "technicalSummary": "Creates a shallow clone of this map.",
+      "embeddingText": "TreeMap.clone(). returns TreeMap<K, V, [K, V]>. Creates a shallow clone of this map. Time complexity: O(n log n). Space complexity: O(n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "complexity": {
+        "time": {
+          "best": "O(n log n)",
+          "average": "O(n log n)",
+          "worst": "O(n log n)"
+        },
+        "space": {
+          "best": "O(n)",
+          "average": "O(n)",
+          "worst": "O(n)"
+        }
+      },
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "TreeMap<K, V, [K, V]>"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "key-value",
+        "associative",
+        "copying",
+        "read-only"
+      ],
+      "related": [
+        "TreeSet.clone",
+        "HashMap.clone"
       ]
     },
     {
@@ -12593,6 +13237,51 @@
       ]
     },
     {
+      "id": "TreeSet.clone",
+      "type": "method",
+      "fqName": "TreeSet.clone",
+      "parent": "TreeSet",
+      "semanticSummary": "TreeSet.clone() Creates a shallow clone of this set. Runs in O(n log n) time.",
+      "technicalSummary": "Creates a shallow clone of this set.",
+      "embeddingText": "TreeSet.clone(). returns TreeSet<K, K>. Creates a shallow clone of this set. Time complexity: O(n log n). Space complexity: O(n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "complexity": {
+        "time": {
+          "best": "O(n log n)",
+          "average": "O(n log n)",
+          "worst": "O(n log n)"
+        },
+        "space": {
+          "best": "O(n)",
+          "average": "O(n)",
+          "worst": "O(n)"
+        }
+      },
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "TreeSet<K, K>"
+      },
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access",
+        "unique-elements",
+        "membership",
+        "copying",
+        "read-only"
+      ],
+      "related": [
+        "TreeMap.clone",
+        "TreeMultiSet.clone"
+      ]
+    },
+    {
       "id": "AbstractVertex",
       "type": "class",
       "fqName": "AbstractVertex",
@@ -14150,6 +14839,102 @@
       "related": []
     },
     {
+      "id": "AbstractGraph.toVisual",
+      "type": "method",
+      "fqName": "AbstractGraph.toVisual",
+      "parent": "AbstractGraph",
+      "semanticSummary": "AbstractGraph.toVisual() Generate a text-based visual representation of the graph.\n\n**Adjacency list format:**\n```\nGraph (5 vertices, 6 edges):\nA -> B (1), C (2)\nB -> D (3)\nC -> (no outgoing edges)\nD -> A (1)\nE (isolated)\n```",
+      "technicalSummary": "Generate a text-based visual representation of the graph.\n\n**Adjacency list format:**\n```\nGraph (5 vertices, 6 edges):\nA -> B (1), C (2)\nB -> D (3)\nC -> (no outgoing edges)\nD -> A (1)\nE (isolated)\n```",
+      "embeddingText": "AbstractGraph.toVisual(options: { showWeight?: boolean | undefined; } | undefined). returns string. Generate a text-based visual representation of the graph.\n\n**Adjacency list format:**\n```\nGraph (5 vertices, 6 edges):\nA -> B (1), C (2)\nB -> D (3)\nC -> (no outgoing edges)\nD -> A (1)\nE (isolated)\n```. Tags: graph, vertices, edges, network, relationships",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "options",
+          "type": "{ showWeight?: boolean | undefined; } | undefined"
+        }
+      ],
+      "returns": {
+        "type": "string"
+      },
+      "tags": [
+        "graph",
+        "vertices",
+        "edges",
+        "network",
+        "relationships",
+        "binary"
+      ],
+      "related": []
+    },
+    {
+      "id": "AbstractGraph.toDot",
+      "type": "method",
+      "fqName": "AbstractGraph.toDot",
+      "parent": "AbstractGraph",
+      "semanticSummary": "AbstractGraph.toDot() Generate DOT language representation for Graphviz.",
+      "technicalSummary": "Generate DOT language representation for Graphviz.",
+      "embeddingText": "AbstractGraph.toDot(options: { name?: string | undefined; showWeight?: boolean | undefined; } | undefined). returns string. Generate DOT language representation for Graphviz. Tags: graph, vertices, edges, network, relationships",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "options",
+          "type": "{ name?: string | undefined; showWeight?: boolean | undefined; } | undefined"
+        }
+      ],
+      "returns": {
+        "type": "string"
+      },
+      "tags": [
+        "graph",
+        "vertices",
+        "edges",
+        "network",
+        "relationships",
+        "binary"
+      ],
+      "related": []
+    },
+    {
+      "id": "AbstractGraph.print",
+      "type": "method",
+      "fqName": "AbstractGraph.print",
+      "parent": "AbstractGraph",
+      "semanticSummary": "AbstractGraph.print() Print the graph to console.",
+      "technicalSummary": "Print the graph to console.",
+      "embeddingText": "AbstractGraph.print(options: { showWeight?: boolean | undefined; } | undefined). returns void. Print the graph to console. Tags: graph, vertices, edges, network, relationships",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "options",
+          "type": "{ showWeight?: boolean | undefined; } | undefined"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      },
+      "tags": [
+        "graph",
+        "vertices",
+        "edges",
+        "network",
+        "relationships",
+        "binary"
+      ],
+      "related": []
+    },
+    {
       "id": "DirectedVertex",
       "type": "class",
       "fqName": "DirectedVertex",
@@ -14204,7 +14989,7 @@
       "parent": "DirectedGraph",
       "semanticSummary": "DirectedGraph.fromKeys() Construct a directed graph from keys with value initializer `v => v`. Runs in O(V) time.",
       "technicalSummary": "Construct a directed graph from keys with value initializer `v => v`.",
-      "embeddingText": "DirectedGraph.fromKeys(keys: Iterable<K>). returns DirectedGraph<K, any, DirectedVertex<K>, DirectedEdge<any>>. Construct a directed graph from keys with value initializer `v => v`. Time complexity: O(V). Space complexity: O(V). Tags: graph, vertices, edges, network, relationships",
+      "embeddingText": "DirectedGraph.fromKeys(keys: Iterable<K>). returns DirectedGraph<K, undefined, DirectedVertex<K>, DirectedEdge<undefined>>. Construct a directed graph from keys with value initializer `v => v`. Time complexity: O(V). Space complexity: O(V). Tags: graph, vertices, edges, network, relationships",
       "complexity": {
         "time": {
           "best": "O(V)",
@@ -14229,7 +15014,7 @@
         }
       ],
       "returns": {
-        "type": "DirectedGraph<K, any, DirectedVertex<K>, DirectedEdge<any>>"
+        "type": "DirectedGraph<K, undefined, DirectedVertex<K>, DirectedEdge<undefined>>"
       },
       "tags": [
         "graph",
@@ -14247,7 +15032,7 @@
       "parent": "DirectedGraph",
       "semanticSummary": "DirectedGraph.fromEntries() Construct a directed graph from `[key, value]` entries. Runs in O(V) time.",
       "technicalSummary": "Construct a directed graph from `[key, value]` entries.",
-      "embeddingText": "DirectedGraph.fromEntries(entries: Iterable<[VertexKey, V]>). returns DirectedGraph<V, any, DirectedVertex<V>, DirectedEdge<any>>. Construct a directed graph from `[key, value]` entries. Time complexity: O(V). Space complexity: O(V). Tags: graph, vertices, edges, network, relationships",
+      "embeddingText": "DirectedGraph.fromEntries(entries: Iterable<[VertexKey, V]>). returns DirectedGraph<V, undefined, DirectedVertex<V>, DirectedEdge<undefined>>. Construct a directed graph from `[key, value]` entries. Time complexity: O(V). Space complexity: O(V). Tags: graph, vertices, edges, network, relationships",
       "complexity": {
         "time": {
           "best": "O(V)",
@@ -14272,7 +15057,7 @@
         }
       ],
       "returns": {
-        "type": "DirectedGraph<V, any, DirectedVertex<V>, DirectedEdge<any>>"
+        "type": "DirectedGraph<V, undefined, DirectedVertex<V>, DirectedEdge<undefined>>"
       },
       "tags": [
         "graph",
@@ -15666,7 +16451,7 @@
       "parent": "UndirectedGraph",
       "semanticSummary": "UndirectedGraph.fromKeys() Construct an undirected graph from keys with value initializer `v => v`. Runs in O(V) time.",
       "technicalSummary": "Construct an undirected graph from keys with value initializer `v => v`.",
-      "embeddingText": "UndirectedGraph.fromKeys(keys: Iterable<K>). returns UndirectedGraph<K, any, UndirectedVertex<K>, UndirectedEdge<any>>. Construct an undirected graph from keys with value initializer `v => v`. Time complexity: O(V). Space complexity: O(V). Tags: graph, vertices, edges, network, relationships",
+      "embeddingText": "UndirectedGraph.fromKeys(keys: Iterable<K>). returns UndirectedGraph<K, undefined, UndirectedVertex<K>, UndirectedEdge<undefined>>. Construct an undirected graph from keys with value initializer `v => v`. Time complexity: O(V). Space complexity: O(V). Tags: graph, vertices, edges, network, relationships",
       "complexity": {
         "time": {
           "best": "O(V)",
@@ -15691,7 +16476,7 @@
         }
       ],
       "returns": {
-        "type": "UndirectedGraph<K, any, UndirectedVertex<K>, UndirectedEdge<any>>"
+        "type": "UndirectedGraph<K, undefined, UndirectedVertex<K>, UndirectedEdge<undefined>>"
       },
       "tags": [
         "graph",
@@ -15709,7 +16494,7 @@
       "parent": "UndirectedGraph",
       "semanticSummary": "UndirectedGraph.fromEntries() Construct an undirected graph from `[key, value]` entries. Runs in O(V) time.",
       "technicalSummary": "Construct an undirected graph from `[key, value]` entries.",
-      "embeddingText": "UndirectedGraph.fromEntries(entries: Iterable<[VertexKey, V]>). returns UndirectedGraph<V, any, UndirectedVertex<V>, UndirectedEdge<any>>. Construct an undirected graph from `[key, value]` entries. Time complexity: O(V). Space complexity: O(V). Tags: graph, vertices, edges, network, relationships",
+      "embeddingText": "UndirectedGraph.fromEntries(entries: Iterable<[VertexKey, V]>). returns UndirectedGraph<V, undefined, UndirectedVertex<V>, UndirectedEdge<undefined>>. Construct an undirected graph from `[key, value]` entries. Time complexity: O(V). Space complexity: O(V). Tags: graph, vertices, edges, network, relationships",
       "complexity": {
         "time": {
           "best": "O(V)",
@@ -15734,7 +16519,7 @@
         }
       ],
       "returns": {
-        "type": "UndirectedGraph<V, any, UndirectedVertex<V>, UndirectedEdge<any>>"
+        "type": "UndirectedGraph<V, undefined, UndirectedVertex<V>, UndirectedEdge<undefined>>"
       },
       "tags": [
         "graph",
@@ -16182,9 +16967,9 @@
       "type": "method",
       "fqName": "UndirectedGraph.getNeighbors",
       "parent": "UndirectedGraph",
-      "semanticSummary": "UndirectedGraph.getNeighbors() ",
-      "technicalSummary": "",
-      "embeddingText": "UndirectedGraph.getNeighbors(vertexOrKey: VertexKey | VO). returns VO[]. . Tags: graph, vertices, edges, network, relationships",
+      "semanticSummary": "UndirectedGraph.getNeighbors() UndirectedGraph connectivity and neighbors",
+      "technicalSummary": "UndirectedGraph connectivity and neighbors",
+      "embeddingText": "UndirectedGraph.getNeighbors(vertexOrKey: VertexKey | VO). returns VO[]. UndirectedGraph connectivity and neighbors. Tags: graph, vertices, edges, network, relationships",
       "behavior": {
         "mutates": false,
         "pure": true,
@@ -16414,6 +17199,86 @@
         "edges",
         "network",
         "relationships"
+      ],
+      "related": []
+    },
+    {
+      "id": "UndirectedGraph.getBiconnectedComponents",
+      "type": "method",
+      "fqName": "UndirectedGraph.getBiconnectedComponents",
+      "parent": "UndirectedGraph",
+      "semanticSummary": "UndirectedGraph.getBiconnectedComponents() Find biconnected components using edge-stack Tarjan variant.\nA biconnected component is a maximal biconnected subgraph. Runs in O(V + E) time.",
+      "technicalSummary": "Find biconnected components using edge-stack Tarjan variant.\nA biconnected component is a maximal biconnected subgraph.",
+      "embeddingText": "UndirectedGraph.getBiconnectedComponents(). returns EO[][]. Find biconnected components using edge-stack Tarjan variant.\nA biconnected component is a maximal biconnected subgraph. Time complexity: O(V + E). Space complexity: O(V + E). Tags: graph, vertices, edges, network, relationships",
+      "complexity": {
+        "time": {
+          "best": "O(V + E)",
+          "average": "O(V + E)",
+          "worst": "O(V + E)"
+        },
+        "space": {
+          "best": "O(V + E)",
+          "average": "O(V + E)",
+          "worst": "O(V + E)"
+        }
+      },
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "EO[][]"
+      },
+      "tags": [
+        "graph",
+        "vertices",
+        "edges",
+        "network",
+        "relationships",
+        "lookup",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "UndirectedGraph.hasCycle",
+      "type": "method",
+      "fqName": "UndirectedGraph.hasCycle",
+      "parent": "UndirectedGraph",
+      "semanticSummary": "UndirectedGraph.hasCycle() Detect whether the graph contains a cycle.\nUses DFS with parent tracking. Runs in O(V + E) time.",
+      "technicalSummary": "Detect whether the graph contains a cycle.\nUses DFS with parent tracking.",
+      "embeddingText": "UndirectedGraph.hasCycle(). returns boolean. Detect whether the graph contains a cycle.\nUses DFS with parent tracking. Time complexity: O(V + E). Space complexity: O(V). Tags: graph, vertices, edges, network, relationships",
+      "complexity": {
+        "time": {
+          "best": "O(V + E)",
+          "average": "O(V + E)",
+          "worst": "O(V + E)"
+        },
+        "space": {
+          "best": "O(V)",
+          "average": "O(V)",
+          "worst": "O(V)"
+        }
+      },
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "boolean"
+      },
+      "tags": [
+        "graph",
+        "vertices",
+        "edges",
+        "network",
+        "relationships",
+        "predicate",
+        "read-only"
       ],
       "related": []
     },
@@ -22182,26 +23047,148 @@
       "id": "SkipList",
       "type": "class",
       "fqName": "SkipList",
-      "semanticSummary": "SkipList data structure",
-      "technicalSummary": "",
-      "embeddingText": "SkipList. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).",
+      "technicalSummary": "SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).",
+      "embeddingText": "SkipList. SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface). Tags: linear, sequential, ordered, probabilistic, skip-list",
       "tags": [
         "linear",
         "sequential",
         "ordered",
         "probabilistic",
-        "skip-list"
+        "skip-list",
+        "sorted"
       ],
       "related": []
     },
     {
-      "id": "SkipList.add",
+      "id": "SkipList.createDefaultComparator",
       "type": "method",
-      "fqName": "SkipList.add",
+      "fqName": "SkipList.createDefaultComparator",
       "parent": "SkipList",
-      "semanticSummary": "SkipList.add() ",
+      "semanticSummary": "SkipList.createDefaultComparator() Creates a default comparator supporting number, string, Date, and bigint.",
+      "technicalSummary": "Creates a default comparator supporting number, string, Date, and bigint.",
+      "embeddingText": "SkipList.createDefaultComparator(). returns Comparator<K>. Creates a default comparator supporting number, string, Date, and bigint. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "Comparator<K>"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted",
+        "lookup",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.isEmpty",
+      "type": "method",
+      "fqName": "SkipList.isEmpty",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.isEmpty() ",
       "technicalSummary": "",
-      "embeddingText": "SkipList.add(key: K, value: V). returns void. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "embeddingText": "SkipList.isEmpty(). returns boolean. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "boolean"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted",
+        "predicate",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.clear",
+      "type": "method",
+      "fqName": "SkipList.clear",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.clear() ",
+      "technicalSummary": "",
+      "embeddingText": "SkipList.clear(). returns void. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": true,
+        "pure": false,
+        "sideEffects": [
+          "modifies internal state"
+        ]
+      },
+      "parameters": [],
+      "returns": {
+        "type": "void"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted",
+        "bulk-delete",
+        "mutating"
+      ],
+      "related": [
+        "SkipList.delete",
+        "SkipList.isEmpty"
+      ]
+    },
+    {
+      "id": "SkipList.clone",
+      "type": "method",
+      "fqName": "SkipList.clone",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.clone() ",
+      "technicalSummary": "",
+      "embeddingText": "SkipList.clone(). returns this. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "this"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted",
+        "copying",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.set",
+      "type": "method",
+      "fqName": "SkipList.set",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.set() Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.",
+      "technicalSummary": "Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.",
+      "embeddingText": "SkipList.set(key: K, value: V). returns this. Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place. Tags: linear, sequential, ordered, probabilistic, skip-list",
       "behavior": {
         "mutates": true,
         "pure": false,
@@ -22220,7 +23207,7 @@
         }
       ],
       "returns": {
-        "type": "void"
+        "type": "this"
       },
       "tags": [
         "linear",
@@ -22228,12 +23215,13 @@
         "ordered",
         "probabilistic",
         "skip-list",
+        "sorted",
         "insertion",
         "mutating"
       ],
       "related": [
-        "SkipList.delete",
-        "SkipList.has"
+        "SkipList.get",
+        "SkipList.delete"
       ]
     },
     {
@@ -22241,9 +23229,9 @@
       "type": "method",
       "fqName": "SkipList.get",
       "parent": "SkipList",
-      "semanticSummary": "SkipList.get() ",
-      "technicalSummary": "",
-      "embeddingText": "SkipList.get(key: K). returns V | undefined. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList.get() Get the value for a key, or `undefined` if not found.\nOverrides base O(n) with O(log n) skip-list search.",
+      "technicalSummary": "Get the value for a key, or `undefined` if not found.\nOverrides base O(n) with O(log n) skip-list search.",
+      "embeddingText": "SkipList.get(key: K). returns V | undefined. Get the value for a key, or `undefined` if not found.\nOverrides base O(n) with O(log n) skip-list search. Tags: linear, sequential, ordered, probabilistic, skip-list",
       "behavior": {
         "mutates": false,
         "pure": true,
@@ -22264,10 +23252,12 @@
         "ordered",
         "probabilistic",
         "skip-list",
+        "sorted",
         "lookup",
         "read-only"
       ],
       "related": [
+        "SkipList.set",
         "SkipList.has"
       ]
     },
@@ -22276,9 +23266,9 @@
       "type": "method",
       "fqName": "SkipList.has",
       "parent": "SkipList",
-      "semanticSummary": "SkipList.has() ",
-      "technicalSummary": "",
-      "embeddingText": "SkipList.has(key: K). returns boolean. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList.has() Check if a key exists.\nOverrides base O(n) with O(log n) skip-list search.",
+      "technicalSummary": "Check if a key exists.\nOverrides base O(n) with O(log n) skip-list search.",
+      "embeddingText": "SkipList.has(key: K). returns boolean. Check if a key exists.\nOverrides base O(n) with O(log n) skip-list search. Tags: linear, sequential, ordered, probabilistic, skip-list",
       "behavior": {
         "mutates": false,
         "pure": true,
@@ -22299,6 +23289,7 @@
         "ordered",
         "probabilistic",
         "skip-list",
+        "sorted",
         "predicate",
         "read-only"
       ],
@@ -22309,9 +23300,9 @@
       "type": "method",
       "fqName": "SkipList.delete",
       "parent": "SkipList",
-      "semanticSummary": "SkipList.delete() ",
-      "technicalSummary": "",
-      "embeddingText": "SkipList.delete(key: K). returns boolean. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList.delete() Delete a key. Returns `true` if the key was found and removed.",
+      "technicalSummary": "Delete a key. Returns `true` if the key was found and removed.",
+      "embeddingText": "SkipList.delete(key: K). returns boolean. Delete a key. Returns `true` if the key was found and removed. Tags: linear, sequential, ordered, probabilistic, skip-list",
       "behavior": {
         "mutates": true,
         "pure": false,
@@ -22334,21 +23325,130 @@
         "ordered",
         "probabilistic",
         "skip-list",
+        "sorted",
         "deletion",
         "mutating"
       ],
       "related": [
-        "SkipList.add"
+        "SkipList.clear"
       ]
     },
     {
-      "id": "SkipList.higher",
+      "id": "SkipList.first",
       "type": "method",
-      "fqName": "SkipList.higher",
+      "fqName": "SkipList.first",
       "parent": "SkipList",
-      "semanticSummary": "SkipList.higher() ",
-      "technicalSummary": "",
-      "embeddingText": "SkipList.higher(key: K). returns V | undefined. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList.first() Returns the first (smallest key) entry, or `undefined` if empty.",
+      "technicalSummary": "Returns the first (smallest key) entry, or `undefined` if empty.",
+      "embeddingText": "SkipList.first(). returns [K, V | undefined] | undefined. Returns the first (smallest key) entry, or `undefined` if empty. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "[K, V | undefined] | undefined"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.last",
+      "type": "method",
+      "fqName": "SkipList.last",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.last() Returns the last (largest key) entry, or `undefined` if empty.",
+      "technicalSummary": "Returns the last (largest key) entry, or `undefined` if empty.",
+      "embeddingText": "SkipList.last(). returns [K, V | undefined] | undefined. Returns the last (largest key) entry, or `undefined` if empty. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "[K, V | undefined] | undefined"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.pollFirst",
+      "type": "method",
+      "fqName": "SkipList.pollFirst",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.pollFirst() Remove and return the first (smallest key) entry.",
+      "technicalSummary": "Remove and return the first (smallest key) entry.",
+      "embeddingText": "SkipList.pollFirst(). returns [K, V | undefined] | undefined. Remove and return the first (smallest key) entry. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "[K, V | undefined] | undefined"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.pollLast",
+      "type": "method",
+      "fqName": "SkipList.pollLast",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.pollLast() Remove and return the last (largest key) entry.",
+      "technicalSummary": "Remove and return the last (largest key) entry.",
+      "embeddingText": "SkipList.pollLast(). returns [K, V | undefined] | undefined. Remove and return the last (largest key) entry. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "[K, V | undefined] | undefined"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.ceiling",
+      "type": "method",
+      "fqName": "SkipList.ceiling",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.ceiling() Least entry ≥ key, or `undefined`.",
+      "technicalSummary": "Least entry ≥ key, or `undefined`.",
+      "embeddingText": "SkipList.ceiling(key: K). returns [K, V | undefined] | undefined. Least entry ≥ key, or `undefined`. Tags: linear, sequential, ordered, probabilistic, skip-list",
       "behavior": {
         "mutates": false,
         "pure": false,
@@ -22361,14 +23461,79 @@
         }
       ],
       "returns": {
-        "type": "V | undefined"
+        "type": "[K, V | undefined] | undefined"
       },
       "tags": [
         "linear",
         "sequential",
         "ordered",
         "probabilistic",
-        "skip-list"
+        "skip-list",
+        "sorted"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.floor",
+      "type": "method",
+      "fqName": "SkipList.floor",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.floor() Greatest entry ≤ key, or `undefined`.",
+      "technicalSummary": "Greatest entry ≤ key, or `undefined`.",
+      "embeddingText": "SkipList.floor(key: K). returns [K, V | undefined] | undefined. Greatest entry ≤ key, or `undefined`. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "key",
+          "type": "K"
+        }
+      ],
+      "returns": {
+        "type": "[K, V | undefined] | undefined"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.higher",
+      "type": "method",
+      "fqName": "SkipList.higher",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.higher() Least entry strictly > key, or `undefined`.",
+      "technicalSummary": "Least entry strictly > key, or `undefined`.",
+      "embeddingText": "SkipList.higher(key: K). returns [K, V | undefined] | undefined. Least entry strictly > key, or `undefined`. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "key",
+          "type": "K"
+        }
+      ],
+      "returns": {
+        "type": "[K, V | undefined] | undefined"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted"
       ],
       "related": []
     },
@@ -22377,9 +23542,9 @@
       "type": "method",
       "fqName": "SkipList.lower",
       "parent": "SkipList",
-      "semanticSummary": "SkipList.lower() ",
-      "technicalSummary": "",
-      "embeddingText": "SkipList.lower(key: K). returns V | undefined. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList.lower() Greatest entry strictly < key, or `undefined`.",
+      "technicalSummary": "Greatest entry strictly < key, or `undefined`.",
+      "embeddingText": "SkipList.lower(key: K). returns [K, V | undefined] | undefined. Greatest entry strictly < key, or `undefined`. Tags: linear, sequential, ordered, probabilistic, skip-list",
       "behavior": {
         "mutates": false,
         "pure": false,
@@ -22392,14 +23557,129 @@
         }
       ],
       "returns": {
-        "type": "V | undefined"
+        "type": "[K, V | undefined] | undefined"
       },
       "tags": [
         "linear",
         "sequential",
         "ordered",
         "probabilistic",
-        "skip-list"
+        "skip-list",
+        "sorted"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.rangeSearch",
+      "type": "method",
+      "fqName": "SkipList.rangeSearch",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.rangeSearch() Returns entries within the given key range.",
+      "technicalSummary": "Returns entries within the given key range.",
+      "embeddingText": "SkipList.rangeSearch(range: [K, K], options: SkipListRangeOptions). returns [K, V | undefined][]. Returns entries within the given key range. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "range",
+          "type": "[K, K]"
+        },
+        {
+          "name": "options",
+          "type": "SkipListRangeOptions"
+        }
+      ],
+      "returns": {
+        "type": "[K, V | undefined][]"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted",
+        "lookup",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.map",
+      "type": "method",
+      "fqName": "SkipList.map",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.map() Creates a new SkipList with entries transformed by callback.",
+      "technicalSummary": "Creates a new SkipList with entries transformed by callback.",
+      "embeddingText": "SkipList.map(callback: EntryCallback<K, V | undefined, [MK, MV]>, options: SkipListOptions<MK, MV, [MK, MV]> | undefined). returns SkipList<MK, MV, [MK, MV]>. Creates a new SkipList with entries transformed by callback. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "EntryCallback<K, V | undefined, [MK, MV]>"
+        },
+        {
+          "name": "options",
+          "type": "SkipListOptions<MK, MV, [MK, MV]> | undefined"
+        }
+      ],
+      "returns": {
+        "type": "SkipList<MK, MV, [MK, MV]>"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted",
+        "functional",
+        "transformation"
+      ],
+      "related": []
+    },
+    {
+      "id": "SkipList.filter",
+      "type": "method",
+      "fqName": "SkipList.filter",
+      "parent": "SkipList",
+      "semanticSummary": "SkipList.filter() Creates a new SkipList with entries that pass the predicate.",
+      "technicalSummary": "Creates a new SkipList with entries that pass the predicate.",
+      "embeddingText": "SkipList.filter(callbackfn: EntryCallback<K, V | undefined, boolean>, thisArg: unknown). returns this. Creates a new SkipList with entries that pass the predicate. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "callbackfn",
+          "type": "EntryCallback<K, V | undefined, boolean>"
+        },
+        {
+          "name": "thisArg",
+          "type": "unknown"
+        }
+      ],
+      "returns": {
+        "type": "this"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "probabilistic",
+        "skip-list",
+        "sorted",
+        "functional",
+        "transformation"
       ],
       "related": []
     },
@@ -22764,6 +24044,295 @@
         "mathematical",
         "copying",
         "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.isEmpty",
+      "type": "method",
+      "fqName": "Matrix.isEmpty",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.isEmpty() ",
+      "technicalSummary": "",
+      "embeddingText": "Matrix.isEmpty(). returns boolean. . Tags: matrix, 2d-array, grid, mathematical, predicate",
+      "behavior": {
+        "mutates": false,
+        "pure": true,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "boolean"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical",
+        "predicate",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.toArray",
+      "type": "method",
+      "fqName": "Matrix.toArray",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.toArray() Returns a deep copy of the data as a plain 2D array.",
+      "technicalSummary": "Returns a deep copy of the data as a plain 2D array.",
+      "embeddingText": "Matrix.toArray(). returns number[][]. Returns a deep copy of the data as a plain 2D array. Tags: matrix, 2d-array, grid, mathematical",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "number[][]"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.flatten",
+      "type": "method",
+      "fqName": "Matrix.flatten",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.flatten() Returns a flat row-major array.",
+      "technicalSummary": "Returns a flat row-major array.",
+      "embeddingText": "Matrix.flatten(). returns number[]. Returns a flat row-major array. Tags: matrix, 2d-array, grid, mathematical, lookup",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "number[]"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical",
+        "lookup",
+        "read-only"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.[Symbol.iterator]",
+      "type": "method",
+      "fqName": "Matrix.[Symbol.iterator]",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.[Symbol.iterator]() Iterates over rows.",
+      "technicalSummary": "Iterates over rows.",
+      "embeddingText": "Matrix.[Symbol.iterator](). returns IterableIterator<number[]>. Iterates over rows. Tags: matrix, 2d-array, grid, mathematical, lookup",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "IterableIterator<number[]>"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical",
+        "lookup",
+        "read-only",
+        "iteration"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.forEach",
+      "type": "method",
+      "fqName": "Matrix.forEach",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.forEach() Visits each element with its row and column index.",
+      "technicalSummary": "Visits each element with its row and column index.",
+      "embeddingText": "Matrix.forEach(callback: (value: number, row: number, col: number) => void). returns void. Visits each element with its row and column index. Tags: matrix, 2d-array, grid, mathematical, iteration",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "(value: number, row: number, col: number) => void"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical",
+        "iteration"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.map",
+      "type": "method",
+      "fqName": "Matrix.map",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.map() Maps each element (number → number) and returns a new Matrix.",
+      "technicalSummary": "Maps each element (number → number) and returns a new Matrix.",
+      "embeddingText": "Matrix.map(callback: (value: number, row: number, col: number) => number). returns Matrix. Maps each element (number → number) and returns a new Matrix. Tags: matrix, 2d-array, grid, mathematical, functional",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "callback",
+          "type": "(value: number, row: number, col: number) => number"
+        }
+      ],
+      "returns": {
+        "type": "Matrix"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical",
+        "functional",
+        "transformation"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.print",
+      "type": "method",
+      "fqName": "Matrix.print",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.print() ",
+      "technicalSummary": "",
+      "embeddingText": "Matrix.print(). returns void. . Tags: matrix, 2d-array, grid, mathematical",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "void"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.zeros",
+      "type": "method",
+      "fqName": "Matrix.zeros",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.zeros() Creates a rows×cols zero matrix.",
+      "technicalSummary": "Creates a rows×cols zero matrix.",
+      "embeddingText": "Matrix.zeros(rows: number, cols: number). returns Matrix. Creates a rows×cols zero matrix. Tags: matrix, 2d-array, grid, mathematical",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "rows",
+          "type": "number"
+        },
+        {
+          "name": "cols",
+          "type": "number"
+        }
+      ],
+      "returns": {
+        "type": "Matrix"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.identity",
+      "type": "method",
+      "fqName": "Matrix.identity",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.identity() Creates an n×n identity matrix.",
+      "technicalSummary": "Creates an n×n identity matrix.",
+      "embeddingText": "Matrix.identity(n: number). returns Matrix. Creates an n×n identity matrix. Tags: matrix, 2d-array, grid, mathematical",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "returns": {
+        "type": "Matrix"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical"
+      ],
+      "related": []
+    },
+    {
+      "id": "Matrix.from",
+      "type": "method",
+      "fqName": "Matrix.from",
+      "parent": "Matrix",
+      "semanticSummary": "Matrix.from() Creates a Matrix from a plain 2D array (deep copy).",
+      "technicalSummary": "Creates a Matrix from a plain 2D array (deep copy).",
+      "embeddingText": "Matrix.from(data: number[][]). returns Matrix. Creates a Matrix from a plain 2D array (deep copy). Tags: matrix, 2d-array, grid, mathematical",
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [
+        {
+          "name": "data",
+          "type": "number[][]"
+        }
+      ],
+      "returns": {
+        "type": "Matrix"
+      },
+      "tags": [
+        "matrix",
+        "2d-array",
+        "grid",
+        "mathematical"
       ],
       "related": []
     },
@@ -24015,13 +25584,13 @@
       "related": []
     },
     {
-      "id": "Deque.shrinkToFit",
+      "id": "Deque.compact",
       "type": "method",
-      "fqName": "Deque.shrinkToFit",
+      "fqName": "Deque.compact",
       "parent": "Deque",
-      "semanticSummary": "Deque.shrinkToFit() Trim unused buckets to fit exactly the active range. Runs in O(N) time.",
-      "technicalSummary": "Trim unused buckets to fit exactly the active range.",
-      "embeddingText": "Deque.shrinkToFit(). returns void. Trim unused buckets to fit exactly the active range. Time complexity: O(N). Space complexity: O(1). Tags: linear, sequential, ordered, double-ended, array-backed",
+      "semanticSummary": "Deque.compact() Compact the deque by removing unused buckets. Runs in O(N) time.",
+      "technicalSummary": "Compact the deque by removing unused buckets.",
+      "embeddingText": "Deque.compact(). returns boolean. Compact the deque by removing unused buckets. Time complexity: O(N). Space complexity: O(1). Tags: linear, sequential, ordered, double-ended, array-backed",
       "complexity": {
         "time": {
           "best": "O(N)",
@@ -24034,6 +25603,36 @@
           "worst": "O(1)"
         }
       },
+      "behavior": {
+        "mutates": false,
+        "pure": false,
+        "sideEffects": []
+      },
+      "parameters": [],
+      "returns": {
+        "type": "boolean"
+      },
+      "tags": [
+        "linear",
+        "sequential",
+        "ordered",
+        "double-ended",
+        "array-backed",
+        "circular-buffer",
+        "constant-time-ops"
+      ],
+      "related": [
+        "Queue.compact"
+      ]
+    },
+    {
+      "id": "Deque.shrinkToFit",
+      "type": "method",
+      "fqName": "Deque.shrinkToFit",
+      "parent": "Deque",
+      "semanticSummary": "Deque.shrinkToFit() ",
+      "technicalSummary": "",
+      "embeddingText": "Deque.shrinkToFit(). returns void. . Tags: linear, sequential, ordered, double-ended, array-backed",
       "behavior": {
         "mutates": false,
         "pure": false,
@@ -24911,7 +26510,9 @@
         "first-in-first-out",
         "constant-time-ops"
       ],
-      "related": []
+      "related": [
+        "Deque.compact"
+      ]
     },
     {
       "id": "Queue.splice",
@@ -27365,9 +28966,9 @@
       "id": "BinaryIndexedTree",
       "name": "BinaryIndexedTree",
       "category": "tree",
-      "semanticSummary": "BinaryIndexedTree is a tree data structure",
-      "technicalSummary": "",
-      "embeddingText": "BinaryIndexedTree. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.",
+      "technicalSummary": "Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.",
+      "embeddingText": "BinaryIndexedTree. Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "genericParameters": [],
       "tags": [
         "tree",
@@ -27375,9 +28976,10 @@
         "recursive",
         "sorted",
         "logarithmic-access",
-        "binary"
+        "binary",
+        "logarithmic-ops"
       ],
-      "methodCount": 7,
+      "methodCount": 14,
       "complexitySummary": {},
       "relations": [
         {
@@ -27413,22 +29015,27 @@
         {
           "subject": "BinaryIndexedTree",
           "predicate": "hasOperation",
-          "object": "readSingle"
-        },
-        {
-          "subject": "BinaryIndexedTree",
-          "predicate": "hasOperation",
           "object": "update"
         },
         {
           "subject": "BinaryIndexedTree",
           "predicate": "hasOperation",
-          "object": "writeSingle"
+          "object": "set"
         },
         {
           "subject": "BinaryIndexedTree",
           "predicate": "hasOperation",
-          "object": "read"
+          "object": "get"
+        },
+        {
+          "subject": "BinaryIndexedTree",
+          "predicate": "hasOperation",
+          "object": "query"
+        },
+        {
+          "subject": "BinaryIndexedTree",
+          "predicate": "hasOperation",
+          "object": "queryRange"
         },
         {
           "subject": "BinaryIndexedTree",
@@ -27443,7 +29050,17 @@
         {
           "subject": "BinaryIndexedTree",
           "predicate": "hasOperation",
-          "object": "getPrefixSum"
+          "object": "isEmpty"
+        },
+        {
+          "subject": "BinaryIndexedTree",
+          "predicate": "hasOperation",
+          "object": "clear"
+        },
+        {
+          "subject": "BinaryIndexedTree",
+          "predicate": "hasOperation",
+          "object": "clone"
         }
       ]
     },
@@ -27917,7 +29534,7 @@
         "red-black",
         "logarithmic-ops"
       ],
-      "methodCount": 8,
+      "methodCount": 9,
       "complexitySummary": {
         "createNode": "O(1)",
         "isNode": "O(1)",
@@ -27926,7 +29543,7 @@
         "setWithHint": "O(log n)",
         "set": "O(log n)",
         "delete": "O(log n)",
-        "map": "O(n)"
+        "perfectlyBalance": "O(n)"
       },
       "relations": [
         {
@@ -28002,7 +29619,114 @@
         {
           "subject": "RedBlackTree",
           "predicate": "hasOperation",
+          "object": "perfectlyBalance"
+        },
+        {
+          "subject": "RedBlackTree",
+          "predicate": "hasOperation",
           "object": "map"
+        }
+      ]
+    },
+    {
+      "id": "SegmentTree",
+      "name": "SegmentTree",
+      "category": "tree",
+      "semanticSummary": "Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.",
+      "technicalSummary": "Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.",
+      "embeddingText": "SegmentTree. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "genericParameters": [
+        "E"
+      ],
+      "tags": [
+        "tree",
+        "hierarchical",
+        "recursive",
+        "sorted",
+        "logarithmic-access"
+      ],
+      "methodCount": 14,
+      "complexitySummary": {},
+      "relations": [
+        {
+          "subject": "SegmentTree",
+          "predicate": "isA",
+          "object": "tree"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasProperty",
+          "object": "tree"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasProperty",
+          "object": "hierarchical"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasProperty",
+          "object": "recursive"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasProperty",
+          "object": "sorted"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasProperty",
+          "object": "logarithmic-access"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "sum"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "min"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "max"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "update"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "query"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "get"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "maxRight"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "minLeft"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "isEmpty"
+        },
+        {
+          "subject": "SegmentTree",
+          "predicate": "hasOperation",
+          "object": "clone"
         }
       ]
     },
@@ -28057,71 +29781,6 @@
       ]
     },
     {
-      "id": "SegmentTree",
-      "name": "SegmentTree",
-      "category": "tree",
-      "semanticSummary": "SegmentTree is a tree data structure",
-      "technicalSummary": "",
-      "embeddingText": "SegmentTree. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "genericParameters": [],
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access"
-      ],
-      "methodCount": 3,
-      "complexitySummary": {},
-      "relations": [
-        {
-          "subject": "SegmentTree",
-          "predicate": "isA",
-          "object": "tree"
-        },
-        {
-          "subject": "SegmentTree",
-          "predicate": "hasProperty",
-          "object": "tree"
-        },
-        {
-          "subject": "SegmentTree",
-          "predicate": "hasProperty",
-          "object": "hierarchical"
-        },
-        {
-          "subject": "SegmentTree",
-          "predicate": "hasProperty",
-          "object": "recursive"
-        },
-        {
-          "subject": "SegmentTree",
-          "predicate": "hasProperty",
-          "object": "sorted"
-        },
-        {
-          "subject": "SegmentTree",
-          "predicate": "hasProperty",
-          "object": "logarithmic-access"
-        },
-        {
-          "subject": "SegmentTree",
-          "predicate": "hasOperation",
-          "object": "build"
-        },
-        {
-          "subject": "SegmentTree",
-          "predicate": "hasOperation",
-          "object": "updateNode"
-        },
-        {
-          "subject": "SegmentTree",
-          "predicate": "hasOperation",
-          "object": "querySumByRange"
-        }
-      ]
-    },
-    {
       "id": "TreeMap",
       "name": "TreeMap",
       "category": "tree",
@@ -28142,7 +29801,7 @@
         "key-value",
         "associative"
       ],
-      "methodCount": 29,
+      "methodCount": 30,
       "complexitySummary": {
         "set": "O(log n)",
         "get": "O(log n)",
@@ -28155,7 +29814,8 @@
         "some": "O(n)",
         "find": "O(n)",
         "toArray": "O(n)",
-        "print": "O(n)"
+        "print": "O(n)",
+        "clone": "O(n log n)"
       },
       "relations": [
         {
@@ -28598,7 +30258,7 @@
         "unique-elements",
         "membership"
       ],
-      "methodCount": 28,
+      "methodCount": 29,
       "complexitySummary": {
         "add": "O(log n)",
         "has": "O(log n)",
@@ -28610,7 +30270,8 @@
         "some": "O(n)",
         "find": "O(n)",
         "toArray": "O(n)",
-        "print": "O(n)"
+        "print": "O(n)",
+        "clone": "O(n log n)"
       },
       "relations": [
         {
@@ -28823,7 +30484,7 @@
         "relationships",
         "binary"
       ],
-      "methodCount": 31,
+      "methodCount": 34,
       "complexitySummary": {
         "createVertex": "O(1)",
         "createEdge": "O(1)",
@@ -29530,7 +31191,7 @@
         "network",
         "relationships"
       ],
-      "methodCount": 21,
+      "methodCount": 23,
       "complexitySummary": {
         "fromKeys": "O(V)",
         "fromEntries": "O(V)",
@@ -29548,6 +31209,8 @@
         "clear": "O(V + E)",
         "clone": "O(V + E)",
         "tarjan": "O(V + E)",
+        "getBiconnectedComponents": "O(V + E)",
+        "hasCycle": "O(V + E)",
         "getBridges": "O(B)",
         "getCutVertices": "O(C)",
         "getDFNMap": "O(V)",
@@ -30723,27 +32386,35 @@
       "id": "SkipList",
       "name": "SkipList",
       "category": "linear",
-      "semanticSummary": "SkipList is a linear data structure",
-      "technicalSummary": "",
-      "embeddingText": "SkipList. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).",
+      "technicalSummary": "SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).",
+      "embeddingText": "SkipList. SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface). Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "extends": "IterableEntryBase<K, V | undefined>",
       "genericParameters": [
         "K",
-        "V"
+        "V",
+        "R"
       ],
       "tags": [
         "linear",
         "sequential",
         "ordered",
         "probabilistic",
-        "skip-list"
+        "skip-list",
+        "sorted"
       ],
-      "methodCount": 6,
+      "methodCount": 19,
       "complexitySummary": {},
       "relations": [
         {
           "subject": "SkipList",
           "predicate": "isA",
           "object": "linear"
+        },
+        {
+          "subject": "SkipList",
+          "predicate": "extends",
+          "object": "IterableEntryBase"
         },
         {
           "subject": "SkipList",
@@ -30773,7 +32444,27 @@
         {
           "subject": "SkipList",
           "predicate": "hasOperation",
-          "object": "add"
+          "object": "createDefaultComparator"
+        },
+        {
+          "subject": "SkipList",
+          "predicate": "hasOperation",
+          "object": "isEmpty"
+        },
+        {
+          "subject": "SkipList",
+          "predicate": "hasOperation",
+          "object": "clear"
+        },
+        {
+          "subject": "SkipList",
+          "predicate": "hasOperation",
+          "object": "clone"
+        },
+        {
+          "subject": "SkipList",
+          "predicate": "hasOperation",
+          "object": "set"
         },
         {
           "subject": "SkipList",
@@ -30793,12 +32484,12 @@
         {
           "subject": "SkipList",
           "predicate": "hasOperation",
-          "object": "higher"
+          "object": "first"
         },
         {
           "subject": "SkipList",
           "predicate": "hasOperation",
-          "object": "lower"
+          "object": "last"
         }
       ]
     },
@@ -30816,7 +32507,7 @@
         "grid",
         "mathematical"
       ],
-      "methodCount": 11,
+      "methodCount": 21,
       "complexitySummary": {},
       "relations": [
         {
@@ -31206,7 +32897,7 @@
         "circular-buffer",
         "constant-time-ops"
       ],
-      "methodCount": 26,
+      "methodCount": 27,
       "complexitySummary": {
         "fromArray": "O(N)",
         "push": "O(1)",
@@ -31229,7 +32920,7 @@
         "setEquality": "O(1)",
         "reverse": "O(N)",
         "unique": "O(N)",
-        "shrinkToFit": "O(N)",
+        "compact": "O(N)",
         "clone": "O(N)",
         "filter": "O(N)",
         "mapSame": "O(N)",
@@ -32230,8 +33921,8 @@
       "sourceId": "BinaryIndexedTree",
       "section": "overview",
       "title": "BinaryIndexedTree Overview",
-      "content": "BinaryIndexedTree is a tree data structure.",
-      "embeddingText": "BinaryIndexedTree overview:  Category: tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access, binary",
+      "content": "Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.",
+      "embeddingText": "BinaryIndexedTree overview: Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic. Category: tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access, binary, logarithmic-ops",
       "metadata": {
         "category": "tree",
         "tags": [
@@ -32240,7 +33931,48 @@
           "recursive",
           "sorted",
           "logarithmic-access",
-          "binary"
+          "binary",
+          "logarithmic-ops"
+        ]
+      }
+    },
+    {
+      "chunkId": "binaryindexedtree-insertion-ops",
+      "sourceId": "BinaryIndexedTree",
+      "section": "operation",
+      "title": "BinaryIndexedTree Insertion Operations",
+      "content": "set: Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)",
+      "embeddingText": "BinaryIndexedTree insertion operations: set: Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)",
+      "metadata": {
+        "category": "tree",
+        "tags": [
+          "tree",
+          "hierarchical",
+          "recursive",
+          "sorted",
+          "logarithmic-access",
+          "binary",
+          "logarithmic-ops"
+        ]
+      }
+    },
+    {
+      "chunkId": "binaryindexedtree-deletion-ops",
+      "sourceId": "BinaryIndexedTree",
+      "section": "operation",
+      "title": "BinaryIndexedTree Deletion Operations",
+      "content": "clear: ",
+      "embeddingText": "BinaryIndexedTree deletion operations: clear: ",
+      "metadata": {
+        "category": "tree",
+        "tags": [
+          "tree",
+          "hierarchical",
+          "recursive",
+          "sorted",
+          "logarithmic-access",
+          "binary",
+          "logarithmic-ops"
         ]
       }
     },
@@ -32249,8 +33981,8 @@
       "sourceId": "BinaryIndexedTree",
       "section": "operation",
       "title": "BinaryIndexedTree Lookup Operations",
-      "content": "update: The \"update\" function updates the value at a given index by adding a delta and triggers a callback\nto notify of the change.. getPrefixSum: The function calculates the prefix sum of an array using a binary indexed tree.",
-      "embeddingText": "BinaryIndexedTree lookup operations: update: The \"update\" function updates the value at a given index by adding a delta and triggers a callback\nto notify of the change.. getPrefixSum: The function calculates the prefix sum of an array using a binary indexed tree.",
+      "content": "update: Point update: add delta to the value at index (0-based).\nTime: O(log n). get: Get the point value at index (0-based).\nTime: O(log n). [Symbol.iterator]: Iterate over point values in index order.",
+      "embeddingText": "BinaryIndexedTree lookup operations: update: Point update: add delta to the value at index (0-based).\nTime: O(log n). get: Get the point value at index (0-based).\nTime: O(log n). [Symbol.iterator]: Iterate over point values in index order.",
       "metadata": {
         "category": "tree",
         "tags": [
@@ -32259,7 +33991,8 @@
           "recursive",
           "sorted",
           "logarithmic-access",
-          "binary"
+          "binary",
+          "logarithmic-ops"
         ]
       }
     },
@@ -32542,8 +34275,8 @@
       "sourceId": "RedBlackTree",
       "section": "complexity",
       "title": "RedBlackTree Time Complexity",
-      "content": "createNode: O(1), isNode: O(1), clear: O(n), setWithHintNode: O(log n), setWithHint: O(log n), set: O(log n), delete: O(log n), map: O(n)",
-      "embeddingText": "RedBlackTree time complexity: createNode: O(1), isNode: O(1), clear: O(n), setWithHintNode: O(log n), setWithHint: O(log n), set: O(log n), delete: O(log n), map: O(n)",
+      "content": "createNode: O(1), isNode: O(1), clear: O(n), setWithHintNode: O(log n), setWithHint: O(log n), set: O(log n), delete: O(log n), perfectlyBalance: O(n)",
+      "embeddingText": "RedBlackTree time complexity: createNode: O(1), isNode: O(1), clear: O(n), setWithHintNode: O(log n), setWithHint: O(log n), set: O(log n), delete: O(log n), perfectlyBalance: O(n)",
       "metadata": {
         "category": "tree",
         "tags": [
@@ -32625,30 +34358,12 @@
       }
     },
     {
-      "chunkId": "segmenttreenode-overview",
-      "sourceId": "SegmentTreeNode",
-      "section": "overview",
-      "title": "SegmentTreeNode Overview",
-      "content": "SegmentTreeNode is a tree data structure.",
-      "embeddingText": "SegmentTreeNode overview:  Category: tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "metadata": {
-        "category": "tree",
-        "tags": [
-          "tree",
-          "hierarchical",
-          "recursive",
-          "sorted",
-          "logarithmic-access"
-        ]
-      }
-    },
-    {
       "chunkId": "segmenttree-overview",
       "sourceId": "SegmentTree",
       "section": "overview",
       "title": "SegmentTree Overview",
-      "content": "SegmentTree is a tree data structure.",
-      "embeddingText": "SegmentTree overview:  Category: tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "content": "Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.",
+      "embeddingText": "SegmentTree overview: Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>. Category: tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "metadata": {
         "category": "tree",
         "tags": [
@@ -32665,8 +34380,26 @@
       "sourceId": "SegmentTree",
       "section": "operation",
       "title": "SegmentTree Lookup Operations",
-      "content": "updateNode: The function updates the value of a node in a segment tree and recalculates the sum of its children if they exist.",
-      "embeddingText": "SegmentTree lookup operations: updateNode: The function updates the value of a node in a segment tree and recalculates the sum of its children if they exist.",
+      "content": "update: Point update: set element at index to value.\nTime: O(log n). get: Get element at index.\nTime: O(1). [Symbol.iterator]: Iterates over leaf values in index order.",
+      "embeddingText": "SegmentTree lookup operations: update: Point update: set element at index to value.\nTime: O(log n). get: Get element at index.\nTime: O(1). [Symbol.iterator]: Iterates over leaf values in index order.",
+      "metadata": {
+        "category": "tree",
+        "tags": [
+          "tree",
+          "hierarchical",
+          "recursive",
+          "sorted",
+          "logarithmic-access"
+        ]
+      }
+    },
+    {
+      "chunkId": "segmenttreenode-overview",
+      "sourceId": "SegmentTreeNode",
+      "section": "overview",
+      "title": "SegmentTreeNode Overview",
+      "content": "SegmentTreeNode is a tree data structure.",
+      "embeddingText": "SegmentTreeNode overview:  Category: tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "metadata": {
         "category": "tree",
         "tags": [
@@ -32703,8 +34436,8 @@
       "sourceId": "TreeMap",
       "section": "complexity",
       "title": "TreeMap Time Complexity",
-      "content": "set: O(log n), get: O(log n), has: O(log n), delete: O(log n), map: O(n log n), filter: O(n log n), reduce: O(n), every: O(n), some: O(n), find: O(n), toArray: O(n), print: O(n)",
-      "embeddingText": "TreeMap time complexity: set: O(log n), get: O(log n), has: O(log n), delete: O(log n), map: O(n log n), filter: O(n log n), reduce: O(n), every: O(n), some: O(n), find: O(n), toArray: O(n), print: O(n)",
+      "content": "set: O(log n), get: O(log n), has: O(log n), delete: O(log n), map: O(n log n), filter: O(n log n), reduce: O(n), every: O(n), some: O(n), find: O(n), toArray: O(n), print: O(n), clone: O(n log n)",
+      "embeddingText": "TreeMap time complexity: set: O(log n), get: O(log n), has: O(log n), delete: O(log n), map: O(n log n), filter: O(n log n), reduce: O(n), every: O(n), some: O(n), find: O(n), toArray: O(n), print: O(n), clone: O(n log n)",
       "metadata": {
         "category": "tree",
         "tags": [
@@ -33042,8 +34775,8 @@
       "sourceId": "TreeSet",
       "section": "complexity",
       "title": "TreeSet Time Complexity",
-      "content": "add: O(log n), has: O(log n), delete: O(log n), map: O(n log n), filter: O(n log n), reduce: O(n), every: O(n), some: O(n), find: O(n), toArray: O(n), print: O(n)",
-      "embeddingText": "TreeSet time complexity: add: O(log n), has: O(log n), delete: O(log n), map: O(n log n), filter: O(n log n), reduce: O(n), every: O(n), some: O(n), find: O(n), toArray: O(n), print: O(n)",
+      "content": "add: O(log n), has: O(log n), delete: O(log n), map: O(n log n), filter: O(n log n), reduce: O(n), every: O(n), some: O(n), find: O(n), toArray: O(n), print: O(n), clone: O(n log n)",
+      "embeddingText": "TreeSet time complexity: add: O(log n), has: O(log n), delete: O(log n), map: O(n log n), filter: O(n log n), reduce: O(n), every: O(n), some: O(n), find: O(n), toArray: O(n), print: O(n), clone: O(n log n)",
       "metadata": {
         "category": "tree",
         "tags": [
@@ -33543,8 +35276,8 @@
       "sourceId": "UndirectedGraph",
       "section": "complexity",
       "title": "UndirectedGraph Time Complexity",
-      "content": "fromKeys: O(V), fromEntries: O(V), createVertex: O(1), createEdge: O(1), getEdge: O(1), deleteEdgeBetween: O(1), deleteEdge: O(1), deleteVertex: O(deg), degreeOf: O(1), edgesOf: O(deg), edgeSet: O(E), getEndsOfEdge: O(1), isEmpty: O(1), clear: O(V + E), clone: O(V + E), tarjan: O(V + E), getBridges: O(B), getCutVertices: O(C), getDFNMap: O(V), getLowMap: O(V)",
-      "embeddingText": "UndirectedGraph time complexity: fromKeys: O(V), fromEntries: O(V), createVertex: O(1), createEdge: O(1), getEdge: O(1), deleteEdgeBetween: O(1), deleteEdge: O(1), deleteVertex: O(deg), degreeOf: O(1), edgesOf: O(deg), edgeSet: O(E), getEndsOfEdge: O(1), isEmpty: O(1), clear: O(V + E), clone: O(V + E), tarjan: O(V + E), getBridges: O(B), getCutVertices: O(C), getDFNMap: O(V), getLowMap: O(V)",
+      "content": "fromKeys: O(V), fromEntries: O(V), createVertex: O(1), createEdge: O(1), getEdge: O(1), deleteEdgeBetween: O(1), deleteEdge: O(1), deleteVertex: O(deg), degreeOf: O(1), edgesOf: O(deg), edgeSet: O(E), getEndsOfEdge: O(1), isEmpty: O(1), clear: O(V + E), clone: O(V + E), tarjan: O(V + E), getBiconnectedComponents: O(V + E), hasCycle: O(V + E), getBridges: O(B), getCutVertices: O(C), getDFNMap: O(V), getLowMap: O(V)",
+      "embeddingText": "UndirectedGraph time complexity: fromKeys: O(V), fromEntries: O(V), createVertex: O(1), createEdge: O(1), getEdge: O(1), deleteEdgeBetween: O(1), deleteEdge: O(1), deleteVertex: O(deg), degreeOf: O(1), edgesOf: O(deg), edgeSet: O(E), getEndsOfEdge: O(1), isEmpty: O(1), clear: O(V + E), clone: O(V + E), tarjan: O(V + E), getBiconnectedComponents: O(V + E), hasCycle: O(V + E), getBridges: O(B), getCutVertices: O(C), getDFNMap: O(V), getLowMap: O(V)",
       "metadata": {
         "category": "graph",
         "tags": [
@@ -33599,8 +35332,8 @@
       "sourceId": "UndirectedGraph",
       "section": "operation",
       "title": "UndirectedGraph Lookup Operations",
-      "content": "createVertex: Create an undirected vertex instance. Does not insert into the graph. (O(1)). createEdge: Create an undirected edge instance. Does not insert into the graph. (O(1)). getEdge: Get an undirected edge between two vertices, if present. (O(1)). getNeighbors: . getEndsOfEdge: Resolve an edge's two endpoints to vertex instances. (O(1)). getBridges: Get bridges discovered by `tarjan()`. (O(B)). getCutVertices: Get articulation points discovered by `tarjan()`. (O(C)). getDFNMap: DFN index map computed by `tarjan()`. (O(V)). getLowMap: LOW link map computed by `tarjan()`. (O(V))",
-      "embeddingText": "UndirectedGraph lookup operations: createVertex: Create an undirected vertex instance. Does not insert into the graph. (O(1)). createEdge: Create an undirected edge instance. Does not insert into the graph. (O(1)). getEdge: Get an undirected edge between two vertices, if present. (O(1)). getNeighbors: . getEndsOfEdge: Resolve an edge's two endpoints to vertex instances. (O(1)). getBridges: Get bridges discovered by `tarjan()`. (O(B)). getCutVertices: Get articulation points discovered by `tarjan()`. (O(C)). getDFNMap: DFN index map computed by `tarjan()`. (O(V)). getLowMap: LOW link map computed by `tarjan()`. (O(V))",
+      "content": "createVertex: Create an undirected vertex instance. Does not insert into the graph. (O(1)). createEdge: Create an undirected edge instance. Does not insert into the graph. (O(1)). getEdge: Get an undirected edge between two vertices, if present. (O(1)). getNeighbors: UndirectedGraph connectivity and neighbors. getEndsOfEdge: Resolve an edge's two endpoints to vertex instances. (O(1)). getBiconnectedComponents: Find biconnected components using edge-stack Tarjan variant.\nA biconnected component is a maximal biconnected subgraph. (O(V + E)). hasCycle: Detect whether the graph contains a cycle.\nUses DFS with parent tracking. (O(V + E)). getBridges: Get bridges discovered by `tarjan()`. (O(B)). getCutVertices: Get articulation points discovered by `tarjan()`. (O(C)). getDFNMap: DFN index map computed by `tarjan()`. (O(V)). getLowMap: LOW link map computed by `tarjan()`. (O(V))",
+      "embeddingText": "UndirectedGraph lookup operations: createVertex: Create an undirected vertex instance. Does not insert into the graph. (O(1)). createEdge: Create an undirected edge instance. Does not insert into the graph. (O(1)). getEdge: Get an undirected edge between two vertices, if present. (O(1)). getNeighbors: UndirectedGraph connectivity and neighbors. getEndsOfEdge: Resolve an edge's two endpoints to vertex instances. (O(1)). getBiconnectedComponents: Find biconnected components using edge-stack Tarjan variant.\nA biconnected component is a maximal biconnected subgraph. (O(V + E)). hasCycle: Detect whether the graph contains a cycle.\nUses DFS with parent tracking. (O(V + E)). getBridges: Get bridges discovered by `tarjan()`. (O(B)). getCutVertices: Get articulation points discovered by `tarjan()`. (O(C)). getDFNMap: DFN index map computed by `tarjan()`. (O(V)). getLowMap: LOW link map computed by `tarjan()`. (O(V))",
       "metadata": {
         "category": "graph",
         "tags": [
@@ -34320,8 +36053,8 @@
       "sourceId": "SkipList",
       "section": "overview",
       "title": "SkipList Overview",
-      "content": "SkipList is a linear data structure.",
-      "embeddingText": "SkipList overview:  Category: linear. Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "content": "SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).",
+      "embeddingText": "SkipList overview: SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface). Category: linear. Tags: linear, sequential, ordered, probabilistic, skip-list, sorted",
       "metadata": {
         "category": "linear",
         "tags": [
@@ -34329,7 +36062,8 @@
           "sequential",
           "ordered",
           "probabilistic",
-          "skip-list"
+          "skip-list",
+          "sorted"
         ]
       }
     },
@@ -34338,8 +36072,8 @@
       "sourceId": "SkipList",
       "section": "operation",
       "title": "SkipList Insertion Operations",
-      "content": "add: ",
-      "embeddingText": "SkipList insertion operations: add: ",
+      "content": "set: Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.",
+      "embeddingText": "SkipList insertion operations: set: Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.",
       "metadata": {
         "category": "linear",
         "tags": [
@@ -34347,7 +36081,8 @@
           "sequential",
           "ordered",
           "probabilistic",
-          "skip-list"
+          "skip-list",
+          "sorted"
         ]
       }
     },
@@ -34356,8 +36091,8 @@
       "sourceId": "SkipList",
       "section": "operation",
       "title": "SkipList Deletion Operations",
-      "content": "delete: ",
-      "embeddingText": "SkipList deletion operations: delete: ",
+      "content": "clear: . delete: Delete a key. Returns `true` if the key was found and removed.",
+      "embeddingText": "SkipList deletion operations: clear: . delete: Delete a key. Returns `true` if the key was found and removed.",
       "metadata": {
         "category": "linear",
         "tags": [
@@ -34365,7 +36100,8 @@
           "sequential",
           "ordered",
           "probabilistic",
-          "skip-list"
+          "skip-list",
+          "sorted"
         ]
       }
     },
@@ -34374,8 +36110,8 @@
       "sourceId": "SkipList",
       "section": "operation",
       "title": "SkipList Lookup Operations",
-      "content": "get: . has: ",
-      "embeddingText": "SkipList lookup operations: get: . has: ",
+      "content": "createDefaultComparator: Creates a default comparator supporting number, string, Date, and bigint.. get: Get the value for a key, or `undefined` if not found.\nOverrides base O(n) with O(log n) skip-list search.. has: Check if a key exists.\nOverrides base O(n) with O(log n) skip-list search.. rangeSearch: Returns entries within the given key range.",
+      "embeddingText": "SkipList lookup operations: createDefaultComparator: Creates a default comparator supporting number, string, Date, and bigint.. get: Get the value for a key, or `undefined` if not found.\nOverrides base O(n) with O(log n) skip-list search.. has: Check if a key exists.\nOverrides base O(n) with O(log n) skip-list search.. rangeSearch: Returns entries within the given key range.",
       "metadata": {
         "category": "linear",
         "tags": [
@@ -34383,7 +36119,8 @@
           "sequential",
           "ordered",
           "probabilistic",
-          "skip-list"
+          "skip-list",
+          "sorted"
         ]
       }
     },
@@ -34426,8 +36163,8 @@
       "sourceId": "Matrix",
       "section": "operation",
       "title": "Matrix Lookup Operations",
-      "content": "get: The `get` function returns the value at the specified row and column index if it is a valid index.. isMatchForCalculate: The function checks if the dimensions of the given matrix match the dimensions of the current\nmatrix.",
-      "embeddingText": "Matrix lookup operations: get: The `get` function returns the value at the specified row and column index if it is a valid index.. isMatchForCalculate: The function checks if the dimensions of the given matrix match the dimensions of the current\nmatrix.",
+      "content": "get: The `get` function returns the value at the specified row and column index if it is a valid index.. isMatchForCalculate: The function checks if the dimensions of the given matrix match the dimensions of the current\nmatrix.. flatten: Returns a flat row-major array.. [Symbol.iterator]: Iterates over rows.",
+      "embeddingText": "Matrix lookup operations: get: The `get` function returns the value at the specified row and column index if it is a valid index.. isMatchForCalculate: The function checks if the dimensions of the given matrix match the dimensions of the current\nmatrix.. flatten: Returns a flat row-major array.. [Symbol.iterator]: Iterates over rows.",
       "metadata": {
         "category": "matrix",
         "tags": [
@@ -34558,8 +36295,8 @@
       "sourceId": "Deque",
       "section": "complexity",
       "title": "Deque Time Complexity",
-      "content": "fromArray: O(N), push: O(1), pop: O(1), shift: O(1), unshift: O(1), pushMany: O(N), unshiftMany: O(N), isEmpty: O(1), clear: O(1), at: O(1), setAt: O(1), addAt: O(N), cut: O(N), splice: O(N + M), cutRest: O(N), deleteAt: O(N), delete: O(N), deleteWhere: O(N), setEquality: O(1), reverse: O(N), unique: O(N), shrinkToFit: O(N), clone: O(N), filter: O(N), mapSame: O(N), map: O(N)",
-      "embeddingText": "Deque time complexity: fromArray: O(N), push: O(1), pop: O(1), shift: O(1), unshift: O(1), pushMany: O(N), unshiftMany: O(N), isEmpty: O(1), clear: O(1), at: O(1), setAt: O(1), addAt: O(N), cut: O(N), splice: O(N + M), cutRest: O(N), deleteAt: O(N), delete: O(N), deleteWhere: O(N), setEquality: O(1), reverse: O(N), unique: O(N), shrinkToFit: O(N), clone: O(N), filter: O(N), mapSame: O(N), map: O(N)",
+      "content": "fromArray: O(N), push: O(1), pop: O(1), shift: O(1), unshift: O(1), pushMany: O(N), unshiftMany: O(N), isEmpty: O(1), clear: O(1), at: O(1), setAt: O(1), addAt: O(N), cut: O(N), splice: O(N + M), cutRest: O(N), deleteAt: O(N), delete: O(N), deleteWhere: O(N), setEquality: O(1), reverse: O(N), unique: O(N), compact: O(N), clone: O(N), filter: O(N), mapSame: O(N), map: O(N)",
+      "embeddingText": "Deque time complexity: fromArray: O(N), push: O(1), pop: O(1), shift: O(1), unshift: O(1), pushMany: O(N), unshiftMany: O(N), isEmpty: O(1), clear: O(1), at: O(1), setAt: O(1), addAt: O(N), cut: O(N), splice: O(N + M), cutRest: O(N), deleteAt: O(N), delete: O(N), deleteWhere: O(N), setEquality: O(1), reverse: O(N), unique: O(N), compact: O(N), clone: O(N), filter: O(N), mapSame: O(N), map: O(N)",
       "metadata": {
         "category": "linear",
         "tags": [
@@ -36207,22 +37944,37 @@
         "object": "map"
       },
       {
-        "subject": "BinaryIndexedTree.readSingle",
-        "predicate": "belongsTo",
-        "object": "BinaryIndexedTree"
-      },
-      {
         "subject": "BinaryIndexedTree.update",
         "predicate": "belongsTo",
         "object": "BinaryIndexedTree"
       },
       {
-        "subject": "BinaryIndexedTree.writeSingle",
+        "subject": "BinaryIndexedTree.set",
         "predicate": "belongsTo",
         "object": "BinaryIndexedTree"
       },
       {
-        "subject": "BinaryIndexedTree.read",
+        "subject": "BinaryIndexedTree.set",
+        "predicate": "mutatesState",
+        "object": "true"
+      },
+      {
+        "subject": "BinaryIndexedTree.get",
+        "predicate": "belongsTo",
+        "object": "BinaryIndexedTree"
+      },
+      {
+        "subject": "BinaryIndexedTree.get",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "BinaryIndexedTree.query",
+        "predicate": "belongsTo",
+        "object": "BinaryIndexedTree"
+      },
+      {
+        "subject": "BinaryIndexedTree.queryRange",
         "predicate": "belongsTo",
         "object": "BinaryIndexedTree"
       },
@@ -36237,14 +37989,54 @@
         "object": "BinaryIndexedTree"
       },
       {
-        "subject": "BinaryIndexedTree.getPrefixSum",
+        "subject": "BinaryIndexedTree.isEmpty",
         "predicate": "belongsTo",
         "object": "BinaryIndexedTree"
       },
       {
-        "subject": "BinaryIndexedTree.getPrefixSum",
+        "subject": "BinaryIndexedTree.isEmpty",
         "predicate": "isPure",
         "object": "true"
+      },
+      {
+        "subject": "BinaryIndexedTree.clear",
+        "predicate": "belongsTo",
+        "object": "BinaryIndexedTree"
+      },
+      {
+        "subject": "BinaryIndexedTree.clear",
+        "predicate": "mutatesState",
+        "object": "true"
+      },
+      {
+        "subject": "BinaryIndexedTree.clone",
+        "predicate": "belongsTo",
+        "object": "BinaryIndexedTree"
+      },
+      {
+        "subject": "BinaryIndexedTree.clone",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "BinaryIndexedTree.toArray",
+        "predicate": "belongsTo",
+        "object": "BinaryIndexedTree"
+      },
+      {
+        "subject": "BinaryIndexedTree.[Symbol.iterator]",
+        "predicate": "belongsTo",
+        "object": "BinaryIndexedTree"
+      },
+      {
+        "subject": "BinaryIndexedTree.forEach",
+        "predicate": "belongsTo",
+        "object": "BinaryIndexedTree"
+      },
+      {
+        "subject": "BinaryIndexedTree.print",
+        "predicate": "belongsTo",
+        "object": "BinaryIndexedTree"
       },
       {
         "subject": "BinaryIndexedTree",
@@ -36279,22 +38071,27 @@
       {
         "subject": "BinaryIndexedTree",
         "predicate": "hasOperation",
-        "object": "readSingle"
-      },
-      {
-        "subject": "BinaryIndexedTree",
-        "predicate": "hasOperation",
         "object": "update"
       },
       {
         "subject": "BinaryIndexedTree",
         "predicate": "hasOperation",
-        "object": "writeSingle"
+        "object": "set"
       },
       {
         "subject": "BinaryIndexedTree",
         "predicate": "hasOperation",
-        "object": "read"
+        "object": "get"
+      },
+      {
+        "subject": "BinaryIndexedTree",
+        "predicate": "hasOperation",
+        "object": "query"
+      },
+      {
+        "subject": "BinaryIndexedTree",
+        "predicate": "hasOperation",
+        "object": "queryRange"
       },
       {
         "subject": "BinaryIndexedTree",
@@ -36309,7 +38106,17 @@
       {
         "subject": "BinaryIndexedTree",
         "predicate": "hasOperation",
-        "object": "getPrefixSum"
+        "object": "isEmpty"
+      },
+      {
+        "subject": "BinaryIndexedTree",
+        "predicate": "hasOperation",
+        "object": "clear"
+      },
+      {
+        "subject": "BinaryIndexedTree",
+        "predicate": "hasOperation",
+        "object": "clone"
       },
       {
         "subject": "BinaryTreeNode",
@@ -37437,14 +39244,19 @@
         "object": "true"
       },
       {
-        "subject": "RedBlackTree.map",
+        "subject": "RedBlackTree.perfectlyBalance",
         "predicate": "belongsTo",
         "object": "RedBlackTree"
       },
       {
-        "subject": "RedBlackTree.map",
+        "subject": "RedBlackTree.perfectlyBalance",
         "predicate": "hasTimeComplexity",
         "object": "O(n)"
+      },
+      {
+        "subject": "RedBlackTree.map",
+        "predicate": "belongsTo",
+        "object": "RedBlackTree"
       },
       {
         "subject": "RedBlackTree",
@@ -37519,9 +39331,179 @@
       {
         "subject": "RedBlackTree",
         "predicate": "hasOperation",
+        "object": "perfectlyBalance"
+      },
+      {
+        "subject": "RedBlackTree",
+        "predicate": "hasOperation",
         "object": "map"
       },
       {
+        "subject": "SegmentTree.sum",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.min",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.max",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.update",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.query",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.get",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.get",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "SegmentTree.maxRight",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.minLeft",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.isEmpty",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.isEmpty",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "SegmentTree.clone",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.clone",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "SegmentTree.toArray",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.[Symbol.iterator]",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.forEach",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree.print",
+        "predicate": "belongsTo",
+        "object": "SegmentTree"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "isA",
+        "object": "tree"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasProperty",
+        "object": "tree"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasProperty",
+        "object": "hierarchical"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasProperty",
+        "object": "recursive"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasProperty",
+        "object": "sorted"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasProperty",
+        "object": "logarithmic-access"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "sum"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "min"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "max"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "update"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "query"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "get"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "maxRight"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "minLeft"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "isEmpty"
+      },
+      {
+        "subject": "SegmentTree",
+        "predicate": "hasOperation",
+        "object": "clone"
+      },
+      {
         "subject": "SegmentTreeNode",
         "predicate": "isA",
         "object": "tree"
@@ -37550,66 +39532,6 @@
         "subject": "SegmentTreeNode",
         "predicate": "hasProperty",
         "object": "logarithmic-access"
-      },
-      {
-        "subject": "SegmentTree.build",
-        "predicate": "belongsTo",
-        "object": "SegmentTree"
-      },
-      {
-        "subject": "SegmentTree.updateNode",
-        "predicate": "belongsTo",
-        "object": "SegmentTree"
-      },
-      {
-        "subject": "SegmentTree.querySumByRange",
-        "predicate": "belongsTo",
-        "object": "SegmentTree"
-      },
-      {
-        "subject": "SegmentTree",
-        "predicate": "isA",
-        "object": "tree"
-      },
-      {
-        "subject": "SegmentTree",
-        "predicate": "hasProperty",
-        "object": "tree"
-      },
-      {
-        "subject": "SegmentTree",
-        "predicate": "hasProperty",
-        "object": "hierarchical"
-      },
-      {
-        "subject": "SegmentTree",
-        "predicate": "hasProperty",
-        "object": "recursive"
-      },
-      {
-        "subject": "SegmentTree",
-        "predicate": "hasProperty",
-        "object": "sorted"
-      },
-      {
-        "subject": "SegmentTree",
-        "predicate": "hasProperty",
-        "object": "logarithmic-access"
-      },
-      {
-        "subject": "SegmentTree",
-        "predicate": "hasOperation",
-        "object": "build"
-      },
-      {
-        "subject": "SegmentTree",
-        "predicate": "hasOperation",
-        "object": "updateNode"
-      },
-      {
-        "subject": "SegmentTree",
-        "predicate": "hasOperation",
-        "object": "querySumByRange"
       },
       {
         "subject": "TreeMap.createDefaultComparator",
@@ -37853,6 +39775,21 @@
       },
       {
         "subject": "TreeMap.rangeSearch",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "TreeMap.clone",
+        "predicate": "belongsTo",
+        "object": "TreeMap"
+      },
+      {
+        "subject": "TreeMap.clone",
+        "predicate": "hasTimeComplexity",
+        "object": "O(n log n)"
+      },
+      {
+        "subject": "TreeMap.clone",
         "predicate": "isPure",
         "object": "true"
       },
@@ -39107,6 +41044,21 @@
         "object": "true"
       },
       {
+        "subject": "TreeSet.clone",
+        "predicate": "belongsTo",
+        "object": "TreeSet"
+      },
+      {
+        "subject": "TreeSet.clone",
+        "predicate": "hasTimeComplexity",
+        "object": "O(n log n)"
+      },
+      {
+        "subject": "TreeSet.clone",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
         "subject": "TreeSet",
         "predicate": "isA",
         "object": "tree"
@@ -39635,6 +41587,21 @@
         "subject": "AbstractGraph.clone",
         "predicate": "isPure",
         "object": "true"
+      },
+      {
+        "subject": "AbstractGraph.toVisual",
+        "predicate": "belongsTo",
+        "object": "AbstractGraph"
+      },
+      {
+        "subject": "AbstractGraph.toDot",
+        "predicate": "belongsTo",
+        "object": "AbstractGraph"
+      },
+      {
+        "subject": "AbstractGraph.print",
+        "predicate": "belongsTo",
+        "object": "AbstractGraph"
       },
       {
         "subject": "AbstractGraph",
@@ -40650,6 +42617,36 @@
         "subject": "UndirectedGraph.tarjan",
         "predicate": "hasTimeComplexity",
         "object": "O(V + E)"
+      },
+      {
+        "subject": "UndirectedGraph.getBiconnectedComponents",
+        "predicate": "belongsTo",
+        "object": "UndirectedGraph"
+      },
+      {
+        "subject": "UndirectedGraph.getBiconnectedComponents",
+        "predicate": "hasTimeComplexity",
+        "object": "O(V + E)"
+      },
+      {
+        "subject": "UndirectedGraph.getBiconnectedComponents",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "UndirectedGraph.hasCycle",
+        "predicate": "belongsTo",
+        "object": "UndirectedGraph"
+      },
+      {
+        "subject": "UndirectedGraph.hasCycle",
+        "predicate": "hasTimeComplexity",
+        "object": "O(V + E)"
+      },
+      {
+        "subject": "UndirectedGraph.hasCycle",
+        "predicate": "isPure",
+        "object": "true"
       },
       {
         "subject": "UndirectedGraph.getBridges",
@@ -42927,12 +44924,47 @@
         "object": "skip-list"
       },
       {
-        "subject": "SkipList.add",
+        "subject": "SkipList.createDefaultComparator",
         "predicate": "belongsTo",
         "object": "SkipList"
       },
       {
-        "subject": "SkipList.add",
+        "subject": "SkipList.isEmpty",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.isEmpty",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "SkipList.clear",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.clear",
+        "predicate": "mutatesState",
+        "object": "true"
+      },
+      {
+        "subject": "SkipList.clone",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.clone",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "SkipList.set",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.set",
         "predicate": "mutatesState",
         "object": "true"
       },
@@ -42965,6 +44997,36 @@
         "subject": "SkipList.delete",
         "predicate": "mutatesState",
         "object": "true"
+      },
+      {
+        "subject": "SkipList.first",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.last",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.pollFirst",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.pollLast",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.ceiling",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.floor",
+        "predicate": "belongsTo",
+        "object": "SkipList"
       },
       {
         "subject": "SkipList.higher",
@@ -42977,9 +45039,34 @@
         "object": "SkipList"
       },
       {
+        "subject": "SkipList.rangeSearch",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.rangeSearch",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "SkipList.map",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
+        "subject": "SkipList.filter",
+        "predicate": "belongsTo",
+        "object": "SkipList"
+      },
+      {
         "subject": "SkipList",
         "predicate": "isA",
         "object": "linear"
+      },
+      {
+        "subject": "SkipList",
+        "predicate": "extends",
+        "object": "IterableEntryBase"
       },
       {
         "subject": "SkipList",
@@ -43009,7 +45096,27 @@
       {
         "subject": "SkipList",
         "predicate": "hasOperation",
-        "object": "add"
+        "object": "createDefaultComparator"
+      },
+      {
+        "subject": "SkipList",
+        "predicate": "hasOperation",
+        "object": "isEmpty"
+      },
+      {
+        "subject": "SkipList",
+        "predicate": "hasOperation",
+        "object": "clear"
+      },
+      {
+        "subject": "SkipList",
+        "predicate": "hasOperation",
+        "object": "clone"
+      },
+      {
+        "subject": "SkipList",
+        "predicate": "hasOperation",
+        "object": "set"
       },
       {
         "subject": "SkipList",
@@ -43029,12 +45136,12 @@
       {
         "subject": "SkipList",
         "predicate": "hasOperation",
-        "object": "higher"
+        "object": "first"
       },
       {
         "subject": "SkipList",
         "predicate": "hasOperation",
-        "object": "lower"
+        "object": "last"
       },
       {
         "subject": "Matrix.get",
@@ -43110,6 +45217,61 @@
         "subject": "Matrix.clone",
         "predicate": "isPure",
         "object": "true"
+      },
+      {
+        "subject": "Matrix.isEmpty",
+        "predicate": "belongsTo",
+        "object": "Matrix"
+      },
+      {
+        "subject": "Matrix.isEmpty",
+        "predicate": "isPure",
+        "object": "true"
+      },
+      {
+        "subject": "Matrix.toArray",
+        "predicate": "belongsTo",
+        "object": "Matrix"
+      },
+      {
+        "subject": "Matrix.flatten",
+        "predicate": "belongsTo",
+        "object": "Matrix"
+      },
+      {
+        "subject": "Matrix.[Symbol.iterator]",
+        "predicate": "belongsTo",
+        "object": "Matrix"
+      },
+      {
+        "subject": "Matrix.forEach",
+        "predicate": "belongsTo",
+        "object": "Matrix"
+      },
+      {
+        "subject": "Matrix.map",
+        "predicate": "belongsTo",
+        "object": "Matrix"
+      },
+      {
+        "subject": "Matrix.print",
+        "predicate": "belongsTo",
+        "object": "Matrix"
+      },
+      {
+        "subject": "Matrix.zeros",
+        "predicate": "belongsTo",
+        "object": "Matrix"
+      },
+      {
+        "subject": "Matrix.identity",
+        "predicate": "belongsTo",
+        "object": "Matrix"
+      },
+      {
+        "subject": "Matrix.from",
+        "predicate": "belongsTo",
+        "object": "Matrix"
       },
       {
         "subject": "Matrix",
@@ -43652,14 +45814,19 @@
         "object": "O(N)"
       },
       {
-        "subject": "Deque.shrinkToFit",
+        "subject": "Deque.compact",
         "predicate": "belongsTo",
         "object": "Deque"
       },
       {
-        "subject": "Deque.shrinkToFit",
+        "subject": "Deque.compact",
         "predicate": "hasTimeComplexity",
         "object": "O(N)"
+      },
+      {
+        "subject": "Deque.shrinkToFit",
+        "predicate": "belongsTo",
+        "object": "Deque"
       },
       {
         "subject": "Deque.clone",
@@ -44812,7 +46979,7 @@
         "object": "hasCommonPrefix"
       }
     ],
-    "totalTriples": 1960
+    "totalTriples": 2046
   },
   "complexityIndex": {
     "O(n)": {
@@ -44865,7 +47032,7 @@
         "LinearLinkedBase.slice",
         "LinearLinkedBase.getNodeAt",
         "RedBlackTree.clear",
-        "RedBlackTree.map",
+        "RedBlackTree.perfectlyBalance",
         "TreeMap.reduce",
         "TreeMap.every",
         "TreeMap.some",
@@ -45067,13 +47234,15 @@
         "LinearBase.sort",
         "TreeMap.map",
         "TreeMap.filter",
+        "TreeMap.clone",
         "TreeMultiMap.map",
         "TreeMultiMap.clone",
         "TreeMultiSet.filter",
         "TreeMultiSet.map",
         "TreeMultiSet.clone",
         "TreeSet.map",
-        "TreeSet.filter"
+        "TreeSet.filter",
+        "TreeSet.clone"
       ],
       "classes": [
         "LinearBase",
@@ -45214,7 +47383,7 @@
         "Deque.deleteWhere",
         "Deque.reverse",
         "Deque.unique",
-        "Deque.shrinkToFit",
+        "Deque.compact",
         "Deque.clone",
         "Deque.filter",
         "Deque.mapSame",
@@ -45512,7 +47681,9 @@
         "MapGraph.clone",
         "UndirectedGraph.clear",
         "UndirectedGraph.clone",
-        "UndirectedGraph.tarjan"
+        "UndirectedGraph.tarjan",
+        "UndirectedGraph.getBiconnectedComponents",
+        "UndirectedGraph.hasCycle"
       ],
       "classes": [
         "AbstractGraph",
@@ -46899,38 +49070,68 @@
         "type": "factual"
       },
       {
-        "instruction": "What does BinaryIndexedTree.readSingle() do?",
-        "output": "The function \"readSingle\" reads a single number from a specified index.",
-        "type": "factual"
-      },
-      {
         "instruction": "What does BinaryIndexedTree.update() do?",
-        "output": "The \"update\" function updates the value at a given index by adding a delta and triggers a callback\nto notify of the change.",
+        "output": "Point update: add delta to the value at index (0-based).\nTime: O(log n)",
         "type": "factual"
       },
       {
-        "instruction": "What does BinaryIndexedTree.writeSingle() do?",
-        "output": "The function \"writeSingle\" checks the index and writes a single value with a given frequency.",
+        "instruction": "How do I set in BinaryIndexedTree?",
+        "output": "Use BinaryIndexedTree.set(). BinaryIndexedTree.set() Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)",
+        "type": "howto"
+      },
+      {
+        "instruction": "How to call set on a BinaryIndexedTree?",
+        "output": "Call BinaryIndexedTree.set(index, value). Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)",
+        "type": "howto"
+      },
+      {
+        "instruction": "What does BinaryIndexedTree.set() do?",
+        "output": "Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)",
         "type": "factual"
       },
       {
-        "instruction": "What does BinaryIndexedTree.read() do?",
-        "output": "The read function takes a count parameter, checks if it is an integer, and returns the result of\ncalling the _read function with the count parameter clamped between 0 and the maximum value.",
+        "instruction": "Show me an example of using BinaryIndexedTree.set()",
+        "output": "const ds = new BinaryIndexedTree();\nds.set(42, 42); // Point set: set the value at index to an absolute value (0-based).\nTime: O(log n)",
+        "type": "howto"
+      },
+      {
+        "instruction": "What does BinaryIndexedTree.get() do?",
+        "output": "Get the point value at index (0-based).\nTime: O(log n)",
+        "type": "factual"
+      },
+      {
+        "instruction": "Show me an example of using BinaryIndexedTree.get()",
+        "output": "const ds = new BinaryIndexedTree();\nds.get(42); // Get the point value at index (0-based).\nTime: O(log n)",
+        "type": "howto"
+      },
+      {
+        "instruction": "What does BinaryIndexedTree.query() do?",
+        "output": "Prefix sum query: returns sum of elements [0..index] (inclusive, 0-based).\nTime: O(log n)",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does BinaryIndexedTree.queryRange() do?",
+        "output": "Range sum query: returns sum of elements [start..end] (inclusive, 0-based).\nTime: O(log n)",
         "type": "factual"
       },
       {
         "instruction": "What does BinaryIndexedTree.lowerBound() do?",
-        "output": "The function returns the lower bound of a non-descending sequence that sums up to a given number.",
+        "output": "Find the smallest index i such that prefix sum [0..i] >= sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n)",
         "type": "factual"
       },
       {
         "instruction": "What does BinaryIndexedTree.upperBound() do?",
-        "output": "The upperBound function returns the index of the first element in a sequence that is greater than\nor equal to a given sum.",
+        "output": "Find the smallest index i such that prefix sum [0..i] > sum.\nRequires all values to be non-negative (behavior undefined otherwise).\nReturns size if no such index exists.\nTime: O(log n)",
         "type": "factual"
       },
       {
-        "instruction": "What does BinaryIndexedTree.getPrefixSum() do?",
-        "output": "The function calculates the prefix sum of an array using a binary indexed tree.",
+        "instruction": "What does BinaryIndexedTree.toArray() do?",
+        "output": "Returns the point values as a plain array.\nTime: O(n log n)",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does BinaryIndexedTree.[Symbol.iterator]() do?",
+        "output": "Iterate over point values in index order.",
         "type": "factual"
       },
       {
@@ -48184,33 +50385,68 @@
         "type": "howto"
       },
       {
-        "instruction": "What is the time complexity of RedBlackTree.map()?",
-        "output": "RedBlackTree.map() runs in O(n) time complexity.",
+        "instruction": "What is the time complexity of RedBlackTree.perfectlyBalance()?",
+        "output": "RedBlackTree.perfectlyBalance() runs in O(n) time complexity.",
         "type": "factual"
       },
       {
-        "instruction": "How fast is map in RedBlackTree?",
-        "output": "RedBlackTree.map() operates in O(n) time.",
+        "instruction": "How fast is perfectlyBalance in RedBlackTree?",
+        "output": "RedBlackTree.perfectlyBalance() operates in O(n) time.",
         "type": "factual"
       },
       {
-        "instruction": "What does RedBlackTree.map() do?",
+        "instruction": "What does RedBlackTree.perfectlyBalance() do?",
         "output": "Transform entries into a like-kind red-black tree with possibly different key/value types.",
         "type": "factual"
       },
       {
-        "instruction": "What does SegmentTree.build() do?",
-        "output": "The build function creates a segment tree by recursively dividing the given range into smaller segments and assigning\nthe sum of values to each segment.",
+        "instruction": "What does SegmentTree.sum() do?",
+        "output": "Create a sum segment tree.",
         "type": "factual"
       },
       {
-        "instruction": "What does SegmentTree.updateNode() do?",
-        "output": "The function updates the value of a node in a segment tree and recalculates the sum of its children if they exist.",
+        "instruction": "What does SegmentTree.min() do?",
+        "output": "Create a min segment tree.",
         "type": "factual"
       },
       {
-        "instruction": "What does SegmentTree.querySumByRange() do?",
-        "output": "The function `querySumByRange` calculates the sum of values within a given range in a segment tree.",
+        "instruction": "What does SegmentTree.max() do?",
+        "output": "Create a max segment tree.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SegmentTree.update() do?",
+        "output": "Point update: set element at index to value.\nTime: O(log n)",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SegmentTree.query() do?",
+        "output": "Range query: returns merger result over [start, end] (inclusive).\nTime: O(log n)",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SegmentTree.get() do?",
+        "output": "Get element at index.\nTime: O(1)",
+        "type": "factual"
+      },
+      {
+        "instruction": "Show me an example of using SegmentTree.get()",
+        "output": "const ds = new SegmentTree();\nds.get(42); // Get element at index.\nTime: O(1)",
+        "type": "howto"
+      },
+      {
+        "instruction": "What does SegmentTree.maxRight() do?",
+        "output": "Find the largest r such that predicate(query(left, r)) is true.\nReturns left-1 if predicate(identity) is false.\nReturns n-1 if predicate holds for the entire range [left, n-1].\nTime: O(log n)",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SegmentTree.minLeft() do?",
+        "output": "Find the smallest l such that predicate(query(l, right)) is true.\nReturns right+1 if predicate(identity) is false.\nReturns 0 if predicate holds for the entire range [0, right].\nTime: O(log n)",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SegmentTree.[Symbol.iterator]() do?",
+        "output": "Iterates over leaf values in index order.",
         "type": "factual"
       },
       {
@@ -48506,6 +50742,21 @@
       {
         "instruction": "What does TreeMap.rangeSearch() do?",
         "output": "Return all entries in a given key range.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What is the time complexity of TreeMap.clone()?",
+        "output": "TreeMap.clone() runs in O(n log n) time complexity.",
+        "type": "factual"
+      },
+      {
+        "instruction": "How fast is clone in TreeMap?",
+        "output": "TreeMap.clone() operates in O(n log n) time.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does TreeMap.clone() do?",
+        "output": "Creates a shallow clone of this map.",
         "type": "factual"
       },
       {
@@ -49849,6 +52100,21 @@
         "type": "factual"
       },
       {
+        "instruction": "What is the time complexity of TreeSet.clone()?",
+        "output": "TreeSet.clone() runs in O(n log n) time complexity.",
+        "type": "factual"
+      },
+      {
+        "instruction": "How fast is clone in TreeSet?",
+        "output": "TreeSet.clone() operates in O(n log n) time.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does TreeSet.clone() do?",
+        "output": "Creates a shallow clone of this set.",
+        "type": "factual"
+      },
+      {
         "instruction": "What is the time complexity of AbstractGraph.createVertex()?",
         "output": "AbstractGraph.createVertex() runs in O(1) time complexity.",
         "type": "factual"
@@ -50396,6 +52662,21 @@
       {
         "instruction": "What does AbstractGraph.clone() do?",
         "output": "Create a deep clone of the graph with the same species.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does AbstractGraph.toVisual() do?",
+        "output": "Generate a text-based visual representation of the graph.\n\n**Adjacency list format:**\n```\nGraph (5 vertices, 6 edges):\nA -> B (1), C (2)\nB -> D (3)\nC -> (no outgoing edges)\nD -> A (1)\nE (isolated)\n```",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does AbstractGraph.toDot() do?",
+        "output": "Generate DOT language representation for Graphviz.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does AbstractGraph.print() do?",
+        "output": "Print the graph to console.",
         "type": "factual"
       },
       {
@@ -51074,6 +53355,11 @@
         "type": "factual"
       },
       {
+        "instruction": "What does UndirectedGraph.getNeighbors() do?",
+        "output": "UndirectedGraph connectivity and neighbors",
+        "type": "factual"
+      },
+      {
         "instruction": "What is the time complexity of UndirectedGraph.getEndsOfEdge()?",
         "output": "UndirectedGraph.getEndsOfEdge() runs in O(1) time complexity.",
         "type": "factual"
@@ -51156,6 +53442,36 @@
       {
         "instruction": "What does UndirectedGraph.tarjan() do?",
         "output": "Tarjan-based bridge and articulation point detection.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What is the time complexity of UndirectedGraph.getBiconnectedComponents()?",
+        "output": "UndirectedGraph.getBiconnectedComponents() runs in O(V + E) time complexity.",
+        "type": "factual"
+      },
+      {
+        "instruction": "How fast is getBiconnectedComponents in UndirectedGraph?",
+        "output": "UndirectedGraph.getBiconnectedComponents() operates in O(V + E) time.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does UndirectedGraph.getBiconnectedComponents() do?",
+        "output": "Find biconnected components using edge-stack Tarjan variant.\nA biconnected component is a maximal biconnected subgraph.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What is the time complexity of UndirectedGraph.hasCycle()?",
+        "output": "UndirectedGraph.hasCycle() runs in O(V + E) time complexity.",
+        "type": "factual"
+      },
+      {
+        "instruction": "How fast is hasCycle in UndirectedGraph?",
+        "output": "UndirectedGraph.hasCycle() operates in O(V + E) time.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does UndirectedGraph.hasCycle() do?",
+        "output": "Detect whether the graph contains a cycle.\nUses DFS with parent tracking.",
         "type": "factual"
       },
       {
@@ -53334,39 +55650,119 @@
         "type": "factual"
       },
       {
-        "instruction": "How do I add in SkipList?",
-        "output": "Use SkipList.add(). SkipList.add() ",
+        "instruction": "What does SkipList.createDefaultComparator() do?",
+        "output": "Creates a default comparator supporting number, string, Date, and bigint.",
+        "type": "factual"
+      },
+      {
+        "instruction": "How do I set in SkipList?",
+        "output": "Use SkipList.set(). SkipList.set() Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.",
         "type": "howto"
       },
       {
-        "instruction": "How to call add on a SkipList?",
-        "output": "Call SkipList.add(key, value). ",
+        "instruction": "How to call set on a SkipList?",
+        "output": "Call SkipList.set(key, value). Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.",
         "type": "howto"
       },
       {
-        "instruction": "Show me an example of using SkipList.add()",
-        "output": "const ds = new SkipList();\nds.add(element, element); // ",
+        "instruction": "What does SkipList.set() do?",
+        "output": "Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.",
+        "type": "factual"
+      },
+      {
+        "instruction": "Show me an example of using SkipList.set()",
+        "output": "const ds = new SkipList();\nds.set(element, element); // Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.",
         "type": "howto"
+      },
+      {
+        "instruction": "What does SkipList.get() do?",
+        "output": "Get the value for a key, or `undefined` if not found.\nOverrides base O(n) with O(log n) skip-list search.",
+        "type": "factual"
       },
       {
         "instruction": "Show me an example of using SkipList.get()",
-        "output": "const ds = new SkipList();\nds.get(element); // ",
+        "output": "const ds = new SkipList();\nds.get(element); // Get the value for a key, or `undefined` if not found.\nOverrides base O(n) with O(log n) skip-list search.",
         "type": "howto"
       },
       {
+        "instruction": "What does SkipList.has() do?",
+        "output": "Check if a key exists.\nOverrides base O(n) with O(log n) skip-list search.",
+        "type": "factual"
+      },
+      {
         "instruction": "How do I delete in SkipList?",
-        "output": "Use SkipList.delete(). SkipList.delete() ",
+        "output": "Use SkipList.delete(). SkipList.delete() Delete a key. Returns `true` if the key was found and removed.",
         "type": "howto"
       },
       {
         "instruction": "How to call delete on a SkipList?",
-        "output": "Call SkipList.delete(key). ",
+        "output": "Call SkipList.delete(key). Delete a key. Returns `true` if the key was found and removed.",
         "type": "howto"
       },
       {
+        "instruction": "What does SkipList.delete() do?",
+        "output": "Delete a key. Returns `true` if the key was found and removed.",
+        "type": "factual"
+      },
+      {
         "instruction": "Show me an example of using SkipList.delete()",
-        "output": "const ds = new SkipList();\nds.delete(element); // ",
+        "output": "const ds = new SkipList();\nds.delete(element); // Delete a key. Returns `true` if the key was found and removed.",
         "type": "howto"
+      },
+      {
+        "instruction": "What does SkipList.first() do?",
+        "output": "Returns the first (smallest key) entry, or `undefined` if empty.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.last() do?",
+        "output": "Returns the last (largest key) entry, or `undefined` if empty.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.pollFirst() do?",
+        "output": "Remove and return the first (smallest key) entry.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.pollLast() do?",
+        "output": "Remove and return the last (largest key) entry.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.ceiling() do?",
+        "output": "Least entry ≥ key, or `undefined`.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.floor() do?",
+        "output": "Greatest entry ≤ key, or `undefined`.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.higher() do?",
+        "output": "Least entry strictly > key, or `undefined`.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.lower() do?",
+        "output": "Greatest entry strictly < key, or `undefined`.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.rangeSearch() do?",
+        "output": "Returns entries within the given key range.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.map() do?",
+        "output": "Creates a new SkipList with entries transformed by callback.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.filter() do?",
+        "output": "Creates a new SkipList with entries that pass the predicate.",
+        "type": "factual"
       },
       {
         "instruction": "What does Matrix.get() do?",
@@ -53456,6 +55852,46 @@
       {
         "instruction": "What does Matrix.clone() do?",
         "output": "The `clone` function returns a new instance of the Matrix class with the same data and properties\nas the original instance.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does Matrix.toArray() do?",
+        "output": "Returns a deep copy of the data as a plain 2D array.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does Matrix.flatten() do?",
+        "output": "Returns a flat row-major array.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does Matrix.[Symbol.iterator]() do?",
+        "output": "Iterates over rows.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does Matrix.forEach() do?",
+        "output": "Visits each element with its row and column index.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does Matrix.map() do?",
+        "output": "Maps each element (number → number) and returns a new Matrix.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does Matrix.zeros() do?",
+        "output": "Creates a rows×cols zero matrix.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does Matrix.identity() do?",
+        "output": "Creates an n×n identity matrix.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does Matrix.from() do?",
+        "output": "Creates a Matrix from a plain 2D array (deep copy).",
         "type": "factual"
       },
       {
@@ -53949,18 +56385,18 @@
         "type": "factual"
       },
       {
-        "instruction": "What is the time complexity of Deque.shrinkToFit()?",
-        "output": "Deque.shrinkToFit() runs in O(N) time complexity.",
+        "instruction": "What is the time complexity of Deque.compact()?",
+        "output": "Deque.compact() runs in O(N) time complexity.",
         "type": "factual"
       },
       {
-        "instruction": "How fast is shrinkToFit in Deque?",
-        "output": "Deque.shrinkToFit() operates in O(N) time.",
+        "instruction": "How fast is compact in Deque?",
+        "output": "Deque.compact() operates in O(N) time.",
         "type": "factual"
       },
       {
-        "instruction": "What does Deque.shrinkToFit() do?",
-        "output": "Trim unused buckets to fit exactly the active range.",
+        "instruction": "What does Deque.compact() do?",
+        "output": "Compact the deque by removing unused buckets.",
         "type": "factual"
       },
       {
@@ -55230,22 +57666,22 @@
       },
       {
         "instruction": "What is BinaryIndexedTree in data-structure-typed?",
-        "output": "BinaryIndexedTree is a tree data structure",
+        "output": "Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.",
         "type": "factual"
       },
       {
         "instruction": "Explain BinaryIndexedTree data structure",
-        "output": "BinaryIndexedTree is a tree data structure. BinaryIndexedTree is a tree data structure",
+        "output": "BinaryIndexedTree is a tree data structure. Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.",
         "type": "factual"
       },
       {
         "instruction": "When should I use BinaryIndexedTree?",
-        "output": "Use BinaryIndexedTree when you need tree, hierarchical, recursive operations. BinaryIndexedTree is a tree data structure",
+        "output": "Use BinaryIndexedTree when you need tree, hierarchical, recursive operations. Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.",
         "type": "reasoning"
       },
       {
         "instruction": "What are the use cases for BinaryIndexedTree?",
-        "output": "BinaryIndexedTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. BinaryIndexedTree is a tree data structure",
+        "output": "BinaryIndexedTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. Binary Indexed Tree (Fenwick Tree).\n\nEfficient prefix sums and point updates in O(log n).\nStandard array-based implementation per C++ competitive programming conventions.\n\nAll indices are 0-based externally; internally converted to 1-based for BIT arithmetic.",
         "type": "reasoning"
       },
       {
@@ -55430,8 +57866,33 @@
       },
       {
         "instruction": "What operations does RedBlackTree support?",
-        "output": "RedBlackTree supports: createNode, isNode, clear, setWithHintNode, setWithHint, set, delete, map",
+        "output": "RedBlackTree supports: createNode, isNode, clear, setWithHintNode, setWithHint, set, delete, perfectlyBalance",
         "type": "factual"
+      },
+      {
+        "instruction": "What is SegmentTree in data-structure-typed?",
+        "output": "Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.",
+        "type": "factual"
+      },
+      {
+        "instruction": "Explain SegmentTree data structure",
+        "output": "SegmentTree is a tree data structure. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.",
+        "type": "factual"
+      },
+      {
+        "instruction": "When should I use SegmentTree?",
+        "output": "Use SegmentTree when you need tree, hierarchical, recursive operations. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.",
+        "type": "reasoning"
+      },
+      {
+        "instruction": "What are the use cases for SegmentTree?",
+        "output": "SegmentTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.",
+        "type": "reasoning"
+      },
+      {
+        "instruction": "How to create a SegmentTree?",
+        "output": "const ds = new SegmentTree(); // Creates an empty SegmentTree",
+        "type": "howto"
       },
       {
         "instruction": "What is SegmentTreeNode in data-structure-typed?",
@@ -55456,31 +57917,6 @@
       {
         "instruction": "How to create a SegmentTreeNode?",
         "output": "const ds = new SegmentTreeNode(); // Creates an empty SegmentTreeNode",
-        "type": "howto"
-      },
-      {
-        "instruction": "What is SegmentTree in data-structure-typed?",
-        "output": "SegmentTree is a tree data structure",
-        "type": "factual"
-      },
-      {
-        "instruction": "Explain SegmentTree data structure",
-        "output": "SegmentTree is a tree data structure. SegmentTree is a tree data structure",
-        "type": "factual"
-      },
-      {
-        "instruction": "When should I use SegmentTree?",
-        "output": "Use SegmentTree when you need tree, hierarchical, recursive operations. SegmentTree is a tree data structure",
-        "type": "reasoning"
-      },
-      {
-        "instruction": "What are the use cases for SegmentTree?",
-        "output": "SegmentTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. SegmentTree is a tree data structure",
-        "type": "reasoning"
-      },
-      {
-        "instruction": "How to create a SegmentTree?",
-        "output": "const ds = new SegmentTree(); // Creates an empty SegmentTree",
         "type": "howto"
       },
       {
@@ -56350,22 +58786,22 @@
       },
       {
         "instruction": "What is SkipList in data-structure-typed?",
-        "output": "SkipList is a linear data structure",
+        "output": "SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).",
         "type": "factual"
       },
       {
         "instruction": "Explain SkipList data structure",
-        "output": "SkipList is a linear data structure. SkipList is a linear data structure",
+        "output": "SkipList is a linear data structure. SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).",
         "type": "factual"
       },
       {
         "instruction": "When should I use SkipList?",
-        "output": "Use SkipList when you need linear, sequential, ordered operations. SkipList is a linear data structure",
+        "output": "Use SkipList when you need linear, sequential, ordered operations. SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).",
         "type": "reasoning"
       },
       {
         "instruction": "What are the use cases for SkipList?",
-        "output": "SkipList is ideal for: linear, sequential, ordered, probabilistic, skip-list. SkipList is a linear data structure",
+        "output": "SkipList is ideal for: linear, sequential, ordered, probabilistic, skip-list. SkipList — a probabilistic sorted key-value container.\n\nAPI mirrors TreeMap: users can swap `TreeMap` ↔ `SkipList` with zero code changes.\nReference: Java ConcurrentSkipListMap (NavigableMap interface).",
         "type": "reasoning"
       },
       {
@@ -57375,7 +59811,7 @@
       },
       {
         "instruction": "What tree data structures are available?",
-        "output": "Available tree structures: AVLTreeNode, AVLTree, BinaryIndexedTree, BinaryTreeNode, BinaryTree, BSTNode, BST, RedBlackTreeNode, RedBlackTree, SegmentTreeNode, SegmentTree, TreeMap, TreeMultiMapNode, TreeMultiMap, TreeMultiSet, TreeSet",
+        "output": "Available tree structures: AVLTreeNode, AVLTree, BinaryIndexedTree, BinaryTreeNode, BinaryTree, BSTNode, BST, RedBlackTreeNode, RedBlackTree, SegmentTree, SegmentTreeNode, TreeMap, TreeMultiMapNode, TreeMultiMap, TreeMultiSet, TreeSet",
         "type": "factual"
       },
       {
@@ -57419,14 +59855,14 @@
         "type": "factual"
       }
     ],
-    "totalPairs": 2356
+    "totalPairs": 2409
   },
   "stats": {
-    "totalAtoms": 633,
+    "totalAtoms": 683,
     "totalClasses": 59,
-    "totalMethods": 574,
-    "totalChunks": 169,
-    "totalTriples": 1960,
+    "totalMethods": 624,
+    "totalChunks": 171,
+    "totalTriples": 2046,
     "categoryCounts": {
       "other": 6,
       "tree": 16,
