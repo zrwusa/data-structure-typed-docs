@@ -549,12 +549,6 @@
 {"subject":"SegmentTree","predicate":"hasOperation","object":"minLeft"}
 {"subject":"SegmentTree","predicate":"hasOperation","object":"isEmpty"}
 {"subject":"SegmentTree","predicate":"hasOperation","object":"clone"}
-{"subject":"SegmentTreeNode","predicate":"isA","object":"tree"}
-{"subject":"SegmentTreeNode","predicate":"hasProperty","object":"tree"}
-{"subject":"SegmentTreeNode","predicate":"hasProperty","object":"hierarchical"}
-{"subject":"SegmentTreeNode","predicate":"hasProperty","object":"recursive"}
-{"subject":"SegmentTreeNode","predicate":"hasProperty","object":"sorted"}
-{"subject":"SegmentTreeNode","predicate":"hasProperty","object":"logarithmic-access"}
 {"subject":"TreeMap.createDefaultComparator","predicate":"belongsTo","object":"TreeMap"}
 {"subject":"TreeMap.isEmpty","predicate":"belongsTo","object":"TreeMap"}
 {"subject":"TreeMap.isEmpty","predicate":"isPure","object":"true"}
@@ -623,13 +617,6 @@
 {"subject":"TreeMap","predicate":"hasOperation","object":"keys"}
 {"subject":"TreeMap","predicate":"hasOperation","object":"values"}
 {"subject":"TreeMap","predicate":"hasOperation","object":"entries"}
-{"subject":"TreeMultiMapNode","predicate":"isA","object":"tree"}
-{"subject":"TreeMultiMapNode","predicate":"extends","object":"RedBlackTreeNode"}
-{"subject":"TreeMultiMapNode","predicate":"hasProperty","object":"tree"}
-{"subject":"TreeMultiMapNode","predicate":"hasProperty","object":"hierarchical"}
-{"subject":"TreeMultiMapNode","predicate":"hasProperty","object":"recursive"}
-{"subject":"TreeMultiMapNode","predicate":"hasProperty","object":"sorted"}
-{"subject":"TreeMultiMapNode","predicate":"hasProperty","object":"logarithmic-access"}
 {"subject":"TreeMultiMap.isEmpty","predicate":"belongsTo","object":"TreeMultiMap"}
 {"subject":"TreeMultiMap.isEmpty","predicate":"hasTimeComplexity","object":"O(1)"}
 {"subject":"TreeMultiMap.isEmpty","predicate":"isPure","object":"true"}

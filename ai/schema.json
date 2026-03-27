@@ -1,8 +1,8 @@
 {
   "library": "data-structure-typed",
-  "version": "2.4.5",
+  "version": "2.5.0",
   "language": "TypeScript",
-  "generatedAt": "2026-03-26T20:33:47.414Z",
+  "generatedAt": "2026-03-27T07:25:38.825Z",
   "atoms": [
     {
       "id": "IterableElementBase",
@@ -7350,7 +7350,7 @@
       "parent": "RedBlackTree",
       "semanticSummary": "RedBlackTree.perfectlyBalance() Transform entries into a like-kind red-black tree with possibly different key/value types. Runs in O(n) time.",
       "technicalSummary": "Transform entries into a like-kind red-black tree with possibly different key/value types.",
-      "embeddingText": "RedBlackTree.perfectlyBalance(iterationType: IterationType | undefined). returns boolean. Transform entries into a like-kind red-black tree with possibly different key/value types. Time complexity: O(n). Space complexity: O(n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "embeddingText": "RedBlackTree.perfectlyBalance(_iterationType: IterationType | undefined). returns boolean. Transform entries into a like-kind red-black tree with possibly different key/value types. Time complexity: O(n). Space complexity: O(n). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "complexity": {
         "time": {
           "best": "O(n)",
@@ -7370,7 +7370,7 @@
       },
       "parameters": [
         {
-          "name": "iterationType",
+          "name": "_iterationType",
           "type": "IterationType | undefined"
         }
       ],
@@ -7397,9 +7397,9 @@
       "type": "method",
       "fqName": "RedBlackTree.map",
       "parent": "RedBlackTree",
-      "semanticSummary": "RedBlackTree.map() ",
-      "technicalSummary": "",
-      "embeddingText": "RedBlackTree.map(callback: EntryCallback<K, V | undefined, [MK, MV]>, options: Partial<RedBlackTreeOptions<MK, MV, MR>> | undefined, thisArg: unknown). returns RedBlackTree<MK, MV, MR>. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
+      "semanticSummary": "RedBlackTree.map() Transform to new tree",
+      "technicalSummary": "Transform to new tree",
+      "embeddingText": "RedBlackTree.map(callback: EntryCallback<K, V | undefined, [MK, MV]>, options: Partial<RedBlackTreeOptions<MK, MV, MR>> | undefined, thisArg: unknown). returns RedBlackTree<MK, MV, MR>. Transform to new tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "behavior": {
         "mutates": false,
         "pure": false,
@@ -7883,22 +7883,6 @@
       "returns": {
         "type": "void"
       },
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access"
-      ],
-      "related": []
-    },
-    {
-      "id": "SegmentTreeNode",
-      "type": "class",
-      "fqName": "SegmentTreeNode",
-      "semanticSummary": "SegmentTreeNode data structure",
-      "technicalSummary": "",
-      "embeddingText": "SegmentTreeNode. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
       "tags": [
         "tree",
         "hierarchical",
@@ -9130,25 +9114,6 @@
         "TreeSet.clone",
         "HashMap.clone"
       ]
-    },
-    {
-      "id": "TreeMultiMapNode",
-      "type": "class",
-      "fqName": "TreeMultiMapNode",
-      "semanticSummary": "Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).",
-      "technicalSummary": "Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).",
-      "embeddingText": "TreeMultiMapNode. Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access",
-        "key-value",
-        "associative",
-        "duplicates-allowed"
-      ],
-      "related": []
     },
     {
       "id": "TreeMultiMap",
@@ -15330,9 +15295,9 @@
       "type": "method",
       "fqName": "DirectedGraph.deleteVertex",
       "parent": "DirectedGraph",
-      "semanticSummary": "DirectedGraph.deleteVertex() ",
-      "technicalSummary": "",
-      "embeddingText": "DirectedGraph.deleteVertex(vertexOrKey: VertexKey | VO). returns boolean. . Tags: graph, vertices, edges, network, relationships",
+      "semanticSummary": "DirectedGraph.deleteVertex() Remove a vertex",
+      "technicalSummary": "Remove a vertex",
+      "embeddingText": "DirectedGraph.deleteVertex(vertexOrKey: VertexKey | VO). returns boolean. Remove a vertex. Tags: graph, vertices, edges, network, relationships",
       "behavior": {
         "mutates": true,
         "pure": false,
@@ -15793,9 +15758,9 @@
       "type": "method",
       "fqName": "DirectedGraph.edgeSet",
       "parent": "DirectedGraph",
-      "semanticSummary": "DirectedGraph.edgeSet() ",
-      "technicalSummary": "",
-      "embeddingText": "DirectedGraph.edgeSet(). returns EO[]. . Tags: graph, vertices, edges, network, relationships",
+      "semanticSummary": "DirectedGraph.edgeSet() Get all edges",
+      "technicalSummary": "Get all edges",
+      "embeddingText": "DirectedGraph.edgeSet(). returns EO[]. Get all edges. Tags: graph, vertices, edges, network, relationships",
       "behavior": {
         "mutates": true,
         "pure": false,
@@ -15823,9 +15788,9 @@
       "type": "method",
       "fqName": "DirectedGraph.getNeighbors",
       "parent": "DirectedGraph",
-      "semanticSummary": "DirectedGraph.getNeighbors() ",
-      "technicalSummary": "",
-      "embeddingText": "DirectedGraph.getNeighbors(vertexOrKey: VertexKey | VO). returns VO[]. . Tags: graph, vertices, edges, network, relationships",
+      "semanticSummary": "DirectedGraph.getNeighbors() Get outgoing neighbors",
+      "technicalSummary": "Get outgoing neighbors",
+      "embeddingText": "DirectedGraph.getNeighbors(vertexOrKey: VertexKey | VO). returns VO[]. Get outgoing neighbors. Tags: graph, vertices, edges, network, relationships",
       "behavior": {
         "mutates": false,
         "pure": true,
@@ -23094,9 +23059,9 @@
       "type": "method",
       "fqName": "SkipList.isEmpty",
       "parent": "SkipList",
-      "semanticSummary": "SkipList.isEmpty() ",
-      "technicalSummary": "",
-      "embeddingText": "SkipList.isEmpty(). returns boolean. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList.isEmpty() Check if empty",
+      "technicalSummary": "Check if empty",
+      "embeddingText": "SkipList.isEmpty(). returns boolean. Check if empty. Tags: linear, sequential, ordered, probabilistic, skip-list",
       "behavior": {
         "mutates": false,
         "pure": true,
@@ -23123,9 +23088,9 @@
       "type": "method",
       "fqName": "SkipList.clear",
       "parent": "SkipList",
-      "semanticSummary": "SkipList.clear() ",
-      "technicalSummary": "",
-      "embeddingText": "SkipList.clear(). returns void. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList.clear() Remove all entries",
+      "technicalSummary": "Remove all entries",
+      "embeddingText": "SkipList.clear(). returns void. Remove all entries. Tags: linear, sequential, ordered, probabilistic, skip-list",
       "behavior": {
         "mutates": true,
         "pure": false,
@@ -23157,9 +23122,9 @@
       "type": "method",
       "fqName": "SkipList.clone",
       "parent": "SkipList",
-      "semanticSummary": "SkipList.clone() ",
-      "technicalSummary": "",
-      "embeddingText": "SkipList.clone(). returns this. . Tags: linear, sequential, ordered, probabilistic, skip-list",
+      "semanticSummary": "SkipList.clone() Create independent copy",
+      "technicalSummary": "Create independent copy",
+      "embeddingText": "SkipList.clone(). returns this. Create independent copy. Tags: linear, sequential, ordered, probabilistic, skip-list",
       "behavior": {
         "mutates": false,
         "pure": true,
@@ -29731,56 +29696,6 @@
       ]
     },
     {
-      "id": "SegmentTreeNode",
-      "name": "SegmentTreeNode",
-      "category": "tree",
-      "semanticSummary": "SegmentTreeNode is a tree data structure",
-      "technicalSummary": "",
-      "embeddingText": "SegmentTreeNode. . Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "genericParameters": [],
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access"
-      ],
-      "methodCount": 0,
-      "complexitySummary": {},
-      "relations": [
-        {
-          "subject": "SegmentTreeNode",
-          "predicate": "isA",
-          "object": "tree"
-        },
-        {
-          "subject": "SegmentTreeNode",
-          "predicate": "hasProperty",
-          "object": "tree"
-        },
-        {
-          "subject": "SegmentTreeNode",
-          "predicate": "hasProperty",
-          "object": "hierarchical"
-        },
-        {
-          "subject": "SegmentTreeNode",
-          "predicate": "hasProperty",
-          "object": "recursive"
-        },
-        {
-          "subject": "SegmentTreeNode",
-          "predicate": "hasProperty",
-          "object": "sorted"
-        },
-        {
-          "subject": "SegmentTreeNode",
-          "predicate": "hasProperty",
-          "object": "logarithmic-access"
-        }
-      ]
-    },
-    {
       "id": "TreeMap",
       "name": "TreeMap",
       "category": "tree",
@@ -29897,68 +29812,6 @@
           "subject": "TreeMap",
           "predicate": "hasOperation",
           "object": "entries"
-        }
-      ]
-    },
-    {
-      "id": "TreeMultiMapNode",
-      "name": "TreeMultiMapNode",
-      "category": "tree",
-      "semanticSummary": "Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).",
-      "technicalSummary": "Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).",
-      "embeddingText": "TreeMultiMapNode. Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility). Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "extends": "RedBlackTreeNode<K, V[]>",
-      "genericParameters": [
-        "K",
-        "V"
-      ],
-      "tags": [
-        "tree",
-        "hierarchical",
-        "recursive",
-        "sorted",
-        "logarithmic-access",
-        "key-value",
-        "associative",
-        "duplicates-allowed"
-      ],
-      "methodCount": 0,
-      "complexitySummary": {},
-      "relations": [
-        {
-          "subject": "TreeMultiMapNode",
-          "predicate": "isA",
-          "object": "tree"
-        },
-        {
-          "subject": "TreeMultiMapNode",
-          "predicate": "extends",
-          "object": "RedBlackTreeNode"
-        },
-        {
-          "subject": "TreeMultiMapNode",
-          "predicate": "hasProperty",
-          "object": "tree"
-        },
-        {
-          "subject": "TreeMultiMapNode",
-          "predicate": "hasProperty",
-          "object": "hierarchical"
-        },
-        {
-          "subject": "TreeMultiMapNode",
-          "predicate": "hasProperty",
-          "object": "recursive"
-        },
-        {
-          "subject": "TreeMultiMapNode",
-          "predicate": "hasProperty",
-          "object": "sorted"
-        },
-        {
-          "subject": "TreeMultiMapNode",
-          "predicate": "hasProperty",
-          "object": "logarithmic-access"
         }
       ]
     },
@@ -34394,24 +34247,6 @@
       }
     },
     {
-      "chunkId": "segmenttreenode-overview",
-      "sourceId": "SegmentTreeNode",
-      "section": "overview",
-      "title": "SegmentTreeNode Overview",
-      "content": "SegmentTreeNode is a tree data structure.",
-      "embeddingText": "SegmentTreeNode overview:  Category: tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access",
-      "metadata": {
-        "category": "tree",
-        "tags": [
-          "tree",
-          "hierarchical",
-          "recursive",
-          "sorted",
-          "logarithmic-access"
-        ]
-      }
-    },
-    {
       "chunkId": "treemap-overview",
       "sourceId": "TreeMap",
       "section": "overview",
@@ -34510,27 +34345,6 @@
           "logarithmic-access",
           "key-value",
           "associative"
-        ]
-      }
-    },
-    {
-      "chunkId": "treemultimapnode-overview",
-      "sourceId": "TreeMultiMapNode",
-      "section": "overview",
-      "title": "TreeMultiMapNode Overview",
-      "content": "Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).",
-      "embeddingText": "TreeMultiMapNode overview: Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility). Category: tree. Tags: tree, hierarchical, recursive, sorted, logarithmic-access, key-value, associative, duplicates-allowed",
-      "metadata": {
-        "category": "tree",
-        "tags": [
-          "tree",
-          "hierarchical",
-          "recursive",
-          "sorted",
-          "logarithmic-access",
-          "key-value",
-          "associative",
-          "duplicates-allowed"
         ]
       }
     },
@@ -35065,8 +34879,8 @@
       "sourceId": "DirectedGraph",
       "section": "operation",
       "title": "DirectedGraph Insertion Operations",
-      "content": "edgeSet: ",
-      "embeddingText": "DirectedGraph insertion operations: edgeSet: ",
+      "content": "edgeSet: Get all edges",
+      "embeddingText": "DirectedGraph insertion operations: edgeSet: Get all edges",
       "metadata": {
         "category": "graph",
         "tags": [
@@ -35083,8 +34897,8 @@
       "sourceId": "DirectedGraph",
       "section": "operation",
       "title": "DirectedGraph Deletion Operations",
-      "content": "deleteEdgeSrcToDest: Delete edge `src -> dest` if present. (O(1)). deleteEdge: Delete an edge by instance or by `(srcKey, destKey)`. (O(1)). deleteVertex: . deleteEdgesBetween: . clear: Remove all vertices and edges. (O(V + E))",
-      "embeddingText": "DirectedGraph deletion operations: deleteEdgeSrcToDest: Delete edge `src -> dest` if present. (O(1)). deleteEdge: Delete an edge by instance or by `(srcKey, destKey)`. (O(1)). deleteVertex: . deleteEdgesBetween: . clear: Remove all vertices and edges. (O(V + E))",
+      "content": "deleteEdgeSrcToDest: Delete edge `src -> dest` if present. (O(1)). deleteEdge: Delete an edge by instance or by `(srcKey, destKey)`. (O(1)). deleteVertex: Remove a vertex. deleteEdgesBetween: . clear: Remove all vertices and edges. (O(V + E))",
+      "embeddingText": "DirectedGraph deletion operations: deleteEdgeSrcToDest: Delete edge `src -> dest` if present. (O(1)). deleteEdge: Delete an edge by instance or by `(srcKey, destKey)`. (O(1)). deleteVertex: Remove a vertex. deleteEdgesBetween: . clear: Remove all vertices and edges. (O(V + E))",
       "metadata": {
         "category": "graph",
         "tags": [
@@ -35102,8 +34916,8 @@
       "sourceId": "DirectedGraph",
       "section": "operation",
       "title": "DirectedGraph Lookup Operations",
-      "content": "createVertex: Create a directed vertex instance. Does not insert into the graph. (O(1)). createEdge: Create a directed edge instance. Does not insert into the graph. (O(1)). getEdge: Get the unique edge from `src` to `dest`, if present. (O(1)). getEdgeSrc: . getEdgeDest: . getDestinations: Direct children reachable by one outgoing edge. (O(deg_out)). getNeighbors: . getEndsOfEdge: Resolve an edge's `[src, dest]` endpoints to vertex instances. (O(1)). getDFNMap: DFN index map computed by `tarjan()`. (O(V)). getLowMap: LOW link map computed by `tarjan()`. (O(V)). getSCCs: Strongly connected components computed by `tarjan()`. (O(#SCC + V))",
-      "embeddingText": "DirectedGraph lookup operations: createVertex: Create a directed vertex instance. Does not insert into the graph. (O(1)). createEdge: Create a directed edge instance. Does not insert into the graph. (O(1)). getEdge: Get the unique edge from `src` to `dest`, if present. (O(1)). getEdgeSrc: . getEdgeDest: . getDestinations: Direct children reachable by one outgoing edge. (O(deg_out)). getNeighbors: . getEndsOfEdge: Resolve an edge's `[src, dest]` endpoints to vertex instances. (O(1)). getDFNMap: DFN index map computed by `tarjan()`. (O(V)). getLowMap: LOW link map computed by `tarjan()`. (O(V)). getSCCs: Strongly connected components computed by `tarjan()`. (O(#SCC + V))",
+      "content": "createVertex: Create a directed vertex instance. Does not insert into the graph. (O(1)). createEdge: Create a directed edge instance. Does not insert into the graph. (O(1)). getEdge: Get the unique edge from `src` to `dest`, if present. (O(1)). getEdgeSrc: . getEdgeDest: . getDestinations: Direct children reachable by one outgoing edge. (O(deg_out)). getNeighbors: Get outgoing neighbors. getEndsOfEdge: Resolve an edge's `[src, dest]` endpoints to vertex instances. (O(1)). getDFNMap: DFN index map computed by `tarjan()`. (O(V)). getLowMap: LOW link map computed by `tarjan()`. (O(V)). getSCCs: Strongly connected components computed by `tarjan()`. (O(#SCC + V))",
+      "embeddingText": "DirectedGraph lookup operations: createVertex: Create a directed vertex instance. Does not insert into the graph. (O(1)). createEdge: Create a directed edge instance. Does not insert into the graph. (O(1)). getEdge: Get the unique edge from `src` to `dest`, if present. (O(1)). getEdgeSrc: . getEdgeDest: . getDestinations: Direct children reachable by one outgoing edge. (O(deg_out)). getNeighbors: Get outgoing neighbors. getEndsOfEdge: Resolve an edge's `[src, dest]` endpoints to vertex instances. (O(1)). getDFNMap: DFN index map computed by `tarjan()`. (O(V)). getLowMap: LOW link map computed by `tarjan()`. (O(V)). getSCCs: Strongly connected components computed by `tarjan()`. (O(#SCC + V))",
       "metadata": {
         "category": "graph",
         "tags": [
@@ -36091,8 +35905,8 @@
       "sourceId": "SkipList",
       "section": "operation",
       "title": "SkipList Deletion Operations",
-      "content": "clear: . delete: Delete a key. Returns `true` if the key was found and removed.",
-      "embeddingText": "SkipList deletion operations: clear: . delete: Delete a key. Returns `true` if the key was found and removed.",
+      "content": "clear: Remove all entries. delete: Delete a key. Returns `true` if the key was found and removed.",
+      "embeddingText": "SkipList deletion operations: clear: Remove all entries. delete: Delete a key. Returns `true` if the key was found and removed.",
       "metadata": {
         "category": "linear",
         "tags": [
@@ -39504,36 +39318,6 @@
         "object": "clone"
       },
       {
-        "subject": "SegmentTreeNode",
-        "predicate": "isA",
-        "object": "tree"
-      },
-      {
-        "subject": "SegmentTreeNode",
-        "predicate": "hasProperty",
-        "object": "tree"
-      },
-      {
-        "subject": "SegmentTreeNode",
-        "predicate": "hasProperty",
-        "object": "hierarchical"
-      },
-      {
-        "subject": "SegmentTreeNode",
-        "predicate": "hasProperty",
-        "object": "recursive"
-      },
-      {
-        "subject": "SegmentTreeNode",
-        "predicate": "hasProperty",
-        "object": "sorted"
-      },
-      {
-        "subject": "SegmentTreeNode",
-        "predicate": "hasProperty",
-        "object": "logarithmic-access"
-      },
-      {
         "subject": "TreeMap.createDefaultComparator",
         "predicate": "belongsTo",
         "object": "TreeMap"
@@ -39872,41 +39656,6 @@
         "subject": "TreeMap",
         "predicate": "hasOperation",
         "object": "entries"
-      },
-      {
-        "subject": "TreeMultiMapNode",
-        "predicate": "isA",
-        "object": "tree"
-      },
-      {
-        "subject": "TreeMultiMapNode",
-        "predicate": "extends",
-        "object": "RedBlackTreeNode"
-      },
-      {
-        "subject": "TreeMultiMapNode",
-        "predicate": "hasProperty",
-        "object": "tree"
-      },
-      {
-        "subject": "TreeMultiMapNode",
-        "predicate": "hasProperty",
-        "object": "hierarchical"
-      },
-      {
-        "subject": "TreeMultiMapNode",
-        "predicate": "hasProperty",
-        "object": "recursive"
-      },
-      {
-        "subject": "TreeMultiMapNode",
-        "predicate": "hasProperty",
-        "object": "sorted"
-      },
-      {
-        "subject": "TreeMultiMapNode",
-        "predicate": "hasProperty",
-        "object": "logarithmic-access"
       },
       {
         "subject": "TreeMultiMap.isEmpty",
@@ -46979,7 +46728,7 @@
         "object": "hasCommonPrefix"
       }
     ],
-    "totalTriples": 2046
+    "totalTriples": 2033
   },
   "complexityIndex": {
     "O(n)": {
@@ -50400,6 +50149,11 @@
         "type": "factual"
       },
       {
+        "instruction": "What does RedBlackTree.map() do?",
+        "output": "Transform to new tree",
+        "type": "factual"
+      },
+      {
         "instruction": "What does SegmentTree.sum() do?",
         "output": "Create a sum segment tree.",
         "type": "factual"
@@ -52831,13 +52585,18 @@
       },
       {
         "instruction": "How do I delete vertex in DirectedGraph?",
-        "output": "Use DirectedGraph.deleteVertex(). DirectedGraph.deleteVertex() ",
+        "output": "Use DirectedGraph.deleteVertex(). DirectedGraph.deleteVertex() Remove a vertex",
         "type": "howto"
       },
       {
         "instruction": "How to call deleteVertex on a DirectedGraph?",
-        "output": "Call DirectedGraph.deleteVertex(vertexOrKey). ",
+        "output": "Call DirectedGraph.deleteVertex(vertexOrKey). Remove a vertex",
         "type": "howto"
+      },
+      {
+        "instruction": "What does DirectedGraph.deleteVertex() do?",
+        "output": "Remove a vertex",
+        "type": "factual"
       },
       {
         "instruction": "How do I delete edges between in DirectedGraph?",
@@ -52942,6 +52701,16 @@
       {
         "instruction": "What does DirectedGraph.topologicalSort() do?",
         "output": "Topological sort if DAG; returns `undefined` if a cycle exists.",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does DirectedGraph.edgeSet() do?",
+        "output": "Get all edges",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does DirectedGraph.getNeighbors() do?",
+        "output": "Get outgoing neighbors",
         "type": "factual"
       },
       {
@@ -55655,6 +55424,21 @@
         "type": "factual"
       },
       {
+        "instruction": "What does SkipList.isEmpty() do?",
+        "output": "Check if empty",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.clear() do?",
+        "output": "Remove all entries",
+        "type": "factual"
+      },
+      {
+        "instruction": "What does SkipList.clone() do?",
+        "output": "Create independent copy",
+        "type": "factual"
+      },
+      {
         "instruction": "How do I set in SkipList?",
         "output": "Use SkipList.set(). SkipList.set() Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.",
         "type": "howto"
@@ -57895,31 +57679,6 @@
         "type": "howto"
       },
       {
-        "instruction": "What is SegmentTreeNode in data-structure-typed?",
-        "output": "SegmentTreeNode is a tree data structure",
-        "type": "factual"
-      },
-      {
-        "instruction": "Explain SegmentTreeNode data structure",
-        "output": "SegmentTreeNode is a tree data structure. SegmentTreeNode is a tree data structure",
-        "type": "factual"
-      },
-      {
-        "instruction": "When should I use SegmentTreeNode?",
-        "output": "Use SegmentTreeNode when you need tree, hierarchical, recursive operations. SegmentTreeNode is a tree data structure",
-        "type": "reasoning"
-      },
-      {
-        "instruction": "What are the use cases for SegmentTreeNode?",
-        "output": "SegmentTreeNode is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. SegmentTreeNode is a tree data structure",
-        "type": "reasoning"
-      },
-      {
-        "instruction": "How to create a SegmentTreeNode?",
-        "output": "const ds = new SegmentTreeNode(); // Creates an empty SegmentTreeNode",
-        "type": "howto"
-      },
-      {
         "instruction": "What is TreeMap in data-structure-typed?",
         "output": "An ordered Map backed by a red-black tree.\n\n- Iteration order is ascending by key.\n- No node exposure: all APIs use keys/values only.",
         "type": "factual"
@@ -57953,31 +57712,6 @@
         "instruction": "What operations does TreeMap support?",
         "output": "TreeMap supports: set, get, has, delete, map, filter, reduce, every",
         "type": "factual"
-      },
-      {
-        "instruction": "What is TreeMultiMapNode in data-structure-typed?",
-        "output": "Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).",
-        "type": "factual"
-      },
-      {
-        "instruction": "Explain TreeMultiMapNode data structure",
-        "output": "TreeMultiMapNode is a tree data structure. Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).",
-        "type": "factual"
-      },
-      {
-        "instruction": "When should I use TreeMultiMapNode?",
-        "output": "Use TreeMultiMapNode when you need tree, hierarchical, recursive operations. Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).",
-        "type": "reasoning"
-      },
-      {
-        "instruction": "What are the use cases for TreeMultiMapNode?",
-        "output": "TreeMultiMapNode is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).",
-        "type": "reasoning"
-      },
-      {
-        "instruction": "How to create a TreeMultiMapNode?",
-        "output": "const ds = new TreeMultiMapNode(); // Creates an empty TreeMultiMapNode",
-        "type": "howto"
       },
       {
         "instruction": "What is TreeMultiMap in data-structure-typed?",
@@ -59811,7 +59545,7 @@
       },
       {
         "instruction": "What tree data structures are available?",
-        "output": "Available tree structures: AVLTreeNode, AVLTree, BinaryIndexedTree, BinaryTreeNode, BinaryTree, BSTNode, BST, RedBlackTreeNode, RedBlackTree, SegmentTree, SegmentTreeNode, TreeMap, TreeMultiMapNode, TreeMultiMap, TreeMultiSet, TreeSet",
+        "output": "Available tree structures: AVLTreeNode, AVLTree, BinaryIndexedTree, BinaryTreeNode, BinaryTree, BSTNode, BST, RedBlackTreeNode, RedBlackTree, SegmentTree, TreeMap, TreeMultiMap, TreeMultiSet, TreeSet",
         "type": "factual"
       },
       {
@@ -59855,17 +59589,17 @@
         "type": "factual"
       }
     ],
-    "totalPairs": 2409
+    "totalPairs": 2406
   },
   "stats": {
-    "totalAtoms": 683,
-    "totalClasses": 59,
+    "totalAtoms": 681,
+    "totalClasses": 57,
     "totalMethods": 624,
-    "totalChunks": 171,
-    "totalTriples": 2046,
+    "totalChunks": 169,
+    "totalTriples": 2033,
     "categoryCounts": {
       "other": 6,
-      "tree": 16,
+      "tree": 14,
       "graph": 12,
       "hash": 2,
       "heap": 5,

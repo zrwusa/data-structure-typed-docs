@@ -516,6 +516,7 @@
 {"instruction":"What is the time complexity of RedBlackTree.perfectlyBalance()?","output":"RedBlackTree.perfectlyBalance() runs in O(n) time complexity.","type":"factual"}
 {"instruction":"How fast is perfectlyBalance in RedBlackTree?","output":"RedBlackTree.perfectlyBalance() operates in O(n) time.","type":"factual"}
 {"instruction":"What does RedBlackTree.perfectlyBalance() do?","output":"Transform entries into a like-kind red-black tree with possibly different key/value types.","type":"factual"}
+{"instruction":"What does RedBlackTree.map() do?","output":"Transform to new tree","type":"factual"}
 {"instruction":"What does SegmentTree.sum() do?","output":"Create a sum segment tree.","type":"factual"}
 {"instruction":"What does SegmentTree.min() do?","output":"Create a min segment tree.","type":"factual"}
 {"instruction":"What does SegmentTree.max() do?","output":"Create a max segment tree.","type":"factual"}
@@ -1002,8 +1003,9 @@
 {"instruction":"How do I delete edge in DirectedGraph?","output":"Use DirectedGraph.deleteEdge(). DirectedGraph.deleteEdge() Delete an edge by instance or by `(srcKey, destKey)`. Runs in O(1) time.","type":"howto"}
 {"instruction":"How to call deleteEdge on a DirectedGraph?","output":"Call DirectedGraph.deleteEdge(edgeOrSrcVertexKey, destVertexKey). Delete an edge by instance or by `(srcKey, destKey)`.","type":"howto"}
 {"instruction":"What does DirectedGraph.deleteEdge() do?","output":"Delete an edge by instance or by `(srcKey, destKey)`.","type":"factual"}
-{"instruction":"How do I delete vertex in DirectedGraph?","output":"Use DirectedGraph.deleteVertex(). DirectedGraph.deleteVertex() ","type":"howto"}
-{"instruction":"How to call deleteVertex on a DirectedGraph?","output":"Call DirectedGraph.deleteVertex(vertexOrKey). ","type":"howto"}
+{"instruction":"How do I delete vertex in DirectedGraph?","output":"Use DirectedGraph.deleteVertex(). DirectedGraph.deleteVertex() Remove a vertex","type":"howto"}
+{"instruction":"How to call deleteVertex on a DirectedGraph?","output":"Call DirectedGraph.deleteVertex(vertexOrKey). Remove a vertex","type":"howto"}
+{"instruction":"What does DirectedGraph.deleteVertex() do?","output":"Remove a vertex","type":"factual"}
 {"instruction":"How do I delete edges between in DirectedGraph?","output":"Use DirectedGraph.deleteEdgesBetween(). DirectedGraph.deleteEdgesBetween() ","type":"howto"}
 {"instruction":"How to call deleteEdgesBetween on a DirectedGraph?","output":"Call DirectedGraph.deleteEdgesBetween(v1, v2). ","type":"howto"}
 {"instruction":"What is the time complexity of DirectedGraph.incomingEdgesOf()?","output":"DirectedGraph.incomingEdgesOf() runs in O(deg_in) time complexity.","type":"factual"}
@@ -1025,6 +1027,8 @@
 {"instruction":"What is the time complexity of DirectedGraph.topologicalSort()?","output":"DirectedGraph.topologicalSort() runs in O(V + E) time complexity.","type":"factual"}
 {"instruction":"How fast is topologicalSort in DirectedGraph?","output":"DirectedGraph.topologicalSort() operates in O(V + E) time.","type":"factual"}
 {"instruction":"What does DirectedGraph.topologicalSort() do?","output":"Topological sort if DAG; returns `undefined` if a cycle exists.","type":"factual"}
+{"instruction":"What does DirectedGraph.edgeSet() do?","output":"Get all edges","type":"factual"}
+{"instruction":"What does DirectedGraph.getNeighbors() do?","output":"Get outgoing neighbors","type":"factual"}
 {"instruction":"What is the time complexity of DirectedGraph.getEndsOfEdge()?","output":"DirectedGraph.getEndsOfEdge() runs in O(1) time complexity.","type":"factual"}
 {"instruction":"How fast is getEndsOfEdge in DirectedGraph?","output":"DirectedGraph.getEndsOfEdge() operates in O(1) time.","type":"factual"}
 {"instruction":"Is DirectedGraph.getEndsOfEdge() efficient?","output":"Yes, DirectedGraph.getEndsOfEdge() is very efficient with constant time O(1) complexity.","type":"factual"}
@@ -1567,6 +1571,9 @@
 {"instruction":"How fast is map in SinglyLinkedList?","output":"SinglyLinkedList.map() operates in O(N) time.","type":"factual"}
 {"instruction":"What does SinglyLinkedList.map() do?","output":"Map values into a new list (possibly different element type).","type":"factual"}
 {"instruction":"What does SkipList.createDefaultComparator() do?","output":"Creates a default comparator supporting number, string, Date, and bigint.","type":"factual"}
+{"instruction":"What does SkipList.isEmpty() do?","output":"Check if empty","type":"factual"}
+{"instruction":"What does SkipList.clear() do?","output":"Remove all entries","type":"factual"}
+{"instruction":"What does SkipList.clone() do?","output":"Create independent copy","type":"factual"}
 {"instruction":"How do I set in SkipList?","output":"Use SkipList.set(). SkipList.set() Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.","type":"howto"}
 {"instruction":"How to call set on a SkipList?","output":"Call SkipList.set(key, value). Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.","type":"howto"}
 {"instruction":"What does SkipList.set() do?","output":"Insert or update a key-value pair. Returns `this` for chaining.\nUnique keys only — if key exists, value is updated in place.","type":"factual"}
@@ -2015,11 +2022,6 @@
 {"instruction":"When should I use SegmentTree?","output":"Use SegmentTree when you need tree, hierarchical, recursive operations. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.","type":"reasoning"}
 {"instruction":"What are the use cases for SegmentTree?","output":"SegmentTree is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. Generic Segment Tree with flat array internals.\n\nSupports any associative merge operation (sum, min, max, gcd, etc.).\nReference: AtCoder Library segtree<S, op, e>.","type":"reasoning"}
 {"instruction":"How to create a SegmentTree?","output":"const ds = new SegmentTree(); // Creates an empty SegmentTree","type":"howto"}
-{"instruction":"What is SegmentTreeNode in data-structure-typed?","output":"SegmentTreeNode is a tree data structure","type":"factual"}
-{"instruction":"Explain SegmentTreeNode data structure","output":"SegmentTreeNode is a tree data structure. SegmentTreeNode is a tree data structure","type":"factual"}
-{"instruction":"When should I use SegmentTreeNode?","output":"Use SegmentTreeNode when you need tree, hierarchical, recursive operations. SegmentTreeNode is a tree data structure","type":"reasoning"}
-{"instruction":"What are the use cases for SegmentTreeNode?","output":"SegmentTreeNode is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. SegmentTreeNode is a tree data structure","type":"reasoning"}
-{"instruction":"How to create a SegmentTreeNode?","output":"const ds = new SegmentTreeNode(); // Creates an empty SegmentTreeNode","type":"howto"}
 {"instruction":"What is TreeMap in data-structure-typed?","output":"An ordered Map backed by a red-black tree.\n\n- Iteration order is ascending by key.\n- No node exposure: all APIs use keys/values only.","type":"factual"}
 {"instruction":"Explain TreeMap data structure","output":"TreeMap is a tree data structure. An ordered Map backed by a red-black tree.\n\n- Iteration order is ascending by key.\n- No node exposure: all APIs use keys/values only.","type":"factual"}
 {"instruction":"When should I use TreeMap?","output":"Use TreeMap when you need tree, hierarchical, recursive operations. An ordered Map backed by a red-black tree.\n\n- Iteration order is ascending by key.\n- No node exposure: all APIs use keys/values only.","type":"reasoning"}
@@ -2027,11 +2029,6 @@
 {"instruction":"What are the time complexities for TreeMap operations?","output":"set: O(log n), get: O(log n), has: O(log n), delete: O(log n), map: O(n log n)","type":"factual"}
 {"instruction":"How to create a TreeMap?","output":"const ds = new TreeMap(); // Creates an empty TreeMap","type":"howto"}
 {"instruction":"What operations does TreeMap support?","output":"TreeMap supports: set, get, has, delete, map, filter, reduce, every","type":"factual"}
-{"instruction":"What is TreeMultiMapNode in data-structure-typed?","output":"Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).","type":"factual"}
-{"instruction":"Explain TreeMultiMapNode data structure","output":"TreeMultiMapNode is a tree data structure. Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).","type":"factual"}
-{"instruction":"When should I use TreeMultiMapNode?","output":"Use TreeMultiMapNode when you need tree, hierarchical, recursive operations. Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).","type":"reasoning"}
-{"instruction":"What are the use cases for TreeMultiMapNode?","output":"TreeMultiMapNode is ideal for: tree, hierarchical, recursive, sorted, logarithmic-access. Node type used by TreeMultiMap (alias to RedBlackTreeNode for backward compatibility).","type":"reasoning"}
-{"instruction":"How to create a TreeMultiMapNode?","output":"const ds = new TreeMultiMapNode(); // Creates an empty TreeMultiMapNode","type":"howto"}
 {"instruction":"What is TreeMultiMap in data-structure-typed?","output":"TreeMultiMap (ordered MultiMap) — key → bucket (Array of values).\n\nSemantics (RFC):\n- Bucketed design: each key appears once; duplicates live in the bucket.\n- `get(key)` returns a **live** bucket reference.\n- Default iteration yields bucket entries: `[K, V[]]`.\n- Navigable operations (`first/last/ceiling/...`) return entry tuples like TreeMap.","type":"factual"}
 {"instruction":"Explain TreeMultiMap data structure","output":"TreeMultiMap is a tree data structure. TreeMultiMap (ordered MultiMap) — key → bucket (Array of values).\n\nSemantics (RFC):\n- Bucketed design: each key appears once; duplicates live in the bucket.\n- `get(key)` returns a **live** bucket reference.\n- Default iteration yields bucket entries: `[K, V[]]`.\n- Navigable operations (`first/last/ceiling/...`) return entry tuples like TreeMap.","type":"factual"}
 {"instruction":"When should I use TreeMultiMap?","output":"Use TreeMultiMap when you need tree, hierarchical, recursive operations. TreeMultiMap (ordered MultiMap) — key → bucket (Array of values).\n\nSemantics (RFC):\n- Bucketed design: each key appears once; duplicates live in the bucket.\n- `get(key)` returns a **live** bucket reference.\n- Default iteration yields bucket entries: `[K, V[]]`.\n- Navigable operations (`first/last/ceiling/...`) return entry tuples like TreeMap.","type":"reasoning"}
@@ -2398,7 +2395,7 @@
 {"instruction":"What type of arguments does DirectedGraph.addEdge() take?","output":"Takes (src: VertexKey, dest: VertexKey, weight?: number). Creates directed edge from src to dest.","type":"factual"}
 {"instruction":"What parameters does PriorityQueue.add() accept?","output":"Takes element: E. Priority determined by comparator (default: min-heap by value).","type":"factual"}
 {"instruction":"What type of arguments does PriorityQueue.add() take?","output":"Takes element: E. Priority determined by comparator (default: min-heap by value).","type":"factual"}
-{"instruction":"What tree data structures are available?","output":"Available tree structures: AVLTreeNode, AVLTree, BinaryIndexedTree, BinaryTreeNode, BinaryTree, BSTNode, BST, RedBlackTreeNode, RedBlackTree, SegmentTree, SegmentTreeNode, TreeMap, TreeMultiMapNode, TreeMultiMap, TreeMultiSet, TreeSet","type":"factual"}
+{"instruction":"What tree data structures are available?","output":"Available tree structures: AVLTreeNode, AVLTree, BinaryIndexedTree, BinaryTreeNode, BinaryTree, BSTNode, BST, RedBlackTreeNode, RedBlackTree, SegmentTree, TreeMap, TreeMultiMap, TreeMultiSet, TreeSet","type":"factual"}
 {"instruction":"What graph data structures are available?","output":"Available graph structures: AbstractVertex, AbstractEdge, AbstractGraph, DirectedVertex, DirectedEdge, DirectedGraph, MapVertex, MapEdge, MapGraph, UndirectedVertex, UndirectedEdge, UndirectedGraph","type":"factual"}
 {"instruction":"What hash data structures are available?","output":"Available hash structures: HashMap, LinkedHashMap","type":"factual"}
 {"instruction":"What heap data structures are available?","output":"Available heap structures: Heap, FibonacciHeapNode, FibonacciHeap, MaxHeap, MinHeap","type":"factual"}
