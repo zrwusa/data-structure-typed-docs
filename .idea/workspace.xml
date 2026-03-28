@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f1bd643-ccb3-434c-abcd-9f43ac633a17" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2Tx8wN90eAYRnVjn1ddgM1nRLUw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/revone/.openclaw/workspace/data-structure-typed-docs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/data-structure-typed-docs/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.29188.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f1bd643-ccb3-434c-abcd-9f43ac633a17" name="Changes" comment="" />
+      <created>1691973609000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691973609000</updated>
+      <workItem from="1691973610411" duration="783000" />
+      <workItem from="1692005024496" duration="5745000" />
+      <workItem from="1692113972902" duration="477000" />
+      <workItem from="1692197658450" duration="1975000" />
+      <workItem from="1692233271570" duration="599000" />
+      <workItem from="1692369744085" duration="645000" />
+      <workItem from="1692464128740" duration="468000" />
+      <workItem from="1692536997509" duration="604000" />
+      <workItem from="1692605892995" duration="545000" />
+      <workItem from="1692715923111" duration="302000" />
+      <workItem from="1692767935564" duration="1317000" />
+      <workItem from="1692806609987" duration="388000" />
+      <workItem from="1693192532630" duration="659000" />
+      <workItem from="1693313432694" duration="448000" />
+      <workItem from="1693414992027" duration="801000" />
+      <workItem from="1693492907840" duration="61000" />
+      <workItem from="1693543661624" duration="231000" />
+      <workItem from="1694066576378" duration="259000" />
+      <workItem from="1694098394127" duration="560000" />
+      <workItem from="1694489764646" duration="602000" />
+      <workItem from="1695044898849" duration="703000" />
+      <workItem from="1695061845719" duration="592000" />
+      <workItem from="1695632496102" duration="58000" />
+      <workItem from="1696207847459" duration="3341000" />
+      <workItem from="1696817137853" duration="831000" />
+      <workItem from="1696939161974" duration="3697000" />
+      <workItem from="1697181470937" duration="36000" />
+      <workItem from="1697388210609" duration="823000" />
+      <workItem from="1697460130913" duration="812000" />
+      <workItem from="1697552174987" duration="405000" />
+      <workItem from="1697627997474" duration="2597000" />
+      <workItem from="1722748114641" duration="1093000" />
+      <workItem from="1771744654116" duration="785000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="85000f06-319c-4b01-a71e-ac2317da7a70" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="85000f06-319c-4b01-a71e-ac2317da7a70">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
